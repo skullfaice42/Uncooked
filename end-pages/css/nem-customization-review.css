@@ -1,0 +1,305 @@
+* {
+    color: white;
+}
+
+.banner-cont { 
+    width: 99vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.banner-cont h1 {
+    position: absolute;
+    text-align: center;
+    align-self: center; 
+    margin:0;
+    margin-top: 6.944vw;
+    line-height: normal;
+    font-size: 72px;
+
+}
+
+
+.sideview-car-showcase { 
+    margin-top: 6.319vw;
+    display: flex;
+    flex-direction: column;
+}
+.sideview-car-showcase img{ 
+    width: 99vw;
+}
+.sideview-car-showcase .change-cont { 
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    background-color: #0073E6;
+    align-self: flex-end;
+    margin-top: 28.056vw;
+    width: 14.8611vw;
+    height: 4.513vw;
+    margin-right: 2.153vw;
+}
+#change-button { 
+    display: flex;
+    flex-direction: row;
+    margin:0;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    width: fit-content;
+    
+}
+
+#change-button p { 
+    margin:0;
+    margin-left: 1.319vw;
+    line-height:normal;
+    font-size: 2.5rem;
+    width: fit-content;
+}
+#change-button .rfa {
+    height: 2.394vw;
+    width: 1.449vw;
+    margin-left: 2.264vw;
+}
+
+.selection-name { 
+    margin-top: 2.708vw;
+    width: 25.208vw;
+    height: 2.778vw;
+    background-color: #003B76;
+    display: flex;
+    position: absolute;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: center;
+
+}
+.selection-name p { 
+    margin: 0;
+    color: white;
+    font-size: 1.875rem;
+}
+
+.price-rev-cont { 
+    display: flex;
+    flex-direction: column;
+}
+
+.body-rim-color-tabs {
+    display: flex; 
+    flex-direction: row;
+    width: 99vw;
+    height: 5.2083vw;
+
+    align-items: center;
+}
+
+.box-name-money-cont { 
+    display: flex;
+    flex-direction: row;
+    width: 99vw;
+    height: 7.291vw;
+    align-items: center;
+}
+
+.body-rim-color-tabs p { 
+    font-size: 40px;
+    font-weight: 600;
+}
+.body-rim-color-tabs p:nth-child(1) { 
+    margin-left: 5.3472vw;
+}
+.body-rim-color-tabs p:nth-child(2) { 
+    margin-left: 2.9166vw;
+}
+
+.color-box { 
+    background-color: black;
+    width: 4.652vw;
+    height: 4.652vw;
+    margin-left: 5.3472vw;
+    border: white 2px solid;
+}
+.color-box2 { 
+    background-color: #BABCB7;
+    width: 4.652vw;
+    height: 4.652vw;
+    margin-left: 5.3472vw;
+    border: white 2px solid;
+}
+.color-name-money { 
+    margin-left: 1.527vw;
+}
+.color-name-money p:first-child {
+    font-size: 32px;
+    font-weight: 500;
+}
+.color-name-money p:nth-child(2) { 
+    font-size: 32px;
+    font-weight: 300;
+}
+.box-name-money-cont .edit{ 
+    display: flex;
+    width: 80.902vw;
+    justify-content: flex-end;
+    margin-right: 5.2083vw;
+}
+
+.order-summary-head {
+    height: 16.8055vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.order-summary-head h2{ 
+    margin-top: 6.1805vw;
+    margin-bottom: 5.069vw;
+    font-size: 72px;
+    font-weight: 600;
+}
+
+.summary-review {
+    height: 35.8333vw;
+    display: flex;
+    flex-direction: row;
+    width: 99vw;
+}
+.summary-left { 
+    width: 32.9861vw;
+    display: flex;
+    flex-direction: column;
+}
+.summary-right .legalthing { 
+    flex-wrap: wrap;
+    text-wrap: wrap;
+}
+.summary-left > div { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.summary-left a { 
+    font-size: 24px;
+    margin:0;
+    font-weight: 300;
+}
+
+.summary-left .stand-equip img { 
+    width: 2.08333vw;
+    height: 2.08333vw;
+}
+.summary-left .tri-code img { 
+    width: 1.66666vw;
+    height: 2.0083vw;
+}
+.summary-left .change-model img { 
+    width: 2.5694vw;
+    height: 2.0625vw;
+}
+
+.summary-left .stand-equip { 
+    display: flex;
+    margin-left: 5.69444vw;
+}
+.summary-left .tri-code { 
+    margin-left: 5.902vw;
+    margin-top: 2.2222vw;
+}
+.summary-left .change-model { 
+    margin-left: 5.41666vw;
+    margin-top: 2.2222vw;
+}
+.summary-left div:nth-child(1) a { 
+    margin-left: 1.875vw;
+    
+}
+.summary-left div:nth-child(2) a { 
+    margin-left: 2.0833333vw;
+}
+.summary-left div:nth-child(3) a { 
+    margin-left: 1.6666vw;
+}
+
+
+
+.summary-left,
+.summary-right { 
+    margin-top: 5.0694vw;
+}
+
+.summary-right { 
+    display: flex;
+    flex-direction: column;
+    width: 62.1527vw;
+}
+
+.summary-right div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* FIX HERE */
+.summary-right .leftbold {
+    font-size: 40px; 
+    font-weight: 500;
+    
+}
+/* HERE */
+
+
+
+
+#sr-d2, #sr-d3 { 
+    margin-top: 1.180vw;
+}
+.p2 {
+    font-size: 24px; 
+    font-weight: 300;
+    display: flex;
+    
+}
+
+
+.summary-right hr {
+    margin-top: 2.916vw;
+}
+.summary-right .totalprice { 
+    margin-top: 2.916vw;
+    height: 8.958vw;
+}
+
+.totalprice p:first-child{ 
+    font-size: 44px;
+}
+.totalprice p:nth-child(2) {
+    font-size: 40px;
+}
+
+/* FIX HERE */
+.legalthing { 
+    font-size: 32px;
+    font-weight: 300;
+}
+/* HERE */
+
+
+.summary-readmore { 
+    position: absolute;
+    align-self: flex-end;
+    margin-left: 53.6111vw;
+    font-size: 32px;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+.summary-right .rightmoney { 
+    font-size: 32px;
+    font-weight: 300;
+}

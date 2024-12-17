@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="car-img">
+        <div class="hero-img-cont">
+            <img src="front-angle-black.png" width="100%"> <!--change path-->
+            <div class="name">
+                <h3>Nemesis RR</h3>
+            </div>
+
+            <div class="stats">
+
+                <div class="speed">
+                    <h2>Max Speed</h2>
+                    <p>270+ mph</p>
+                </div>
+
+                <div class="speed2">
+                    <h2>0-60 mph</h2>
+                    <p>270+ mph</p>
+                </div>
+
+                <div class="speed3">
+                    <h2>Engine</h2>
+                    <p>V8</p>
+                </div>
+
+                <div class="speed4">
+                    <h2>2000 hp</h2>
+                    <p>Twin Turbo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            color: white;
+        }
+        .hero-img-cont{
+            display: flex;
+            position: relative;
+            /* flex-direction: column; */
+            /* justify-content: center; */
+            /* justify-content: flex-start; */
+        }
+        .hero-img-cont .name{
+            position: absolute; /*this is where the magic happens*/
+            justify-content: center;
+            background-color: #003B76;
+            padding: .5em 2.5em;
+            font-size: 1.5rem;
+            /* 1.5rem */
+        }
+        .hero-img-cont .stats{
+            /* background-color: rgba(116, 137, 40, 0.433); */
+            background-color: blue;
+            position: absolute;
+            margin-top: 35vw;
+            display: flex;
+            /* justify-content: space-around; */
+            gap: 20%;
+            margin-left: 10%;
+        }
+        .stats .speed{
+            width: 200px;
+        }
+        .stats{
+            background-color: #003B76;
+        }
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+    </body>
+</html>

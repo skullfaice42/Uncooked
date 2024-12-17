@@ -1,0 +1,213 @@
+<!-- i dident push on the one i was working on... and i dont want to mess it up, so heres this -->
+
+
+<!-- for the types of font type...
+24px = 1.5rem
+32px = 2rem -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <link rel="icon" href="images/icons/med/icon.png">
+</head>
+<body>
+
+    <!-- JEREMY CHANGE P'S TO "a" TAGS -->
+    <!-- JEREMY CHANGE P'S TO "a" TAGS -->
+    <!-- JEREMY CHANGE P'S TO "a" TAGS -->
+
+    <footer>
+        <div class="top">
+            <div class="account footermedia">
+                <div class="mobile">
+                    <h2>Account</h2>
+                    <img src="images/home/down-arrow.png">
+                </div>
+                <a>Settings</a>
+                <a>Saved Car Configurations</a>
+                <a>Order History</a>
+            </div>
+            <div class="dealerships footermedia">
+                <h2>Dealerships</h2>
+                <a>Locations</a>
+            </div>
+            <div class="nemesis-rr footermedia">
+                <h2>Nemesis RR</h2>
+                <a>Overview</a>
+                <a>Customize</a>
+            </div>
+            <div class="black-widow footermedia">
+                <h2>Black Widow</h2>
+                <a>Overview</a>
+                <a>Customize</a>
+            </div>
+            <div class="services footermedia">
+                <h2>Services</h2>
+                <a>Insurance</a>
+                <a>Part Replacement</a>
+                <a>Customor Help</a>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="merchandise footermedia">
+                <h2>Merchandise</h2>
+                <a>All Merchandise</a>
+                <a>Men</a>
+                <a>Women</a>
+                <a>Accessories</a>
+            </div>
+            <div class="about-us footermedia">
+                <h2>About Us</h2>
+                <a>Mission</a>
+                <a>Press</a>
+                <a>Contact Us</a>
+            </div>
+            <div class="legal footermedia">
+                <h2>Legal</h2>
+                <a>Terms & Conditions</a>
+                <a>Privacy Policy</a>
+                <a>Cookies</a>
+            </div>
+            <div class="social footermedia">
+                <h2>Social</h2>
+                <div class="icons">
+                    <img src="images/all/instagram.png" alt="instagram logo" id="instagram">
+                    <img src="images/all/facebook.png" alt="facebook logo" id="facebook">
+                    <img src="images/all/linkedin.png" alt="linkedin logo" id="linkedin">
+                </div>
+            </div>
+            
+        </div>
+        <div class="bottom">
+            <img src="images/all/icon.png" id="footer-tri-icon" alt="trion icon" href="index.html">
+            <h3 class="bot-deets">© 2025 by  TRION.</h3>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Jim+Nightshade&family=Lexend+Deca:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "Lexend Deca";
+        }
+        body{
+            background-color: #050133;
+            color: white;
+        }
+
+        footer { 
+            background-color: #08006A;
+        }
+        footer .top{
+            width: fit-content;
+            margin-top: 9%;
+            display: flex;
+            justify-content: flex-start; /*yeah, i know its not what it looks like in the 
+            figma but this could be better because i see dead space in the figma*/
+            margin-left: 8vw;
+
+        }
+        footer .middle{
+            width: fit-content;
+            display: flex;
+            justify-content: flex-start;
+            margin-left: 8vw;
+
+        }
+        
+        footer .bottom{
+            /* display: inline; */
+            /* position: relative; */
+            margin-top: 5%;
+            justify-items: center;
+
+
+        }
+        .account, .dealerships, .nemesis-rr, .black-widow, .services, .merchandise, .about-us, .legal {
+            width: 18vw;
+            text-overflow: none;
+
+        }
+
+        .social { 
+            align-self: flex-start;
+            width: 18vw;
+            text-overflow: none;
+        }
+        footer a{
+            margin-top: 10%;
+            font-size: 1.5rem;
+            color: white;
+            text-decoration: none;
+            /* font-size: 24px; */
+        }
+        footer a:hover { 
+            cursor: pointer;
+        }
+
+        footer .bot-deets{
+            font-size: .9em;
+        }
+        footer h2{
+            margin-top: 30%;
+            /* font-size: 32px; */
+            font-size: 2rem;
+        }
+        footer h3{
+            margin-top: 2%;
+        }
+
+        #instagram, #linkedin, #facebook { 
+            margin-top: 2vw;
+            height: 3vw;
+
+            
+        }
+        
+        .icons { 
+            display: flex;
+            width: 70%;
+            justify-content: space-between;
+
+        }
+        .footermedia { 
+            display: flex;
+            flex-direction: column;
+        }
+        #footer-tri-icon { 
+            height: 5vw;
+
+        }
+
+        .mobile{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid green;
+            align-self: center;
+            justify-items: center;
+        }
+        .mobile img{
+            width: 10vw;
+            border: 2px solid red;
+        }
+
+    </style>
+        
+</body>
+</html>

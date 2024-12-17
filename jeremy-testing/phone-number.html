@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full-Screen Width Phone Input</title>
+  <!-- Include intl-tel-input CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+  />
+  <style>
+    body {
+      background-color: #003b79; /* Blue background */
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0; /* Remove default body margins */
+    }
+
+    .phone-container {
+      width: 100%; /* Full width of the screen */
+      padding: 10px; /* Add some padding for spacing */
+    }
+
+    #phone {
+      width: 100%; /* Full width of the parent container */
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+      box-sizing: border-box; /* Ensures padding doesn't exceed width */
+    }
+
+    #phone:focus {
+      border-color: #0078d7;
+    }
+
+    /* Style for placeholder text */
+    #phone::placeholder {
+      color: #ccc; /* Grey placeholder text */
+      font-style: italic; /* Optional: Italicized text for the placeholder */
+    }
+  </style>
+</head>
+<body>
+  <div class="phone-container">
+    <label for="phone" style="display: block; margin-bottom: 5px;">Enter your mobile number:</label>
+    <input id="phone" type="tel" placeholder="Example: (1+123 456 7890)">
+  </div>
+
+  <!-- Include intl-tel-input JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+  <script>
+    const phoneInputField = document.getElementById("phone");
+    const iti = window.intlTelInput(phoneInputField, {
+      initialCountry: "us", // Default country
+      separateDialCode: true, // Show dial code separately
+      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js", // Validation script
+    });
+
+    // Optional: Log selected country and dial code (debugging)
+    phoneInputField.addEventListener("countrychange", function () {
+      const countryData = iti.getSelectedCountryData();
+      console.log("Selected country:", countryData.name);
+      console.log("Dial code:", countryData.dialCode);
+    });
+  </script>
+</body>
+</html>

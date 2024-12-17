@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h2>Exterior</h2>
+    <h3>Body Color</h3>
+    <hr>
+    <div class="top">
+        <input type="checkbox" id="toggle">
+        <label for="toggle" class="red">Red</label>
+        <img src="down-arrow.png" alt="Arrow">
+
+        <div class="choices">
+            <input type="checkbox" id="r1">
+            <label for="r1" class="red1">cameras</label>
+        </div>
+    </div>
+    <div class="ligma">
+        <input type="checkbox" id="sigma">
+        <label for="sigma" class="betta">mimi-ligma</label>
+    </div>
+    <input type="checkbox" id="red2">
+    <label for="red2" class="bat">here plz</label>
+    <style>
+        body {
+            background-color: rgba(78, 7, 105, 0.562);
+        }
+
+        /* Hide the checkbox */
+        .top [type="checkbox"] {
+            display: none;
+        }
+
+        /* Style the button */
+        .top .red {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        /* Rotate the image when the checkbox is checked */
+        .top [type="checkbox"]:checked ~ img {
+            transform: rotate(180deg);
+            transition: transform 0.3s ease;
+        }
+
+        /* Style the image */
+        .top img {
+            width: 30px;
+            height: 30px;
+            transition: transform 0.3s ease;
+        }
+        #r1:checked ~ label[for="r1"]{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+        }
+        #sigma:checked ~ label[for="sigma"]{
+            background-color: purple;
+            scrollbar-highlight-color: blue;
+        }
+        ::selection{
+            background-color: rgba(78, 7, 105, 0.562);
+            color: rgb(0, 0, 0);
+        }
+        .bat{
+            display: flex;
+            background-color: black;
+            height: 200px;
+            width: 200px;
+            color: white;
+            align-items: center;
+            justify-content: center;
+        }
+        .input [type="checkbox"] {
+            display: none;
+        }
+
+    </style>
+</body>
+</html>

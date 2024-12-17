@@ -1,0 +1,64 @@
+cook for at least 30% of the time
+JEREMY CHANGE P'S TO "a" TAGS
+a crap ton of photoshop :/
+add functionality to a lot of things (everything, all i did was make it look alright)
+lock in
+
+Nemisis exterior and interior needs color CHANGE  
+    interior not using lower 4 images
+
+Customization review needs functionality
+    2 overlayed images... has to save the image 
+
+most likelly going to have to re-do the customizxation page
+
+progress bar on index needs to get working, lower left
+
+acessability guy
+
+phone number needs to be corrected (100vw)
+
+:psudo class everywhere
+
+that acessability feature where you can tab and it goes to the next thing
+
+remmeber javascript to *i choose black, displays black. * i choose red, displays red
+
+update contact info with hover
+
+come up with animation
+
+font weight on everything
+
+taklk with design on mobil consistnacy 
+
+
+clean up code... like comments
+
+optomize images
+
+make sure to replace all the 'placeholder' icons.... and links and the rest...
+
+fix alts on all pages
+
+
+
+REVIEW THE ENTIRE WEBSITE BEFORE SUBMITION
+
+
+
+
+*things for birthday boy to comp:
+make the image and text fit on the hat-shopping-menu page (lmk when you are done)
+
+put the code for header and footer in ONE html file (make sure they are appended properelly)
+
+
+
+
+j- merch... All, and Customization, and html raw pages
+a- nem customization rewiev (no functionality)
+
+both- MEDIA QUERRIES
+
+hat-selection-black (needs functionality, jeremy will try to get it but hopes are low)

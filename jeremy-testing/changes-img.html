@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Images by Color</title>
+  <style>
+    /* Hide the radio buttons */
+    input[type="radio"] {
+      display: none;
+    }
+
+    /* Style the labels as color buttons */
+    label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      margin: 5px;
+      border-radius: 50%;
+      cursor: pointer;
+      border: 2px solid #ccc;
+    }
+
+    /* Different colors for the labels */
+    .red { background-color: red; }
+    .blue { background-color: blue; }
+    .green { background-color: green; }
+
+    /* The container for images */
+    .image-container img {
+      display: none;
+      width: 200px;
+      height: auto;
+    }
+    
+
+    /* Show the correct image when a color is selected */
+    #red:checked ~ .image-container .img-red,
+    #blue:checked ~ .image-container .img-blue,
+    #green:checked ~ .image-container .img-green {
+      display: block;
+    }
+
+    /* Set up the default hero image */
+.hero-image {
+  width: 500px;
+  height: 300px;
+  background-image: url('secondary.png');
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #ccc;
+  margin-top: 20px;
+}
+
+/* Change the hero image when each radio button is selected */
+#option1:checked ~ .hero-image {
+  background-image: url('thirdary.png');
+}
+
+#option2:checked ~ .hero-image {
+  background-image: url('fifthdary.png');
+}
+
+#option3:checked ~ .hero-image {
+  background-image: url('fourthdary.png');
+}
+
+  </style>
+</head>
+<body>
+
+<h1>Choose a Color</h1>
+<div class="container">
+    <!-- Radio Buttons for Image Selection -->
+    <input type="radio" id="option1" name="image" class="selector" />
+    <label for="option1">Option 1</label>
+  
+    <input type="radio" id="option2" name="image" class="selector" />
+    <label for="option2">Option 2</label>
+  
+    <input type="radio" id="option3" name="image" class="selector" />
+    <label for="option3">Option 3</label>
+  
+    <!-- Hero Image -->
+    <div class="hero-image"></div>
+  </div>
+  
+
+</body>
+</html>

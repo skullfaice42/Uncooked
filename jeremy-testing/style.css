@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Jim+Nightshade&family=Lexend+Deca:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* { 
+    font-family: "Lexend Deca";
+}
+
+
+:root{
+    --background-color: #08006A;
+}
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Lexend+Deca:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* { 
+    font-family: "Lexend Deca", sans-serif;
+}
+
+
+
+body {
+    /* height: 69420px; */
+    background-color: #050133;
+}
+
+
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* home page start */
+
+
+
+
+
+/* home page end */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start merchandice */
+/* Start merchandice */
+/* Start merchandice */
+/* Start merchandice */
+/* Start merchandice */
+/* Start merchandice */
+/* Start merchandice */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend Deca";
+}
+
+body {
+    /* height: 69420px; */
+    background-color: #050133;
+}
+
+.top-containermh {
+    position: relative;
+}
+
+.hero-imgmh img{
+    width: 100%;
+    display: block;
+}
+
+.bit-o-textmh {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 5%; /* Align text to the left with a margin */
+    transform: translateY(-50%); /* Adjust for perfect vertical centering */
+    color: white;
+    text-align: left;
+}
+
+.bit-o-textmh h2 {
+    color: #0073E6;
+    font-size: 4em;
+    margin: 0;
+}
+
+.bit-o-textmh h3 {
+    font-size: 2em;
+    color: white;
+    margin: 0;
+}
+
+.all-merch-buttonmh{
+    display: flex;
+    margin-top: 4.930vw;
+    width: 48.61vw;
+    height: 6.944vw;
+    background-color: #003B76;
+    font-size: 2.5em;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.four-clothingmh {
+display: flex;
+flex-direction: column;
+justify-content: space-between; /* Space out the rows of cards evenly */
+flex-grow: 1; /* Allow it to stretch and take available height */
+gap: 1rem; /* Spacing between rows */
+}
+.two-cardsmh {
+display: flex;
+gap: 1rem; /* Spacing between items in the row */
+justify-content: space-between;
+}
+
+.lil-sectionmh{
+    margin-top: 3.5416666vw;
+    justify-content: space-between;
+    color: white;
+    display: flex;
+}
+
+.left-lsmh{
+    margin-left: 2.4305vw;
+    display: flex;
+    align-items: center;
+}
+.left-lsmh img{
+    width: 2.4305vw;
+}
+.left-lsmh p{
+    font-size: 1.5em;
+    margin-left: .83vw;
+}
+.right-lsmh{
+    margin-right: 2.4305vw;
+    color: #A1A1A1;
+    font-size: 1.5em;
+}
+
+
+
+
+
+.entire-sectionmh {
+    margin-top: 1.736vw;
+display: flex;
+gap: 2rem; /* Spacing between mini-hero and clothing section */
+align-items: stretch; /* Make both sections align with the tallest one */
+}
+.entire-sectionmh:nth-child(2){
+    flex-direction: row-reverse;
+}
+.mini-heromh {
+height: auto; /* Let the height of mini-hero adapt to the flex container */
+max-height: 100%; /* Ensure it doesn't exceed the calculated height */
+width: auto;
+object-fit: cover; /* Ensure the image scales proportionally */
+}
+.entire-sectionmh .mini-heromh{
+    height: 92.9vw;
+}
+
+.one-clothingmh {
+color: white;
+width: 23.055vw;
+/* border: red 3px solid; For testing layout */
+/* Remove margin-left to avoid uneven spacing */
+/* yeah you know what... ima just call it here, i have things to do in the moring... becides im getting cold :/ */
+}
+
+.one-clothingmh img {
+    background-color: white;
+    width: 23.055vw;
+    object-fit: cover; /*idk what this does, i just got reccomended it*/
+}
+
+.one-clothingmh h3 {
+    font-size: 2em;
+}
+
+.one-clothingmh p {
+    font-size: 1.5em;
+}
+
+.colorsmh {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    display: flex;
+    gap: .9vw;
+}
+
+/* Hide the default radio buttons */
+.color-inputmh {
+    display: none;
+}
+
+/* Style the color circle container */
+.color-labelmh {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Circle styles */
+.color-labelmh span {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    border: rgba(255, 255, 255, 0.315) 2px solid;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.color-blackmh {
+    background-color: black;
+}
+
+.color-whitemh {
+    background-color: white;
+}
+
+.color-bluemh {
+    background-color: blue;
+}
+
+.color-redmh {
+    background-color: red;
+}
+
+/* Highlight the selected color */
+.color-inputmh:checked + span {
+    border: white 3px solid;
+}
+
+/* Style the Add to Cart button */
+.add-to-cartmh {
+    margin-top: auto;
+    width: 100%;
+    font-size: 1.25em;
+    border: #0073E6 3px solid;
+    color: white;
+    background-color: transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s ease-in-out;
+}
+
+.add-to-cartmh:hover {
+    background-color: #0073E6;
+    color: #050133;
+}
+
+.add-to-cartmh:active {
+    transform: scale(0.95); /*kek*/
+}
+
+
+
+
+/* end merchandice */
+/* end merchandice */
+/* end merchandice */
+/* end merchandice */
+/* end merchandice */
+/* end merchandice */
+/* end merchandice */
+
+
+

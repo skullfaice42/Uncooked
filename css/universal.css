@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Lexend+Deca:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* ALL */
+
+* { 
+    font-family: "Lexend Deca", sans-serif;
+}
+:root{
+    --background-color: #08006A;
+}
+
+/* BODY */
+
+body{
+    margin:0;
+    padding: 0;
+    background-color: #050133;
+    color: white;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/* TOP NAVIGATION */
+
+header {
+    
+    margin:0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    top: 0;
+}
+
+.topnav {
+    position: fixed;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    height: 6.944vw;
+    background: linear-gradient(to bottom,#050133, rgba(0,0,0,0));
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    width: 33.33%;
+    height: 80%;
+    justify-content: center;;
+    align-items: center;
+    list-style-type: none;
+}
+.topnav ul li img {
+    height: 6vw;
+    margin-bottom: 0;
+}
+
+.topnav ul li { 
+    display: flex;
+    align-items: center;
+}
+
+#nav-menu { 
+    margin-left: 1.550vw; 
+    margin-bottom: 0;
+    font-size: 2.75rem;
+}
+#nav-ham-menu { 
+    display: flex;
+    align-items: center;
+}
+#nav-ham-menu img{
+    height: 3.125vw;
+}
+#nav-mag-glass img {
+    height: 3.333vw;
+    margin-right: 2.5vw;
+}
+#nav-profile img {
+    height: 4.306vw;
+    margin-right: 0;
+}
+
+.topnav-left {
+    display: flex;
+    margin:0;
+    justify-content: flex-start;
+    align-items:center; 
+    padding-left: 1.744vw;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.topnav-right { 
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1.744vw;
+}
+
+.ham-working .lil-x img{
+    /* position: absolute; */
+    margin-left: 32vw;
+    display: flex;
+    height: 2.1527vw;
+    justify-self: flex-end;
+    margin-right: 1.527vw;
+    margin-top: 1.527vw;
+}
+.ham-working {
+    /* position: fixed; Ensures it overlays the page */
+    height: fit-content;
+    padding-bottom: 5vw;
+    width: 35.4166vw;
+    position: absolute;
+    background-color: #050133;
+
+    z-index: 1000; /* Keeps it above other content */
+    transform: translateX(-100%); /* Hides it off-screen initially */
+    transition: ease-in-out .4s; /* Smooth animation */
+    margin-top: 6.944vw;
+}
+
+.ham-working.active {
+    transform: translateX(0); /* Brings it into view */
+}
+
+.ham-working .selections{
+    margin-left: 3.95833vw;
+}
+
+.selections img.active { 
+    rotate: 90deg;
+}
+
+
+
+.selections{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 25.4861vw;
+    font-size: 2.5rem;
+    margin-bottom: .55555vw;
+    /* justify-content: center; */
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    margin-top: 1.2vw;
+    transition: ease-in-out 1s;
+}
+
+
+
+
+#nemesislink { 
+    margin-top: 3.63888vw;
+}
+.ham-working .selections:first-child{
+    margin-top: 8.125vw;
+}
+
+.selections > a{
+    color: white;
+    font-size: 2.5rem;
+    margin-left: 1.9444vw;
+    text-decoration: none;
+}
+
+.sub { 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transition: ease-out .1s; 
+    height: 0px;
+    opacity: 0;
+    display: none;
+    transform: translateY(-5vw);
+}
+
+.sub a { 
+    color: white;
+    text-decoration: none;
+    width: fit-content;
+}
+.sub.active { 
+    display: flex;
+    opacity: 1;
+    height: fit-content;
+    transform: translate(0);
+    transition: ease-in-out .25s; 
+}
+
+.sub.active a { 
+    margin-left: 5vw;
+}
+
+.lil-x img:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.selections img { 
+    width: 1.52777vw;
+    height: 2.5vw;
+    transition: ease-in-out .15s;
+}
+.rfa:hover {
+    transform: translateX(.75vw);
+    transition: ease-in-out 1s;
+}
+.hmrfa:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 440px) {
+    .topnav {
+        height: 23.86363vw;
+    }
+
+    #nav-menu {
+        font-size: 1rem;
+    }
+
+    #nav-ham-menu img {
+        height: 5.227272vw;
+    }
+    #nav-mag-glass img { 
+        height: 7.04545vw;
+    }
+    #nav-profile img {
+        height: 7.04545vw;
+    }
+    .topnav ul li img {
+        height: 13.1818vw;
+    }
+
+
+}
+
+

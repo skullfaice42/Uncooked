@@ -1,0 +1,22 @@
+here are the rules, do not disobey the rules
+
+1. stay in your section
+    - meaning dont work on others html files without asking,
+      this could really mess up their flow
+
+2. use class tags that coralate with your page
+    -for example, if you are working on the home page, your tags should
+     end with hp (or something like that), this way when you commit, we 
+     wont have to worry about MERGE CONFLICT. 
+
+    -nobody wants to deel with that because it would mess with our flow
+    so please make sure to add something indicating that your 
+    css is yours
+
+3. renaming images
+    -if you plan on renaming the images, ask before doing so. 
+    make sure everybody is alright with it, because if not then it could
+    mess them up (idk, just talkin' at this point)
+
+4. renaming anything
+    -ask before doing so, that way images wont be broken

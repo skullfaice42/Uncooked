@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page 1 - Select an Image</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      height: 100vh;
+    }
+    .preview {
+      margin-top: 20px;
+      width: 300px;
+      height: 300px;
+      background-color: #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-size: cover;
+      background-position: center;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      text-align: center;
+    }
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Select an Image</h1>
+  <div>
+    <button onclick="previewImage('secondary.png')">Option 1</button>
+    <button onclick="previewImage('fifthdary.png')">Option 2</button>
+    <button onclick="previewImage('fourthdary.png')">Option 3</button>
+  </div>
+  <!-- <img src="secondary.png"> -->
+  <div id="preview" class="preview">
+    <p>Click an option to preview the image</p>
+  </div>
+  <button onclick="saveAndGo()">Save & Go to Page 2</button>
+
+  <script>
+    let selectedImage = null;
+
+    function previewImage(image) {
+      const preview = document.getElementById('preview');
+      selectedImage = image; // Save the selected image
+      preview.style.backgroundImage = `url('${image}')`;
+      preview.textContent = ''; // Clear the text when an image is displayed
+    }
+
+    function saveAndGo() {
+      if (selectedImage) {
+        localStorage.setItem('selectedImage', selectedImage); // Save the selected image
+        window.location.href = 'two.html'; // Redirect to Page 2
+      } else {
+        alert('Please select an image before proceeding!');
+      }
+    }
+  </script>
+</body>
+</html>

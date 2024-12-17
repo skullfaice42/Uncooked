@@ -1,0 +1,49 @@
+<!-- alright chief, this is how to get the checkbox working -->
+ <!-- the problem is that idk how to implicate it to the code... ill get working on the 'base' code for it -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Box (CSS Only)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    /* Hide the checkbox, but keep it accessible for interaction */
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    /* Style the label as the clickable box */
+    label {
+      width: 100px;
+      height: 100px;
+      border-radius: 100px;
+      background-color: grey;
+      border: 3px solid black;
+      cursor: pointer;
+      display: block;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    /* Change the background when the checkbox is checked */
+    input[type="checkbox"]:checked + label {
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hidden checkbox paired with a label -->
+  <input type="checkbox" id="colorBox">
+  <label for="colorBox"></label>
+</body>
+</html>

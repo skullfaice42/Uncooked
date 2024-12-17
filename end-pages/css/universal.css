@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Lexend+Deca:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* ALL */
+
+* { 
+    font-family: "Lexend Deca", sans-serif;
+}
+:root{
+    --background-color: #08006A;
+}
+
+/* BODY */
+
+body{
+    margin:0;
+    padding: 0;
+    background-color: #050133;
+    color: white;
+    width: 99vw;
+}
+
+/* TOP NAVIGATION */
+
+header {
+    position: fixed;
+    margin:0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 99vw;
+    z-index: 1;
+    top: 0;
+}
+
+.topnav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    height: 6.944vw;
+    background: linear-gradient(to bottom,#050133, rgba(0,0,0,0));
+    justify-content: center;
+    align-items: center;
+    width: 99vw;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    width: 33.33%;
+    height: 80%;
+    justify-content: center;;
+    align-items: center;
+    list-style-type: none;
+}
+.topnav ul li img {
+    height: 6vw;
+    margin-bottom: 0;
+}
+
+.topnav ul li { 
+    display: flex;
+    align-items: center;
+}
+
+#nav-menu { 
+    margin-left: 1.550vw; 
+    margin-bottom: 0;
+    font-size: 2.75rem;
+}
+#nav-ham-menu { 
+    display: flex;
+    align-items: center;
+}
+#nav-ham-menu img{
+    height: 3.125vw;
+}
+#nav-mag-glass img {
+    height: 3.333vw;
+    margin-right: 2.5vw;
+}
+#nav-profile img {
+    height: 4.306vw;
+    margin-right: 0;
+}
+
+.topnav-left {
+    display: flex;
+    margin:0;
+    justify-content: flex-start;
+    align-items:center; 
+    padding-left: 1.744vw;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.topnav-right { 
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1.744vw;
+}
+
+
+/* FOOTER */
+
+footer { 
+    background-color: #08006A;
+}
+footer .top{
+    width: fit-content;
+    margin-top: 9%;
+    display: flex;
+    justify-content: flex-start; 
+    margin-left: 8vw;
+
+}
+footer .middle{
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 8vw;
+
+}
+
+footer .bottom{
+    margin-top: 7.014vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.account, .dealerships, .nemesis-rr, .black-widow, .services, .merchandise, .footer-about-us, .legal {
+    width: 18vw;
+    text-overflow: none;
+
+}
+
+.social { 
+    align-self: flex-start;
+    width: 18vw;
+    text-overflow: none;
+}
+footer a{
+    margin-top: 10%;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    width: fit-content;
+    /* font-size: 24px; */
+}
+footer a:hover { 
+    cursor: pointer;
+}
+
+footer .bot-deets{
+    font-size: .9em;
+}
+footer h2{
+    margin-top: 30%;
+    /* font-size: 32px; */
+    font-size: 2rem;
+}
+footer h3{
+    margin-top: 2%;
+}
+
+#instagram, #linkedin, #facebook { 
+    margin-top: 2vw;
+    height: 3vw;
+
+    
+}
+.icons { 
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+
+}
+.footermedia { 
+    display: flex;
+    flex-direction: column;
+}
+#footer-tri-icon { 
+    height: 5vw;
+
+}

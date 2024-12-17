@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAKA</title>
+    <link rel="icon" href="little-anya.png">
+</head>
+<body>
+    <h1>Spy X Family best characters</h1>
+    <div class="buttons">
+        <div class="goin-back">
+            <p> Back</p>
+        </div>
+        <div class="goin-foward">
+            <p> Foward</p>
+        </div>
+    </div>
+    <div class="carasel">
+        <div class="one">
+            <img src="little-anya.png">
+            <h2>Anya Forger</h2>
+        </div>
+
+        <div class="one">
+            <img src="little-anya.png">
+            <h2>Anya Forger</h2>
+        </div>
+
+        <div class="one">
+            <img src="little-anya.png">
+            <h2>Anya Forger</h2>
+        </div>
+
+        <div class="one">
+            <img src="little-anya.png">
+            <h2>Anya Forger</h2>
+        </div>
+
+        <div class="one">
+            <img src="little-anya.png">
+            <h2>Anya Forger</h2>
+        </div>
+    </div>
+    
+</body>
+<style>
+    body{
+        /* overflow: hidden; */
+    }
+    .carasel{
+        /* width: 100vw; */
+        display: flex;
+        overflow: hidden;
+        gap: 30px;
+        /* position: absolute; */
+    }
+    .one img{
+        /* width: 2; */
+        width: 500px;
+    }
+    .one{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(64, 125, 179);
+        width: 125;
+    }
+    .one h2{
+        display: flex;
+        justify-content: center;
+    }
+    p{
+        display: flex;
+        width: 200px;
+        height: 75px;
+        border-radius: 20px;
+        font-size: 3em;
+        background-color: blue;
+        /* position: relative; */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .buttons{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .goin-foward:hover ~ .carasel{
+        /* display: none; */
+        background-color: black;
+    }
+
+    
+</style>
+
+</html>

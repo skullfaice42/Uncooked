@@ -1,0 +1,8 @@
+the footer and header are in:
+index.html
+
+css is inside the html file for purposes of not breaking 
+other pages css while 2 people working at same time
+
+(going to add universal css file 
+and separate css files per page later)

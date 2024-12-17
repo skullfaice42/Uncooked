@@ -1,0 +1,479 @@
+.hero-img-stuff img{ 
+    width: 100%;
+}
+.hero-img { 
+    margin-top: 6.944vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.hero-img-textcontent {
+    margin-top: 16.667vw;
+    margin-left: 7.153vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    flex-wrap: wrap;
+    width: 35.189vw;
+}
+.hero-img-textcontent h1 { 
+    font-size: 4.9rem;
+    color: #0073E6;
+    margin: 0;
+}
+.hero-img-textcontent p {
+    font-weight: 500;
+    font-size: 2.5rem;
+    width: 27vw;
+    margin: 0;
+}
+.hero-button-cont { 
+    display: flex;
+    flex-direction: row;
+}
+
+.herobuttons {  
+    font-weight: 600;
+    text-decoration: none;
+    color: white;   
+    
+    display: flex;
+    margin-top: 2.708vw;
+    align-items: center;
+    
+}
+.herobuttons p { 
+    margin-left: 1.319vw;
+    width: fit-content;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#build-button { 
+    margin-left:.972vw; 
+    background-color: #0073E6;
+    border-style: solid;
+    border-color:#0073E6;
+    width:11.944vw;
+    height: 4.513vw;
+}
+#discovermore-button { 
+    border-style: solid;
+    border-color:#0073E6;
+    width: 22.222vw;
+    height: 4.513vw;
+    
+}
+
+.rfa { 
+    height: 2.393vw;
+    margin-left: 2.264vw;
+}
+
+
+
+
+.car-quick-desc { 
+    display: flex;
+    flex-direction: row;
+    width: 99vw;
+    height: 36.875vw;
+}
+.overlayed-photos {
+    width: 45.625vw;
+    display: flex;
+
+}
+
+.overlayed-photos img { 
+    height: 21.597vw;
+    position: absolute;
+}
+#overlayed-photo1 { 
+    margin-top: 4.513vw;
+    margin-left: 5.972vw;
+    box-shadow: 0px 0px 4px black;
+}
+#overlayed-photo2 { 
+    margin-top: 15.278vw;
+    margin-left: 16.181vw;
+    box-shadow: 0px 0px 4px black;
+}
+.car-quick-desc article { 
+    display: flex;
+    flex-direction: column;
+    width: 47.5vw;
+}
+.car-quick-desc h2 { 
+    margin:0;
+    margin-top: 4.513vw;
+    font-size: 4.5rem;
+}
+
+.car-quick-desc article > p {
+    font-size: 2.75rem;
+    width: 90%;
+    line-height: 4.625rem;
+}
+
+.exclusivity-counter { 
+    width: 87.917vw;
+    height: 20.069vw;
+    display: flex;
+    flex-direction: row;
+    background-color: #003B76;
+    margin-left: 5.972vw;
+    margin-top: 5.763vw;
+}
+
+.remaining { 
+    display: flex;
+    width: 22.083vw;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.remaining img {
+    width: 19.514vw;
+    height: 19.514vw;
+}
+.exclusivity-counter article { 
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.111vw;
+    margin-left: 4.931vw;
+    width: 47.5vw;
+}
+.exclusivity-counter article h2 { 
+    font-size: 4.5rem;
+    margin: 0;
+    font-weight: 600;
+}
+.exclusivity-counter article p {
+    font-size:  2rem;
+    line-height: 3.813rem;
+    margin-top: 1.389vw;
+}
+.exclusivity-counter .rightarrow img { 
+    height: 11.528vw;
+    margin-left: 2.986vw;
+}
+.exclusivity-counter .rightarrow {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.sideview-car-showcase { 
+    margin-top: 6.319vw;
+    display: flex;
+    flex-direction: column;
+}
+.sideview-car-showcase img{ 
+    width: 99vw;
+}
+.sideview-car-showcase .customize-cont { 
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    background-color: #0073E6;
+    align-self: flex-end;
+    margin-top: 28.056vw;
+    width: 17.917vw;
+    height: 4.513vw;
+    margin-right: 2.153vw;
+}
+#customize-button { 
+    display: flex;
+    flex-direction: row;
+    margin:0;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    width: fit-content;
+    
+}
+
+#customize-button p { 
+    margin:0;
+    margin-left: 1.319vw;
+    line-height:normal;
+    font-size: 2.5rem;
+    width: fit-content;
+}
+#customize-button .rfa {
+    height: 2.394vw;
+    width: 1.449vw;
+}
+
+.nem-name { 
+    margin-top: 2.708vw;
+    width: 25.208vw;
+    height: 2.778vw;
+    background-color: #003B76;
+    display: flex;
+    position: absolute;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: center;
+
+}
+.nem-name p { 
+    margin: 0;
+    color: white;
+    font-size: 1.875rem;
+}
+
+.bw-name { 
+    margin-top: 2.708vw;
+    width: 25.208vw;
+    height: 2.778vw;
+    background-color: #003B76;
+    display: flex;
+    position: absolute;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: center;
+
+}
+.bw-name p { 
+    margin: 0;
+    color: white;
+    font-size: 1.875rem;
+}
+
+.s-header { 
+    display: flex;
+    flex-direction: row;
+    width: 99vw;
+    height: 21.181vw;
+    color: white;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 3.5rem;
+}
+.s-header h2 { 
+    margin-left: 5.972vw;
+}
+
+.s-card-cont { 
+    display: flex;
+    flex-direction: row;
+    height: 28.264vw;
+    width: 91.917vw;
+    margin-left: 5.972vw;
+}
+
+.s-card { 
+    display: flex;
+    height: 28.264vw;
+    width: 33.33%;
+}
+.s-card article {
+    display: flex;
+    flex-direction: column;
+}
+#s-card-1 img { 
+    height: 8.333vw;
+    width: 8.333vw;
+}
+#s-card-2 img { 
+    height: 8.333vw;
+    width: 8.333vw;
+}
+#s-card-3 img { 
+    height: 8.333vw;
+    width: 8.333vw;
+}
+.s-card h3 { 
+
+    font-size: 40px;
+    margin: 0;
+    margin-top: 1.25vw;
+}
+.s-card article > p {
+    font-size: 32px;
+    width: 24.514vw;
+    height: 8.333vw;
+    font-weight: 300;
+}
+#learnmore { 
+    display: flex;
+    flex-direction: row;
+    margin:0;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    width: 19.027vw;
+    height: 4.514vw;
+    border-style: solid;
+    border-color:#0073E6;
+
+}
+
+#learnmore p { 
+    margin:0;
+    margin-left: 1.319vw;
+    line-height:normal;
+    font-size: 40px;
+    width: fit-content;
+    font-weight: 600;
+}
+#learnmore .rfa {
+    height: 2.394vw;
+    width: 1.449vw;
+}
+
+
+.merch-cont { 
+    margin-top: 10.694vw;
+    width: 99vw;
+    display: flex;
+    flex-direction: row;
+    height: 52.083vw;
+}
+
+.merch-left { 
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 60.556vw;
+    height: 52.083vw;
+}
+.merch-left article { 
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 14.444vw;
+    margin-left: 5.972vw;
+}
+.merch-left h2 { 
+    margin: 0;
+    line-height: normal;
+    color: #0073E6;
+    font-size: 72px;
+    font-weight: 600;
+    width: 28.543vw;
+}
+.merch-left article > p {
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    width: 29.167vw;
+    margin: 0;
+}
+
+#shopmerch { 
+    display: flex;
+    flex-direction: row;
+    margin:0;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    width: 26.389vw;;
+    height: 4.514vw;
+    border-style: solid;
+    border-color:#0073E6;
+    margin-top: 2.014vw;
+}
+
+#shopmerch p { 
+    margin:0;
+    margin-left: 1.181vw;
+    line-height:normal;
+    font-size: 40px;
+    width: fit-content;
+    font-weight: 600;
+}
+#shopmerch .rfa {
+    height: 2.394vw;
+    width: 1.449vw;
+}
+
+.merch-right { 
+    display: flex;
+    flex-direction: column;
+    width: 39.444vw;
+
+}
+.merch-right a {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: white;
+ }
+ .merch-right p { 
+    position: absolute;
+    align-self: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0;
+ }
+ .merch-right img { 
+    width: 100%;
+ }
+
+
+ .about-us { 
+    margin-top: 10.694vw;
+    width: 99vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+ }
+
+ .about-us > img{ 
+    width: 99vw;
+ }
+
+ .about-us article { 
+    margin-top: 11.944vw;
+    margin-left: 5.972vw;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: fit-content;
+ }
+ .about-us article h2 { 
+    margin: 0;
+    color: #0073E6;
+    font-size: 72px;
+    font-weight: 600;
+ }
+ .about-us article > p { 
+    font-size: 40px;
+    color: white;
+    width: 34.097vw;
+    margin: 0;
+ }
+
+ #aboutus { 
+    display: flex;
+    flex-direction: row;
+    margin:0;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    width: 16.458vw;
+    height: 4.514vw;
+    border-style: solid;
+    border-color:#0073E6;
+    margin-top: 2.083vw;
+}
+
+#aboutus p { 
+    margin:0;
+    margin-left: 1.181vw;
+    line-height:normal;
+    font-size: 40px;
+    width: fit-content;
+    font-weight: 600;
+}
+#aboutus .rfa {
+    height: 2.394vw;
+    width: 1.449vw;
+}

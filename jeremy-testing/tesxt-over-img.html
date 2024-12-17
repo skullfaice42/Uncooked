@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Image Overlay</h2>
+    <div class="image-container">
+        <img src="front-angle-black.png" alt="Black Product Image">
+        <div class="overlay-text">Text Over Image</div>
+    </div>
+</body>
+<style>
+body {
+            background-color: antiquewhite;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            width: 100vw;
+            /* max-width: 400px; Adjust image size as needed */
+            display: block;
+        }
+
+        .image-container {
+            position: relative;
+            /* display: inline-block; */
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.5); /* Optional: Transparent background */
+            padding: 5px 10px;
+            border-radius: 5px; /* Optional: Rounded corners */
+        }
+
+</style>
+</html>
