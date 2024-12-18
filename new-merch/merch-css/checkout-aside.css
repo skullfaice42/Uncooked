@@ -1,0 +1,10 @@
+/* use this when you are linking things such as
+'shipping info', 'shopping info', and even 'payments info' */
+
+/* note to self... apend everything with ca... or something like that */
+.container{
+    color: white;
+}
+.container .left h2:nth-child(1){
+    color: #A1A1A1;
+}
