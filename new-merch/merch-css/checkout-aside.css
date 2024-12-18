@@ -2,9 +2,136 @@
 'shipping info', 'shopping info', and even 'payments info' */
 
 /* note to self... apend everything with ca... or something like that */
-.container{
-    color: white;
+:root{
+    font-size: 16px;
 }
-.container .left h2:nth-child(1){
+body{
+    overflow: auto;
+}
+.containerc-aside{
+    color: white;
+    display: flex;
+    margin-top: 5.902777vw;
+    margin-left: 2.08333vw;
+    margin-right: 2.08333vw;
+    justify-content: space-between;
+
+}
+.containerc-aside .leftc-aside h2:nth-child(1){ /*MAKE THIS THE ONE YOU ARE HAVING GRAYED OUT*/
     color: #A1A1A1;
+}
+.leftc-aside{
+    width: 33.194444vw;
+    height: 56.73611vw;
+    background-color: rgba(0, 0, 0, 0.349);
+    
+}
+.headingc-aside{
+    height: 10.41vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.headingc-aside h2{
+    font-size: 1.5rem;
+    font-weight: var(--regular);
+}
+aside.leftc-aside > h2{
+    margin-top: 2.0833vw;
+    margin-bottom: 3.0555vw;
+}
+
+aside.leftc-aside .pricesc-aside{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 8.33333vw;
+}
+
+.pricesc-aside h3:nth-child(even) {
+    display: flex;
+    justify-content: flex-end;
+}
+
+aside.leftc-aside .prices h3{
+    font-weight: var(--light);
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+aside.leftc-aside hr{
+    display: block;
+}
+
+.totalc-aside hr:nth-child(1){
+    margin-top: 3.26388vw;
+}
+
+.totalc-aside hr:nth-child(3){
+    margin-bottom: 1.5277vw;
+}
+
+.totalc-aside .total-pricingc-aside{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.52777vw;
+    margin-bottom: 1.52777vw;
+    font-size: 1.5rem;
+}
+
+.totalc-aside .total-pricingc-aside h3:nth-child(1){
+    font-size: var(--semi-bold);
+}
+
+.bag-flexc-aside{
+    display: flex;
+}
+.your-bagc-aside h3{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1.527777vw;
+}
+
+.your-bagc-aside img{
+    width: 11.11111vw;
+    height: fit-content;
+}
+
+.bag-flexc-aside .bag-infoc-aside{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 1.944vw;
+}
+.bag-flexc-aside .bag-infoc-aside h4{
+    font-size: 1.5rem;
+    width: 47%;
+    /* border: 2px solid green; */
+}
+
+/* part to turn these icons into a lighter font */
+.bag-flexc-aside .bag-infoc-aside > h4:nth-child(2),
+.bag-flexc-aside .bag-infoc-aside > h4:nth-child(3),
+.bag-flexc-aside .bag-infoc-aside > h4:nth-child(5),
+.bag-flexc-aside .bag-infoc-aside > h4:nth-child(7),
+.bag-flexc-aside .bag-infoc-aside > h4 > a{
+    font-weight: var(--light);
+}
+
+/* part to give flex end to the kiddos */
+.bag-flexc-aside .bag-infoc-aside h4:nth-child(even){
+    display: flex;
+    justify-content: flex-end;
+    /* justify-content: flex-start; */
+}
+
+
+
+
+
+.rightc-aside{
+    width: 47.9166vw;
+    height: 82.569444vw;
+    background-color: #A1A1A1;
 }
