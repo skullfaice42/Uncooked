@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="red box"></div>
+    <h2>simga</h2>
+    <hr>
+    <div class="blue box"></div>
+    <div class="green box"></div>
+    <div class="black box"></div>
+    <div class="purple box"></div>
+    <div class="aqua box"></div>
+    
+</body>
+
+<style>
+    body{
+        border: 2px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .box{
+        
+        height: 200px;
+        width: 200px;
+        border-radius: 200px;
+        /* background:linear-gradient(red, blue, purple); */
+    }
+    .red{background-color: red;}
+    .blue{background-color: blue;}
+    .green{background-color: green;}
+    .black{background-color: black;}
+    .purple{background-color: purple;}
+    .aqua{background-color: aqua;}
+    h2{width: 100%; background-color: rgba(87, 33, 104, 0.658); color: white;}
+    hr{
+        width: 20px;
+        background-color: black;
+        border-radius: 20px;
+        height: 2000px;
+        position: fixed;
+    }
+    
+
+
+    @media (max-width: 688px){ /*everything has to have order, not just 1*/
+        .red{order: 5;}
+        .blue{order: 6;}
+        .green{order: 7;}
+        .black{order: 1;}
+        .purple{order: 2;}
+        .aqua{order: 3;}
+        h2{order: 4;}
+        hr{
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-content: center; */
+            margin-left: 310px;
+            border: solid 2px green;
+        }
+    }
+</style>
+</html>

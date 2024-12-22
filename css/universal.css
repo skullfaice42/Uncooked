@@ -244,3 +244,56 @@ header ul {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* use this for an interactable button, you'll have to set your own 
+width, height, font-size, and margin though */
+button.uni-button {
+    background-color: #0073E6;
+    color: white;
+    border: none;
+    font-weight: bold; /* maybe */
+    transition: all 0.3s ease;
+    font-weight: var(--semi-bold);
+}
+
+button.uni-button:hover {
+    scale: 0.95;
+    background-color: #005bb5;
+}
+
+button.uni-button:active {
+    scale: 0.9;
+    background-color: #004494;
+}
+
+button.uni-button:focus {
+    outline: 3px solid #80bfff;
+}
+
+/* ends here */

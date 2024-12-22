@@ -2,6 +2,8 @@
 'shipping info', 'shopping info', and even 'payments info' */
 
 /* note to self... apend everything with ca... or something like that */
+
+/*  i will totally re-do this... LATER for now i need to make sure the base content gets down */
 :root{
     font-size: 16px;
 }
@@ -48,10 +50,21 @@ aside.leftc-aside .pricesc-aside{
     width: 100%;
     height: 8.33333vw;
 }
+.leftc-aside .order-summery h2{
+    color: white !important; /*no idea wahts wrong with this here*/
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
 
 .pricesc-aside h3:nth-child(even) {
     display: flex;
     justify-content: flex-end;
+}
+.leftc-aside .pricesc-aside h3,
+.bag-flexc-aside .bag-infoc-aside h4,
+.bag-flexc-aside .bag-infoc-aside h5{
+    border: var(--bb);
+    width: 49%;
 }
 
 aside.leftc-aside .prices h3{
@@ -86,6 +99,7 @@ aside.leftc-aside hr{
 
 .bag-flexc-aside{
     display: flex;
+    gap: 1.944vw;
 }
 .your-bagc-aside h3{
     color: white;
@@ -102,30 +116,23 @@ aside.leftc-aside hr{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 1.944vw;
+    /* margin-left: 1.944vw; */
 }
-.bag-flexc-aside .bag-infoc-aside h4{
+.bag-flexc-aside .bag-infoc-aside h4,
+.bag-flexc-aside .bag-infoc-aside h5{
     font-size: 1.5rem;
     width: 47%;
-    /* border: 2px solid green; */
 }
 
-/* part to turn these icons into a lighter font */
-.bag-flexc-aside .bag-infoc-aside > h4:nth-child(2),
-.bag-flexc-aside .bag-infoc-aside > h4:nth-child(3),
-.bag-flexc-aside .bag-infoc-aside > h4:nth-child(5),
-.bag-flexc-aside .bag-infoc-aside > h4:nth-child(7),
-.bag-flexc-aside .bag-infoc-aside > h4 > a{
+
+
+.flexing{
+    display: flex;
+    width: 100%;
+}
+.flexing h3{
     font-weight: var(--light);
 }
-
-/* part to give flex end to the kiddos */
-.bag-flexc-aside .bag-infoc-aside h4:nth-child(even){
-    display: flex;
-    justify-content: flex-end;
-    /* justify-content: flex-start; */
-}
-
 
 
 
@@ -134,4 +141,126 @@ aside.leftc-aside hr{
     width: 47.9166vw;
     height: 82.569444vw;
     background-color: #A1A1A1;
+}
+
+.bag-infoc-aside .flexing h5:nth-child(3){
+    border: black 2px solid;
+}
+
+
+
+
+@media (max-width: 1210px){
+    :root{
+        font-size: 12px;
+    }
+    .leftc-aside .pricesc-aside h3{
+        width: 45%;
+    }
+}
+@media (max-width: 723px){
+    :root{
+        font-size: 12px;
+    }
+   .containerc-aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    border: 2px solid red;
+    margin-left: 0;
+    margin-right: 0;
+    margin-right: 7.5vw;
+    margin-left: 7.5vw;
+   }
+   .leftc-aside{
+    width: 100%;
+    height: auto;
+    margin-bottom: 2vw;
+    display: flex;
+    flex-direction: column; /*yup, it was flex*/
+   }
+   /* ONLY ORDER HERE */
+   .leftc-aside .headingc-aside{
+        order: 0;
+   }
+   .leftc-aside .order-summery{
+        order: 4;
+   }
+   .leftc-aside .pricesc-aside{
+        order: 3;
+   }
+   .leftc-aside .totalc-aside{
+        order: 5;
+   }
+   .leftc-aside .your-bagc-aside{
+        order: 1;
+   }/* ONLY ORDER HERE */
+
+   .order-summery{
+        margin-top: 3vw;
+   }
+
+   .bag-flexc-aside{
+    display: flex;
+    flex-direction: column;
+   }
+   .bag-flexc-aside img{
+    width: 100%;
+   }
+    .headingc-aside{
+        margin-bottom: 10vw;
+    }
+   .headingc-aside h2{
+    border: 2px solid green;
+    font-size: 3rem;
+   }
+   .bag-infoc-aside h4{
+    /* font-size: 55rem !important; */
+   }
+}
+
+   @media (max-width: 665px) {
+    /* :root{
+        font-size: 10px;
+    } */
+     .your-bagc-aside{
+        margin-top: 10vw;
+     }
+    
+   }
+   @media (max-width: 505px){
+    .order-summery{
+        margin-top: 13vw;
+    }
+   }
+   @media (max-width: 473px){
+    .headingc-aside h2{
+        font-size: 2.25rem;
+    }
+    .pricesc-aside{
+        margin-top: 5vw;
+    }
+   }
+@media (max-width: 440px){
+    .bag-infoc-aside h4:nth-child(3),
+    .bag-infoc-aside h4:nth-child(4),
+    .bag-infoc-aside h4:nth-child(5),
+    .bag-infoc-aside h4:nth-child(6),
+    .bag-infoc-aside h4:nth-child(8){
+        border: 3px solid red;
+        width: fit-content;
+    }
+    .bag-infoc-aside h4:nth-child(4),
+    .bag-infoc-aside h4:nth-child(6){
+        margin-right: 40%;
+        margin-left: 0;
+        /* width: 30%; */
+        /* align-items: center; */
+        text-align: center;
+    }
+    .bag-infoc-aside h4:nth-child(4){
+        display: flex;
+        right: 140%;
+    }
 }
