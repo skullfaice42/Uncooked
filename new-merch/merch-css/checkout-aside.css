@@ -25,7 +25,7 @@ body{
 .leftc-aside{
     width: 33.194444vw;
     height: 56.73611vw;
-    background-color: rgba(0, 0, 0, 0.349);
+    /* background-color: rgba(0, 0, 0, 0.349); */
     
 }
 .headingc-aside{
@@ -63,7 +63,7 @@ aside.leftc-aside .pricesc-aside{
 .leftc-aside .pricesc-aside h3,
 .bag-flexc-aside .bag-infoc-aside h4,
 .bag-flexc-aside .bag-infoc-aside h5{
-    border: var(--bb);
+    /* border: var(--bb); */
     width: 49%;
 }
 
@@ -140,7 +140,7 @@ aside.leftc-aside hr{
 .rightc-aside{
     width: 47.9166vw;
     height: 82.569444vw;
-    background-color: #A1A1A1;
+    /* background-color: #A1A1A1; */
 }
 
 .bag-infoc-aside .flexing h5:nth-child(3){
@@ -167,7 +167,7 @@ aside.leftc-aside hr{
     flex-direction: column;
     justify-content: center;
     margin-left: auto;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin-left: 0;
     margin-right: 0;
     margin-right: 7.5vw;
@@ -212,7 +212,7 @@ aside.leftc-aside hr{
         margin-bottom: 10vw;
     }
    .headingc-aside h2{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     font-size: 3rem;
    }
    .bag-infoc-aside h4{

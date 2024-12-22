@@ -2,6 +2,9 @@
     display: flex;
     justify-content: space-between;
 }
+.rightc-aside{
+    /* background-color: grey; */
+}
 
 .box-height{
   height: 4.86111vw;  
@@ -14,9 +17,6 @@ input::placeholder {
     margin-left: .76388vw;
     font-weight: var(--regular);
     font-size: 2rem;
-}
-.box-height::placeholder{
-    border-color: green;
 }
 .box-height:focus,
 .text-full:focus{
@@ -91,4 +91,64 @@ use .spacing.top to get that 22px gap */
 }
 .contact-info a{
     text-decoration: underline;
+}
+
+
+@media (max-width: 760px){
+   .rightc-aside{
+    /* border: 2px solid red; */
+    height: 120vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+   } 
+   .rightc-aside h2{
+    text-align: center;
+    font-size: 3rem !important;
+   }
+   .rightc-aside .half-full{
+    display: none;
+   }
+
+   .type-container{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    gap: 3vw;
+   }
+   .full{
+    /* margin-top: 1.5vw; */
+    /* margin-bottom: 1.5vw; */
+   }
+   .box-height{
+    width: 100%;
+   }
+   .spacing-top{
+    margin-top: 0;
+    display: none;
+   }
+}
+@media (max-width: 672px){
+    button.uni-button{
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 466px){
+    .rightc-aside{
+        height: 130vw;
+    }
+    .rightc-aside a{
+        font-size: 2rem;
+    }
+    .rightc-aside .uni-button{
+        height: 10vw !important;
+        /* margin-bottom: 10vw; */
+    }
+    .name-boxes input::placeholder,
+    .full input::placeholder{
+        font-size: 1.5rem;
+    }
 }

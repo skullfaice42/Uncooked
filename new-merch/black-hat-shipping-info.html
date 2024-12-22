@@ -8,11 +8,11 @@
     <link rel="icon" href="../icons/icon.png">
     <link rel="stylesheet" href="../font-weight.css">
     <link rel="stylesheet" href="../styles.css">
-    <!-- <link rel="stylesheet" href="merch-css/checkout-aside.css"> -->
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="merch-css/checkout-aside.css">
-    <link rel="stylesheet" href="shipping-info.css">
+    <link rel="stylesheet" href="merch-css/checkout-aside.css"> <!--this is the left side-->
+    <link rel="stylesheet" href="shipping-info.css"> <!--this is the right side-->
     <link rel="stylesheet" href="../css/universal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" /> <!--this is for the phone number-->
     
     
 </head>
@@ -147,9 +147,13 @@
         <div class="single-left spacing-top">
             <h3>Email Address</h3>
         </div>
-        <div class="full">
-            <input type="text" placeholder="Email Address" class="text-full">
+        
+        <!-- phone number below -->
+        <div class="phone-container">
+            <input type="tel" id="phone" class="full base" placeholder="Mobile Number">
         </div>
+        <!-- end phone number -->
+
         <!-- end of placeholder -->
         <button class="uni-button"><a href="hat-shipping-method.html">Continue to Shipping Method</a></button>
         
@@ -272,4 +276,23 @@
         </div>
     </footer>
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+  <script>
+    const phoneInputField = document.getElementById("phone");
+    const iti = window.intlTelInput(phoneInputField, {
+      initialCountry: "us", // Default country
+      separateDialCode: true, // Show dial code separately
+      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js", // Validation script
+    });
+
+    // Optional: Log selected country and dial code (debugging)
+    phoneInputField.addEventListener("countrychange", function () {
+      const countryData = iti.getSelectedCountryData();
+      console.log("Selected country:", countryData.name);
+      console.log("Dial code:", countryData.dialCode);
+    });
+    </script>
+
 </html>
