@@ -8,6 +8,9 @@
     <link rel="icon" href="../icons/icon.png">
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../css/footer.css">
+
+    <link rel="stylesheet" href="merch-css/checkout-aside.css">
+    <link rel="stylesheet" href="merch-css/payment-info.css">
     <link rel="stylesheet" href="../css/universal.css">
     <script src="../nav.js"></script>
 </head>
@@ -107,42 +110,63 @@
                     </div>
             </div>     
     </header>
-    <div class="container">
-        <aside class="left">
-            <div class="steps">
-                <h3>Step 1- Shipping Info</h3>
-                <h3>Step 2- Shipping Method</h3>
-                <h4>Step 3- Payment Method</h4>
+    <div class="containerc-aside">
+        <aside class="leftc-aside">
+            <div class="headingc-aside">
+                <h2>Step 1- Shipping Info</h2>
+                <h2>Step 2- Shipping Method</h2>
+                <h2>Step 3- Payment Method</h2>
+            </div>
+            <div class="order-summery">
                 <h2>Order Summary</h2>
             </div>
-            <div class="subtotal">
-                <div class="break"><h3>Subtotal:</h3><h3>$15.00</h3></div>
-                <div class="break"><h3>Estimated Shipping:</h3><h3>Free</h3></div>
-                <div class="break"><h3>Estimated Sales Tax:</h3><h3>-</h3></div>
+            <div class="pricesc-aside">
+                <div class="flexing">
+                    <h3>Subtotal:</h3>
+                    <h3>$15.00</h3>
+                </div>
+                <div class="flexing">
+                    <h3>Estimated Shipping:</h3>
+                    <h3>Free</h3>
+                </div>
+                <div class="flexing">
+                    <h3>Estimated Sales Tax:</h3>
+                    <h3>-</h3>
+                </div>
             </div>
-            <div class="total">
+            <div class="totalc-aside">
                 <hr>
-                <div class="total-price">
-                    <h2>Total</h2>
-                    <h2>$00.00</h2>
+                <div class="total-pricingc-aside">
+                    <h3>Total</h3>
+                    <h3>$00.00</h3>
                 </div>
                 <hr>
             </div>
-            <div class="info">
-                <h2>Your Bag (1)</h2>
-                <div class="below">
-                    <img src="../new-merch/imgs/merch/hat/med-black-hat.jpg" alt="Small black hat">
-                    <div class="content">
-                        <div class="trucker"><h2>Trucker Cap</h2><strong> $15.00</strong></div>
-                        <div class="size"><h2>Size:</h2><strong>One Size Fits All</strong></div>
-                        <div class="color"><h2>Color:</h2><strong>Black</strong></div>
-                        <div class="quantity"><h2>Quantity:</h2><strong>1</strong></div>
-                        <a href="#">REMOVE</a>
+            <div class="your-bagc-aside">
+                <h3>Your Bag (1)</h3>
+                <div class="bag-flexc-aside">
+                    <img src="../new-merch/imgs/merch/hat/large-black-hat.jpg" alt="User chosen black hat">
+                    <div class="bag-infoc-aside">
+                        <div class="flexing">
+                            <h4>Trucker Cap</h4>
+                            <h5>$15.00</h5>
+                        </div>
+                        <div class="flexing">
+                            <h5>Size:</h5>
+                            <h4>One Size Fits All</h4>
+                        </div>
+                        <div class="flexing">
+                            <h5>Color:</h5>
+                            <h4>Black</h4>
+                        </div>
+                        <div class="flexing">
+                            <h5>Quantity:</h5>
+                            <h4>1</h4>
+                        </div>
                     </div>
-                    
-    
                 </div>
             </div>
+            
         </aside>
         <!-- imported directelly from hat-shipping method -->
          <aside class="right-side">
@@ -150,6 +174,7 @@
                 <h2>Step 3- Payment Method</h2>
             </div>
                 <div class="types-of-cards">
+                    
                     <button class="credit-card height">Credit Card</button>
                     <div class="two-cards">
                         <button class="paypal height"><img src="../icons/paypal-icon.png" alt="Paypal venmo-icon"></button>
@@ -164,135 +189,172 @@
                                 maxlength="19" 
                                 pattern=".{19}" 
                                 title="Please enter with spaces as well" 
+                                class="testing height"
+                            />
+                        </div>
+                        <!-- hidden by defalt -->
+                        <div class="card-number-two">
+                            
+                            <input 
+                                type="text" 
+                                placeholder="Card Number" 
+                                maxlength="19" 
+                                pattern=".{19}" 
+                                title="Please enter with spaces as well" 
                                 class="height"
                             />
                         </div>
+                         <!--  -->
                     <div class="cardholder-name">
                         <h3>Cardholder Name</h3>
                         <input type="text" placeholder="John Doe" class="height">
                     </div>
+                    <!-- here too -->
+                    <div class="cardholder-name-two">
+
+                        <input type="text" placeholder="Cardholder Name" class="height">
+                    </div>
+                     <!--  -->
                     <div class="card-numbers">
                         <div class="month">
                             <h3>Exp. Month </h3>
                             <input type="text" class="height" placeholder="00" maxlength="2" title="Expiration Month">
                         </div>
+
+                        <div class="month-two">
+                            
+                            <input type="text" class="height" placeholder="Exp. Month" maxlength="2" title="Expiration Month">
+                        </div>
+
                         <div class="year">
                             <h3>Exp. Year </h3>
                             <input type="text" class="height" placeholder="00" maxlength="2" title="Expiration Year">
                         </div>
+
+                        <div class="year-two">
+                            
+                            <input type="text" class="height" placeholder="Exp. Year" maxlength="2" title="Expiration Year">
+                        </div>
+
                         <div class="cvv">
                             <h3>CVV </h3>
                             <input type="text" class="height" placeholder="000" maxlength="3" title="CVV"> <!--no unique title here bcause im not too sure what it is-->
                         </div>
+
+                        <div class="cvv-two">
+                            
+                            <input type="text" class="height" placeholder="CVV" maxlength="3" title="CVV"> <!--no unique title here bcause im not too sure what it is-->
+                        </div>
                     </div>
                     
-                        <a href="merch-order-placed.html" class="place-order"><button>Place Order</button></a>
+                    <a href="merch-order-placed.html" class="place-order"><button>Place Order</button></a>
                     
                       
                 </div>
          </aside>
-         <footer>
-            <div class="accountrf">
-                <div class="headerrf">
-                    <h2>Account</h2>
-                </div>
-                <div class="hyperlinksrf">
-                    <a href="#">Settings</a>
-                    <a href="#">Saved Car Configurations</a>
-                    <a href="#">Order History</a>
-                </div>
+    </div>
+    <footer>
+        <div class="accountrf">
+            <div class="headerrf">
+                <h2>Account</h2>
             </div>
-    
-            <div class="accountrf">
-                <div class="headerrf">
-                    <h2>Dealerships</h2>
-                </div>
-                <div class="hyperlinksrf">
-                    <a href="#">Locations</a>
-                </div>
+            <div class="hyperlinksrf">
+                <a href="#">Settings</a>
+                <a href="#">Saved Car Configurations</a>
+                <a href="#">Order History</a>
             </div>
-    
-            <div class="accountrf">
-                <div class="headerrf">
-                    <h2>Nemesis RR</h2>
-                </div>
-                <div class="hyperlinksrf">
-                    <a href="#">Overview</a>
-                    <a href="#">Customize</a>
-                </div>
+        </div>
+
+        <div class="accountrf">
+            <div class="headerrf">
+                <h2>Dealerships</h2>
             </div>
-    
-            <div class="accountrf">
-                <div class="headerrf">
-                    <h2>Black Widow</h2>
-                </div>
-                <div class="hyperlinksrf">
-                    <a href="#">Overview</a>
-                    <a href="#">Customize</a>
-                </div>
+            <div class="hyperlinksrf">
+                <a href="#">Locations</a>
             </div>
-    
-            <div class="accountrf">
-                <div class="headerrf">
-                    <h2>Services</h2>
-                </div>
-                <div class="hyperlinksrf">
-                    <a href="#">Insurance</a>
-                    <a href="#">Part Replacement</a>
-                    <a href="#">Customer Help</a>
-                </div>
+        </div>
+
+        <div class="accountrf">
+            <div class="headerrf">
+                <h2>Nemesis RR</h2>
             </div>
-    
-            <div class="accountrf">
-                <div class="headerrf">
-                    <h2>Merchandise</h2>
-                </div>
-                <div class="hyperlinksrf">
-                    <a href="#">All Merchandise</a>
-                    <a href="#">Men</a>
-                    <a href="#">Women</a>
-                    <a href="#">Accessories</a>
-                </div>
+            <div class="hyperlinksrf">
+                <a href="#">Overview</a>
+                <a href="#">Customize</a>
             </div>
-    
-            <div class="accountrf">
-                <div class="headerrf">
-                    <h2>About Us</h2>
-                </div>
-                <div class="hyperlinksrf">
-                    <a href="#">Mission</a>
-                    <a href="#">Press</a>
-                    <a href="#">Contact Us</a>
-                </div>
+        </div>
+
+        <div class="accountrf">
+            <div class="headerrf">
+                <h2>Black Widow</h2>
             </div>
-    
-            <div class="accountrf">
-                <div class="headerrf">
-                    <h2>Legal</h2>
-                </div>
-                <div class="hyperlinksrf">
-                    <a href="#">Terms & Conditions</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Cookies</a>
-                </div>
+            <div class="hyperlinksrf">
+                <a href="#">Overview</a>
+                <a href="#">Customize</a>
             </div>
-    
-            <div class="accountrf">
-                <div class="headerrf">
-                    <h2>Social</h2>
-                </div>
-                <div class="iconsrf">
-                    <a href="#"><img src="images/all/instagram.png" alt="instagram logo" id="instagram"></a>
-                    <a href="#"><img src="images/all/facebook.png" alt="facebook logo" id="facebook"></a>
-                    <a href="#"><img src="images/all/linkedin.png" alt="linkedin logo" id="linkedin"></a>
-                </div>
+        </div>
+
+        <div class="accountrf">
+            <div class="headerrf">
+                <h2>Services</h2>
             </div>
-    
-            <div class="belowrf">
-                <a href="index.html"><img src="images/all/icon.png" alt="trion logo"></a>
-                <h3>© 2025 by TRION.</h3>
+            <div class="hyperlinksrf">
+                <a href="#">Insurance</a>
+                <a href="#">Part Replacement</a>
+                <a href="#">Customer Help</a>
             </div>
-        </footer>
+        </div>
+
+        <div class="accountrf">
+            <div class="headerrf">
+                <h2>Merchandise</h2>
+            </div>
+            <div class="hyperlinksrf">
+                <a href="#">All Merchandise</a>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Accessories</a>
+            </div>
+        </div>
+
+        <div class="accountrf">
+            <div class="headerrf">
+                <h2>About Us</h2>
+            </div>
+            <div class="hyperlinksrf">
+                <a href="#">Mission</a>
+                <a href="#">Press</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="accountrf">
+            <div class="headerrf">
+                <h2>Legal</h2>
+            </div>
+            <div class="hyperlinksrf">
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+
+        <div class="accountrf">
+            <div class="headerrf">
+                <h2>Social</h2>
+            </div>
+            <div class="iconsrf">
+                <a href="#"><img src="../icons/instagram.png" alt="instagram logo" id="instagram"></a>
+                <a href="#"><img src="../icons/facebook.png" alt="facebook logo" id="facebook"></a>
+                <a href="#"><img src="../icons/linkedin.png" alt="linkedin logo" id="linkedin"></a>
+            </div>
+        </div>
+
+        <div class="belowrf">
+            <a href="index.html"><img src="../icons/icon.png" alt="trion logo"></a>
+            <h3>© 2025 by TRION.</h3>
+        </div>
+    </footer>
 </body>
 <style>
     *{
@@ -303,7 +365,10 @@
         color: white;
         margin: 0;
         padding: 0;
-        overflow: auto;
+        overflow-x: hidden;
+    }
+    .containerc-aside{
+        margin-top: 8vw;
     }
     .container{
         display: flex;
@@ -408,85 +473,11 @@
    
    */
 
-    .height{
-        height: 4.86111vw;
-    }
-   .right-side{
-    width: 47.9166vw;
-    height: 50.8333vw;
-    border: white 3px solid;
-    margin-left: 14.513vw;
-    margin-right: 2.291vw;
-   }
-   .right-side .head h2{
-    font-size: 2em;
-   }
-   
-   
-   .types-of-cards .credit-card{
-    font-size: 2em;
-    width: 100%;
-    background-color: #0073E6;
-    border: none;
-    color: white;
-    /* margin-top: 2.1527vw; */
-    /* margin-bottom: 2.1527vw; */
-    transition: all 0.3s ease;
-   }
-   .types-of-cards .credit-card:hover{
-        transform: scale(0.95);
-   }
-   .two-cards{
-    display: flex;
-    justify-content: space-between;
-   }
-   .two-cards .paypal, .two-cards .venmo{
-        width: 22.541vw;    /*not exact number but toughhhhh*/
-        background-color: white;
-        /* border-radius: 10px; */
-   }
-   .two-cards button{
-    border: none;
-    text-decoration: none;
-   }
-   .card-info{
-    margin-top: 3.1944vw;
-   }
-   .card-info h3{
-    font-size: 1.5em;
-   }
-   .card-number input[type="text"],
-   .cardholder-name input[type="text"]{
-    width: 100%;
-    font-size: 2em;
-    color: #D9D9D9;
-
-   }
-   .card-numbers{
-    display: flex;
-    justify-content: space-between;
-   }
-   .card-numbers input[type="text"]{
-    font-size: 2em;
-    width: 14.4861vw; /*once again not the correct value, i -1*/
-   }
-   .cardholder-name,
-   .card-numbers{
-        margin-top: 1.59722vw;
-   }
-.types-of-cards button{
-    margin-top: 3.1944vw;
-    width: 100%;
-    background-color: #0073E6;
-    height: 3.611vw;
-    border: none;
-    color: white;
-    font-size: 1.5em;
-    transition: all 0.3s ease;
-}
-.types-of-cards button:hover{
-    transform: scale(0.95);
-}
+    
 /* future me, theres an error with spacing from credit card to payment method... i dont want to fix it rn :/ */
+
+@media (max-width: 723px){
+
+}
 </style>
 </html>

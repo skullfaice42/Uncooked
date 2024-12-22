@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/universal.css">
-    <!-- <script src="../nav.js"></script> -->
+    <link rel="stylesheet" href="merch-css/checkout-aside.css"> <!--this is the left side-->
+    <script src="../nav.js"></script>
 </head>
 <body>
     <header>
@@ -20,7 +21,7 @@
             </ul>
     
             <ul class="topnav-mid">
-                <li  id="nav-tri-icon" ><a href="index.html"><img src="../icons/icon.png" ></a></li>
+                <li  id="nav-tri-icon" ><a href="../new-home/index.html"><img src="../icons/icon.png" ></a></li>
             </ul>
     
             <ul class="topnav-right">
@@ -106,43 +107,67 @@
                     </div>
             </div>     
     </header>
-    <div class="container">
-    <aside class="left">
-        <div class="steps">
-            <h3>Step 1- Shipping Info</h3>
-            <h4>Step 2- Shipping Method</h4>
-            <h3>Step 3- Payment Method</h3>
-            <h2>Order Summary</h2>
-        </div>
-        <div class="subtotal">
-            <div class="break"><h3>Subtotal:</h3><h3>$15.00</h3></div>
-            <div class="break"><h3>Estimated Shipping:</h3><h3>Free</h3></div>
-            <div class="break"><h3>Estimated Sales Tax:</h3><h3>-</h3></div>
-        </div>
-        <div class="total">
-            <hr>
-            <div class="total-price">
-                <h2>Total</h2>
-                <h2>$00.00</h2>
+    <div class="containerc-aside">
+        <aside class="leftc-aside">
+            <div class="headingc-aside">
+                <h2>Step 1- Shipping Info</h2>
+                <h2>Step 2- Shipping Method</h2>
+                <h2>Step 3- Payment Method</h2>
             </div>
-            <hr>
-        </div>
-        <div class="info">
-            <h2>Your Bag (1)</h2>
-            <div class="below">
-                <img src="../new-merch/imgs/merch/hat/med-black-hat.jpg" alt="Medium black hat">
-                <div class="content">
-                    <div class="trucker"><h2>Trucker Cap</h2><strong> $15.00</strong></div>
-                    <div class="size"><h2>Size:</h2><strong>One Size Fits All</strong></div>
-                    <div class="color"><h2>Color:</h2><strong>Black</strong></div>
-                    <div class="quantity"><h2>Quantity:</h2><strong>1</strong></div>
-                    <a href="#">REMOVE</a>
+            <div class="order-summery">
+                <h2>Order Summary</h2>
+            </div>
+            <div class="pricesc-aside">
+                <div class="flexing">
+                    <h3>Subtotal:</h3>
+                    <h3>$15.00</h3>
                 </div>
-                
-
+                <div class="flexing">
+                    <h3>Estimated Shipping:</h3>
+                    <h3>Free</h3>
+                </div>
+                <div class="flexing">
+                    <h3>Estimated Sales Tax:</h3>
+                    <h3>-</h3>
+                </div>
             </div>
-        </div>
-    </aside>
+            <div class="totalc-aside">
+                <hr>
+                <div class="total-pricingc-aside">
+                    <h3>Total</h3>
+                    <h3>$00.00</h3>
+                </div>
+                <hr>
+            </div>
+            <div class="your-bagc-aside">
+                <h3>Your Bag (1)</h3>
+                <div class="bag-flexc-aside">
+                    <img src="../new-merch/imgs/merch/hat/large-black-hat.jpg" alt="User chosen black hat">
+                    <div class="bag-infoc-aside">
+                        <div class="flexing">
+                            <h4>Trucker Cap</h4>
+                            <h5>$15.00</h5>
+                        </div>
+                        <div class="flexing">
+                            <h5>Size:</h5>
+                            <h4>One Size Fits All</h4>
+                        </div>
+                        <div class="flexing">
+                            <h5>Color:</h5>
+                            <h4>Black</h4>
+                        </div>
+                        <div class="flexing">
+                            <h5>Quantity:</h5>
+                            <h4>1</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </aside>
+        <!-- <aside class="rightc-aside">
+            <h1>sigma</h1>
+        </aside> -->
     <aside class="right">
         <div class="shipping-methods">
             <h2>Step 2- Shipping Method</h2>
@@ -169,9 +194,11 @@
                     <p>Delivers next business day if ordered by 9AM PT (excluding pre-orders)</p>
                 </label>
             </div>
-            <a href="hat-payment-info.html"><div class="button">Continue to Payment Method</div></a>
+            <!-- <a href="hat-payment-info.html"><div class="button">Continue to Payment Method</div></a> -->
+            <a href="../new-merch/hat-payment-info.html"> <button><div class="uni-button">Continue to Payment Method</div></button></a>
         </div>
     </aside>
+    </div>
     <footer>
         <div class="accountrf">
             <div class="headerrf">
@@ -263,14 +290,14 @@
                 <h2>Social</h2>
             </div>
             <div class="iconsrf">
-                <a href="#"><img src="images/all/instagram.png" alt="instagram logo" id="instagram"></a>
-                <a href="#"><img src="images/all/facebook.png" alt="facebook logo" id="facebook"></a>
-                <a href="#"><img src="images/all/linkedin.png" alt="linkedin logo" id="linkedin"></a>
+                <a href="#"><img src="../icons/instagram.png" alt="instagram logo" id="instagram"></a>
+                <a href="#"><img src="../icons/facebook.png" alt="facebook logo" id="facebook"></a>
+                <a href="#"><img src="../icons/linkedin.png" alt="linkedin logo" id="linkedin"></a>
             </div>
         </div>
 
         <div class="belowrf">
-            <a href="index.html"><img src="images/all/icon.png" alt="trion logo"></a>
+            <a href="index.html"><img src="../icons/icon.png" alt="trion logo"></a>
             <h3>© 2025 by TRION.</h3>
         </div>
     </footer>
@@ -280,6 +307,7 @@
         color: white;
         margin: 0;
         padding: 0;
+        overflow-x: hidden;
     }
     .container{
         display: flex;
@@ -533,7 +561,12 @@ button{
         height: 60vw;
     }
     .right{
-        margin-top: 70vw;
+        /* margin-top: 70vw; */
+    }
+}
+@media (max-width: 440px){
+    header{
+        margin-bottom: 18vw;
     }
 }
 

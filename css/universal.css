@@ -287,11 +287,6 @@ button.uni-button:hover {
     background-color: #005bb5;
 }
 
-button.uni-button:active {
-    scale: 0.9;
-    background-color: #004494;
-}
-
 button.uni-button:focus {
     outline: 3px solid #80bfff;
 }

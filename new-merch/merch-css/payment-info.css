@@ -1,0 +1,196 @@
+.height{
+    height: 4.86111vw;
+}
+
+.right-side{
+width: 47.9166vw;
+height: 50.8333vw;
+border: white 3px solid;
+margin-left: 14.513vw;
+margin-right: 2.291vw;
+}
+
+.right-side .head h2{
+font-size: 2em;
+}
+
+.types-of-cards .credit-card{
+font-size: 2em;
+width: 100%;
+background-color: #0073E6;
+border: none;
+color: white;
+transition: all 0.3s ease;
+}
+
+.types-of-cards .credit-card:hover{
+    transform: scale(0.95);
+}
+
+.two-cards{
+display: flex;
+justify-content: space-between;
+}
+.two-cards .paypal, .two-cards .venmo{
+    width: 22.541vw;    /*not exact number but toughhhhh*/
+    background-color: white;/
+}
+
+.two-cards button{
+border: none;
+text-decoration: none;
+}
+
+.card-info{
+margin-top: 3.1944vw;
+}
+
+.card-info h3{
+font-size: 1.5em;
+}
+
+.card-number input[type="text"],
+.card-number-two input[type="text"],
+.cardholder-name input[type="text"],
+.cardholder-name-two input[type="text"]{
+width: 100%;
+font-size: 2em;
+color: #D9D9D9;
+}
+
+
+
+
+
+
+
+.card-number-two, .cardholder-name-two,
+.month-two, .year-two, .cvv-two{
+    display: none; /*HERE BOSS, THIS IS WHERE THE MAGIC HAPPENS*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card-numbers{
+display: flex;
+justify-content: space-between;
+}
+
+.card-numbers input[type="text"]{
+font-size: 2em;
+width: 14.4861vw; /*once again not the correct value, i -1*/
+}
+
+.cardholder-name,
+.cardholder-name-two,
+.card-numbers{
+    margin-top: 1.59722vw;
+}
+.types-of-cards button{
+margin-top: 3.1944vw;
+width: 100%;
+background-color: #0073E6;
+height: 3.611vw;
+border: none;
+color: white;
+font-size: 1.5em;
+transition: all 0.3s ease;
+}
+
+
+
+.types-of-cards button:hover{
+transform: scale(0.95);
+background-color: #005bb5;
+}
+.types-of-cards button:active{
+    /* scale: 0.9;
+    background-color: #004494; */
+}
+.types-of-cards button:focus{
+    outline: 3px solid #80bfff;
+}
+
+
+
+@media (max-width: 723px){
+    .card-number, .cardholder-name,
+    .month, .year, .cvv{
+        display: none;
+    }
+    .card-number-two, .cardholder-name-two,
+    .month-two, .year-two, .cvv-two{
+        display: block;
+    }
+    .right-side{
+        width: 100%;
+        margin-left: 0;
+    }
+    .right-side .head h2{
+        text-align: center;
+        font-size: 2rem;
+    }
+.types-of-cards .credit-card{
+    height: 10vw;
+}    
+.types-of-cards .two-cards .paypal,
+.types-of-cards .two-cards .venmo{
+    height: 10vw;
+    width: 49%;
+}
+
+.paypal:focus, .venmo:focus{
+    outline: 3px solid #80bfff;
+}
+
+/* .card-info:focus{
+    outline: 3px solid #80bfff; WHY WONT THIS WORK!!!!!! WHATEVER... FUTURE ME PROBLEM RIGHT THERE
+}
+
+.card-number input:focus {
+    outline: 3px solid #80bfff;
+} */
+
+.card-numbers{
+    display: flex;
+    flex-direction: column;
+}
+.month-two input[type="text"],
+.year-two input[type="text"],
+.cvv-two input[type="text"]{
+/* border: 2px solid green; */
+width: 100%;
+}
+.right-side{
+    height: 90vw;
+}
+
+
+footer{
+    /* margin-top: 30vw; */
+}
+}
+@media (max-width: 440px){
+    .year-two input{
+       margin-top: 1.6vw;/*eyeballing it here chief*/
+       margin-bottom: 1.6vw;
+    }
+    .place-order button{
+        height: 11.818vw;
+    }
+    
+}
