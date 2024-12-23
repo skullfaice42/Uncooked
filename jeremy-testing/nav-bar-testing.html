@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Right-Side Overlay</title>
+</head>
+<body>
+    <!-- Button to open the overlay -->
+    <a href="#overlay" class="open-button">Open Overlay</a>
+
+    <!-- Side Overlay -->
+    <div id="overlay" class="overlay">
+        <a href="#" class="close-button">Close ×</a>
+        <div class="overlay-content">
+            <h2>Overlay Panel</h2>
+            <p>This is an overlay panel sliding from the right.</p>
+        </div>
+    </div>
+</body>
+<style>
+    /* Basic styling for the button */
+/* General Reset */
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Button at the bottom-right corner */
+.open-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #0078D7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 999;
+    font-size: 14px;
+}
+
+/* Side Overlay Styling */
+.overlay {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Start hidden off-screen */
+    width: 300px;
+    height: 100%;
+    background: #f8f9fa;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    z-index: 1000;
+    animation: none;
+}
+
+/* Bounce-in Animation */
+@keyframes bounceInRight {
+    0% {
+        transform: translateX(100%);
+    }
+    60% {
+        transform: translateX(-30px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Show overlay with bounce animation */
+.overlay:target {
+    right: 0;
+    animation: bounceInRight 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Close button */
+.close-button {
+    display: block;
+    text-align: right;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+}
+
+.close-button:hover {
+    color: #d9534f;
+}
+
+/* Overlay Content */
+.overlay-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.overlay-content h2 {
+    margin-top: 0;
+}
+
+
+
+</style>
+</html>
