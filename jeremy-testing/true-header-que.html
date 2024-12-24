@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+
+        <input type="checkbox" id="check">
+        <label for="check">
+            <div class="box1 box">Press me</div>
+        </label>
+
+        <div class="overlay">
+            <label for="check"><h3>x</h3></label>
+            <h1>overlay here</h1>
+
+            <input type="checkbox" id="lan">
+            <label for="lan">
+                <h2>heres some content mate</h2>
+            </label>
+            <div class="lan2">
+                <h3>testing here stuffz</h3>
+            </div>
+            <div class="lan-stuff">
+                <h3>should have been miku</h3>
+            </div>
+            <label for="check">
+                <h4>press me</h4>
+            </label>
+        </div>
+
+
+    </header>
+</body>
+
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        height: 699vw;
+    }
+    header{
+        height: 50px;
+        width: 100%;
+        background-color: red;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+    }
+    .box1{
+        height: 20px;
+        width: 20px;
+        background-color: cornsilk;
+    }
+    .box{
+        background-color: black;
+        /* z-index: 1; */
+        color: white;
+        margin-top: 48%;
+        left: 90%;
+        position: fixed;
+        
+        height: 20px;
+        width: 100px;
+       
+    }
+
+    input[type="checkbox"]{
+        display: none;
+    }
+
+
+    input[type="checkbox"]#check:checked ~.overlay{
+        transform: translateX(-130%);
+    }
+
+    .overlay{
+        position: fixed;
+        background-color: black;
+        color: white;
+        top: 40%;
+        height: 380px;
+        width: 300px;
+        left: 110%;
+        transition: all 0.3s;
+    }
+    .overlay h4{
+        display: flex;
+        position: absolute;
+        top: 90%;
+        right: 20%;
+    }
+.lan-stuff{
+    display: none;
+}
+input[type="checkbox"]#lan:checked ~ .lan-stuff{
+    display: block;
+}
+input[type="checkbox"]#lan:checked ~ .lan2{
+    display: none;
+}
+
+
+
+
+    
+</style>
+</html>

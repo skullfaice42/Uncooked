@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Header</title>
+    <link rel="stylesheet" href="font-weight.css">
+</head>
+<body>
+    
+
+
+    <header>
+        <div class="menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="two-menu">
+                <img src="icons/ham-menu.png" alt="hamburger menu">
+                <h2>MENU</h2>
+            </label>
+
+            <div class="menu-content">
+                <label for="check" class="lil-x"><img src="icons/x.png" alt="X icon"></label>
+
+
+
+
+                <input type="checkbox" id="sub">
+                <label for="sub">
+                    <div class="headings">
+                        <img src="icons/right-arrow.png" alt="Right Facing Arrow">
+                        <h3>Nemesis</h3>
+                    </div>
+                </label>
+                <div class="more-content">
+                    <a href="#">Overview</a>
+                    <a href="#">Customize</a>
+                </div>
+
+                
+
+
+
+
+
+                <input type="checkbox" id="sub2">
+                <label for="sub2">
+                    <div class="headings">
+                        <img src="icons/right-arrow.png" alt="Right Facing Arrow">
+                        <h3>Black Widow</h3>
+                    </div>
+                </label>
+                <div class="more-content2">
+                    <a href="#">Overview</a>
+                    <a href="#">Customize</a>
+                </div>
+
+                
+
+                <input type="checkbox" id="sub3">
+                <label for="sub3">
+                    <div class="headings">
+                        <img src="icons/right-arrow.png" alt="Right Facing Arrow">
+                        <h3>Dealerships</h3>
+                    </div>
+                </label>
+                <div class="more-content3">
+                    <a href="#">Locations</a>
+                </div>
+
+
+
+
+
+                <input type="checkbox" id="sub4">
+                <label for="sub4">
+                    <div class="headings">
+                        <img src="icons/right-arrow.png" alt="Right Facing Arrow">
+                        <h3>Services</h3>
+                    </div>
+                </label>
+                <div class="more-content4">
+                    <a href="#">Insurance</a>
+                    <a href="#">Part Replacement</a>
+                    <a href="#">Customer Help</a>
+                </div>
+
+
+
+
+                <input type="checkbox" id="sub5">
+                <label for="sub5">
+                    <div class="headings">
+                        <img src="icons/right-arrow.png" alt="Right Facing Arrow">
+                        <h3>Merchandise</h3>
+                    </div>
+                </label>
+                <div class="more-content5">
+                    <a href="#">All Merchandise</a>
+                    <a href="#">Men</a>
+                    <a href="#">Women</a>
+                    <a href="#">Accessories</a>
+                </div>
+
+
+
+
+                <input type="checkbox" id="sub6">
+                <label for="sub6">
+                    <div class="headings">
+                        <img src="icons/right-arrow.png" alt="Right Facing Arrow">
+                        <h3>About us</h3>
+                    </div>
+                </label>
+                <div class="more-content6">
+                    <a href="#">Mission</a>
+                    <a href="#">Press</a>
+                    <a href="#">Contact Us</a>
+                </div>
+
+
+
+
+                <input type="checkbox" id="sub7">
+                <label for="sub7">
+                    <div class="headings">
+                        <img src="icons/right-arrow.png" alt="Right Facing Arrow">
+                        <h3>Settings</h3>
+                    </div>
+                </label>
+                <div class="more-content7">
+                    <a href="#">Wanna break from the adds?</a>
+                    <a href="#">Wanna break from the adds?</a>
+                </div>
+
+
+
+
+
+                <input type="checkbox" id="sub8">
+                <label for="sub8">
+                    <div class="headings">
+                        <img src="icons/right-arrow.png" alt="Right Facing Arrow">
+                        <h3>Account</h3>
+                    </div>
+                </label>
+                <div class="more-content8">
+                    <a href="#">Settings</a>
+                    <a href="#">Saved Car Configurations</a>
+                    <a href="#">Order History</a>
+                </div>
+                
+
+
+                
+            </div>
+            <div class="icon">
+                <a href="#">
+                    <img src="icons/icon.png" alt="icon image">
+                </a>
+            </div>
+            <div class="aside-icons">
+                <a href="#"> 
+                    <img src="icons/mag-glass.png" alt="mag glass">
+                </a>
+                <a href="#">
+                    <img src="icons/profile.png" alt="profile image">
+                </a>
+            </div>
+            
+        </div>
+
+        <!-- accessibility adjustments here -->
+        
+        
+
+    </header>
+</body>
+<style>
+
+
+* { 
+    font-family: "Lexend Deca", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+input[type="checkbox"]{
+    display: none;
+}
+:root{
+    --background-color: #08006A;
+}
+
+/* BODY */
+
+body{
+    margin:0;
+    padding: 0;
+    background-color: #050133;
+    color: white;
+    height: 100vw;
+    /* overflow-x: hidden; */
+    overflow-y: auto;
+}
+
+header{
+    height: 6.9vw;
+    width: 100%;
+    background-color: #1e11ad; /*testing*/
+    position: fixed;
+}
+.menu{
+    width: 100%;
+    /* border: 2px solid white; */
+    height: 100%;
+    /* height: 100%; */
+}
+.menu .two-menu{
+    display: flex;
+    width: 30%;
+    height: 100%;
+    /* border: 2px solid green; */
+    margin-left: 1vw;
+    align-items: center;
+    top: 0;
+    gap: 1vw;
+}
+.menu .two-menu img{
+    
+    width: 4.652vw;
+    height: 3.125vw;
+    /* border: 2px solid rgb(255, 0, 0); */
+}
+.menu .two-menu h2{
+    font-size: 3rem;
+    /* border: 2px solid rgb(255, 0, 0); */
+}
+
+
+
+
+.menu-content{
+
+position: fixed;
+background-color: #050133;
+transform: translateX(-110%);
+overflow-y: auto;
+height: 68.75vh; /*was going to try and experement with width = fit content but Itzel dident say anything about it*/
+overflow-x: hidden;
+width: 35.416vw;
+transition: all 0.3s;
+}
+
+
+.menu-content .lil-x img{
+    width: 30px; /*fix later*/
+    display: flex;
+    /* margin-top: 10%; */
+    padding-top: 4%; /*because idk whats up with it*/
+    margin-left: 90%;
+    transition: all 0.3s;
+}
+
+.headings{
+    display: flex;
+    margin-left: 3.958vw;
+    gap: 1.59vw;
+    /* border: 2px solid blue; */
+    align-items: center;
+}
+.headings h3{
+    font-size: 2rem;
+}
+
+
+
+input[type="checkbox"]#check:checked ~ .menu-content{
+    transform: translateX(0%);
+}
+.headings img{
+    height: 4.7vw;
+}
+
+/* functionality for all the buttons to work for the menu */
+
+.headings img, .more-content,
+.headings img, .more-content2,
+.headings img, .more-content3,
+.headings img, .more-content4,
+.headings img, .more-content5,
+.headings img, .more-content6,
+.headings img, .more-content7,
+.headings img, .more-content8{
+    transition: all 0.3s;
+}
+
+.more-content,
+.more-content2,
+.more-content3,
+.more-content4,
+.more-content5,
+.more-content6,
+.more-content7,
+.more-content8{
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    margin-left: 25%;
+    /* transform: translateX(-25deg); */
+}
+
+input[type="checkbox"]#sub:checked ~ .more-content,
+input[type="checkbox"]#sub2:checked ~ .more-content2,
+input[type="checkbox"]#sub3:checked ~ .more-content3,
+input[type="checkbox"]#sub4:checked ~ .more-content4,
+input[type="checkbox"]#sub5:checked ~ .more-content5,
+input[type="checkbox"]#sub6:checked ~ .more-content6,
+input[type="checkbox"]#sub7:checked ~ .more-content7,
+input[type="checkbox"]#sub8:checked ~ .more-content8 {
+    display: flex;
+    gap: 2vw;
+    /* transform: translateX(25deg); */
+}
+input[type="checkbox"]#sub:checked + label .headings img,
+input[type="checkbox"]#sub2:checked + label .headings img,
+input[type="checkbox"]#sub3:checked + label .headings img,
+input[type="checkbox"]#sub4:checked + label .headings img,
+input[type="checkbox"]#sub5:checked + label .headings img,
+input[type="checkbox"]#sub6:checked + label .headings img,
+input[type="checkbox"]#sub7:checked + label .headings img,
+input[type="checkbox"]#sub8:checked + label .headings img {
+    transform: rotate(90deg);
+}
+
+.menu-content a{
+    color: white;
+    text-decoration: none;
+    font-weight: var(--semi-bold);
+    font-size: 1.75rem;
+}
+
+
+
+
+
+/* this part is for the three on the side... */
+
+
+/* re-sizing the hero icon */
+.icon img{
+    /* border: 2px solid black; */
+    width: 7.152vw;
+    position: absolute;
+    left: 45%;
+    top: 0;
+}
+.aside-icons a:nth-child(1) img{
+    width: 3.3vw;
+}
+.aside-icons a:nth-child(2) img{
+    width: 5.138vw;
+}
+.aside-icons{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    position: absolute;
+    right: 1.5%;
+    top: 10%;
+    /* border: 2px solid black; */
+}
+
+/* below is the acessability stuff */
+
+
+
+
+
+</style>
+</html>
