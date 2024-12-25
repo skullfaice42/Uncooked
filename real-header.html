@@ -159,21 +159,331 @@
                 </a>
             </div>
             <div class="aside-icons">
-                <a href="#"> 
+                <!-- search bar stuff -->
+                <input type="checkbox" id="mag-glass">
+                <label for="mag-glass">
                     <img src="icons/mag-glass.png" alt="mag glass">
-                </a>
+                </label>
+
+                <div class="search-container">
+                    <input type="text" id="search-bar" placeholder="Search...">
+                    <hr>
+                    <div class="searching">
+                        <a href="#">ima sigma</a>
+                        <a href="#">ima sigma</a>
+                        <a href="#">ima sigma</a>
+                        <a href="#">ima sigma</a>
+                        <a href="#">ima sigma</a>
+                        <a href="#">ima sigma</a>
+                        <a href="#">ima sigma</a>
+                        <a href="#">ima sigma</a>
+                        <a href="#">ima sigma</a>
+                        <a href="#">ima sigma</a>
+                        <a href="#">ima sigma</a>
+                        <a href="#">ima sigma</a>
+                        <a href="#">ima sigma</a>
+                        <a href="#">ima sigma</a>
+                        <a href="#">ima sigma</a>
+                        <a href="#">ima sigma</a>
+                        <a href="#">ima sigma</a>
+                        <a href="#">ima sigma</a>
+                        <a href="#">ima sigma</a>
+                        <a href="#">ima sigma</a>
+                    </div>
+
+                </div>
+                
+                <!-- ending search bar stuff -->
                 <a href="#">
                     <img src="icons/profile.png" alt="profile image">
                 </a>
             </div>
             
+            
         </div>
 
         <!-- accessibility adjustments here -->
-        
+        <input type="checkbox" id="access">
+        <label for="access" class="access-icon">
+            <img src="icons/accessibility.png" alt="accessibility">
+        </label>
+        <div class="access-overlay">
+            <!-- blue-top here -->
+            <div class="blue-top">
+                <label for="access">
+                    <img src="icons/white-x.png" alt="closing icon 'X'">
+                </label>
+                <h2>Accessibility Adjustments</h2>
+            </div>
+            <!-- blue-bott here -->
+            <div class="blue-bott"></div>
+            <!-- white-overlay here -->
+            <div class="white-overlay">
+                <div class="heading mm">
+                    <h2>Languages</h2>
+                    <div class="english">
+                        <input type="checkbox" id="english">
+                        <label for="english">
+                            
+                            <h2 class="lan lan1">English</h2>
+                            <h2 class="lanh lan2">Russian (Русский / Russkiy)</h2>
+                            <h2 class="lanh lan3">French (Français)</h2>
+                            <h2 class="lanh lan4">German (Deutsch)</h2>
+                            <h2 class="lanh lan5">Spanish (Español)</h2>
+                            <h2 class="lanh lan6">Portuguese (Português)</h2>
+                            <h2 class="lanh lan7">Mandarin Chinese (普通话 / Pǔtōnghuà)</h2>
+                            <h2 class="lanh lan8">Japanese (日本語 / Nihongo)</h2>
+                            <h2 class="lanh lan9">Hindi (हिंदी / Hindī)</h2>
+                            <h2 class="lanh lan10">Arabic (العربية / Al-‘Arabiyya)</h2>
+                            <h2 class="lanh lan11">Bengali (বাংলা / Bangla)</h2>
+                            <h2 class="lanh lan12">Urdu (اردو / Urdū)</h2>
+                            <img src="icons/black-right-arrow.png" alt="right facing arrow">
+                        </label>
+                    </div>
+                </div>
+                <hr class="mm">
+
+                <div class="basic"> <!--what the user first sees-->
+                    <div class="dark-mode mm">
+                        <h2>Dark Mode</h2>
+                        <div class="color-options">
+                            <input type="radio" id="defalt" name="color-mode">
+                            <label for="defalt">
+                                <div class="circle blue"><p>A</p></div>
+                            </label>
+                            <input type="radio" id="reverse" name="color-mode">
+                            <label for="reverse">
+                                <div class="circle white"><p>A</p></div>
+                            </label>
+                            <input type="radio" id="yellow" name="color-mode">
+                            <label for="yellow">
+                                <div class="circle black"><p>A</p></div>
+                            </label>
+                        </div>
+                    </div>
+                
+                    <hr class="mm">
+                    <div class="font-sizing mm">
+                        <h2>Font Sizing</h2>
+                        <div class="letter-sizing">
+                            <input type="radio" id="small-text" name="resizing">
+                            <label for="small-text">
+                                <h3>A</h3>
+                            </label>
+                            <input type="radio" id="larger-text" name="resizing">
+                            <label for="larger-text">
+                                <h2>A</h2>
+                            </label>
+                        </div>
+                    </div>
+                    <hr class="mm">
+                    <div class="blind-users mm">
+                        <h2>Blind Users (Screen Reader)</h2>
+                        <input type="checkbox" id="screen-reader">
+                        <label for="screen-reader"> <!--a placeholder for the real thing-->
+                            <img src="icons/screen-reader.png" alt="Screen Reader Icon">
+                        </label>
+                    </div>
+                    <hr class="mm">
+                    <div class="keyboard-nav mm">
+                        <h2>Keyboard Navigation</h2>
+                        <input type="checkbox" id="keyboard-nav">
+                        <label for="keyboard-nav">
+                            <img src="icons/keyboard-nav.png" alt="Keyboard Navigation">
+                        </label>
+                    </div>
+                    <hr class="mm">
+                    <div class="reset-settings">
+                        <input type="checkbox" id="reset-settings">
+                        <label for="reset-settings">
+                            <h2>Reset Settings</h2>
+                        </label>
+                    </div>
+                    <!-- <div class="accessibility-icon-again"> well looks like i got it to work...? ima just keep this in here to remember what i did JUST INCASE something goes wrong for whatever reason
+                        <input type="checkbox" id="access">
+                        <label for="access">
+                            <img src="icons/blue-accessability.png" alt="Blue Accessability Image">
+                        </label>
+                    </div> -->
+                    <div class="access-again">
+                        <input type="checkbox" id="access">
+                        <label for="access">
+                            <img src="icons/blue-accessability.png" alt="Blue Accessability Image">
+                        </label>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div class="basic-two">
+                    <div class="lan-switcher">
+                        <ul>
+                            <!-- Grouping all radio buttons under the same "name" makes them mutually exclusive -->
+                            <input type="radio" name="language" id="en">
+                            
+                                <li>
+                                    <button class="language-btn" data-lang="en">
+                                        <label for="en">
+                                            English
+                                        </label>
+                                    </button>
+                                </li>
+                            
+                
+                            <input type="radio" name="language" id="ru">
+                            
+                                <li>
+                                    <button class="language-btn" data-lang="ru">
+                                        <label for="ru">
+                                            Russian (Русский / Russkiy)
+                                        </label>
+                                    </button>
+                                </li>
+                            
+                
+                            <input type="radio" name="language" id="fr">
+                            
+                                <li>
+                                    <button class="language-btn" data-lang="fr">
+                                        <label for="fr">
+                                            French (Français)
+                                        </label>
+                                    </button></li>
+                            
+                
+                            <input type="radio" name="language" id="de">
+                            
+                                <li>
+                                    <button class="language-btn" data-lang="de">
+                                        <label for="de">
+                                            German (Deutsch)
+                                        </label>
+                                    </button>
+                                </li>
+                            
+                
+                            <input type="radio" name="language" id="es">
+                            
+                                <li>
+                                    <button class="language-btn" data-lang="es">
+                                        <label for="es">
+                                            Spanish (Español)
+                                        </label>
+                                    </button>
+                                </li>
+                            
+                
+                            <input type="radio" name="language" id="pt">
+                            
+                                <li>
+                                    <button class="language-btn" data-lang="pt">
+                                        <label for="pt">
+                                            Portuguese (Português)
+                                        </label>
+                                    </button>
+                                </li>
+                            
+                
+                            <input type="radio" name="language" id="zh">
+                            
+                                <li>
+                                    <button class="language-btn" data-lang="zh">
+                                        <label for="zh">
+                                            Mandarin Chinese (普通话 / Pǔtōnghuà)
+                                        </label>
+                                    </button>
+                                </li>
+                            
+                
+                            <input type="radio" name="language" id="ja">
+                            
+                                <li>
+                                    <button class="language-btn" data-lang="ja">
+                                        <label for="ja">
+                                            Japanese (日本語 / Nihongo)
+                                        </label>
+                                    </button>
+                                </li>
+                            
+                
+                            <input type="radio" name="language" id="hi">
+                            
+                                <li>
+                                    <button class="language-btn" data-lang="hi">
+                                        <label for="hi">
+                                            Hindi (हिंदी / Hindī)
+                                        </label>
+                                    </button>
+                                </li>
+                            
+                
+                            <input type="radio" name="language" id="ar">
+                            
+                                <li>
+                                    <button class="language-btn" data-lang="ar">
+                                        <label for="ar">
+                                            Arabic (العربية / Al-‘Arabiyya)
+                                        </label>
+                                    </button>
+                                </li>
+                            
+                
+                            <input type="radio" name="language" id="bn">
+                            
+                                <li>
+                                    <button class="language-btn" data-lang="bn">
+                                        <label for="bn">
+                                            Bengali (বাংলা / Bangla)
+                                        </label>
+                                    </button>
+                                </li>
+                            
+                
+                            <input type="radio" name="language" id="ur">
+                            
+                                <li>
+                                    <button class="language-btn" data-lang="ur">
+                                        <label for="ur">
+                                            Urdu (اردو / Urdū)
+                                        </label>
+                                    </button>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                    <!-- <div class="accessibility-icon-again">  i would totally add this but because in the real  function or whatever is messed up itself, this just wont work ._.
+                        <input type="checkbox" id="access">
+                        <label for="access">
+                            <img src="icons/blue-accessability.png" alt="Blue Accessability Image">
+                        </label>
+                    </div> -->
+                    <div class="access-again">
+                        <input type="checkbox" id="access">
+                        <label for="access">
+                            <img src="icons/blue-accessability.png" alt="Blue Accessability Image">
+                        </label>
+                    </div>
+                    
+                    
+                </div>
+                
+
+
+
+
+
+
+
+            </div>            
+        </div>
         
 
     </header>
+    
 </body>
 <style>
 
@@ -184,6 +494,10 @@
     padding: 0;
 }
 input[type="checkbox"]{
+    display: none;
+}
+
+input[type="radio"] {
     display: none;
 }
 :root{
@@ -353,12 +667,121 @@ input[type="checkbox"]#sub8:checked + label .headings img {
     left: 45%;
     top: 0;
 }
-.aside-icons a:nth-child(1) img{
+
+/* mag glass here */
+/* Magnifying glass icon */
+.aside-icons label[for="mag-glass"] img {
     width: 3.3vw;
+    transition: all 0.3s;
 }
-.aside-icons a:nth-child(2) img{
+.aside-icons{
+    transition: all 1.3s;
+}
+
+
+/* Search bar styling */
+.search-container{
+    margin-right: 7vw;
+    width: 28.819vw;
+    /* border: 2px solid red; */
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+#search-bar {
+    /* display: none; */
+    width: 100%;
+    height: 5vw;
+    /* border: 3px solid green; */
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+    font-size: 2.25rem;
+    background-color: transparent;
+    border: none;
+}
+input[type="text"]{
+    padding-left: .69vw;
+    color: white;
+}
+#search-bar::placeholder{
+    color: white;
+    /* padding-left: .69vw; */
+}
+.search-container hr{
+    color: white;
+    height: 3px;
+    margin-bottom: .56vw;
+    background-color: white;
+    border: none;
+
+}
+.searching{
+    /* display: none; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 10vw;
+    overflow-y: scroll;
+    color: black;
+    background-color: white;
+    gap: 2vw;
+}
+.searching a{
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    font-size: 2.25rem;
+    margin-left: .69vw;
+    /* transition: all 0.3s; */
+
+}
+.searching a:hover{
+    color: #0073E6;
+}
+
+
+input[type="checkbox"]#mag-glass:checked ~ .search-container {
+    display: inline-block;
+    height: 20vw;
+}
+input[type="checkbox"]#mag-glass:checked + label[for="mag-glass"]{
+    position: fixed;
+    top: 1.5vw; /*yeah, this could totally be wrong*/
+    
+    /* height: 20vw; */
+    border: 2px solid green;
+    right: 38%;
+}
+input[type="checkbox"]#mag-glass:checked ~ a{
+    position: fixed;
+    /* border: 2px solid red; */
+    right: 1.5vw;
+    top: 1.4%;
+}
+/* input[type="checkbox"]#mag-glass:checked ~ .searching{
+    display: block;
+} */
+
+input[type="checkbox"]#mag-glass:checked + label img {
+    transform: translateX(0%);
+}
+
+/* Profile image styling */
+.aside-icons a img {
     width: 5.138vw;
 }
+
+
+
+
+
+
+
+
+
+
+
 .aside-icons{
     display: flex;
     align-items: center;
@@ -369,11 +792,382 @@ input[type="checkbox"]#sub8:checked + label .headings img {
     /* border: 2px solid black; */
 }
 
+
+
+
+
+
+
+
+
+
 /* below is the acessability stuff */
 
+.access-overlay{
+    height: 65.20vw;/*temp*/
+    width: 43.88vw;/*temp*/
+    position: fixed;
+    transform: translateX(230%);
+}
+
+.access-icon{
+    position: fixed;
+    right: 1.5vw; /*this should do it*/
+    bottom: .95vw;
+}
+.access-icon img{
+    width: 4.722vw;
+    height: 4.722vw;
+}
+@keyframes bounceIn {
+    0% {
+        transform: translateX(230%);
+    }
+    50% {
+        transform: translateX(125%);
+    }
+    100% {
+        transform: translateX(130%);
+    }
+}
+@keyframes outtaHere{
+    0%{
+        transform: translateX(130%);
+    }
+    
+}
+input[type="checkbox"]#access:checked ~ .access-overlay{
+    /* transform: translateX(120%); */
+    animation: bounceIn .9s ease-out forwards;
+    /* transform: translateX(100%); testing */
+}
+input[type="checkbox"]#access:not(:checked) ~ .access-overlay{
+    animation: outtaHere .6s ease-out forwards;
+}
 
 
 
+/* container for the blue-top */
+.blue-top{
+    width: 100%;
+    height: 20%;
+    background-color: blue;/*temp*/
+}
+.blue-top img{
+    margin-left: 1.5vw;
+    margin-top: 1.5vw;
+    width: 3.6vw;
+    height: 3.6vw;
+}
+.blue-top h2{
+    font-size: 2rem;
+    align-items: center;
+    /* display: flex; */
+    /* border: 2px solid red; */
+    text-align: center;
+    margin-top: 2.5vw;
+}
+
+
+
+/* container for the blue-bott */
+.blue-bott{
+    width: 100%;
+    height: 80%;
+    background-color: #0e0380; /*temp*/
+}
+
+
+
+
+
+
+/* white overlay below */
+
+/* used for spacing */
+.mm{
+    margin-left: 1.458vw;
+    margin-right: 2.5vw;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.18vw;
+    margin-bottom: 1.18vw;
+    display: flex;
+}
+.mt{ /*yeah idk about this one chief*/
+    margin-left: .4vw;
+    margin-right: 1.458vw;
+
+}
+
+
+
+
+
+.circle,
+.letter-sizing h2,
+.letter-sizing h3,
+.blind-users img,
+.keyboard-nav img,
+.reset-settings{
+        transition: all 0.3s;
+    }
+.circle:hover,
+.letter-sizing h3:hover,
+.letter-sizing h2:hover,
+.blind-users img:hover,
+.keyboard-nav img:hover,
+.reset-settings:hover{
+        scale: .95;
+    }
+
+
+
+
+
+
+
+
+
+
+
+.white-overlay{
+    position: fixed;
+    background-color: white;
+    height: 81.5%;
+    width: 39.44vw;
+    z-index: 1;
+    top: 12vw;
+    color: black;
+    margin-left: 2.2vw;
+}
+.white-overlay hr{
+    /* margin-top: 10vw; */
+}
+.heading{
+    /* display: flex; */
+    /* border: 2px solid green; */
+    height: 4.58vw;
+}
+.english label[for="english"]{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+    width: fit-content;
+}
+
+    /* by defalt, what can you and cannot see USER FOR TESTING AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
+.basic-two{
+    display: none;
+}
+.basic{
+    /* display: none; */
+}
+.english img {
+    transition: transform 0.3s, border 0.3s;
+    transform: rotate(0deg); /* Default state */
+}
+
+.english input[type="checkbox"]:checked + label img {
+    transform: rotate(90deg);
+}
+.english h2{
+    font-weight: var(--light);
+}
+
+
+.white-overlay:has(input[type="checkbox"]#english:checked) .basic-two {
+    display: block;
+}
+.white-overlay:has(input[type="checkbox"]#english:checked) .basic{
+    display: none;
+}
+
+    /* styling for the circles */
+    .dark-mode{
+        /* display: flex; */
+    }
+    .color-options{
+        display: flex;
+        gap: .9vw;
+    }
+    
+    .dark-mode .circle{
+        display: flex;
+        justify-items: center;
+        width: 3.8vw;
+        height: 3.8vw;
+        border-radius: 3.8vw;
+        background-color: black;
+        color: white;
+        box-sizing: border-box; /*it was this one*/
+    }
+    .dark-mode .circle p{
+        font-size: 2rem;
+        font-weight: var(--bold);
+        margin-left: auto; /*i mean... it works dont it?*/
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .color-options .blue{
+        color: white;
+        background-color: #050133;
+    }
+    .color-options .white{
+        background-color: white;
+        color: black;
+        border: 3px solid black;
+    }
+    .color-options .black{
+        background-color: black;
+        color: #FFE500;
+    }
+    
+    
+
+
+    body:has(input[type="radio"]#reverse:checked) *{
+        color: white;
+        background-color: #050133;
+    }
+    body:has(input[type="radio"]#reverse:checked) *{ /*may want to change with the real thing later... but idk*/
+        color: black;
+        background-color: white;
+    }
+    body:has(input[type="radio"]#yellow:checked) *{
+        background-color: black;
+        color: #FFE500;
+    }
+
+    /* font sizing */
+    .font-sizing .letter-sizing{
+        display: flex;
+        align-items: center;
+        gap: 2.36vw;
+    }
+    .font-sizing .letter-sizing h3{
+        font-size: 2rem;
+        color: #0073E6;
+    }
+    .font-sizing .letter-sizing h2{
+        font-size: 3rem;
+    }
+    
+    body:has(input[type="radio"]#small-text:checked) {
+        font-size: 12px;
+    }
+    body:has(input[type="radio"]#larger-text:checked) {
+        font-size: 18px;
+    }
+
+
+
+
+    /* blind users here (idk how to make it work :[) */
+.blind-users img,
+.keyboard-nav img{
+    width: 3.819vw;
+    height: 3.819vw;
+}
+
+.reset-settings h2{
+    /* border: 2px solid green; */
+    text-align: center;
+    font-size: 2rem;
+    background-color: #0073E6;
+    color: white;
+}
+.reset-settings{
+    margin-left: 1.041vw; /*yeah, this just wont work because i have no idea how to make it work without js*/
+    margin-right: 1.041vw;
+}
+
+/* finial icon img here herhehrhehherhehhrhehrhehrherhherhehrhrehrhehrherhreherhrrehrherhe*/
+.accessibility-icon-again{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: flex-end;
+    height: 15vw;
+    align-items: flex-end;
+}
+
+
+
+/* when the user clicks on the english icon (the lanuge part )*/
+.basic-two{
+    /* border: 2px solid green; */
+    height: 80%;
+}
+.lan-switcher ul li{
+    list-style: none;
+    margin-left: 1.458vw;
+    font-size: 1.5rem;
+    
+}
+.lan-switcher ul{
+    display: flex;
+    flex-direction: column;
+    gap: .36vw; /*idk if this is good to go or not but to work with the 1440px by 810px i had to do the spacing like this :/*/
+}
+.lan-switcher{
+    /* border: 2px solid red; */
+    height: 100%;
+}
+/* .lan-switcher ul li button[data-lang="en"]{
+    color: #0073E6;
+} */
+.lan-switcher button{
+    /* background-color: white; */
+    background: none;
+    box-shadow: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.lan-switcher button:hover{
+    scale: .99;
+    color: #0073E6;
+}
+.english .lanh{
+    display: none;
+}
+
+
+body:has(input[type="radio"]#ru:checked) .lan2,
+body:has(input[type="radio"]#fr:checked) .lan3,
+body:has(input[type="radio"]#de:checked) .lan4,
+body:has(input[type="radio"]#es:checked) .lan5,
+body:has(input[type="radio"]#pt:checked) .lan6,
+body:has(input[type="radio"]#zh:checked) .lan7,
+body:has(input[type="radio"]#ja:checked) .lan8,
+body:has(input[type="radio"]#hi:checked) .lan9,
+body:has(input[type="radio"]#ar:checked) .lan10,
+body:has(input[type="radio"]#bn:checked) .lan11,
+body:has(input[type="radio"]#ur:checked) .lan12{
+    display: block;
+}
+
+body:has(input[type="radio"]#ru:checked) .lan1,
+body:has(input[type="radio"]#fr:checked) .lan1,
+body:has(input[type="radio"]#de:checked) .lan1,
+body:has(input[type="radio"]#es:checked) .lan1,
+body:has(input[type="radio"]#pt:checked) .lan1,
+body:has(input[type="radio"]#zh:checked) .lan1,
+body:has(input[type="radio"]#ja:checked) .lan1,
+body:has(input[type="radio"]#hi:checked) .lan1,
+body:has(input[type="radio"]#ar:checked) .lan1,
+body:has(input[type="radio"]#bn:checked) .lan1,
+body:has(input[type="radio"]#ur:checked) .lan1{
+    display: none;
+}
+
+.access-again{
+    display: flex;
+    position: absolute;
+    top: 90%;
+    right: 2%;
+}
 
 </style>
 </html>
