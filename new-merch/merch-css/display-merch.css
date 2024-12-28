@@ -1,0 +1,540 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend Deca";
+}
+
+body {
+    /* height: 69420px; */
+    background-color: #050133;
+}
+.hidden{ /*hides the image options*/
+    display: none;
+    margin-top: 5vw; /*yeah i have no idea why this works lmao*/
+}
+.hiddenbn{
+    display: none;
+}
+
+
+
+
+
+
+.top-containermh {
+    position: relative;
+}
+
+.hero-imgmh img{
+    width: 100%;
+    display: block;
+}
+
+.bit-o-textmh {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 5%; /* Align text to the left with a margin */
+    transform: translateY(-50%); /* Adjust for perfect vertical centering */
+    color: white;
+    text-align: left;
+}
+
+.bit-o-textmh h2 {
+    color: #0073E6;
+    font-size: 4em;
+    margin: 0;
+}
+
+.bit-o-textmh h3 {
+    font-size: 2em;
+    color: white;
+    margin: 0;
+}
+
+.all-merch-buttonmh{
+    display: flex;
+    margin-top: 4.930vw;
+    width: 48.61vw;
+    height: 6.944vw;
+    background-color: #003B76;
+    font-size: 2.5em;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.four-clothingmh {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+/* flex-grow: 1; */
+gap: 1rem;
+}
+.two-cardsmh {
+    width: 100%;
+display: flex;
+gap: 1rem; /* Spacing between items in the row */
+justify-content: space-between;
+
+}
+
+.lil-sectionmh{
+    margin-top: 3.5416666vw;
+    justify-content: space-between;
+    color: white;
+    display: flex;
+}
+
+.left-lsmh{
+    margin-left: 2.4305vw;
+    display: flex;
+    align-items: center;
+}
+.left-lsmh img{
+    width: 2.4305vw;
+}
+.left-lsmh p{
+    font-size: 1.5em;
+    margin-left: .83vw;
+}
+.right-lsmh{
+    margin-right: 2.4305vw;
+    color: #A1A1A1;
+    font-size: 1.5em;
+}
+
+
+
+
+
+.entire-sectionmh {
+    margin-top: 1.736vw;
+display: flex;
+gap: 2rem;
+align-items: stretch; /* Make both sections align with the tallest one */
+}
+.entire-sectionmh:nth-child(2){
+    flex-direction: row-reverse;
+}
+.mini-heromh {
+height: auto; /* Let the height of mini-hero adapt to the flex container */
+max-height: 100%; /* Ensure it doesn't exceed the calculated height */
+width: auto;
+object-fit: cover; /* Ensure the image scales proportionally */
+}
+.entire-sectionmh .mini-heromh{
+    height: 92.9vw;
+}
+
+.one-clothingmh{
+color: white;
+width: 23.055vw;
+/* width: 100%; */
+}
+.white{
+    display: flex;
+    background-color: white;
+    width: 23.055vw;
+    height: 32.91vw;
+}
+
+.one-clothingmh img {
+    background-color: white;
+    /* width: 23.055vw; */
+    width: 100%;
+    object-fit: cover; /*idk what this does, i just got reccomended it*/
+    transition: all 0.3s ease;
+}
+
+.one-clothingmh h3 {
+    font-size: 2em;
+}
+
+.one-clothingmh p {
+    font-size: 1.5em;
+}
+
+/* container for changing the type of merch based on which button gets pressed */
+
+
+.white{
+    transition: all 0.3s;
+}
+
+        /* below is strictelly for the images */
+.one-clothingmh:has(.colorsmh input[type="radio"].one-white:checked) .white-t-shirt,
+.one-clothingmh:has(.colorsmh input[type="radio"].one-blue:checked) .blue-t-shirt,
+.one-clothingmh:has(.colorsmh input[type="radio"].one-red:checked) .red-t-shirt,
+
+
+.one-clothingmh:has(.colorsmh input[type="radio"].two-twoc:checked) .two-twoi,
+.one-clothingmh:has(.colorsmh input[type="radio"].two-threec:checked) .two-threei,
+.one-clothingmh:has(.colorsmh input[type="radio"].two-fourc:checked) .two-fouri,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].three-twoc:checked) .three-twoi,
+.one-clothingmh:has(.colorsmh input[type="radio"].three-threec:checked) .three-threei,
+.one-clothingmh:has(.colorsmh input[type="radio"].three-fourc:checked) .three-fouri
+
+{
+    display: block;
+}
+
+
+
+
+.one-clothingmh:has(.colorsmh input[type="radio"].one-white:checked) .black-t-shirt,
+.one-clothingmh:has(.colorsmh input[type="radio"].one-blue:checked) .black-t-shirt,
+.one-clothingmh:has(.colorsmh input[type="radio"].one-red:checked) .black-t-shirt,
+
+
+.one-clothingmh:has(.colorsmh input[type="radio"].two-twoc:checked) .two-onei,
+.one-clothingmh:has(.colorsmh input[type="radio"].two-threec:checked) .two-onei,
+.one-clothingmh:has(.colorsmh input[type="radio"].two-fourc:checked) .two-onei,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].three-twoc:checked) .three-onei,
+.one-clothingmh:has(.colorsmh input[type="radio"].three-threec:checked) .three-onei,
+.one-clothingmh:has(.colorsmh input[type="radio"].three-fourc:checked) .three-onei
+
+{
+    display: none;
+}
+
+
+
+
+        /* below is strictelly for the buttons */
+.one-clothingmh:has(.colorsmh input[type="radio"].one-white:checked) .one-twobutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].one-blue:checked) .one-threebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].one-red:checked) .one-fourbutt,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].two-twoc:checked) .two-twobutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].two-threec:checked) .two-threebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].two-fourc:checked) .two-fourbutt,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].three-twoc:checked) .three-twobutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].three-threec:checked) .three-threebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].three-fourc:checked) .three-fourbutt
+
+{
+    display: block;
+}
+
+
+
+.one-clothingmh:has(.colorsmh input[type="radio"].one-white:checked) .one-onebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].one-blue:checked) .one-onebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].one-red:checked) .one-onebutt,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].two-twoc:checked) .two-onebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].two-threec:checked) .two-onebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].two-fourc:checked) .two-onebutt,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].three-twoc:checked) .three-onebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].three-threec:checked) .three-onebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].three-fourc:checked) .three-onebutt
+
+{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.white img:hover{
+    scale: 0.95;
+}
+
+.colorsmh {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    height: 4vw;
+    display: flex;
+    gap: 1.4vw;
+    box-sizing: border-box;
+    /* border: 2px solid green; */
+}
+
+/* Hide the default radio buttons */
+.color-inputmh {
+    display: none;
+}
+
+/* Style the color circle container */
+.color-labelmh {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Circle styles */
+.color-labelmh span {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    border: rgba(255, 255, 255, 0.315) 2px solid;
+    display: inline-block;
+    transition: 0.2s all;
+}
+
+.color-blackmh {
+    background-color: black;
+    box-sizing: border-box;
+}
+
+.color-whitemh {
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.color-bluemh {
+    background-color: blue;
+    box-sizing: border-box;
+}
+
+.color-redmh {
+    background-color: red;
+    box-sizing: border-box;
+}
+
+/* Highlight the selected color */
+.color-inputmh:checked + span {
+    border: white 2px solid;
+}
+.color-inputmh:checked ~ .color-whitemh {
+    border: rgb(0, 0, 0) 2px solid; /*had to add because whose going to see the white frfr*/
+}
+
+/* Style the Add to Cart button */
+.add-to-cartmh{
+    margin-top: auto;
+    width: 100%;
+    font-size: 1.25em;
+    border: #0073E6 3px solid;
+    color: white;
+    background-color: transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s ease-in-out;
+}
+.add-to-cartmh2{
+    /* border: 21px solid green; */
+    text-align: center;
+}
+.add-to-cartmh2{
+    display: flex;
+    justify-self: center;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+    /* align-content: center; */
+    margin-top: auto;
+    width: 100%;
+    font-size: 1.25em;
+    border: #0073E6 3px solid;
+    color: white;
+    background-color: transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s ease-in-out;
+}
+.add-to-cartmh:hover {
+    background-color: #0073E6;
+    color: #050133;
+}
+
+.add-to-cartmh:active {
+    transform: scale(0.95); /*kek*/
+}
+.bot-buttons{
+    margin-top: 3vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid green; */
+    gap: 2vw;
+    /* width: 15%; */
+    /* align-items: center; */
+    /* align-self: center; */
+    justify-content: center;
+    /* justify-self: center; */
+    /* justify-content: space-between; */
+    /* text-align: center; */
+    /* border: 2px solid green; */
+}
+.bot-buttons button{
+    width: 6vw;
+    height: 6vw;
+    /* display: flex; */
+    background-color: #0073E6;
+    border: none;
+    transition: all 0.2s ease;
+    font-size: 2em;
+}
+.bot-buttons button:hover{
+    scale: 0.95;
+}
+
+.bot-buttons a button{
+    color: white;
+    text-decoration: none;
+}
+
+
+ @media (max-width: 1366px){
+    .one-clothingmh h3{
+        height: 7vw;
+    }
+ }
+ @media (max-width: 1000px){
+    .one-clothingmh h3{
+        margin-bottom: 5vw;
+        font-size: 1.5em;
+    }
+ }
+@media (max-width: 692px){
+    .entire-sectionmh{
+        gap: 0;
+    }
+    .bit-o-textmh{
+        width: 70%;
+    }
+    .bit-o-textmh h2{
+        font-size: 2em;
+    }
+    .bit-o-textmh h3{
+        font-size: 1.5em;
+    }
+    .jazzmh .mini-heromh{
+       display: none;
+    }
+    .four-clothingmh{
+       /* display: flex; */
+       /* align-content: center; */
+       justify-content: center;
+       align-items: center;
+       margin-left: auto;
+       margin-right: auto;
+       /* border: 2px solid green; */
+       /* margin-top: 10vw; used for texting only */
+       /* gap: 0; */
+       /* width: 30%; */
+    }
+    .two-cardsmh h3{
+        font-size: 1em;
+        /* background-color: black; */
+        height: 5vw;
+        margin-bottom: 2vw;
+    }
+
+
+
+
+    .one-clothingmh{
+        text-align: center;
+    }
+    .colorsmh{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    .add-to-cartmh{
+        font-size: 1em;
+    }
+
+
+   }
+@media (max-width: 632px){
+    .all-merch-buttonmh p{
+        font-size: .6em;
+    }
+    .bot-buttons button{
+        width: 10vw;
+        height: 10vw;
+    }
+}
+@media (max-width: 592px){
+    .add-to-cartmh{
+        font-size: .7em;
+    }
+    .two-cardsmh h3{
+        margin-bottom: 4vw;
+    }
+}
+@media (max-width: 474px){
+    .add-to-cartmh{
+        font-size: .6em;
+    }
+}
