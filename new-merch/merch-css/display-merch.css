@@ -160,6 +160,32 @@ width: 23.055vw;
     transition: all 0.3s;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         /* below is strictelly for the images */
 .one-clothingmh:has(.colorsmh input[type="radio"].one-white:checked) .white-t-shirt,
 .one-clothingmh:has(.colorsmh input[type="radio"].one-blue:checked) .blue-t-shirt,
@@ -172,7 +198,46 @@ width: 23.055vw;
 
 .one-clothingmh:has(.colorsmh input[type="radio"].three-twoc:checked) .three-twoi,
 .one-clothingmh:has(.colorsmh input[type="radio"].three-threec:checked) .three-threei,
-.one-clothingmh:has(.colorsmh input[type="radio"].three-fourc:checked) .three-fouri
+.one-clothingmh:has(.colorsmh input[type="radio"].three-fourc:checked) .three-fouri,
+
+
+.one-clothingmh:has(.colorsmh input[type="radio"].four-twoc:checked) .four-twoi,
+.one-clothingmh:has(.colorsmh input[type="radio"].four-threec:checked) .four-threei,
+.one-clothingmh:has(.colorsmh input[type="radio"].four-fourc:checked) .four-fouri,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].five-twoc:checked) .five-twoi,
+.one-clothingmh:has(.colorsmh input[type="radio"].five-threec:checked) .five-threei,
+.one-clothingmh:has(.colorsmh input[type="radio"].five-fourc:checked) .five-fouri,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].six-twoc:checked) .six-twoi,
+.one-clothingmh:has(.colorsmh input[type="radio"].six-threec:checked) .six-threei,
+.one-clothingmh:has(.colorsmh input[type="radio"].six-fourc:checked) .six-fouri,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].seven-twoc:checked) .seven-twoi,
+.one-clothingmh:has(.colorsmh input[type="radio"].seven-threec:checked) .seven-threei,
+.one-clothingmh:has(.colorsmh input[type="radio"].seven-fourc:checked) .seven-fouri,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].eight-twoc:checked) .eight-twoi,
+.one-clothingmh:has(.colorsmh input[type="radio"].eight-threec:checked) .eight-threei,
+.one-clothingmh:has(.colorsmh input[type="radio"].eight-fourc:checked) .eight-fouri,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].nine-twoc:checked) .nine-twoi,
+.one-clothingmh:has(.colorsmh input[type="radio"].nine-threec:checked) .nine-threei,
+.one-clothingmh:has(.colorsmh input[type="radio"].nine-fourc:checked) .nine-fouri,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].ten-twoc:checked) .ten-twoi,
+.one-clothingmh:has(.colorsmh input[type="radio"].ten-threec:checked) .ten-threei,
+.one-clothingmh:has(.colorsmh input[type="radio"].ten-fourc:checked) .ten-fouri,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].eleven-twoc:checked) .eleven-twoi,
+.one-clothingmh:has(.colorsmh input[type="radio"].eleven-threec:checked) .eleven-threei,
+.one-clothingmh:has(.colorsmh input[type="radio"].eleven-fourc:checked) .eleven-fouri,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].twelve-twoc:checked) .twelve-twoi,
+.one-clothingmh:has(.colorsmh input[type="radio"].twelve-threec:checked) .twelve-threei,
+.one-clothingmh:has(.colorsmh input[type="radio"].twelve-fourc:checked) .twelve-fouri
+
+
 
 {
     display: block;
@@ -185,14 +250,49 @@ width: 23.055vw;
 .one-clothingmh:has(.colorsmh input[type="radio"].one-blue:checked) .black-t-shirt,
 .one-clothingmh:has(.colorsmh input[type="radio"].one-red:checked) .black-t-shirt,
 
-
 .one-clothingmh:has(.colorsmh input[type="radio"].two-twoc:checked) .two-onei,
 .one-clothingmh:has(.colorsmh input[type="radio"].two-threec:checked) .two-onei,
 .one-clothingmh:has(.colorsmh input[type="radio"].two-fourc:checked) .two-onei,
 
 .one-clothingmh:has(.colorsmh input[type="radio"].three-twoc:checked) .three-onei,
 .one-clothingmh:has(.colorsmh input[type="radio"].three-threec:checked) .three-onei,
-.one-clothingmh:has(.colorsmh input[type="radio"].three-fourc:checked) .three-onei
+.one-clothingmh:has(.colorsmh input[type="radio"].three-fourc:checked) .three-onei,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].four-twoc:checked) .four-onei,
+.one-clothingmh:has(.colorsmh input[type="radio"].four-threec:checked) .four-onei,
+.one-clothingmh:has(.colorsmh input[type="radio"].four-fourc:checked) .four-onei,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].five-twoc:checked) .five-onei,
+.one-clothingmh:has(.colorsmh input[type="radio"].five-threec:checked) .five-onei,
+.one-clothingmh:has(.colorsmh input[type="radio"].five-fourc:checked) .five-onei,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].six-twoc:checked) .six-onei,
+.one-clothingmh:has(.colorsmh input[type="radio"].six-threec:checked) .six-onei,
+.one-clothingmh:has(.colorsmh input[type="radio"].six-fourc:checked) .six-onei,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].seven-twoc:checked) .seven-onei,
+.one-clothingmh:has(.colorsmh input[type="radio"].seven-threec:checked) .seven-onei,
+.one-clothingmh:has(.colorsmh input[type="radio"].seven-fourc:checked) .seven-onei,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].eight-twoc:checked) .eight-onei,
+.one-clothingmh:has(.colorsmh input[type="radio"].eight-threec:checked) .eight-onei,
+.one-clothingmh:has(.colorsmh input[type="radio"].eight-fourc:checked) .eight-onei,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].nine-twoc:checked) .nine-onei,
+.one-clothingmh:has(.colorsmh input[type="radio"].nine-threec:checked) .nine-onei,
+.one-clothingmh:has(.colorsmh input[type="radio"].nine-fourc:checked) .nine-onei,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].ten-twoc:checked) .ten-onei,
+.one-clothingmh:has(.colorsmh input[type="radio"].ten-threec:checked) .ten-onei,
+.one-clothingmh:has(.colorsmh input[type="radio"].ten-fourc:checked) .ten-onei,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].eleven-twoc:checked) .eleven-onei,
+.one-clothingmh:has(.colorsmh input[type="radio"].eleven-threec:checked) .eleven-onei,
+.one-clothingmh:has(.colorsmh input[type="radio"].eleven-fourc:checked) .eleven-onei,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].twelve-twoc:checked) .twelve-onei,
+.one-clothingmh:has(.colorsmh input[type="radio"].twelve-threec:checked) .twelve-onei,
+.one-clothingmh:has(.colorsmh input[type="radio"].twelve-fourc:checked) .twelve-onei
 
 {
     display: none;
@@ -212,7 +312,43 @@ width: 23.055vw;
 
 .one-clothingmh:has(.colorsmh input[type="radio"].three-twoc:checked) .three-twobutt,
 .one-clothingmh:has(.colorsmh input[type="radio"].three-threec:checked) .three-threebutt,
-.one-clothingmh:has(.colorsmh input[type="radio"].three-fourc:checked) .three-fourbutt
+.one-clothingmh:has(.colorsmh input[type="radio"].three-fourc:checked) .three-fourbutt,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].four-twoc:checked) .four-twobutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].four-threec:checked) .four-threebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].four-fourc:checked) .four-fourbutt,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].five-twoc:checked) .five-twobutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].five-threec:checked) .five-threebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].five-fourc:checked) .five-fourbutt,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].six-twoc:checked) .six-twobutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].six-threec:checked) .six-threebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].six-fourc:checked) .six-fourbutt,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].seven-twoc:checked) .seven-twobutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].seven-threec:checked) .seven-threebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].seven-fourc:checked) .seven-fourbutt,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].eight-twoc:checked) .eight-twobutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].eight-threec:checked) .eight-threebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].eight-fourc:checked) .eight-fourbutt,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].nine-twoc:checked) .nine-twobutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].nine-threec:checked) .nine-threebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].nine-fourc:checked) .nine-fourbutt,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].ten-twoc:checked) .ten-twobutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].ten-threec:checked) .ten-threebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].ten-fourc:checked) .ten-fourbutt,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].eleven-twoc:checked) .eleven-twobutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].eleven-threec:checked) .eleven-threebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].eleven-fourc:checked) .eleven-fourbutt,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].twelve-twoc:checked) .twelve-twobutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].twelve-threec:checked) .twelve-threebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].twelve-fourc:checked) .twelve-fourbutt
 
 {
     display: block;
@@ -230,16 +366,74 @@ width: 23.055vw;
 
 .one-clothingmh:has(.colorsmh input[type="radio"].three-twoc:checked) .three-onebutt,
 .one-clothingmh:has(.colorsmh input[type="radio"].three-threec:checked) .three-onebutt,
-.one-clothingmh:has(.colorsmh input[type="radio"].three-fourc:checked) .three-onebutt
+.one-clothingmh:has(.colorsmh input[type="radio"].three-fourc:checked) .three-onebutt,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].four-twoc:checked) .four-onebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].four-threec:checked) .four-onebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].four-fourc:checked) .four-onebutt,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].five-twoc:checked) .five-onebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].five-threec:checked) .five-onebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].five-fourc:checked) .five-onebutt,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].six-twoc:checked) .six-onebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].six-threec:checked) .six-onebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].six-fourc:checked) .six-onebutt,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].seven-twoc:checked) .seven-onebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].seven-threec:checked) .seven-onebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].seven-fourc:checked) .seven-onebutt,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].eight-twoc:checked) .eight-onebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].eight-threec:checked) .eight-onebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].eight-fourc:checked) .eight-onebutt,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].nine-twoc:checked) .nine-onebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].nine-threec:checked) .nine-onebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].nine-fourc:checked) .nine-onebutt,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].ten-twoc:checked) .ten-onebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].ten-threec:checked) .ten-onebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].ten-fourc:checked) .ten-onebutt,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].eleven-twoc:checked) .eleven-onebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].eleven-threec:checked) .eleven-onebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].eleven-fourc:checked) .eleven-onebutt,
+
+.one-clothingmh:has(.colorsmh input[type="radio"].twelve-twoc:checked) .twelve-onebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].twelve-threec:checked) .twelve-onebutt,
+.one-clothingmh:has(.colorsmh input[type="radio"].twelve-fourc:checked) .twelve-onebutt
 
 {
     display: none;
 }
 
 
+/* has to add a little bit logic to get the rest to work the way i want them to */
+.tote-bagextralogic{
+    margin-top: 0;
+    margin-left: 1vw;
+    height: 100%;
+    scale: .95;
+    /* border: 2px solid green; */
+}
+.eleven-onei,
+.twelve-onei{
+    margin-top: 5vw;
+}
 
 
-
+.colorsmh input[type="radio"] .two-twoi,
+.colorsmh input[type="radio"] .two-threei,
+.colorsmh input[type="radio"] .two-fouri{
+    opacity: 0;
+}
+.one-clothingmh:has(.colorsmh input[type="radio"].two-twoc:checked) .two-twoi,
+.one-clothingmh:has(.colorsmh input[type="radio"].two-threec:checked) .two-threei,
+.one-clothingmh:has(.colorsmh input[type="radio"].two-fourc:checked) .two-fouri{
+    animation-delay: 2s;
+    opacity: 1;
+}
 
 
 

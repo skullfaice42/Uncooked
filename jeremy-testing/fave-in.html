@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="radio" id="black-radio" name="color" checked>
+<input type="radio" id="white-radio" name="color">
+<input type="radio" id="navy-radio" name="color">
+<input type="radio" id="red-radio" name="color">
+
+<div class="merch-container">
+    <img src="../new-merch/imgs/customized-merch/1crewneck-t-shirt/crewneck-men-black.png" alt="Black Shirt" class="merch-image" id="black">
+    <img src="../new-merch/imgs/customized-merch/1crewneck-t-shirt/crewneck-men-white.png" alt="White Shirt" class="merch-image" id="white">
+    <img src="../new-merch/imgs/customized-merch/1crewneck-t-shirt/crewneck-men-navy.png" alt="Navy Shirt" class="merch-image" id="navy">
+    <img src="../new-merch/imgs/customized-merch/1crewneck-t-shirt/crewneck-men-red.png" alt="Red Shirt" class="merch-image" id="red">
+</div>
+
+<div class="color-selectors">
+    <label for="black-radio">Black</label>
+    <label for="white-radio">White</label>
+    <label for="navy-radio">Navy</label>
+    <label for="red-radio">Red</label>
+</div>
+
+
+    
+    
+</body>
+
+<style>
+    /* Base Container Styling */
+.merch-container {
+    position: relative;
+    width: 300px; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+    overflow: hidden;
+}
+
+/* Image Styling */
+.merch-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+/* Active Image Styling */
+#black-radio:checked ~ .merch-container #black,
+#white-radio:checked ~ .merch-container #white,
+#navy-radio:checked ~ .merch-container #navy,
+#red-radio:checked ~ .merch-container #red {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+
+/* Hide Radio Buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/* Color Selector Styling */
+.color-selectors {
+    margin-top: 10px;
+}
+
+.color-selectors label {
+    cursor: pointer;
+    margin-right: 10px;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.color-selectors label:hover {
+    background-color: #dcdcdc;
+}
+
+/* Active Label Styling */
+#black-radio:checked ~ .color-selectors label[for="black-radio"],
+#white-radio:checked ~ .color-selectors label[for="white-radio"],
+#navy-radio:checked ~ .color-selectors label[for="navy-radio"],
+#red-radio:checked ~ .color-selectors label[for="red-radio"] {
+    background-color: #bbb;
+    font-weight: bold;
+}
+
+
+</style>
+</html>
