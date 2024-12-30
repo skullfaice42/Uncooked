@@ -62,3 +62,21 @@ a- nem customization rewiev (no functionality)
 both- MEDIA QUERRIES
 
 hat-selection-black (needs functionality, jeremy will try to get it but hopes are low)
+
+
+
+
+
+
+A{
+    needs to make sure all the inbetween pages are looking correct
+    ^ test on mobil as well to see what has to get changed
+    ^make the changes nessesary
+    also add transations (when you go to another page, there should be an animation)
+}
+
+J{
+    work on remaining merch
+    fix the header
+
+}
