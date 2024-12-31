@@ -112,14 +112,25 @@ display: flex;
 gap: 2rem;
 align-items: stretch; /* Make both sections align with the tallest one */
 }
+
+
+.entire-sectionmh:nth-child(1) .mini-heromh {
+    flex-direction: row-reverse;
+    margin-left: 2.0833vw;
+}
 .entire-sectionmh:nth-child(2){
     flex-direction: row-reverse;
+    margin-right: 2.0833vw;
+}
+.entire-sectionmh:nth-child(3){
+    margin-left: 2.0833vw;
 }
 .mini-heromh {
 height: auto; /* Let the height of mini-hero adapt to the flex container */
 max-height: 100%; /* Ensure it doesn't exceed the calculated height */
 width: auto;
 object-fit: cover; /* Ensure the image scales proportionally */
+
 }
 .entire-sectionmh .mini-heromh{
     height: 92.9vw;
