@@ -216,7 +216,7 @@ top: 40%;
 /* visibility: visible; */
 display: block;
 }
-.cart:checked ~.hidden,
+.cart:checked ~.hidden-selection,
 .cart:checked .add-to-cart{
 display: none;
 opacity: 0;
@@ -228,7 +228,7 @@ opacity: 0;
 
 
 /* contents of overlay here */
-/* Initial state of the overlay: hidden */
+/* Initial state of the overlay: hidden- */
 .overlay {
 display: none;
 background-color: #0D0B9D;
