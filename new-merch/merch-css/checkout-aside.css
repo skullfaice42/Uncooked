@@ -4,6 +4,10 @@
 /* note to self... apend everything with ca... or something like that */
 
 /*  i will totally re-do this... LATER for now i need to make sure the base content gets down */
+*{
+    padding: 0;
+    margin: 0;
+}
 :root{
     font-size: 16px;
 }
@@ -20,7 +24,13 @@ body{
 
 }
 .containerc-aside .leftc-aside h2:nth-child(1){ /*MAKE THIS THE ONE YOU ARE HAVING GRAYED OUT*/
-    color: #A1A1A1;
+    color: white;
+}
+.containerc-aside .leftc-aside h2:nth-child(1){
+    color: white;
+}
+.containerc-aside .leftc-aside h2:nth-child(1){
+    color: white;
 }
 .leftc-aside{
     width: 33.194444vw;
@@ -29,6 +39,8 @@ body{
     
 }
 .headingc-aside{
+    font-weight: var(--regular);
+    gap: 1vw;
     height: 10.41vw;
     display: flex;
     flex-direction: column;
@@ -45,17 +57,33 @@ aside.leftc-aside > h2{
 
 aside.leftc-aside .pricesc-aside{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
     width: 100%;
+    justify-content: space-between;
+    /* border: var(--border1); */
     height: 8.33333vw;
 }
+.pricesc-aside .flexing{
+    display: flex;
+}
+.pricesc-aside .flexing h3{
+    font-size: 1.5rem;
+    font-weight: var(--light);
+}
+
+
+
+
+
+
 .leftc-aside .order-summery h2{
     color: white !important; /*no idea wahts wrong with this here*/
     margin-top: 2vw;
-    margin-bottom: 2vw;
+    margin-bottom: 3vw;
 }
+.leftc-aside .order-summery{
 
+}
 .pricesc-aside h3:nth-child(even) {
     display: flex;
     justify-content: flex-end;
@@ -100,40 +128,63 @@ aside.leftc-aside hr{
 .bag-flexc-aside{
     display: flex;
     gap: 1.944vw;
+    width: 100%;
+    /* border: var(--border4); */
+}
+.your-bagc-aside{
+    width: 100%;
+    /* border: var(--border3); */
 }
 .your-bagc-aside h3{
-    color: white;
     font-size: 2rem;
-    margin-bottom: 1.527777vw;
+    font-weight: var(--semi-bold);
 }
-
 .your-bagc-aside img{
     width: 11.11111vw;
     height: fit-content;
 }
 
-.bag-flexc-aside .bag-infoc-aside{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    /* margin-left: 1.944vw; */
-}
-.bag-flexc-aside .bag-infoc-aside h4,
-.bag-flexc-aside .bag-infoc-aside h5{
-    font-size: 1.5rem;
-    width: 47%;
-}
 
-
-
-.flexing{
-    display: flex;
+.product-info{
     width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.flexing h3{
+.product-info h3,
+.product-info h4{
+    font-size: 1.5rem;
+}
+.product-info h4{
     font-weight: var(--light);
 }
+.product-info h3{
+    font-weight: var(--semi-bold);
+}
+.product-info .name{
+    display: flex;
+    width: 100%;
+    /* border: var(--border2); */
+    justify-content: space-between;
+}
+.product-info .size,
+.product-info .color,
+.product-info .quantity{
+    align-items: center;
+    display: flex;
+}
+.product-info .name h4,
+.product-info .size h3,
+.product-info .color h3,
+.product-info .quantity h3{
+    margin-left: 1vw;
+}
 
+.bag-flexc-aside a{
+    margin-top: 4vw;
+    text-decoration: underline;
+}
 
 
 
@@ -160,7 +211,7 @@ aside.leftc-aside hr{
 }
 @media (max-width: 723px){
     :root{
-        font-size: 12px;
+        font-size: 16px;
     }
    .containerc-aside{
     display: flex;
@@ -173,7 +224,14 @@ aside.leftc-aside hr{
     margin-right: 7.5vw;
     margin-left: 7.5vw;
    }
+
+   .headingc-aside{
+    height: 30vw;
+    border: var(--border2);
+   }
    .leftc-aside{
+    position: relative;
+    border: var(--border3);
     width: 100%;
     height: auto;
     margin-bottom: 2vw;
@@ -197,6 +255,63 @@ aside.leftc-aside hr{
         order: 1;
    }/* ONLY ORDER HERE */
 
+   .product-info .name h3{
+    font-size: 3rem;
+   }
+   .product-info .size h3,
+   .product-info .color h3,
+   .product-info .quantity h3,
+
+   .product-info .size h4,
+   .product-info .color h4,
+   .product-info .quantity h4,
+   
+   .product-info .name h4{
+    font-size: 2rem;
+   }
+
+   /* more ordering here */
+   .product-info .name {order: 1;}
+   .product-info .size {order: 3;}
+   .product-info .color {order: 2;}
+   .product-info .quantity{order: 4;}
+   .product-info a{order: 5;}
+
+   .product-info{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* border: var(--border3); */
+    height: 35vw;
+    margin-bottom: 15vw;
+   }
+   .product-info a{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 2rem;
+   }
+
+
+   /* even more ordering */
+   .leftc-aside .order-summery{
+    position: absolute;
+    bottom: 14%;
+    /* margin-bottom: 10vw;  MAKE SURE YOU KNOW WHAT YOU'RE DOING HERE*/
+   }
+   .leftc-aside .order-summery h2{
+    font-size: 3rem;
+   }
+   .leftc-aside .pricesc-aside{
+    margin-top: 10vw;
+    border: var(--border2);
+    gap: 2vw;
+    height: 20vw !important;
+    /* margin-bottom: 10vw; */
+   }
+
+
+
    .order-summery{
         margin-top: 3vw;
    }
@@ -212,12 +327,9 @@ aside.leftc-aside hr{
         margin-bottom: 10vw;
     }
    .headingc-aside h2{
-    /* border: 2px solid green; */
     font-size: 3rem;
    }
-   .bag-infoc-aside h4{
-    /* font-size: 55rem !important; */
-   }
+   
 }
 
    @media (max-width: 665px) {
@@ -228,6 +340,11 @@ aside.leftc-aside hr{
         margin-top: 10vw;
      }
     
+   }
+   @media (max-width: 613px){
+    .headingc-aside h2{
+        font-size: 2rem;
+    }
    }
    @media (max-width: 505px){
     .order-summery{
@@ -242,6 +359,36 @@ aside.leftc-aside hr{
         margin-top: 5vw;
     }
    }
+   @media (max-width: 500px){
+    .headingc-aside{display: none;}
+    .hidden{display: none;}
+
+    .leftc-aside .pricesc-aside {
+        margin-top: 20vw;
+        height: 40vw !important;
+        /* border: var(--border5); */
+    }
+    .leftc-aside .order-summery{
+        bottom: 24%;
+    }
+    .pricesc-aside .subtotal h3:nth-child(1),
+    .pricesc-aside .shipping h3:nth-child(1),
+    .pricesc-aside .sales h3:nth-child(1){
+        width: 100%;
+        border: var(--border1);
+    }
+   }
+@media (max-width: 466px){
+    .product-info{
+        border: var(--border2);
+        height: 50vw;
+    }
+    .leftc-aside .order-summery h2{
+        font-size: 2rem;
+    }
+}
+
+
 @media (max-width: 440px){
     .bag-infoc-aside h4:nth-child(3),
     .bag-infoc-aside h4:nth-child(4),
@@ -263,4 +410,8 @@ aside.leftc-aside hr{
         display: flex;
         right: 140%;
     }
+
+
+.product-info .name{}
+
 }

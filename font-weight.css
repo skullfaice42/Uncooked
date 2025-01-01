@@ -8,5 +8,11 @@
     --bold: 700;
     --extra-bold: 800;
     --black: 900;
-    --bb: 2px solid green;
+
+
+    --border1: 2px solid green;
+    --border2: 2px solid red;
+    --border3: 2px solid blue;
+    --border4: 5px solid aqua;
+    --border5: 20px solid white;
 }

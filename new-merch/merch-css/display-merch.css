@@ -9,7 +9,7 @@ body {
     background-color: #050133;
 }
 .hidden{ /*hides the image options*/
-    display: none;
+    /* display: none; */
     margin-top: 5vw; /*yeah i have no idea why this works lmao*/
 }
 .hiddenbn{
@@ -68,6 +68,7 @@ flex-direction: column;
 justify-content: space-between;
 /* flex-grow: 1; */
 gap: 1rem;
+height: 100%;
 }
 .two-cardsmh {
     width: 100%;
@@ -107,6 +108,7 @@ justify-content: space-between;
 
 
 .entire-sectionmh {
+    height: 92.9;
     margin-top: 1.736vw;
 display: flex;
 gap: 2rem;
@@ -133,7 +135,7 @@ object-fit: cover; /* Ensure the image scales proportionally */
 
 }
 .entire-sectionmh .mini-heromh{
-    height: 92.9vw;
+    height: 100%;
 }
 
 .one-clothingmh{
@@ -143,10 +145,30 @@ width: 23.055vw;
 }
 .white{
     display: flex;
+    position: relative;
     background-color: white;
     width: 23.055vw;
     height: 32.91vw;
+    transition: all .5s;
 }
+.sub-container img{
+    position: absolute;
+
+}
+
+.one-clothingmh .white img {
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+/* this ended up fixint the tote bag issue */
+    .one-clothingmh .white.sub-container img {
+        transition: all .5s;
+    }
+    .one-clothingmh .white.sub-container img:hover {
+        transform: scale(0.95);
+    }
+/* up to there */
 
 .one-clothingmh img {
     background-color: white;
@@ -162,14 +184,13 @@ width: 23.055vw;
 
 .one-clothingmh p {
     font-size: 1.5em;
+    font-weight: 300 !important;
 }
 
 /* container for changing the type of merch based on which button gets pressed */
 
 
-.white{
-    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
-}
+
 
 
 
@@ -198,52 +219,64 @@ width: 23.055vw;
 
 
         /* below is strictelly for the images */
+.one-clothingmh:has(.colorsmh input[type="radio"].one-onec:checked) .one-onei,
 .one-clothingmh:has(.colorsmh input[type="radio"].one-twoc:checked) .one-twoi,
 .one-clothingmh:has(.colorsmh input[type="radio"].one-threec:checked) .one-threei,
 .one-clothingmh:has(.colorsmh input[type="radio"].one-fourc:checked) .one-fouri,
 
 
+.one-clothingmh:has(.colorsmh input[type="radio"].two-onec:checked) .two-onei,
 .one-clothingmh:has(.colorsmh input[type="radio"].two-twoc:checked) .two-twoi,
 .one-clothingmh:has(.colorsmh input[type="radio"].two-threec:checked) .two-threei,
 .one-clothingmh:has(.colorsmh input[type="radio"].two-fourc:checked) .two-fouri,
 
+.one-clothingmh:has(.colorsmh input[type="radio"].three-onec:checked) .three-onei,
 .one-clothingmh:has(.colorsmh input[type="radio"].three-twoc:checked) .three-twoi,
 .one-clothingmh:has(.colorsmh input[type="radio"].three-threec:checked) .three-threei,
 .one-clothingmh:has(.colorsmh input[type="radio"].three-fourc:checked) .three-fouri,
 
 
+.one-clothingmh:has(.colorsmh input[type="radio"].four-onec:checked) .four-onei,
 .one-clothingmh:has(.colorsmh input[type="radio"].four-twoc:checked) .four-twoi,
 .one-clothingmh:has(.colorsmh input[type="radio"].four-threec:checked) .four-threei,
 .one-clothingmh:has(.colorsmh input[type="radio"].four-fourc:checked) .four-fouri,
 
+.one-clothingmh:has(.colorsmh input[type="radio"].five-onec:checked) .five-onei,
 .one-clothingmh:has(.colorsmh input[type="radio"].five-twoc:checked) .five-twoi,
 .one-clothingmh:has(.colorsmh input[type="radio"].five-threec:checked) .five-threei,
 .one-clothingmh:has(.colorsmh input[type="radio"].five-fourc:checked) .five-fouri,
 
+.one-clothingmh:has(.colorsmh input[type="radio"].six-onec:checked) .six-onei,
 .one-clothingmh:has(.colorsmh input[type="radio"].six-twoc:checked) .six-twoi,
 .one-clothingmh:has(.colorsmh input[type="radio"].six-threec:checked) .six-threei,
 .one-clothingmh:has(.colorsmh input[type="radio"].six-fourc:checked) .six-fouri,
 
+.one-clothingmh:has(.colorsmh input[type="radio"].seven-onec:checked) .seven-onei,
 .one-clothingmh:has(.colorsmh input[type="radio"].seven-twoc:checked) .seven-twoi,
 .one-clothingmh:has(.colorsmh input[type="radio"].seven-threec:checked) .seven-threei,
 .one-clothingmh:has(.colorsmh input[type="radio"].seven-fourc:checked) .seven-fouri,
 
+.one-clothingmh:has(.colorsmh input[type="radio"].eight-onec:checked) .eight-onei,
 .one-clothingmh:has(.colorsmh input[type="radio"].eight-twoc:checked) .eight-twoi,
 .one-clothingmh:has(.colorsmh input[type="radio"].eight-threec:checked) .eight-threei,
 .one-clothingmh:has(.colorsmh input[type="radio"].eight-fourc:checked) .eight-fouri,
 
+.one-clothingmh:has(.colorsmh input[type="radio"].nine-onec:checked) .nine-onei,
 .one-clothingmh:has(.colorsmh input[type="radio"].nine-twoc:checked) .nine-twoi,
 .one-clothingmh:has(.colorsmh input[type="radio"].nine-threec:checked) .nine-threei,
 .one-clothingmh:has(.colorsmh input[type="radio"].nine-fourc:checked) .nine-fouri,
 
+.one-clothingmh:has(.colorsmh input[type="radio"].ten-onec:checked) .ten-onei,
 .one-clothingmh:has(.colorsmh input[type="radio"].ten-twoc:checked) .ten-twoi,
 .one-clothingmh:has(.colorsmh input[type="radio"].ten-threec:checked) .ten-threei,
 .one-clothingmh:has(.colorsmh input[type="radio"].ten-fourc:checked) .ten-fouri,
 
+.one-clothingmh:has(.colorsmh input[type="radio"].eleven-onec:checked) .eleven-onei,
 .one-clothingmh:has(.colorsmh input[type="radio"].eleven-twoc:checked) .eleven-twoi,
 .one-clothingmh:has(.colorsmh input[type="radio"].eleven-threec:checked) .eleven-threei,
 .one-clothingmh:has(.colorsmh input[type="radio"].eleven-fourc:checked) .eleven-fouri,
 
+.one-clothingmh:has(.colorsmh input[type="radio"].twelve-onec:checked) .twelve-onei,
 .one-clothingmh:has(.colorsmh input[type="radio"].twelve-twoc:checked) .twelve-twoi,
 .one-clothingmh:has(.colorsmh input[type="radio"].twelve-threec:checked) .twelve-threei,
 .one-clothingmh:has(.colorsmh input[type="radio"].twelve-fourc:checked) .twelve-fouri
@@ -251,7 +284,8 @@ width: 23.055vw;
 
 
 {
-    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
 
@@ -421,17 +455,31 @@ width: 23.055vw;
 
 
 /* has to add a little bit logic to get the rest to work the way i want them to */
-.tote-bagextralogic{
-    margin-top: 0;
-    margin-left: 1vw;
-    height: 100%;
+
+.scale-down{
+
+    width: 100%;
+    display: flex;
+
+}
+
+.one-clothingmh .white img.ten-twoi,
+.one-clothingmh .white img.ten-threei,
+.one-clothingmh .white img.ten-fouri
+{
+    /* border: 2px solid pink; */
     scale: .95;
-    /* border: 2px solid green; */
+    height: 100%;
+    width: 80%;
+    /* margin-left: auto; */
+    margin-left: 2.3vw;
+    /* margin-right: auto; */
 }
 .ten-onei{
-    height: 100%;
-    margin-left: 1vw;
+    /* height: 100%; */
+    /* margin-left: 1vw; */
     scale: .95; /*eyeballed*/
+    /* border: 2px solid blue; */
 }
 .eleven-onei,
 .twelve-onei,
@@ -445,7 +493,7 @@ width: 23.055vw;
 }
 
 
-.colorsmh input[type="radio"] .two-twoi,
+/* .colorsmh input[type="radio"] .two-twoi,
 .colorsmh input[type="radio"] .two-threei,
 .colorsmh input[type="radio"] .two-fouri{
     opacity: 0;
@@ -455,7 +503,7 @@ width: 23.055vw;
 .one-clothingmh:has(.colorsmh input[type="radio"].two-fourc:checked) .two-fouri{
     animation-delay: 2s;
     opacity: 1;
-}
+} */
 
 
 
@@ -526,10 +574,14 @@ width: 23.055vw;
 
 
 
-
+/* 
 .white img:hover,
-.white a:hover{ /*the 'a' is nessesary to get the hovering over tote bag working*/
+.white a:hover{ /*the 'a' is nessesary to get the hovering over tote bag working
     scale: 0.95;
+} */
+
+.one-clothingmh .white img:hover {
+    scale: .95;
 }
 
 .colorsmh {
@@ -596,6 +648,7 @@ width: 23.055vw;
 .add-to-cartmh{
     margin-top: auto;
     width: 100%;
+    /* height: 7%; */
     font-size: 1.25em;
     border: #0073E6 3px solid;
     color: white;

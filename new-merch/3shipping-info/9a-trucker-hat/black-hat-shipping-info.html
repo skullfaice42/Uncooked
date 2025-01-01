@@ -125,15 +125,15 @@
             <h2>Order Summary</h2>
         </div>
         <div class="pricesc-aside">
-            <div class="flexing">
+            <div class="flexing subtotal">
                 <h3>Subtotal:</h3>
                 <h3>$15.00</h3>
             </div>
-            <div class="flexing">
+            <div class="flexing shipping">
                 <h3>Estimated Shipping:</h3>
                 <h3>Free</h3>
             </div>
-            <div class="flexing">
+            <div class="flexing sales">
                 <h3>Estimated Sales Tax:</h3>
                 <h3>-</h3>
             </div>
@@ -147,26 +147,33 @@
             <hr>
         </div>
         <div class="your-bagc-aside">
-            <h3>Your Bag (1)</h3>
+            <h3 class="hidden">Your Bag (1)</h3>
             <div class="bag-flexc-aside">
                 <img src="../../../new-merch/imgs/merch/hat/large-black-hat.jpg" alt="User chosen black hat">
-                <div class="bag-infoc-aside">
-                    <div class="flexing">
-                        <h4>Trucker Cap</h4>
-                        <h5>$15.00</h5>
+                
+                <div class="product-info">
+
+                    <div class="name">
+                        <h3>Trucker Hat</h3>
+                        <h4>$15:00</h4>
                     </div>
-                    <div class="flexing">
-                        <h5>Size:</h5>
-                        <h4>One Size Fits All</h4>
+
+                    <div class="size">
+                        <h4>Size:</h4>
+                        <h3>One Size Fits All</h3>
                     </div>
-                    <div class="flexing">
-                        <h5>Color:</h5>
-                        <h4>Black</h4>
+
+                    <div class="color">
+                        <h4>Color:</h4>
+                        <h3>Black</h3>
                     </div>
-                    <div class="flexing">
-                        <h5>Quantity:</h5>
-                        <h4>1</h4>
+
+                    <div class="quantity">
+                        <h4>Quantity:</h4>
+                        <h3>1</h3>
                     </div>
+
+                    <a href="../../1selection/9a-trucker-hat/hat-selection-black.html">REMOVE</a>
                 </div>
             </div>
         </div>
@@ -176,7 +183,7 @@
         <h1>sigma</h1>
     </aside> -->
     <aside class="rightc-aside">
-        <h2>Step 1- Shipping Info</h2>
+        <h2 class="shipping">Step 1- Shipping Info</h2>
         <div class="half-full">
             <h3>First Name</h3>
             <h3>Last Name</h3>
@@ -243,7 +250,7 @@
 
         <!-- phone number below -->
         <div class="phone-container">
-            <input type="tel" id="phone" class="full base" placeholder="Mobile Number">
+            <input type="tel" id="phone" class="text-full whole" placeholder="Mobile Number">
         </div>
         <!-- end phone number -->
 
@@ -388,4 +395,11 @@
     });
     </script>
 
+
+
+<style>
+    .containerc-aside .leftc-aside h2:nth-child(1){ /*MAKE THIS THE ONE YOU ARE HAVING GRAYED OUT*/
+    color: #A1A1A1;
+}
+</style>
 </html>

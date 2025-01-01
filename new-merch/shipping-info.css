@@ -42,6 +42,15 @@ input{
     box-sizing: border-box; /*makes it to where when you click on the box, it wont shift*/
 }
 
+/* mobile number here */
+.phone-container input[type="tel"]{
+    width: 100%;
+    /* border: 10px solid green; */
+}
+.phone-container .whole{
+    width: 100%;
+}
+
 
 button.uni-button{
     margin-top: 3.472vw;
@@ -134,6 +143,18 @@ use .spacing.top to get that 22px gap */
         font-size: 1rem;
     }
 }
+@media (max-width: 496px){
+    .rightc-aside .shipping{
+        font-size: 2rem !important;
+    }
+    .name-boxes input::placeholder,
+    .full input::placeholder,
+    .phone-container input::placeholder
+    
+    {
+        font-size: 1.25rem !important;
+    }
+}
 
 
 @media (max-width: 466px){
@@ -141,7 +162,7 @@ use .spacing.top to get that 22px gap */
         height: 130vw;
     }
     .rightc-aside a{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .rightc-aside .uni-button{
         height: 10vw !important;
