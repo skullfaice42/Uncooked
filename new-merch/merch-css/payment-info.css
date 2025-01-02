@@ -1,3 +1,8 @@
+.containerc-aside .leftc-aside h2:nth-child(3){ /*MAKE THIS THE ONE YOU ARE HAVING GRAYED OUT*/
+    color: #A1A1A1;
+    }
+
+
 .height{
     height: 4.86111vw;
 }
@@ -5,7 +10,7 @@
 .right-side{
 width: 47.9166vw;
 height: 50.8333vw;
-border: white 3px solid;
+/* border: white 3px solid; */
 margin-left: 14.513vw;
 margin-right: 2.291vw;
 }
@@ -117,10 +122,7 @@ transition: all 0.3s ease;
 transform: scale(0.95);
 background-color: #005bb5;
 }
-.types-of-cards button:active{
-    /* scale: 0.9;
-    background-color: #004494; */
-}
+
 .types-of-cards button:focus{
     outline: 3px solid #80bfff;
 }
@@ -157,13 +159,6 @@ background-color: #005bb5;
     outline: 3px solid #80bfff;
 }
 
-/* .card-info:focus{
-    outline: 3px solid #80bfff; WHY WONT THIS WORK!!!!!! WHATEVER... FUTURE ME PROBLEM RIGHT THERE
-}
-
-.card-number input:focus {
-    outline: 3px solid #80bfff;
-} */
 
 .card-numbers{
     display: flex;
@@ -176,15 +171,56 @@ background-color: #005bb5;
 width: 100%;
 }
 .right-side{
-    height: 90vw;
+    height: 85vw;
+}
+
+.card-number-two input::placeholder,
+.cardholder-name-two input::placeholder,
+.card-numbers .month-two input::placeholder,
+.card-numbers .year-two input::placeholder,
+.card-numbers .cvv-two input::placeholder
+{
+    font-size: 1.5rem;
 }
 
 
-footer{
-    /* margin-top: 30vw; */
+.place-order button{
+    height: 5vw ;
+    /* border: var(--border1); */
 }
+
+
+}
+@media (max-width: 500px){
+    .right-side{
+        height: 90vw;
+    }
+    
+    .card-number-two input::placeholder,
+    .cardholder-name-two input::placeholder,
+    .card-numbers .month-two input::placeholder,
+    .card-numbers .year-two input::placeholder,
+    .card-numbers .cvv-two input::placeholder
+    {
+        font-size: 1.2rem;
+    }
+    
+    .card-number-two input,
+    .cardholder-name-two input,
+    .card-numbers .month-two input,
+    .card-numbers .year-two input,
+    .card-numbers .cvv-two input{
+        height: 7vw;
+    }
+
+    .place-order button{
+        height: 7vw;
+    }
 }
 @media (max-width: 440px){
+    .right-side{
+        height: 110vw;
+    }
     .year-two input{
        margin-top: 1.6vw;/*eyeballing it here chief*/
        margin-bottom: 1.6vw;

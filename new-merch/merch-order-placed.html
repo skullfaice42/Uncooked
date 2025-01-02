@@ -17,9 +17,9 @@
             box-sizing: border-box;
             font-family: 'Lexend Deca', sans-serif;
         }
-header{
-    margin-bottom: 15vw;
-}
+        header{
+            margin-bottom: 15vw;
+        }
         body {
             background-color: #050133;
             justify-content: center;
@@ -29,6 +29,7 @@ header{
 
         .container {
             position: relative;
+            display: flex;
             background-image: url('images/imgdump/galleryimgs/conformation-bg.png');
             background-size: cover;
             background-position: center;
@@ -36,12 +37,17 @@ header{
             justify-content: center;
             align-items: center;
         }
+        .container img.hero-img{
+            width: 100%;
+        }
 
         .box {
-            position: relative;
+            position: absolute;
             background-color: #003B76;
             width: 87.6388888vw;
             height: 38.1944vw;
+            /* left: 0; */
+            
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -92,6 +98,11 @@ header{
         .box a{
             color: white;
             text-decoration: none;
+        }
+        .box p{
+            border: 2px solid green;
+            width: 74vw;
+            text-align: center;
         }
         
     </style>
@@ -191,7 +202,12 @@ header{
                     </div>
             </div>     
     </header>
+
+
+
+
     <div class="container">
+        <img src="../new-merch/imgs/hero/thank-you-hero.png" alt="Thank you Hero Image" class="hero-img">
         <div class="box">
             <img src="../icons/icon.png" alt="Logo" class="icon">
             <h2>Thank You!</h2>
@@ -199,6 +215,11 @@ header{
             <a href="../index.html"><div class="lower-box">Continue Browsing <img src="../icons/arrow-right-exclusivity.png" alt="right arrow"> </div></a>
         </div>
     </div>
+
+
+
+
+
     <footer>
         <div class="accountrf">
             <div class="headerrf">

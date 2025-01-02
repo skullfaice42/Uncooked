@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../css/footer.css">
 
-    <link rel="stylesheet" href="merch-css/checkout-aside.css">
-    <link rel="stylesheet" href="merch-css/payment-info.css">
+    <link rel="stylesheet" href="merch-css/checkout-aside.css"> <!-- for the left side-->
+    <link rel="stylesheet" href="merch-css/payment-info.css"> <!-- for the right side-->
     <link rel="stylesheet" href="../css/universal.css">
+    <link rel="stylesheet" href="../font-weight.css">
     <script src="../nav.js"></script>
 </head>
 <body>
@@ -121,15 +122,15 @@
                 <h2>Order Summary</h2>
             </div>
             <div class="pricesc-aside">
-                <div class="flexing">
+                <div class="flexing subtotal">
                     <h3>Subtotal:</h3>
                     <h3>$15.00</h3>
                 </div>
-                <div class="flexing">
+                <div class="flexing shipping">
                     <h3>Estimated Shipping:</h3>
                     <h3>Free</h3>
                 </div>
-                <div class="flexing">
+                <div class="flexing sales">
                     <h3>Estimated Sales Tax:</h3>
                     <h3>-</h3>
                 </div>
@@ -143,26 +144,33 @@
                 <hr>
             </div>
             <div class="your-bagc-aside">
-                <h3>Your Bag (1)</h3>
+                <h3 class="hidden">Your Bag (1)</h3>
                 <div class="bag-flexc-aside">
-                    <img src="../new-merch/imgs/merch/hat/large-black-hat.jpg" alt="User chosen black hat">
-                    <div class="bag-infoc-aside">
-                        <div class="flexing">
-                            <h4>Trucker Cap</h4>
-                            <h5>$15.00</h5>
+                    <img src="../../../new-merch/imgs/merch/hat/large-black-hat.jpg" alt="User chosen black hat">
+                    
+                    <div class="product-info">
+    
+                        <div class="name">
+                            <h3>Trucker Hat</h3>
+                            <h4>$15:00</h4>
                         </div>
-                        <div class="flexing">
-                            <h5>Size:</h5>
-                            <h4>One Size Fits All</h4>
+    
+                        <div class="size">
+                            <h4>Size:</h4>
+                            <h3>One Size Fits All</h3>
                         </div>
-                        <div class="flexing">
-                            <h5>Color:</h5>
-                            <h4>Black</h4>
+    
+                        <div class="color">
+                            <h4>Color:</h4>
+                            <h3>Black</h3>
                         </div>
-                        <div class="flexing">
-                            <h5>Quantity:</h5>
-                            <h4>1</h4>
+    
+                        <div class="quantity">
+                            <h4>Quantity:</h4>
+                            <h3>1</h3>
                         </div>
+    
+                        <a href="../../1selection/9a-trucker-hat/hat-selection-black.html">REMOVE</a>
                     </div>
                 </div>
             </div>
@@ -173,37 +181,37 @@
             <div class="head">
                 <h2>Step 3- Payment Method</h2>
             </div>
-                <div class="types-of-cards">
+            <div class="types-of-cards">
                     
-                    <button class="credit-card height">Credit Card</button>
-                    <div class="two-cards">
-                        <button class="paypal height"><img src="../icons/paypal-icon.png" alt="Paypal venmo-icon"></button>
-                        <button class="venmo height"><img src="../icons/venmo-icon.png" alt="Venmo icon"></button>
+                <button class="credit-card height">Credit Card</button>
+                <div class="two-cards">
+                    <button class="paypal height"><img src="../icons/paypal-icon.png" alt="Paypal venmo-icon"></button>
+                    <button class="venmo height"><img src="../icons/venmo-icon.png" alt="Venmo icon"></button>
+                </div>
+                <div class="card-info">
+                    <div class="card-number">
+                        <h3>Card Number</h3>
+                        <input 
+                            type="text" 
+                            placeholder="4111 1111 1111 1111" 
+                            maxlength="19" 
+                            pattern=".{19}" 
+                            title="Please enter with spaces as well" 
+                            class="testing height"
+                        />
                     </div>
-                    <div class="card-info">
-                        <div class="card-number">
-                            <h3>Card Number</h3>
-                            <input 
-                                type="text" 
-                                placeholder="4111 1111 1111 1111" 
-                                maxlength="19" 
-                                pattern=".{19}" 
-                                title="Please enter with spaces as well" 
-                                class="testing height"
-                            />
-                        </div>
                         <!-- hidden by defalt -->
-                        <div class="card-number-two">
+                    <div class="card-number-two">
                             
-                            <input 
-                                type="text" 
-                                placeholder="Card Number" 
-                                maxlength="19" 
-                                pattern=".{19}" 
-                                title="Please enter with spaces as well" 
-                                class="height"
-                            />
-                        </div>
+                        <input 
+                            type="text" 
+                            placeholder="Card Number" 
+                            maxlength="19" 
+                            pattern=".{19}" 
+                            title="Please enter with spaces as well" 
+                            class="height"
+                        />
+                    </div>
                          <!--  -->
                     <div class="cardholder-name">
                         <h3>Cardholder Name</h3>
@@ -356,128 +364,4 @@
         </div>
     </footer>
 </body>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-    }
-     body{
-        color: white;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-    }
-    .containerc-aside{
-        margin-top: 8vw;
-    }
-    .container{
-        display: flex;
-    }
-    .left{
-        height: 56.736vw;
-        width: 33.1944vw;
-        background-color: black;
-        margin-left: 2.0833vw;
-        /* border: 3px rgb(62, 87, 5) solid; */
-    }
-    .left .steps h3,
-    .left .steps h4{
-        font-size: 2em;
-    }
-    .left .steps h4{
-        color: #A1A1A1;
-    }
-    .left .steps h2{
-        /* color: black; */
-        margin-top: 2.291vw;
-        margin-bottom: 3.0555vw;
-        font-size: 2em;
-    }
-    .subtotal .break{
-        font-size: 1.5em;
-        /* color: #ffffff; */
-    }
-    .break{
-        display: flex;
-        justify-content: space-between;
-    }
-    .total{
-        margin-top: 3.263vw;
-        border: 3px solid yellow;
-    }
-    .info{
-        border: 3px solid green;
-        width: 100%;
-    }
-    .info h2{
-        font-size: 2em;
-        margin-top: 1.5277vw;
-        margin-bottom: 1.5277vw;
-    }
-    .info .below{
-        border: 3px solid orange;
-    }
-    .total .total-price{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 1.527vw;
-        margin-bottom: 1.527vw;
-        font-size: 1.5em;
-    }
-    .below{ /*LMAO I WAS SO TIRED I WAS ADDING CSS TO ANOTHER FILE (made sure to fix it) LIKE IW AS EDITING AND WAS ALL LIKE 'bruv why wont this work?'*/
-        display: flex;
-        width: 100%;
-        height: 15.863vw;
-    }
-    .below img{
-        width: 11.111vw;
-        height: 100%;
-        border: red 3px solid;
-        object-fit: cover;
-    }
-
-    .content{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-    }
-    .content .trucker{
-        align-items: center;
-        display: flex;
-        /* width: 100%; */
-        justify-content: space-between;
-        border: 3px white solid;
-    }
-    .content h2, .content strong, .content a{
-        font-size: 2em;
-    }
-    .content a{
-        color: white;
-    }
-    .content .size,
-    .content .color,
-    .content .quantity{
-        display: flex;
-        align-items: center;
-    }
-    /* 
-    
-   
-   
-   
-   
-   
-   
-   
-   
-   */
-
-    
-/* future me, theres an error with spacing from credit card to payment method... i dont want to fix it rn :/ */
-
-@media (max-width: 723px){
-
-}
-</style>
 </html>

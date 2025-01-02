@@ -227,11 +227,11 @@ aside.leftc-aside hr{
 
    .headingc-aside{
     height: 30vw;
-    border: var(--border2);
+    /* border: var(--border2); */
    }
    .leftc-aside{
     position: relative;
-    border: var(--border3);
+    /* border: var(--border3); */
     width: 100%;
     height: auto;
     margin-bottom: 2vw;
@@ -304,7 +304,7 @@ aside.leftc-aside hr{
    }
    .leftc-aside .pricesc-aside{
     margin-top: 10vw;
-    border: var(--border2);
+    /* border: var(--border2); */
     gap: 2vw;
     height: 20vw !important;
     /* margin-bottom: 10vw; */
@@ -375,12 +375,12 @@ aside.leftc-aside hr{
     .pricesc-aside .shipping h3:nth-child(1),
     .pricesc-aside .sales h3:nth-child(1){
         width: 100%;
-        border: var(--border1);
+        /* border: var(--border1); */
     }
    }
 @media (max-width: 466px){
     .product-info{
-        border: var(--border2);
+        /* border: var(--border2); */
         height: 50vw;
     }
     .leftc-aside .order-summery h2{
@@ -412,6 +412,12 @@ aside.leftc-aside hr{
     }
 
 
-.product-info .name{}
+.product-info a{
+    top: 74%;
+}
+
+.product-info .name h3{
+    font-size: 2.5rem;
+}
 
 }
