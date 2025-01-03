@@ -14,7 +14,14 @@ input[type="radio"] {
     --background-color: #08006A;
     font-size: 16px;
 }
-
+header{
+    height: 6.9vw;
+    width: 100%;
+    background: linear-gradient(to bottom,#050133, rgba(0,0,0,0));
+    position: fixed;
+    z-index: 1;
+    margin-bottom: 7vw;
+}
 /* BODY */
 
 body{
@@ -27,35 +34,36 @@ body{
     overflow-y: auto;
 }
 
-header{
+.headerhhh{
     height: 6.9vw;
     width: 100%;
     background-color: #1e11ad; /*testing*/
     position: fixed;
 }
-.menu{
+.menuhhh{
     width: 100%;
     /* border: 2px solid white; */
     height: 100%;
     /* height: 100%; */
 }
-.menu .two-menu{
+.menuhhh .two-menuhhh{
     display: flex;
     width: 30%;
     height: 100%;
     /* border: 2px solid green; */
     margin-left: 1vw;
     align-items: center;
-    top: 0;
+    /* top: 2%; */
+    /* margin-top: 2%; */
     gap: 1vw;
 }
-.menu .two-menu img{
+.menuhhh .two-menuhhh img{
     
     width: 4.652vw;
     height: 3.125vw;
     /* border: 2px solid rgb(255, 0, 0); */
 }
-.menu .two-menu h2{
+.menuhhh .two-menuhhh h2{
     font-size: 3rem;
     /* border: 2px solid rgb(255, 0, 0); */
 }
@@ -63,7 +71,7 @@ header{
 
 
 
-.menu-content{
+.menu-contenthhh{
 
 position: fixed;
 background-color: #050133;
@@ -76,9 +84,9 @@ transition: all 0.3s;
 }
 
 
-.menu-content .lil-x img{
+.menu-contenthhh .lil-xhhh img{
     height: 3.680vw;
-    width: 30px; /*fix later*/
+    /* width: 30px;  */
     display: flex;
     /* margin-top: 10%; */
     padding-top: 4%; /*because idk whats up with it*/
@@ -86,47 +94,47 @@ transition: all 0.3s;
     transition: all 0.3s;
 }
 
-.headings{
+.headingshhh{
     display: flex;
     margin-left: 3.958vw;
     gap: 1.59vw;
     /* border: 2px solid blue; */
     align-items: center;
 }
-.headings h3{
+.headingshhh h3{
     font-size: 2rem;
 }
 
 
 
-input[type="checkbox"]#check:checked ~ .menu-content{
+input[type="checkbox"]#check:checked ~ .menu-contenthhh{
     transform: translateX(0%);
 }
-.headings img{
+.headingshhh img{
     height: 4.7vw;
 }
 
 /* functionality for all the buttons to work for the menu */
 
-.headings img, .more-content,
-.headings img, .more-content2,
-.headings img, .more-content3,
-.headings img, .more-content4,
-.headings img, .more-content5,
-.headings img, .more-content6,
-.headings img, .more-content7,
-.headings img, .more-content8{
+.headingshhh img, .more-contenthhh,
+.headingshhh img, .more-content2hhh,
+.headingshhh img, .more-content3hhh,
+.headingshhh img, .more-content4hhh,
+.headingshhh img, .more-content5hhh,
+.headingshhh img, .more-content6hhh,
+.headingshhh img, .more-content7hhh,
+.headingshhh img, .more-content8hhh{
     transition: all 0.3s;
 }
 
-.more-content,
-.more-content2,
-.more-content3,
-.more-content4,
-.more-content5,
-.more-content6,
-.more-content7,
-.more-content8{
+.more-contenthhh,
+.more-content2hhh,
+.more-content3hhh,
+.more-content4hhh,
+.more-content5hhh,
+.more-content6hhh,
+.more-content7hhh,
+.more-content8hhh{
     display: none;
     /* display: flex; */
     flex-direction: column;
@@ -134,28 +142,28 @@ input[type="checkbox"]#check:checked ~ .menu-content{
     /* transform: translateX(-25deg); */
 }
 
-input[type="checkbox"]#sub:checked ~ .more-content,
-input[type="checkbox"]#sub2:checked ~ .more-content2,
-input[type="checkbox"]#sub3:checked ~ .more-content3,
-input[type="checkbox"]#sub4:checked ~ .more-content4,
-input[type="checkbox"]#sub5:checked ~ .more-content5,
-input[type="checkbox"]#sub6:checked ~ .more-content6,
-input[type="checkbox"]#sub8:checked ~ .more-content8 {
+input[type="checkbox"]#sub:checked ~ .more-contenthhh,
+input[type="checkbox"]#sub2:checked ~ .more-content2hhh,
+input[type="checkbox"]#sub3:checked ~ .more-content3hhh,
+input[type="checkbox"]#sub4:checked ~ .more-content4hhh,
+input[type="checkbox"]#sub5:checked ~ .more-content5hhh,
+input[type="checkbox"]#sub6:checked ~ .more-content6hhh,
+input[type="checkbox"]#sub8:checked ~ .more-content8hhh {
     display: flex;
     gap: 2vw;
     /* transform: translateX(25deg); */
 }
-input[type="checkbox"]#sub:checked + label .headings img,
-input[type="checkbox"]#sub2:checked + label .headings img,
-input[type="checkbox"]#sub3:checked + label .headings img,
-input[type="checkbox"]#sub4:checked + label .headings img,
-input[type="checkbox"]#sub5:checked + label .headings img,
-input[type="checkbox"]#sub6:checked + label .headings img,
-input[type="checkbox"]#sub8:checked + label .headings img {
+input[type="checkbox"]#sub:checked + label .headingshhh img,
+input[type="checkbox"]#sub2:checked + label .headingshhh img,
+input[type="checkbox"]#sub3:checked + label .headingshhh img,
+input[type="checkbox"]#sub4:checked + label .headingshhh img,
+input[type="checkbox"]#sub5:checked + label .headingshhh img,
+input[type="checkbox"]#sub6:checked + label .headingshhh img,
+input[type="checkbox"]#sub8:checked + label .headingshhh img {
     transform: rotate(90deg);
 }
 
-.menu-content a{
+.menu-contenthhh a{
     color: white;
     text-decoration: none;
     font-weight: var(--semi-bold);
@@ -170,7 +178,7 @@ input[type="checkbox"]#sub8:checked + label .headings img {
 
 
 /* re-sizing the hero icon */
-.icon img{
+.iconhhh img{
     /* border: 2px solid black; */
     width: 7.152vw;
     position: absolute;
@@ -180,17 +188,18 @@ input[type="checkbox"]#sub8:checked + label .headings img {
 
 /* mag glass here */
 /* Magnifying glass icon */
-.aside-icons label[for="mag-glass"] img {
+.aside-iconshhh label[for="mag-glass"] img {
     width: 3.3vw;
     transition: all 0.3s;
 }
-.aside-icons{
+.aside-iconshhh{
     transition: all 1.3s;
+    /* margin-top: 3vw; */
 }
 
 
 /* Search bar styling */
-.search-container{
+.search-containerhhh{
     margin-right: 7vw;
     width: 28.819vw;
     /* border: 2px solid red; */
@@ -218,7 +227,7 @@ input[type="text"]{
     color: white;
     /* padding-left: .69vw; */
 }
-.search-container hr{
+.search-containerhhh hr{
     color: white;
     height: 3px;
     margin-bottom: .56vw;
@@ -226,7 +235,7 @@ input[type="text"]{
     border: none;
 
 }
-.searching{
+.searchinghhh{
     /* display: none; */
     display: flex;
     flex-wrap: wrap;
@@ -237,7 +246,7 @@ input[type="text"]{
     background-color: white;
     gap: 2vw;
 }
-.searching a{
+.searchinghhh a{
     width: 100%;
     color: black;
     text-decoration: none;
@@ -246,12 +255,12 @@ input[type="text"]{
     /* transition: all 0.3s; */
 
 }
-.searching a:hover{
+.searchinghhh a:hover{
     color: #0073E6;
 }
 
 
-input[type="checkbox"]#mag-glass:checked ~ .search-container {
+input[type="checkbox"]#mag-glass:checked ~ .search-containerhhh {
     display: inline-block;
     height: 20vw;
 }
@@ -267,7 +276,7 @@ input[type="checkbox"]#mag-glass:checked ~ a{
     position: fixed;
     /* border: 2px solid red; */
     right: 1.5vw;
-    top: 1.4%;
+    top: 1%;
 }
 /* input[type="checkbox"]#mag-glass:checked ~ .searching{
     display: block;
@@ -278,8 +287,10 @@ input[type="checkbox"]#mag-glass:checked + label img {
 }
 
 /* Profile image styling */
-.aside-icons a img {
+.aside-iconshhh a img {
     width: 5.138vw;
+    transition: all .3s;
+    /* border: 2px solid green; */
 }
 
 
@@ -290,43 +301,35 @@ input[type="checkbox"]#mag-glass:checked + label img {
 
 
 
+/* New section */
 
-
-.aside-icons{
+.aside-iconshhh{
     display: flex;
     align-items: center;
     gap: 2vw;
     position: absolute;
     right: 1.5%;
-    top: 10%;
+    top: 2%;
     /* border: 2px solid black; */
 }
 
-
-
-
-
-
-
-
-
-
 /* below is the acessability stuff */
 
-.access-overlay{
+.access-overlayhhh{
     height: 65.20vw;/*temp*/
     /* height: 66.20vw; when testing*/
     width: 43.88vw;/*temp*/
     position: fixed;
     transform: translateX(230%);
+    margin-top: 10vw;
 }
 
-.access-icon{
+.access-iconhhh{
     position: fixed;
     right: 1.5vw; /*this should do it*/
     bottom: .95vw;
 }
-.access-icon img{
+.access-iconhhh img{
     width: 4.722vw;
     height: 4.722vw;
 }
@@ -347,30 +350,29 @@ input[type="checkbox"]#mag-glass:checked + label img {
     }
     
 }
-input[type="checkbox"]#access:checked ~ .access-overlay{
+input[type="checkbox"]#access:checked ~ .access-overlayhhh{
     /* transform: translateX(120%); */
     animation: bounceIn .9s ease-out forwards;
     /* transform: translateX(100%); testing */
 }
-input[type="checkbox"]#access:not(:checked) ~ .access-overlay{
+input[type="checkbox"]#access:not(:checked) ~ .access-overlayhhh{
     animation: outtaHere .6s ease-out forwards;
 }
 
-
-
 /* container for the blue-top */
-.blue-top{
+.blue-tophhh{
     width: 100%;
     height: 20%;
     background-color: blue;/*temp*/
+    
 }
-.blue-top img{
+.blue-tophhh img{
     margin-left: 1.5vw;
     margin-top: 1.5vw;
     width: 3.6vw;
     height: 3.6vw;
 }
-.blue-top h2{
+.blue-tophhh h2{
     font-size: 2rem;
     align-items: center;
     /* display: flex; */
@@ -379,10 +381,8 @@ input[type="checkbox"]#access:not(:checked) ~ .access-overlay{
     margin-top: 2.5vw;
 }
 
-
-
 /* container for the blue-bott */
-.blue-bott{
+.blue-botthhh{
     width: 100%;
     height: 80%;
     background-color: #0e0380; /*temp*/
@@ -390,13 +390,10 @@ input[type="checkbox"]#access:not(:checked) ~ .access-overlay{
 
 
 
-
-
-
 /* white overlay below */
 
 /* used for spacing */
-.mm{
+.mmhhh{
     margin-left: 1.458vw;
     margin-right: 2.5vw;
     justify-content: space-between;
@@ -405,30 +402,26 @@ input[type="checkbox"]#access:not(:checked) ~ .access-overlay{
     margin-bottom: 1.18vw;
     display: flex;
 }
-.mt{ /*yeah idk about this one chief*/
+.mthhh{ /*yeah idk about this one chief*/
     margin-left: .4vw;
     margin-right: 1.458vw;
 
 }
 
-
-
-
-
-.circle,
-.letter-sizing h2,
-.letter-sizing h3,
-.blind-users img,
-.keyboard-nav img,
-.reset-settings{
+.circlehhh,
+.letter-sizinghhh h2,
+.letter-sizinghhh h3,
+.blind-usershhh img,
+.keyboard-navhhh img,
+.reset-settingshhh{
         transition: all 0.3s;
     }
-.circle:hover,
-.letter-sizing h3:hover,
-.letter-sizing h2:hover,
-.blind-users img:hover,
-.keyboard-nav img:hover,
-.reset-settings:hover{
+.circlehhh:hover,
+.letter-sizinghhh h3:hover,
+.letter-sizinghhh h2:hover,
+.blind-usershhh img:hover,
+.keyboard-navhhh img:hover,
+.reset-settingshhh:hover{
         scale: .95;
     }
 
@@ -442,132 +435,161 @@ input[type="checkbox"]#access:not(:checked) ~ .access-overlay{
 
 
 
-.white-overlay{
-    position: fixed;
-    background-color: white;
-    /* height: 81.5%; */
-    height: 52vw;
-    width: 39.44vw;
-    z-index: 1;
-    top: 12vw;
-    color: black;
-    margin-left: 2.2vw;
-}
-.white-overlay hr{
-    /* margin-top: 10vw; */
-}
-.heading{
-    /* display: flex; */
-    /* border: 2px solid green; */
-    height: 4.58vw;
-}
-.english label[for="english"]{
-    display: flex;
-    align-items: center;
-    /* border: 2px solid red; */
-    width: fit-content;
-}
 
-    /* by defalt, what can you and cannot see USER FOR TESTING AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
-.basic-two{
-    display: none;
-}
-.basic{
-    /* display: none; */
-}
-.english img {
-    transition: transform 0.3s, border 0.3s;
-    transform: rotate(0deg); /* Default state */
-}
-
-.english input[type="checkbox"]:checked + label img {
-    transform: rotate(90deg);
-}
-.english h2{
-    font-weight: var(--light);
-}
-
-
-.white-overlay:has(input[type="checkbox"]#english:checked) .basic-two {
-    display: block;
-}
-.white-overlay:has(input[type="checkbox"]#english:checked) .basic{
-    display: none;
-}
-
-    /* styling for the circles */
-    .dark-mode{
+    .white-overlayhhh{
+        position: fixed;
+        background-color: white;
+        /* height: 81.5%; */
+        height: 52vw;
+        width: 39.44vw;
+        z-index: 1;
+        top: 12vw;
+        color: black;
+        margin-left: 2.2vw;
+    }
+    .white-overlayhhh hr{
+        /* margin-top: 10vw; */
+    }
+    .headinghhh{
         /* display: flex; */
+        /* border: 2px solid green; */
+        height: 4.58vw;
     }
-    .color-options{
+    .englishhhh label[for="english"]{
         display: flex;
-        gap: .9vw;
+        align-items: center;
+        /* border: 2px solid red; */
+        width: fit-content;
     }
     
-    .dark-mode .circle{
-        display: flex;
-        justify-items: center;
-        width: 3.8vw;
-        height: 3.8vw;
-        border-radius: 3.8vw;
-        background-color: black;
-        color: white;
-        box-sizing: border-box; /*it was this one*/
+        /* by defalt, what can you and cannot see USER FOR TESTING AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
+    .basic-twohhh{
+        display: none;
     }
-    .dark-mode .circle p{
-        font-size: 2rem;
-        font-weight: var(--bold);
-        margin-left: auto; /*i mean... it works dont it?*/
-        margin-right: auto;
-        margin-top: auto;
-        margin-bottom: auto;
+    .basichhh{
+        /* display: none; */
     }
-    .color-options .blue{
-        color: white;
-        background-color: #050133;
+    .englishhhh img {
+        transition: transform 0.3s, border 0.3s;
+        transform: rotate(0deg); /* Default state */
     }
-    .color-options .white{
-        background-color: white;
-        color: black;
-        border: 3px solid black;
+    
+    .englishhhh input[type="checkbox"]:checked + label img {
+        transform: rotate(90deg);
     }
-    .color-options .black{
-        background-color: black;
-        color: #FFE500;
+    .englishhhh h2{
+        font-weight: var(--light);
     }
     
     
+    .white-overlayhhh:has(input[type="checkbox"]#english:checked) .basic-twohhh {
+        display: block;
+    }
+    .white-overlayhhh:has(input[type="checkbox"]#english:checked) .basichhh{
+        display: none;
+    }
+    
+        /* styling for the circles */
+        .dark-modehhh{
+            /* display: flex; */
+        }
+        .color-optionshhh{
+            display: flex;
+            gap: .9vw;
+        }
+        
+        .dark-modehhh .circlehhh{
+            display: flex;
+            justify-items: center;
+            width: 3.8vw;
+            height: 3.8vw;
+            border-radius: 3.8vw;
+            background-color: black;
+            color: white;
+            box-sizing: border-box; /*it was this one*/
+        }
+        .dark-modehhh .circlehhh p{
+            font-size: 2rem;
+            font-weight: var(--bold);
+            margin-left: auto; /*i mean... it works dont it?*/
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        .color-optionshhh .bluehhh{
+            color: white;
+            background-color: #050133;
+        }
+        .color-optionshhh .whitehhh{
+            background-color: white;
+            color: black;
+            border: 3px solid black;
+        }
+        .color-optionshhh .blackhhh{
+            background-color: black;
+            color: #FFE500;
+        }
+        
+        
+    
+        body:has(input[type="radio"]#reverse:checked) *{
+            color: white;
+            background-color: #050133;
+        }
+
+        body:has(input[type="radio"]#reverse:checked) *{ /*may want to change with the real thing later... but idk*/
+            color: black;
+            background-color: white;
+        }
+        body:has(input[type="radio"]#reverse:checked) img{
+            mix-blend-mode: multiply;
+        
+        }
+
+        body:has(input[type="radio"]#yellow:checked) *{
+            background-color: black;
+            color: #FFE500;
+        }
+
+        
 
 
-    body:has(input[type="radio"]#reverse:checked) *{
-        color: white;
-        background-color: #050133;
-    }
-    body:has(input[type="radio"]#reverse:checked) *{ /*may want to change with the real thing later... but idk*/
-        color: black;
-        background-color: white;
-    }
-    body:has(input[type="radio"]#yellow:checked) *{
-        background-color: black;
-        color: #FFE500;
-    }
 
-    /* font sizing */
-    .font-sizing .letter-sizing{
+
+/* font sizing */
+    .font-sizinghhh .letter-sizinghhh{
         display: flex;
         align-items: center;
         gap: 2.36vw;
     }
-    .font-sizing .letter-sizing h3{
+
+
+
+
+    .font-sizinghhh .letter-sizinghhh h3{
         font-size: 2rem;
+        /* color: #0073E6; */
+        color: black;
+    }
+    .font-sizinghhh .letter-sizinghhh h4{
+        font-size: 2.5rem;
+        color: black;
+
+    }
+    .font-sizinghhh .letter-sizinghhh h2{
+        font-size: 3rem;
+        color: black;
+
+    }
+
+    #small-text:checked + label h3,
+    #regular-sizing:checked + label h4,
+    #larger-text:checked + label h2 {
         color: #0073E6;
     }
-    .font-sizing .letter-sizing h4{
-        font-size: 2.5rem;
-    }
-    .font-sizing .letter-sizing h2{
-        font-size: 3rem;
-    }
+
+
+
     
     body:has(input[type="radio"]#small-text:checked) *{
         font-size: 12px;
@@ -579,30 +601,27 @@ input[type="checkbox"]#access:not(:checked) ~ .access-overlay{
         font-size: 36px;
     }
 
-
-
-
-    /* blind users here (idk how to make it work :[) */
-.blind-users img,
-.keyboard-nav img{
+/* blind users here (idk how to make it work :[) */
+.blind-usershhh img,
+.keyboard-navhhh img{
     width: 3.819vw;
     height: 3.819vw;
 }
 
-.reset-settings h2{
+.reset-settingshhh h2{
     /* border: 2px solid green; */
     text-align: center;
     font-size: 2rem;
     background-color: #0073E6;
     color: white;
 }
-.reset-settings{
+.reset-settingshhh{
     margin-left: 1.041vw; /*yeah, this just wont work because i have no idea how to make it work without js*/
     margin-right: 1.041vw;
 }
 
 /* finial icon img here herhehrhehherhehhrhehrhehrherhherhehrhrehrhehrherhreherhrrehrherhe*/
-.accessibility-icon-again{
+.accessibility-icon-againhhh{
     /* border: 2px solid green; */
     display: flex;
     justify-content: flex-end;
@@ -610,32 +629,30 @@ input[type="checkbox"]#access:not(:checked) ~ .access-overlay{
     align-items: flex-end;
 }
 
-
-
 /* when the user clicks on the english icon (the lanuge part )*/
-.basic-two{
+.basic-twohhh{
     /* border: 2px solid green; */
     height: 80%;
 }
-.lan-switcher ul li{
+.lan-switcherhhh ul li{
     list-style: none;
     margin-left: 1.458vw;
     font-size: 1.5rem;
     
 }
-.lan-switcher ul{
+.lan-switcherhhh ul{
     display: flex;
     flex-direction: column;
     gap: .36vw; /*idk if this is good to go or not but to work with the 1440px by 810px i had to do the spacing like this :/*/
 }
-.lan-switcher{
+.lan-switcherhhh{
     /* border: 2px solid red; */
     height: 100%;
 }
 /* .lan-switcher ul li button[data-lang="en"]{
     color: #0073E6;
 } */
-.lan-switcher button{
+.lan-switcherhhh button{
     /* background-color: white; */
     background: none;
     box-shadow: none;
@@ -643,47 +660,76 @@ input[type="checkbox"]#access:not(:checked) ~ .access-overlay{
     text-decoration: none;
     transition: all 0.3s;
 }
-.lan-switcher button:hover{
+.lan-switcherhhh button:hover{
     scale: .99;
     color: #0073E6;
 }
-.english .lanh{
-    display: none;
+
+.lan-switcherhhh input[type="radio"]#en:checked{
+    color: #0073E6;
 }
-.lanhidden{
+
+.lan-switcherhhh input[type="radio"]#en:checked ~ li:nth-of-type(1) .language-btnhhh label {
+    color: #0073E6;
+}
+
+
+
+
+
+.englishhhh .lan2hhh,
+.englishhhh .lan3hhh,
+.englishhhh .lan4hhh,
+.englishhhh .lan5hhh,
+.englishhhh .lan6hhh,
+.englishhhh .lan7hhh,
+.englishhhh .lan8hhh,
+.englishhhh .lan9hhh,
+.englishhhh .lan10hhh,
+.englishhhh .lan11hhh,
+.englishhhh .lan12hhh{
     display: none;
 }
 
 
-body:has(input[type="radio"]#ru:checked) .lan2,
-body:has(input[type="radio"]#fr:checked) .lan3,
-body:has(input[type="radio"]#de:checked) .lan4,
-body:has(input[type="radio"]#es:checked) .lan5,
-body:has(input[type="radio"]#pt:checked) .lan6,
-body:has(input[type="radio"]#zh:checked) .lan7,
-body:has(input[type="radio"]#ja:checked) .lan8,
-body:has(input[type="radio"]#hi:checked) .lan9,
-body:has(input[type="radio"]#ar:checked) .lan10,
-body:has(input[type="radio"]#bn:checked) .lan11,
-body:has(input[type="radio"]#ur:checked) .lan12{
+
+.englishhhh .lanhhhh{
+    display: none;
+}
+.lanhiddenhhh{
+    display: none;
+}
+
+
+body:has(input[type="radio"]#ru:checked) .lan2hhh,
+body:has(input[type="radio"]#fr:checked) .lan3hhh,
+body:has(input[type="radio"]#de:checked) .lan4hhh,
+body:has(input[type="radio"]#es:checked) .lan5hhh,
+body:has(input[type="radio"]#pt:checked) .lan6hhh,
+body:has(input[type="radio"]#zh:checked) .lan7hhh,
+body:has(input[type="radio"]#ja:checked) .lan8hhh,
+body:has(input[type="radio"]#hi:checked) .lan9hhh,
+body:has(input[type="radio"]#ar:checked) .lan10hhh,
+body:has(input[type="radio"]#bn:checked) .lan11hhh,
+body:has(input[type="radio"]#ur:checked) .lan12hhh{
     display: block;
 }
 
-body:has(input[type="radio"]#ru:checked) .lan1,
-body:has(input[type="radio"]#fr:checked) .lan1,
-body:has(input[type="radio"]#de:checked) .lan1,
-body:has(input[type="radio"]#es:checked) .lan1,
-body:has(input[type="radio"]#pt:checked) .lan1,
-body:has(input[type="radio"]#zh:checked) .lan1,
-body:has(input[type="radio"]#ja:checked) .lan1,
-body:has(input[type="radio"]#hi:checked) .lan1,
-body:has(input[type="radio"]#ar:checked) .lan1,
-body:has(input[type="radio"]#bn:checked) .lan1,
-body:has(input[type="radio"]#ur:checked) .lan1{
+body:has(input[type="radio"]#ru:checked) .lan1hhh,
+body:has(input[type="radio"]#fr:checked) .lan1hhh,
+body:has(input[type="radio"]#de:checked) .lan1hhh,
+body:has(input[type="radio"]#es:checked) .lan1hhh,
+body:has(input[type="radio"]#pt:checked) .lan1hhh,
+body:has(input[type="radio"]#zh:checked) .lan1hhh,
+body:has(input[type="radio"]#ja:checked) .lan1hhh,
+body:has(input[type="radio"]#hi:checked) .lan1hhh,
+body:has(input[type="radio"]#ar:checked) .lan1hhh,
+body:has(input[type="radio"]#bn:checked) .lan1hhh,
+body:has(input[type="radio"]#ur:checked) .lan1hhh{
     display: none;
 }
 
-.access-again{
+.access-againhhh{
     display: flex;
     position: absolute;
     top: 90%;
@@ -693,35 +739,55 @@ body:has(input[type="radio"]#ur:checked) .lan1{
 }
 
 @media (max-width: 1440px){
-    .access-icon{
+    .access-iconhhh{
         /* border: 2px solid green; */
         bottom: 5%;
     }
-    button.language-btn{
+    button.language-btnhhh{
         font-size: 1.5rem;
     }
 }
 @media (max-width: 1145px){
-    button.language-btn{
+    button.language-btnhhh{
         font-size: 1.2rem;
     }
 }
 @media (max-width: 1024px){
-    .access-icon{
+    .access-iconhhh{
         bottom: 13%;
     }
-    .access-again img{
+    .access-againhhh img{
         /* border: 2px solid red; */
         height: 5vw;
     }
     :root{
         font-size: 16px;
     }
-    
+    .blue-botthhh{
+        height: 70vw;
+    }
+    .white-overlayhhh{
+        height: 70vw;
+    }
 
 }
+
+
+@media (max-width: 995px){
+    .menu-contenthhh{
+        border: var(--border2);
+    }
+    .blue-botthhh{
+        border: var(--border1);
+        height: 80vw;
+    }
+    .white-overlayhhh{
+        height: 80vw;
+    }
+}
+
 @media (max-width: 925px){
-    .lan-switcher ul{
+    .lan-switcherhhh ul{
         gap: .2vw;
     }
     /* button.language-btn{
@@ -729,45 +795,56 @@ body:has(input[type="radio"]#ur:checked) .lan1{
     } */
 }
 @media (max-width: 897px){
-    .menu-content{
+    .menu-contenthhh{
         width: 40vw;
     }
-    .lanhidden{
+    .lanhiddenhhh{
         display: block;
     }
-    .lancomputer{
+    .lancomputerhhh{
         display: none;
     }
 }
+
+/* @media (max-width:) */
+
+
 @media (max-width: 768px){
-    .access-icon{
+    .blue-botthhh{
+        border: var(--border1);
+        height: 100vw;
+    }
+    .white-overlayhhh{
+        height: 100vw;
+    }
+    .circlehhh p{
+        font-size: 1rem !important;
+    }
+}
+
+/* @media (max-width: 768px){
+    .access-iconhhh{
         bottom: 35%;
     }
     :root{
         font-size: 12px;
     }
-    .white-overlay{
+    .white-overlayhhh{
         height: 50vw;
     }
 }
 @media (max-width: 705px){
-    .lan-switcher ul{
+    .lan-switcherhhh ul{
         gap: .25vw;
     }
-    .menu-content .lil-x img{
+    .menu-contenthhh .lil-xhhh img{
         margin-left: 80%;
     }
-    
-
-
-
 }
 @media (max-width: 625px){
-    .dark-mode .circle p{
+    .dark-modehhh .circlehhh p{
         font-size: 1.5rem;
     }
-    
-
 }
 @media (max-width:600px){
     :root{
@@ -778,7 +855,8 @@ body:has(input[type="radio"]#ur:checked) .lan1{
     :root{
         font-size: 8px;
     }
-    .reset-settings h2{
+    .reset-settingshhh h2{
         font-size: 1.5rem;
     }
-}
+} */
+

@@ -8,8 +8,13 @@ footer{
     color: white;
     margin-top: 10vw;
     /* z-index: 112; */
+    gap: 3.6666vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 3.97727vw;
+    margin-right: 3.97727vw;
 }
-a{
+.hyperlinksrf a{
     text-decoration: none;
     transition: all 0.3s;
     color: white;
@@ -28,13 +33,7 @@ a{
 }
 
 
-footer{
-    gap: 3.6666vw;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 3.97727vw;
-    margin-right: 3.97727vw;
-}
+
 .accountrf, .socialrf{
     width: 16%;
 }

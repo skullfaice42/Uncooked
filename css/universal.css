@@ -244,6 +244,902 @@ header ul {
 }
 
 
+/* UPDATED HEADER GOES HERE */
+
+
+* { 
+    font-family: "Lexend Deca", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+input[type="checkbox"]{
+    display: none;
+}
+
+input[type="radio"] {
+    display: none;
+}
+:root{
+    --background-color: #08006A;
+    font-size: 16px;
+}
+header{
+    height: 6.9vw;
+    width: 100%;
+    background: linear-gradient(to bottom,#050133, rgba(0,0,0,0));
+    position: fixed;
+    z-index: 1;
+    margin-bottom: 7vw;
+}
+/* BODY */
+
+body{
+    margin:0;
+    padding: 0;
+    background-color: #050133;
+    color: white;
+    height: 100vw;
+    /* overflow-x: hidden; */
+    overflow-y: auto;
+}
+
+.headerhhh{
+    height: 6.9vw;
+    width: 100%;
+    background-color: #1e11ad; /*testing*/
+    position: fixed;
+}
+.menuhhh{
+    width: 100%;
+    /* border: 2px solid white; */
+    height: 100%;
+    /* height: 100%; */
+}
+.menuhhh .two-menuhhh{
+    display: flex;
+    width: 30%;
+    height: 100%;
+    /* border: 2px solid green; */
+    margin-left: 1vw;
+    align-items: center;
+    /* top: 2%; */
+    /* margin-top: 2%; */
+    gap: 1vw;
+}
+.menuhhh .two-menuhhh img{
+    
+    width: 4.652vw;
+    height: 3.125vw;
+    /* border: 2px solid rgb(255, 0, 0); */
+}
+.menuhhh .two-menuhhh h2{
+    font-size: 3rem;
+    /* border: 2px solid rgb(255, 0, 0); */
+}
+
+
+
+
+.menu-contenthhh{
+
+position: fixed;
+background-color: #050133;
+transform: translateX(-110%);
+overflow-y: auto;
+height: 68.75vh; /*was going to try and experement with width = fit content but Itzel dident say anything about it*/
+overflow-x: hidden;
+width: 35.416vw;
+transition: all 0.3s;
+}
+
+
+.menu-contenthhh .lil-xhhh img{
+    height: 3.680vw;
+    /* width: 30px;  */
+    display: flex;
+    /* margin-top: 10%; */
+    padding-top: 4%; /*because idk whats up with it*/
+    margin-left: 90%;
+    transition: all 0.3s;
+}
+
+.headingshhh{
+    display: flex;
+    margin-left: 3.958vw;
+    gap: 1.59vw;
+    /* border: 2px solid blue; */
+    align-items: center;
+}
+.headingshhh h3{
+    font-size: 2rem;
+}
+
+
+
+input[type="checkbox"]#check:checked ~ .menu-contenthhh{
+    transform: translateX(0%);
+}
+.headingshhh img{
+    height: 4.7vw;
+}
+
+/* functionality for all the buttons to work for the menu */
+
+.headingshhh img, .more-contenthhh,
+.headingshhh img, .more-content2hhh,
+.headingshhh img, .more-content3hhh,
+.headingshhh img, .more-content4hhh,
+.headingshhh img, .more-content5hhh,
+.headingshhh img, .more-content6hhh,
+.headingshhh img, .more-content7hhh,
+.headingshhh img, .more-content8hhh{
+    transition: all 0.3s;
+}
+
+.more-contenthhh,
+.more-content2hhh,
+.more-content3hhh,
+.more-content4hhh,
+.more-content5hhh,
+.more-content6hhh,
+.more-content7hhh,
+.more-content8hhh{
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    margin-left: 25%;
+    /* transform: translateX(-25deg); */
+}
+
+input[type="checkbox"]#sub:checked ~ .more-contenthhh,
+input[type="checkbox"]#sub2:checked ~ .more-content2hhh,
+input[type="checkbox"]#sub3:checked ~ .more-content3hhh,
+input[type="checkbox"]#sub4:checked ~ .more-content4hhh,
+input[type="checkbox"]#sub5:checked ~ .more-content5hhh,
+input[type="checkbox"]#sub6:checked ~ .more-content6hhh,
+input[type="checkbox"]#sub8:checked ~ .more-content8hhh {
+    display: flex;
+    gap: 2vw;
+    /* transform: translateX(25deg); */
+}
+input[type="checkbox"]#sub:checked + label .headingshhh img,
+input[type="checkbox"]#sub2:checked + label .headingshhh img,
+input[type="checkbox"]#sub3:checked + label .headingshhh img,
+input[type="checkbox"]#sub4:checked + label .headingshhh img,
+input[type="checkbox"]#sub5:checked + label .headingshhh img,
+input[type="checkbox"]#sub6:checked + label .headingshhh img,
+input[type="checkbox"]#sub8:checked + label .headingshhh img {
+    transform: rotate(90deg);
+}
+
+.menu-contenthhh a{
+    color: white;
+    text-decoration: none;
+    font-weight: var(--semi-bold);
+    font-size: 1.75rem;
+}
+
+
+
+
+
+/* this part is for the three on the side... */
+
+
+/* re-sizing the hero icon */
+.iconhhh img{
+    /* border: 2px solid black; */
+    width: 7.152vw;
+    position: absolute;
+    left: 45%;
+    top: 0;
+}
+
+/* mag glass here */
+/* Magnifying glass icon */
+.aside-iconshhh label[for="mag-glass"] img {
+    width: 3.3vw;
+    transition: all 0.3s;
+}
+.aside-iconshhh{
+    transition: all 1.3s;
+    /* margin-top: 3vw; */
+}
+
+
+/* Search bar styling */
+.search-containerhhh{
+    margin-right: 7vw;
+    width: 28.819vw;
+    /* border: 2px solid red; */
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+#search-bar {
+    /* display: none; */
+    width: 100%;
+    height: 5vw;
+    /* border: 3px solid green; */
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+    font-size: 2.25rem;
+    background-color: transparent;
+    border: none;
+}
+input[type="text"]{
+    padding-left: .69vw;
+    color: white;
+}
+#search-bar::placeholder{
+    color: white;
+    /* padding-left: .69vw; */
+}
+.search-containerhhh hr{
+    color: white;
+    height: 3px;
+    margin-bottom: .56vw;
+    background-color: white;
+    border: none;
+
+}
+.searchinghhh{
+    /* display: none; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 10vw;
+    overflow-y: scroll;
+    color: black;
+    background-color: white;
+    gap: 2vw;
+}
+.searchinghhh a{
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    font-size: 2.25rem;
+    margin-left: .69vw;
+    /* transition: all 0.3s; */
+
+}
+.searchinghhh a:hover{
+    color: #0073E6;
+}
+
+
+input[type="checkbox"]#mag-glass:checked ~ .search-containerhhh {
+    display: inline-block;
+    height: 20vw;
+}
+input[type="checkbox"]#mag-glass:checked + label[for="mag-glass"]{
+    position: fixed;
+    top: 1.5vw; /*yeah, this could totally be wrong*/
+    
+    /* height: 20vw; */
+    /* border: 2px solid green; */
+    right: 38%;
+}
+input[type="checkbox"]#mag-glass:checked ~ a{
+    position: fixed;
+    /* border: 2px solid red; */
+    right: 1.5vw;
+    top: 1%;
+}
+/* input[type="checkbox"]#mag-glass:checked ~ .searching{
+    display: block;
+} */
+
+input[type="checkbox"]#mag-glass:checked + label img {
+    transform: translateX(0%);
+}
+
+/* Profile image styling */
+.aside-iconshhh a img {
+    width: 5.138vw;
+    transition: all .3s;
+    /* border: 2px solid green; */
+}
+
+
+
+
+
+
+
+
+
+/* New section */
+
+.aside-iconshhh{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    position: absolute;
+    right: 1.5%;
+    top: 2%;
+    /* border: 2px solid black; */
+}
+
+/* below is the acessability stuff */
+
+.access-overlayhhh{
+    height: 65.20vw;/*temp*/
+    /* height: 66.20vw; when testing*/
+    width: 43.88vw;/*temp*/
+    position: fixed;
+    transform: translateX(230%);
+    margin-top: 10vw;
+}
+
+.access-iconhhh{
+    position: fixed;
+    right: 1.5vw; /*this should do it*/
+    bottom: .95vw;
+}
+.access-iconhhh img{
+    width: 4.722vw;
+    height: 4.722vw;
+}
+@keyframes bounceIn {
+    0% {
+        transform: translateX(230%);
+    }
+    50% {
+        transform: translateX(125%);
+    }
+    100% {
+        transform: translateX(130%);
+    }
+}
+@keyframes outtaHere{
+    0%{
+        transform: translateX(130%);
+    }
+    
+}
+input[type="checkbox"]#access:checked ~ .access-overlayhhh{
+    /* transform: translateX(120%); */
+    animation: bounceIn .9s ease-out forwards;
+    /* transform: translateX(100%); testing */
+}
+input[type="checkbox"]#access:not(:checked) ~ .access-overlayhhh{
+    animation: outtaHere .6s ease-out forwards;
+}
+
+/* container for the blue-top */
+.blue-tophhh{
+    width: 100%;
+    height: 20%;
+    background-color: blue;/*temp*/
+    
+}
+.blue-tophhh img{
+    margin-left: 1.5vw;
+    margin-top: 1.5vw;
+    width: 3.6vw;
+    height: 3.6vw;
+}
+.blue-tophhh h2{
+    font-size: 2rem;
+    align-items: center;
+    /* display: flex; */
+    /* border: 2px solid red; */
+    text-align: center;
+    margin-top: 2.5vw;
+}
+
+/* container for the blue-bott */
+.blue-botthhh{
+    width: 100%;
+    height: 80%;
+    background-color: #0e0380; /*temp*/
+}
+
+
+
+/* white overlay below */
+
+/* used for spacing */
+.mmhhh{
+    margin-left: 1.458vw;
+    margin-right: 2.5vw;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.18vw;
+    margin-bottom: 1.18vw;
+    display: flex;
+}
+.mthhh{ /*yeah idk about this one chief*/
+    margin-left: .4vw;
+    margin-right: 1.458vw;
+
+}
+
+.circlehhh,
+.letter-sizinghhh h2,
+.letter-sizinghhh h3,
+.blind-usershhh img,
+.keyboard-navhhh img,
+.reset-settingshhh{
+        transition: all 0.3s;
+    }
+.circlehhh:hover,
+.letter-sizinghhh h3:hover,
+.letter-sizinghhh h2:hover,
+.blind-usershhh img:hover,
+.keyboard-navhhh img:hover,
+.reset-settingshhh:hover{
+        scale: .95;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .white-overlayhhh{
+        position: fixed;
+        background-color: white;
+        /* height: 81.5%; */
+        height: 52vw;
+        width: 39.44vw;
+        z-index: 1;
+        top: 12vw;
+        color: black;
+        margin-left: 2.2vw;
+    }
+    .white-overlayhhh hr{
+        /* margin-top: 10vw; */
+    }
+    .headinghhh{
+        /* display: flex; */
+        /* border: 2px solid green; */
+        height: 4.58vw;
+    }
+    .englishhhh label[for="english"]{
+        display: flex;
+        align-items: center;
+        /* border: 2px solid red; */
+        width: fit-content;
+    }
+    
+        /* by defalt, what can you and cannot see USER FOR TESTING AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
+    .basic-twohhh{
+        display: none;
+    }
+    .basichhh{
+        /* display: none; */
+    }
+    .englishhhh img {
+        transition: transform 0.3s, border 0.3s;
+        transform: rotate(0deg); /* Default state */
+    }
+    
+    .englishhhh input[type="checkbox"]:checked + label img {
+        transform: rotate(90deg);
+    }
+    .englishhhh h2{
+        font-weight: var(--light);
+    }
+    
+    
+    .white-overlayhhh:has(input[type="checkbox"]#english:checked) .basic-twohhh {
+        display: block;
+    }
+    .white-overlayhhh:has(input[type="checkbox"]#english:checked) .basichhh{
+        display: none;
+    }
+    
+        /* styling for the circles */
+        .dark-modehhh{
+            /* display: flex; */
+        }
+        .color-optionshhh{
+            display: flex;
+            gap: .9vw;
+        }
+        
+        .dark-modehhh .circlehhh{
+            display: flex;
+            justify-items: center;
+            width: 3.8vw;
+            height: 3.8vw;
+            border-radius: 3.8vw;
+            background-color: black;
+            color: white;
+            box-sizing: border-box; /*it was this one*/
+        }
+        .dark-modehhh .circlehhh p{
+            font-size: 2rem;
+            font-weight: var(--bold);
+            margin-left: auto; /*i mean... it works dont it?*/
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        .color-optionshhh .bluehhh{
+            color: white;
+            background-color: #050133;
+        }
+        .color-optionshhh .whitehhh{
+            background-color: white;
+            color: black;
+            border: 3px solid black;
+        }
+        .color-optionshhh .blackhhh{
+            background-color: black;
+            color: #FFE500;
+        }
+        
+        
+    
+        body:has(input[type="radio"]#reverse:checked) *{
+            color: white;
+            background-color: #050133;
+        }
+
+        body:has(input[type="radio"]#reverse:checked) *{ /*may want to change with the real thing later... but idk*/
+            color: black;
+            background-color: white;
+        }
+        body:has(input[type="radio"]#reverse:checked) img{
+            mix-blend-mode: multiply;
+        
+        }
+
+        body:has(input[type="radio"]#yellow:checked) *{
+            background-color: black;
+            color: #FFE500;
+        }
+
+        
+
+
+
+
+/* font sizing */
+    .font-sizinghhh .letter-sizinghhh{
+        display: flex;
+        align-items: center;
+        gap: 2.36vw;
+    }
+
+
+
+
+    .font-sizinghhh .letter-sizinghhh h3{
+        font-size: 2rem;
+        /* color: #0073E6; */
+        color: black;
+    }
+    .font-sizinghhh .letter-sizinghhh h4{
+        font-size: 2.5rem;
+        color: black;
+
+    }
+    .font-sizinghhh .letter-sizinghhh h2{
+        font-size: 3rem;
+        color: black;
+
+    }
+
+    #small-text:checked + label h3,
+    #regular-sizing:checked + label h4,
+    #larger-text:checked + label h2 {
+        color: #0073E6;
+    }
+
+
+
+    
+    body:has(input[type="radio"]#small-text:checked) *{
+        font-size: 12px;
+    }
+    body:has(input[type="radio"]#regular-sizing:checked) *{
+        font-size: 28px;
+    }
+    body:has(input[type="radio"]#larger-text:checked) *{
+        font-size: 36px;
+    }
+
+/* blind users here (idk how to make it work :[) */
+.blind-usershhh img,
+.keyboard-navhhh img{
+    width: 3.819vw;
+    height: 3.819vw;
+}
+
+.reset-settingshhh h2{
+    /* border: 2px solid green; */
+    text-align: center;
+    font-size: 2rem;
+    background-color: #0073E6;
+    color: white;
+}
+.reset-settingshhh{
+    margin-left: 1.041vw; /*yeah, this just wont work because i have no idea how to make it work without js*/
+    margin-right: 1.041vw;
+}
+
+/* finial icon img here herhehrhehherhehhrhehrhehrherhherhehrhrehrhehrherhreherhrrehrherhe*/
+.accessibility-icon-againhhh{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: flex-end;
+    height: 15vw;
+    align-items: flex-end;
+}
+
+/* when the user clicks on the english icon (the lanuge part )*/
+.basic-twohhh{
+    /* border: 2px solid green; */
+    height: 80%;
+}
+.lan-switcherhhh ul li{
+    list-style: none;
+    margin-left: 1.458vw;
+    font-size: 1.5rem;
+    
+}
+.lan-switcherhhh ul{
+    display: flex;
+    flex-direction: column;
+    gap: .36vw; /*idk if this is good to go or not but to work with the 1440px by 810px i had to do the spacing like this :/*/
+}
+.lan-switcherhhh{
+    /* border: 2px solid red; */
+    height: 100%;
+}
+/* .lan-switcher ul li button[data-lang="en"]{
+    color: #0073E6;
+} */
+.lan-switcherhhh button{
+    /* background-color: white; */
+    background: none;
+    box-shadow: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.lan-switcherhhh button:hover{
+    scale: .99;
+    color: #0073E6;
+}
+
+.lan-switcherhhh input[type="radio"]#en:checked{
+    color: #0073E6;
+}
+
+.lan-switcherhhh input[type="radio"]#en:checked ~ li:nth-of-type(1) .language-btnhhh label {
+    color: #0073E6;
+}
+
+
+
+
+
+.englishhhh .lan2hhh,
+.englishhhh .lan3hhh,
+.englishhhh .lan4hhh,
+.englishhhh .lan5hhh,
+.englishhhh .lan6hhh,
+.englishhhh .lan7hhh,
+.englishhhh .lan8hhh,
+.englishhhh .lan9hhh,
+.englishhhh .lan10hhh,
+.englishhhh .lan11hhh,
+.englishhhh .lan12hhh{
+    display: none;
+}
+
+
+
+.englishhhh .lanhhhh{
+    display: none;
+}
+.lanhiddenhhh{
+    display: none;
+}
+
+
+body:has(input[type="radio"]#ru:checked) .lan2hhh,
+body:has(input[type="radio"]#fr:checked) .lan3hhh,
+body:has(input[type="radio"]#de:checked) .lan4hhh,
+body:has(input[type="radio"]#es:checked) .lan5hhh,
+body:has(input[type="radio"]#pt:checked) .lan6hhh,
+body:has(input[type="radio"]#zh:checked) .lan7hhh,
+body:has(input[type="radio"]#ja:checked) .lan8hhh,
+body:has(input[type="radio"]#hi:checked) .lan9hhh,
+body:has(input[type="radio"]#ar:checked) .lan10hhh,
+body:has(input[type="radio"]#bn:checked) .lan11hhh,
+body:has(input[type="radio"]#ur:checked) .lan12hhh{
+    display: block;
+}
+
+body:has(input[type="radio"]#ru:checked) .lan1hhh,
+body:has(input[type="radio"]#fr:checked) .lan1hhh,
+body:has(input[type="radio"]#de:checked) .lan1hhh,
+body:has(input[type="radio"]#es:checked) .lan1hhh,
+body:has(input[type="radio"]#pt:checked) .lan1hhh,
+body:has(input[type="radio"]#zh:checked) .lan1hhh,
+body:has(input[type="radio"]#ja:checked) .lan1hhh,
+body:has(input[type="radio"]#hi:checked) .lan1hhh,
+body:has(input[type="radio"]#ar:checked) .lan1hhh,
+body:has(input[type="radio"]#bn:checked) .lan1hhh,
+body:has(input[type="radio"]#ur:checked) .lan1hhh{
+    display: none;
+}
+
+.access-againhhh{
+    display: flex;
+    position: absolute;
+    top: 90%;
+    right: 2%;
+    width: 4.722vw;
+    height: 4.722vw;
+}
+
+@media (max-width: 1440px){
+    .access-iconhhh{
+        /* border: 2px solid green; */
+        bottom: 5%;
+    }
+    button.language-btnhhh{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 1145px){
+    button.language-btnhhh{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 1024px){
+    .access-iconhhh{
+        bottom: 13%;
+    }
+    .access-againhhh img{
+        /* border: 2px solid red; */
+        height: 5vw;
+    }
+    :root{
+        font-size: 16px;
+    }
+    .blue-botthhh{
+        height: 70vw;
+    }
+    .white-overlayhhh{
+        height: 70vw;
+    }
+
+}
+
+
+@media (max-width: 995px){
+    .menu-contenthhh{
+        border: var(--border2);
+    }
+    .blue-botthhh{
+        border: var(--border1);
+        height: 80vw;
+    }
+    .white-overlayhhh{
+        height: 80vw;
+    }
+}
+
+@media (max-width: 925px){
+    .lan-switcherhhh ul{
+        gap: .2vw;
+    }
+    /* button.language-btn{
+        font-size: 1rem;
+    } */
+}
+@media (max-width: 897px){
+    .menu-contenthhh{
+        width: 40vw;
+    }
+    .lanhiddenhhh{
+        display: block;
+    }
+    .lancomputerhhh{
+        display: none;
+    }
+}
+
+/* @media (max-width:) */
+
+
+@media (max-width: 768px){
+    .blue-botthhh{
+        border: var(--border1);
+        height: 100vw;
+    }
+    .white-overlayhhh{
+        height: 100vw;
+    }
+    .circlehhh p{
+        font-size: 1rem !important;
+    }
+}
+
+/* @media (max-width: 768px){
+    .access-iconhhh{
+        bottom: 35%;
+    }
+    :root{
+        font-size: 12px;
+    }
+    .white-overlayhhh{
+        height: 50vw;
+    }
+}
+@media (max-width: 705px){
+    .lan-switcherhhh ul{
+        gap: .25vw;
+    }
+    .menu-contenthhh .lil-xhhh img{
+        margin-left: 80%;
+    }
+}
+@media (max-width: 625px){
+    .dark-modehhh .circlehhh p{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:600px){
+    :root{
+        font-size: 10px;
+    }
+}
+@media (max-width: 440px){
+    :root{
+        font-size: 8px;
+    }
+    .reset-settingshhh h2{
+        font-size: 1.5rem;
+    }
+} */
+
+/* END OF UPDATED HEADER */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="../styles.css">
         <link rel="stylesheet" href="../css/footer.css">
         <link rel="stylesheet" href="../css/universal.css">
-        <link rel="stylesheet" href="merch-css/display-merch.css">
+        <link rel="stylesheet" href="merch-css/display-merch.css"> <!--here-->
 
         <script src="../nav.js"></script>
         <style>
@@ -18,6 +18,12 @@
 header{
     margin-bottom: 10vw;
 }
+@media(max-width: 1382px){
+    .entire-sectionmh .mini-heromh{
+        width: 47.15vw;
+    }
+}
+
 
 
             .entire-sectionmh{
@@ -48,7 +54,7 @@ header{
     @media (max-width: 768px){
         .entire-sectionmh .one-clothingmh{ /*this is the only notable change because of the flex-direction im guessing*/
             /* border: 2px solid green; */
-            width: 49%;
+            /* width: 49%; */
         }
         .one-clothingmh img{
             width: 100%;
@@ -101,6 +107,114 @@ header{
 
 
         </style>
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    header{
+        margin-bottom: 10vw;
+    }
+.carasel .section-of-container button img{
+    background-color: black;
+}
+.bot-buttons a:nth-child(3) button{ /*change this to whatever the page is on to*/
+    background-color: #0073e67a;
+}
+@media (max-width: 768px){
+        .bit-o-textmh h2{
+            font-size: 2em;
+        }
+        .bit-o-textmh h3{
+            font-size: 1em;
+        }
+        .left{
+            display: none;
+        }
+        .mini-heromh{
+            display: none;
+        }
+        .two-cardsmh{
+            justify-content: space-around;
+        }
+        
+
+    }
+    @media (max-width: 768px){
+        .entire-sectionmh .one-clothingmh{ /*this is the only notable change because of the flex-direction im guessing*/
+            /* border: 2px solid green; */
+            /* width: 49%; */
+        }
+        .one-clothingmh img{
+            width: 100%;
+        }
+        .lil-sectionmh p,
+        .right-lsmh{
+            font-size: 1em;
+        }
+        .bit-o-textmh h2{
+            font-size: 1.5em;
+            width: 50%;
+        }
+        .bit-o-textmh h3{
+            font-size: 1em;
+            width: 60%;
+        }
+        .all-merch-buttonmh{
+            width: 100%;
+            height: 10.454vw;
+
+        }
+        .all-merch-buttonmh p{
+            font-size: .8em;
+        }
+        .one-clothingmh h3 {
+            font-size: 1.1em;
+            text-align: center;
+            align-self: center;
+            /* border: 2px solid red; */
+        }
+        .one-clothingmh p{
+            /* align-self: center; */
+            text-align: center;
+            font-size: 1em;
+            text-decoration: overline; /* using to sepperate them*/
+        }
+        .colorsmh{
+            /* border: 2px solid green; */
+            /* align-items: center; */
+            /* text-align: center; */
+            justify-content: center;
+            /* width: 49%; */
+        }
+        .one-clothingmh button{
+            font-size: 1em;
+        }
+        .one-clothingmh{
+            /* border: 2px solid green; */
+        }
+
+    }
+    @media (max-width: 606px){
+        /* .bot-buttons a{
+            height: 20vw;
+            width: 50%;
+        }
+        .bot-buttons{
+            gap: 2vw;
+            border: 2px solid green;
+
+        } */
+    }
+</style>
+
     </head>
 <body>
     

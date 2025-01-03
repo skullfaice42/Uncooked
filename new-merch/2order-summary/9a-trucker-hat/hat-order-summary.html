@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../../../css/universal.css">
     <link rel="stylesheet" href="../../merch-css/display-merch.css">
     <!-- <link rel="stylesheet" href="../../merch-css/hat.css"> -->
+     <link rel="stylesheet" href="../../merch-css/you-may-also-like.css">
     <link rel="stylesheet" href="../../../font-weight.css">
     <script src="../../../nav.js"></script>
 </head>
@@ -173,9 +174,9 @@
     </div>
     
 
-    <div class="carasel">
+
         
-        <div class="section-of-container">
+    <div class="section-of-container">
         <!-- THIS SECTION WILL LITERELLY BE JUST COPPIED AND PASTED FROM OTHERS 
             (THIS ONES FROM MERCH3-WOMEN.HTML) -->
         <!-- Custom circle buttons with input -->
@@ -441,57 +442,7 @@
         overflow: hidden;
     }
 
-    /* this ended up fixint the tote bag issue */
-    /* .one-clothingmh .white.sub-container img {
-        transition: transform 0.5s ease;
-    }
-
-
-    .one-clothingmh .white.sub-container img:hover {
-        transform: scale(0.95);
-    } */
-
-    .one-clothingmh .white img.ten-onei{
-        scale: .95;
-        bottom: 1.2%;
-        margin-left: .8%;
-    }
-    .one-clothingmh .white img.ten-twoi,
-    .one-clothingmh .white img.ten-threei,
-    .one-clothingmh .white img.ten-fouri
-    {
-        scale: .95;
-        bottom: 1%;
-    }
-    .one-clothingmh .white img{
-        transition: all 0.3s;
-    }
-    .section-of-container{
-        display: flex;
-        justify-content: space-between;
-    }
-/* .one-clothingmh .white img:hover{
-    scale: .95 !important;
-    border: var(--border1);
-} */
-
-/* .one-clothingmh a button.add-to-cartmh{
-    border: 2px solid green;
-} */
-
-/* .one-clothingmh a button.add-to-cartmh{
-    margin-top: auto !important;
-    width: 100% !important;
-    
-    font-size: 1.25em;
-    border: #0073E6 3px solid;
-    color: white;
-    background-color: transparent;
-    padding: 10px 20px;
-    cursor: pointer;
-    text-align: center;
-    transition: background-color 0.3s, color 0.3s, transform 0.2s ease-in-out;
-} */
+   
     .banner{
         display: flex;
         background-color: #003B76;
@@ -778,6 +729,15 @@
     }
 
 
+.add-to-cartmh{
+    width: 60%;
+}
+
+.one-clothingmh{
+    /* margin-right: auto; */
+    /* margin-left: auto; */
+}
+
 
 
 
@@ -917,14 +877,7 @@
         .arrow{
             display: none;
         }
-        .section-of-container{
-            /* border: 2px solid green; */
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            /* gap: 3vw; */
-        }
+        
         .one-clothingmh{
             /* border: 2px solid blueviolet; */
             width: 40%;
@@ -939,7 +892,7 @@
             font-size: 1.5em;
         }
         .add-to-cartmh{
-            display: flex;
+            /* display: flex; */
             justify-items: center;
             /* border: 8px solid black; */
             /* gap: 2vw; */
@@ -961,41 +914,7 @@
     .hat-options{
         display: none;
     }
-    @media (max-width: 1800px){
-        .info .hat h2,
-        .info .size2 h2,
-        .info .color h2,
-        .info .quantity h2{
-            font-size: .75em;
-        }
-    }
-    @media (max-width: 1564px){
-        .one-clothingmh h3{
-            font-size: 1.5em;
-        }
-    }
-    @media (max-width: 1450px){
-        .info .hat h2,
-        .info .size2 h2,
-        .info .color h2,
-        .info .quantity h2{
-            font-size: .50em;
-        }
-
-        .info .hat strong,
-        .info .size2 strong,
-        .info .color strong,
-        .info .quantity strong{
-            font-size: .50em;
-        }
-        
-        .info label{
-            font-size: .75em;
-            /* border: 2px solid green; */
-            text-align: left;
-            text-decoration: underline;
-        }
-    }
+    
     @media (max-width: 1029px){
         .one-clothingmh h3{
             font-size: 1em;
@@ -1015,12 +934,26 @@
         /* font-size: .5em; */
     }
     }
+    @media (max-width: 873px){
+        .banner h2{
+            font-size: 2rem;
+            /* height: 20vw; */
+        }
+        .banner2{
+            margin-top: 10vw;
+            height: 10vw;
+        }
+    }
     
     @media (max-width: 823px){
         .info .hat{
             width: 30vw;
         }
     }
+
+
+
+
     @media (max-width: 617px){
         .you-will-also-like h2{
             font-size: 1.5em;
@@ -1036,6 +969,21 @@
         }
     
     }
+
+@media(max-width: 689px){
+    .banner2{
+        margin-top: 15vw;
+    }
+}
+
+@media(max-width: 582px){
+    .banner h2{
+        font-size: 1.5rem;
+    }
+    .banner2{
+        margin-top: 20vw;
+    }
+}
     @media (max-width: 572px){
         .info .size2 h2{
             font-size: .4em;
@@ -1076,8 +1024,14 @@
     .info label .remove{
 font-size: .6em;
     }
-    @media (max-width: 496px){
-
+    @media (max-width: 473px){
+.banner2{
+    margin-top: 30vw;
+    
+}
+.right h2{
+    font-size: 1.5rem;
+}
     }
     @media (max-width: 464px){
         .you-will-also-like{
@@ -1145,5 +1099,5 @@ font-size: .6em;
         }
     }
 </style>
-</style>
+
 </html>

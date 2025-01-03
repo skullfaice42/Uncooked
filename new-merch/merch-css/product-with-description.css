@@ -1,0 +1,402 @@
+/* footer{
+        transform: translateX(-400%);
+    } */
+    .one-clothingmh button{
+        /* border: var(--border5); */
+        width: 23vw;
+     }
+     button.hiddenbn{
+        display: none;
+     }
+
+     .one-clothingmh .white .messedup{
+        top: 0;
+     }
+     .one-clothingmh .defalt-butt{
+        margin-top: 1.6vw;
+     }
+    
+    .hidden{
+        cursor: pointer;
+    }
+    .hats label{
+        /* background-color: black; */
+        transition: all 0.3s ease;
+    }
+    .hats label:hover{
+        scale: 0.99;
+    }
+    .hat-options{
+        display: none;
+    }
+
+
+
+
+
+
+
+
+.more-infohs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vw;
+}
+.more-infohs hr{
+    display: block;
+}
+
+    .more-infohs img{
+        width: 3.2vw;
+        /* justify-content: flex-end; */
+        align-self: flex-end;
+    }
+
+    input[type="radio"]{
+        /* display: none; */
+    }
+    .dropdown{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .dropdown h3{
+        font-size: 2rem;
+        font-weight: var(--regular);
+    }
+    .dropdown img{
+        width: 2vw;
+        transition: all 0.3s;
+    }
+
+    .more-infohs .info-on-merch{
+        margin-top: 2vw;
+        width: 100%;
+    }
+    .more-infohs .info-on-merch h3,
+    .offers p{
+        font-size: 1.5rem;
+        font-weight: var(--light);
+    }
+    .offers p{
+        width: 89%;
+    }
+    .info-on-merch .offers{
+        gap: 1.25vw;
+    }
+    .info-on-merch .offers{
+        display: flex;
+        align-items: center;
+        gap: 1.8vw;
+    }
+
+    .info-on-merch .offers{
+        margin-top: 1.25vw;
+    }
+    /* styling for the circle */
+        .offers .w-circle{
+            height: 1vw;
+            width: 1vw;
+            background-color: white;
+            border-radius: 1vw;
+        }
+
+
+    .more-infohs input[type="checkbox"]:checked + label .dropdown img{
+        rotate: -180deg;
+        /* scale: 2; */
+    }
+    .info-on-merch{
+        display: none;
+    }
+    .more-infohs input[type="checkbox"]#dbn1:checked ~ label .merch1,
+    .more-infohs input[type="checkbox"]#dbn2:checked ~ label .merch2,
+    .more-infohs input[type="checkbox"]#dbn3:checked ~ label .merch3,
+    .more-infohs input[type="checkbox"]#dbn4:checked ~ label .merch4,
+    .more-infohs input[type="checkbox"]#dbn5:checked ~ label .merch5{
+        display: block;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    @media (max-width: 1800px){
+        .info .hat h2,
+        .info .size2 h2,
+        .info .color h2,
+        .info .quantity h2{
+            font-size: .75em;
+        }
+    }
+    @media (max-width: 1564px){
+        .one-clothingmh h3{
+            font-size: 1.5em;
+        }
+    }
+    @media (max-width: 1450px){
+        .info .hat h2,
+        .info .size2 h2,
+        .info .color h2,
+        .info .quantity h2{
+            font-size: .50em;
+        }
+
+        .info .hat strong,
+        .info .size2 strong,
+        .info .color strong,
+        .info .quantity strong{
+            font-size: .50em;
+        }
+        
+        .info label{
+            font-size: .75em;
+            /* border: 2px solid green; */
+            text-align: left;
+            text-decoration: underline;
+        }
+    }
+    @media (max-width: 1029px){
+        .one-clothingmh h3{
+            font-size: 1em;
+        }
+        .one-clothingmh p{
+            font-size: .75em;
+        }
+    }
+    @media (max-width: 943px){
+    .overlay .your-bag h2,
+    #checkout-link{
+        font-size: .75em;
+    }
+    #checkout-link {
+        height: 25%;
+        /* background-color: black; */
+        /* font-size: .5em; */
+    }
+    }
+    @media (max-width: 903px){
+        .section-of-container{
+            margin-left: 0;
+        }
+        .size2{
+            /* border: 2px solid green; */
+            width: 30vw;
+        }
+        .one-clothingmh{
+            /* border: 20px solid black; */
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            /* align-self: center; */
+            justify-self: center;
+            width: 80%;
+        }
+        .container .left img{
+            width: 100%;
+            /* border: 20px solid green; */
+        }
+
+        .left {
+            width: 85.22727vw;
+            height: 86.8181vw;
+            overflow: hidden; /*not like this is going to do anything anaways*/
+        }
+
+        .left img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /*needs this so that i can crop the image*/
+            object-position: center;
+        }
+        .right .top-text:nth-child(1) h4{
+            font-size: 4em;
+        }
+        .right .top-text h3{
+            font-size: 3em;
+            /* border: 2px solid green; */
+            width: 80vw;
+        }
+        .right .top-text h4{
+            display: flex;
+        }
+        .right .top-text strong{
+            margin-left: 1vw;
+        }
+        .right .top-text:nth-child(1) h4{
+            /* background-color: black; */
+            font-size: 1.5em;
+        }
+
+        .four-imgs{
+            display: none;
+        }
+        
+
+        /* unhidden section */
+        .hat-options{
+            /* display: flex; */
+            /* align-items: center; */
+            display: flex;
+            width: 50%;
+            justify-content: space-between;
+            /* border: 2px solid green; */
+        }
+        .hat-options .circle{
+            width: 5vw;
+            height: 5vw;
+            border-radius: 5vw;
+            /* background-color: white; */
+            transition: all 0.3s ease;
+        }
+        .hat-options .circle:hover{
+            border: solid 2px white; /*i hope this works lol*/
+        }
+        .hat-options .black{
+            background-color: black;
+        }
+        .hat-options .white{
+            background-color: white;
+
+        }
+        .hat-options .blue{
+            background-color: #0D0B9D;
+        }
+        .hat-options .red{
+            background-color: #B81212;
+        }
+        /* unhidden section */
+        .overlay{
+            /* border: 2px solid green; */
+            width: 80vw;
+            height: 50vw;
+        }
+        .overlay .hats{
+            height: 30vw;
+        }
+        .overlay .hats img{
+            width: 54%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .arrow-left,
+        .arrow{
+            display: none;
+        }
+        .section-of-container{
+            /* border: 2px solid green; */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* gap: 3vw; */
+        }
+        .one-clothingmh{
+            /* border: 2px solid blueviolet; */
+            width: 40%;
+        }
+        .one-clothingmh img{
+            width: 100%;
+        }
+        .one-clothingmh h3{
+            font-size: 1.5em;
+        }
+        .one-clothingmh p{
+            font-size: 1.5em;
+        }
+        .add-to-cartmh{
+            display: flex;
+            justify-items: center;
+            /* border: 8px solid black; */
+            /* gap: 2vw; */
+            margin-bottom: 5vw;
+        }
+.more-infohs .info-on-merch h3{
+    font-size: 2rem;
+}
+.info-on-merch p{
+    font-size: 1.5rem;
+}
+
+    }
+    @media (max-width: 823px){
+        .info .hat{
+            width: 30vw;
+        }
+    }
+    @media (max-width: 617px){
+        .you-will-also-like h2{
+            font-size: 1.5em;
+        }
+        .cart{
+            width: 100%;
+        }
+        .hover{
+            /* border: 2px solid green; */
+            /* font-size: 1em; */
+            width: 100%;
+            /* background-color: black; */
+        }
+    
+    }
+    @media (max-width: 572px){
+        .info .size2 h2{
+            font-size: .4em;
+            /* border: 2px solid gold; */
+            width: 100%;
+
+        }
+    }
+    @media (max-width: 528px){
+        .cart input{
+            /* width: 2vw; */
+        }
+        .cart{
+            width: 100%;
+        }
+        .hover{
+            /* border: 2px solid green; */
+            /* font-size: 1em; */
+            width: 100%;
+            /* background-color: black; */
+        }
+        .size strong{
+            font-size: .5em;
+        }
+    }
+    @media (max-width: 511px){
+        .info .hat h2, .info .hat strong{
+            font-size: .38em;
+        }
+        .info .size2 h2{
+            font-size: .3em;
+        }
+    }
+    .info label .remove{
+font-size: .6em;
+    }
+    @media (max-width: 496px){
+
+    }
+    @media (max-width: 464px){
+        .you-will-also-like{
+            height: 12vw;
+            /* font */
+        }
+        .you-will-also-like h2{
+            font-size: 1.25em;
+        }
+    }
+    @media (max-width: 440px){
+        .more-infohs .dropdown img{
+            width: 5vw;
+        }
+    }

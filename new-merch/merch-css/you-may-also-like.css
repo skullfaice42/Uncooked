@@ -1,0 +1,57 @@
+/* fixing this pos */
+.section-of-container{
+    display: flex;
+    justify-content: space-between;
+}
+.one-clothingmh .white img.ten-onei{
+    scale: .95;
+    bottom: 1.2%;
+    margin-left: .8%;
+}
+.one-clothingmh .white img.ten-twoi,
+.one-clothingmh .white img.ten-threei,
+.one-clothingmh .white img.ten-fouri
+{
+    scale: .95;
+    bottom: 1%;
+}
+.one-clothingmh .white img{
+    transition: all 0.3s;
+}
+
+
+
+
+@media (max-width:903px){
+    .section-of-container{
+        margin-top: 2vw;
+        /* border: 2px solid green; */
+        margin-left: 10vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        /* gap: 3vw; */
+    }
+}
+
+
+
+@media (max-width: 692px){
+    .section-of-container .sub-container{
+        /* margin: 0; */
+        margin-left: 6vw;
+    }
+    .one-clothingmh button.hiddenbn{
+        margin-left: 7.2vw;
+    }
+}
+
+
+
+
+
+
+
+

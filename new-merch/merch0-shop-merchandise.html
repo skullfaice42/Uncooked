@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/universal.css">
+    <link rel="stylesheet" href="../font-weight.css">
     <script src="../nav.js"></script>
     
 </head>
@@ -118,31 +119,34 @@
     <div class="three-cards">
         <div class="card">
             <a href="merch2-man.html"> 
-                <div class="option">
+                <div class="option right">
                     <h2>Men</h2>
                     <img src="../icons/blue-right-arrow.png" alt="Right arrow" class="arrow">
                 </div>
-                <img src="../new-merch/imgs/hero/mens-tall.jpg" alt="Men Merch Image" class="sub-hero">
+                <a href=""><img src="../new-merch/imgs/hero/mens-tall.jpg" alt="Men Merch Image" class="sub-hero"></a>
+                <a href=""><img src="../new-merch/imgs/hero/third-man.png" alt="mobile mens img" class="mobile-img"></a>
             </a>
         </div>
 
         <div class="card">
             <a href="merch3-women.html"> 
-                <div class="option">
+                <div class="option left">
                     <h2>Women</h2>
                     <img src="../icons/blue-right-arrow.png" alt="Right arrow" class="arrow">
                 </div>
-                <img src="../new-merch/imgs/hero/women-tall.jpg" alt="Women Merch Image" class="sub-hero">
+                <a href=""><img src="../new-merch/imgs/hero/women-tall.jpg" alt="Women Merch Image" class="sub-hero"></a>
+                <a href=""><img src="../new-merch/imgs/hero/women-img.png" alt="mobile mens img" class="mobile-img"></a>
             </a>
         </div>
 
         <div class="card">
             <a href="merch4-accessories.html"> 
-                <div class="option">
+                <div class="option right">
                     <h2>Accessories</h2>
                     <img src="../icons/blue-right-arrow.png" alt="Right arrow" class="arrow">
                 </div>
-                <img src="../new-merch/imgs/hero/acessorsies-tall.jpg" alt="Acessories Merch Image" class="sub-hero">
+                <a href=""><img src="../new-merch/imgs/hero/acessorsies-tall.jpg" alt="Acessories Merch Image" class="sub-hero"></a>
+                <a href=""><img src="../new-merch/imgs/hero/third-accessories.png" alt="mobile mens img" class="mobile-img"></a>
             </a>
         </div>
     </div>
@@ -268,6 +272,13 @@
 
 
         <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .mobile-img{
+                display: none;
+            }
 
             .top-container {
                 position: relative;
@@ -324,9 +335,14 @@
                 margin-top: 1em;
                 font-weight: 600;
             }
+            .bit-o-text a p{
+                font-size: 2rem;
+                font-weight: var(--semibold);
+            }
             .bit-o-text img{
                 margin-left: 1.8055vw;
                 height: 4.513vw;
+                width: auto;
             }
             .bit-o-text a{
                 text-decoration: none;
@@ -336,6 +352,7 @@
                 color: #0073E6;
                 font-size: 2em;
                 background-color: white;
+                align-items: center;
             }
             .option{
                 display: flex;
@@ -376,11 +393,7 @@
             }
 
 
-            @media (max-width: 1944px){
-                .card .option h2{
-                    font-size: 1.5em;
-                }
-            }
+            
             @media (max-width: 1260px){
                 .three-cards {
                     /* display: flex; */
@@ -449,10 +462,54 @@
               .three-cards .card img{
                 height: 100%;
               }
+.top-container .bit-o-text img{
+    height: 6.513vw;
+}
+
+.sub-hero{
+    display: none;
+}
+.mobile-img{
+    display: block;
+}
+
+.card{
+    position: relative;
+}
+.card .option{
+    position: absolute;
+    background-color: transparent;
+    bottom: 50%;
+}
+.card .option img{
+    display: none;
+}
+.card img{
+    width: 100%;
+}
+.card .option h2{
+    font-size: 3rem;
+    color: white;
+}
+.card .right{
+    right: 7%;
+}
+.card .left{
+    left: 7%;
+}
+
+@media (max-width:685px){
+    .card .option h2{
+        font-size: 2rem;
+    }
+}
             }
             @media (max-width: 440px){
                 .bit-o-text a{
                     width: 45vw;
+                }
+                .bit-o-text a p{
+                    font-size: 1.5rem;
                 }
 
             }
