@@ -1173,7 +1173,7 @@ button.uni-button {
     background-color: #0073E6;
     color: white;
     border: none;
-    font-weight: bold; /* maybe */
+    /*font-weight: bold;  maybe */
     transition: all 0.3s ease;
     font-weight: var(--semi-bold);
 }
@@ -1186,5 +1186,37 @@ button.uni-button:hover {
 button.uni-button:focus {
     outline: 3px solid #80bfff;
 }
+
+
+
+/* OUTLINED BUTTON HERE */
+/* yes, i know its commented out but use that for the blue outlined button... 
+like on the merch page*/
+
+/* .add-to-cartmh2{
+    display: flex;
+    justify-self: center;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+    margin-top: auto;
+    width: 100%;
+    font-size: 1.25em;
+    border: #0073E6 3px solid;
+    color: white;
+    background-color: transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s ease-in-out;
+}
+.add-to-cartmh:hover {
+    background-color: #0073E6;
+    color: #050133;
+}
+
+.add-to-cartmh:active {
+    transform: scale(0.95);
+} */
 
 /* ends here */
