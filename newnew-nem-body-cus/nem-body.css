@@ -24,6 +24,7 @@ input[type=radio]{
     position: absolute;
     width: 65.972vw; /*because it looks stupid*/
     opacity: .1;
+    transition: all 0.3s;
 }
 
 
@@ -34,9 +35,9 @@ input[type=radio]{
 /* sub hero logic goes here */
 .sub-hero{
     display: flex;
-    position: absolute;
+    position: relative;
     top: 65%;      /*REMEMBER TO EDIT THIS WHEN JUST ABOUT DONE kek*/
-    width: 100%;
+    width: 80%; /*alter this too kek*/
     height: 12vw;
     border: var(--border5);
     justify-content: space-between;
@@ -58,14 +59,62 @@ input[type=radio]{
 
 
 /* below is testing if i get the idea on how to do it */
+.sub-hero{
+    /* position: relative; */
+}
+.sub-hero .sub img{
+    position: absolute;
+}
+.left-car #one:checked ~ img.b1,
+.left-car #two:checked ~ img.b2,
+.left-car #three:checked ~ img.b3,
+.left-car #four:checked ~ img.b4
 
+{
+    opacity: 1;
+}
 
-#one:checked ~ label {
-    opacity: .2;
+.sub img{
+    opacity: 0;
 }
 
 
-.hero .b5{
-    /* opacity: 1; */
+/* set by defalt... HERO */
+.hero input#one:checked ~ img.b1,    /*changes the hero based on the state of the sub... kinda*/
+.hero input#two:checked ~ img.b2,
+.hero input#three:checked ~ img.b3,
+.hero input#four:checked ~ img.b4,
+.hero input#five:checked ~ img.b5
+{
+    opacity: 1;
 }
 
+
+/* subs */
+.hero:has(#one:checked) ~ .sub-hero .sub1 .b1, /*makes that sub hidden when clicked*/
+.hero:has(#two:checked) ~ .sub-hero .sub2 .b2,
+.hero:has(#three:checked) ~ .sub-hero .sub3 .b3,
+.hero:has(#four:checked) ~ .sub-hero .sub4 .b4{
+    /* opacity: 0; */
+}
+.hero.hero:has(#one:checked) ~ .sub-hero .sub1 .b5,
+.hero.hero:has(#two:checked) ~ .sub-hero .sub2 .b4,
+.hero.hero:has(#three:checked) ~ .sub-hero .sub3 .b1,
+.hero.hero:has(#four:checked) ~ .sub-hero .sub4 .b2
+{
+    opacity: 1;
+}
+
+/* set by defalt..... SUBS */
+.sub1 .b1{
+    opacity: 1;
+}
+.sub2 .b2{
+    opacity: 1;
+}
+.sub3 .b3{
+    opacity: 1;
+}
+.sub4 .b4{
+    opacity: 1;
+}

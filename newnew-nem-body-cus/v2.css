@@ -1,0 +1,434 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 65vw;
+
+}
+input[type=checkbox]{
+    display: none;
+}
+
+
+/* left side */
+.left-cars{
+    height: 760px;
+    width: 66vw;
+    height: 65vw; /*origional was 65vw*/
+    border: var(--border2);
+}
+
+.left-cars .hero{
+    position: relative;
+    width: 100%;
+    height: 47vw; /*origional was 53*/
+    border: var(--border1);
+}
+.hero img{
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+}
+
+.left-cars .sub-hero{
+    width: 100%;
+    height: 12vw;
+    border: var(--border3);
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 1vw;
+    position: relative;
+
+}
+.sub-hero .option{
+    border: 2px solid yellow;
+    position: relative;
+    /* opacity: 0; */
+    width: 100%;
+    height: 100%;
+}
+.sub-hero .option img{
+    /* border: 3px solid white; */
+    width: 100%;
+    /* align-content: center; */
+    margin-left: auto;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.sub-hero .option{
+    transition: all 0.3s;
+}
+.sub-hero .option:hover{
+    scale: .95;
+}
+
+
+/* RED */
+#red-selector11:checked ~ .hero .r11,
+#red-selector12:checked ~ .hero .r12,
+#red-selector13:checked ~ .hero .r13,
+#red-selector14:checked ~ .hero .r14,
+#red-selector15:checked ~ .hero .r15,
+
+#red-selector21:checked ~ .hero .r21,
+#red-selector22:checked ~ .hero .r22,
+#red-selector23:checked ~ .hero .r23,
+#red-selector24:checked ~ .hero .r24,
+#red-selector25:checked ~ .hero .r25,
+
+#red-selector31:checked ~ .hero .r31,
+#red-selector32:checked ~ .hero .r32,
+#red-selector33:checked ~ .hero .r33,
+#red-selector34:checked ~ .hero .r34,
+#red-selector35:checked ~ .hero .r35,
+
+/* BLUE */
+#blue-selector11:checked ~ .hero .b11,
+#blue-selector12:checked ~ .hero .b12,
+#blue-selector13:checked ~ .hero .b13,
+#blue-selector14:checked ~ .hero .b14,
+#blue-selector15:checked ~ .hero .b15,
+
+#blue-selector21:checked ~ .hero .b21,
+#blue-selector22:checked ~ .hero .b22,
+#blue-selector23:checked ~ .hero .b23,
+#blue-selector24:checked ~ .hero .b24,
+#blue-selector25:checked ~ .hero .b25,
+
+#blue-selector31:checked ~ .hero .b31,
+#blue-selector32:checked ~ .hero .b32,
+#blue-selector33:checked ~ .hero .b33,
+#blue-selector34:checked ~ .hero .b34,
+#blue-selector35:checked ~ .hero .b35,
+
+/* GREEN */
+#green-selector11:checked ~ .hero .g11,
+#green-selector12:checked ~ .hero .g12,
+#green-selector13:checked ~ .hero .g13,
+#green-selector14:checked ~ .hero .g14,
+#green-selector15:checked ~ .hero .g15,
+
+#green-selector21:checked ~ .hero .g21,
+#green-selector22:checked ~ .hero .g22,
+#green-selector23:checked ~ .hero .g23,
+#green-selector24:checked ~ .hero .g24,
+#green-selector25:checked ~ .hero .g25,
+
+#green-selector31:checked ~ .hero .g31,
+#green-selector32:checked ~ .hero .g32,
+#green-selector33:checked ~ .hero .g33,
+#green-selector34:checked ~ .hero .g34,
+#green-selector35:checked ~ .hero .g35,
+
+/* SHADOW */
+#shadow-selector11:checked ~ .hero .s11,
+#shadow-selector12:checked ~ .hero .s12,
+#shadow-selector13:checked ~ .hero .s13,
+#shadow-selector14:checked ~ .hero .s14,
+#shadow-selector15:checked ~ .hero .s15,
+
+#shadow-selector21:checked ~ .hero .s21,
+#shadow-selector22:checked ~ .hero .s22,
+#shadow-selector23:checked ~ .hero .s23,
+#shadow-selector24:checked ~ .hero .s24,
+#shadow-selector25:checked ~ .hero .s25,
+
+#shadow-selector31:checked ~ .hero .s31,
+#shadow-selector32:checked ~ .hero .s32,
+#shadow-selector33:checked ~ .hero .s33,
+#shadow-selector34:checked ~ .hero .s34,
+#shadow-selector35:checked ~ .hero .s35
+{
+    opacity: 1;
+    /* scale: 2; */
+    z-index: 2;
+    transition: all 0.3s;
+}
+#red-selector2:checked ~.hero .r1,
+#red-selector3:checked ~.hero .r1,
+#red-selector4:checked ~.hero .r1,
+#red-selector5:checked ~.hero .r1{
+    /* opacity: 0;                     THIS IS UNESSESADY IF IM NOT EVEN ADDING A HERO TO BEGAIN WITH*/
+}
+
+
+
+
+
+/* right side */
+.gets-margin{
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+
+
+.right-selectors{
+    width: 33vw;
+    max-height: 100%;
+    overflow-y: scroll;
+    border: 2px solid green;
+    background-color: #003B76;
+}
+
+/* top text for right side here */
+        
+        .gets-margin .top-text h2{
+            font-size: 4rem;
+            font-weight: var(--bold);
+            margin-top: 1vw;
+        }
+        .gets-margin .top-text h3{
+            margin-top: 3vw;
+            margin-bottom: 1.8vw;
+        }
+        
+
+h3{ /*because theres too many that are the same*/
+    font-size: 2rem;
+    font-weight: var(--semi-bold);
+}
+
+/* colors with drop downs */
+
+    .color-arrow{
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid black;
+        height: 100%;
+        align-items: center;
+    }
+    .color-arrow img{
+        height: 2.5vw;
+    }
+    .color-widh-dropdown{
+        margin-top: 1vw;
+        border: var(--border2);
+        height: 4.7vw;
+        align-items: center;
+    }
+    .color-widh-dropdown hr{
+        margin-top: 1vw;
+    }
+h4{
+    font-size: 1.5rem;
+    font-weight: var(--light);
+}
+    .dropdown-content{
+        width: 100%;
+        height: 4.6vw;
+        margin-top: 1vw;
+        margin-bottom: 1.7vw;
+        gap: 1vw;
+    }
+    .dropdown-content .two-colors{
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+        display: flex;
+        gap: 1.5vw;
+        /* background-color: black; */
+        height: 6.9vw;
+        width: 100%;
+    }
+    .dropdown-content .two-colors .named-color{
+        border: 2px solid green;
+        width: 50%;
+        /* height: 100%; */
+    }
+    .two-colors .named-color .color{
+        height: 69%;
+        /* background-color: white;                       USED FOR TESTING*/
+    }
+    .named-color h4{
+        bottom: 0;
+        /* border: 2px solid green; */
+    }
+    /* changing colors for each read */
+        .named-color .r1{background-color: #B81212;}
+        .named-color .r2{background-color: #D73B2C;}
+        .named-color .r3{background-color: #BB2517;}
+        .named-color .r4{background-color: #940000;}
+        .named-color .r5{background-color: #5C1010;}
+        .named-color .r6{background-color: #560D0D;}
+
+        .named-color .b1{background-color: #7F88FF;}
+        .named-color .b2{background-color: #5C68F0;}
+        .named-color .b3{background-color: #4453EE;}
+        .named-color .b4{background-color: #2D3DEB;}
+        .named-color .b5{background-color: #1627E9;}
+        .named-color .b6{background-color: #1323D1;}
+
+        .named-color .g1{background-color: #ACDF87;}
+        .named-color .g2{background-color: #A4DE02;}
+        .named-color .g3{background-color: #68BB59;}
+        .named-color .g4{background-color: #76BA1B;}
+        .named-color .g5{background-color: #4C9A2A;}
+        .named-color .g6{background-color: #1E5631;}
+
+        .named-color .s1{background-color: #4F4F4F;}
+        .named-color .s2{background-color: #3E3E3E;}
+        .named-color .s3{background-color: #2D2D2D;}
+        .named-color .s4{background-color: #1B1B1B;}
+        .named-color .s5{background-color: #101010;}
+        .named-color .s6{background-color: #0C0C0C;}
+
+
+    /* functionality for on click displays */
+    .dropdown-content{
+        visibility: hidden;
+        opacity: 0; 
+        transition: all 0.3s;
+        height: 0;
+        margin: 0; /*this and height gets rid of the space... setting to op0 and vis hidden only
+        make the content visually not there... remember they still have height, padding, 
+        margin, width... those types of things*/
+    }
+    #red:checked ~ .dropdown-content.red,
+    #blue:checked ~ .dropdown-content.blue,
+    #green:checked ~ .dropdown-content.green,
+    #shadow:checked ~ .dropdown-content.shadow{
+        visibility: visible;
+        opacity: 1;
+        height: auto; /*allows for the box to expand upon being checked*/
+    }
+    #red:checked + label .color-arrow img,
+    #blue:checked + label .color-arrow img,
+    #green:checked + label .color-arrow img,
+    #shadow:checked + label .color-arrow img
+    {
+        rotate: -180deg;
+    }
+    .color-arrow img{
+        transition: all 0.3s;
+    }
+    .na{
+        transition: all.9s;
+        filter: brightness(.55);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        
+    }
+    .na::after{
+        /* content: "Color Unavailable"; */
+        font-size: 1.5rem;
+    }
+    .two-colors .strikethrough{
+        cursor:not-allowed;
+    }
+    .two-colors .strikethrough h4 {
+        text-decoration: line-through;
+        filter: brightness(.7); /*used for targeting that line through*/
+    }
+
+    /* below is getting the color to be toggled */
+    .available{
+        transition: all 0.3s;
+    }
+    .available:hover{
+        scale: .95;
+        border: 2px solid #0073E6;
+    }
+    .left-cars #red1:checked ~ .sub-hero .right-selectors .gets-margin .color-widh-dropdown .dropdown-content .two-colors .named-color .r1{
+        /* scale: .95; */
+    }
+
+    /* #red1:checked ~ .hero img.r1, */
+    #red1:checked ~ .sub-hero img.sub-r1,
+
+    /* #red2:checked ~ .hero img.r2, */
+    #red2:checked ~ .sub-hero img.sub-r2,
+
+    /* #red3:checked ~ .hero img.r3, */
+    #red3:checked ~ .sub-hero img.sub-r3,
+
+    /* #blue1:checked ~ .hero img.b1, */
+    #blue1:checked ~ .sub-hero img.sub-b1,
+
+    /* #blue2:checked ~ .hero img.b2, */
+    #blue2:checked ~ .sub-hero img.sub-b2,
+
+    /* #blue3:checked ~ .hero img.b3, */
+    #blue3:checked ~ .sub-hero img.sub-b3,
+
+    /* #green1:checked ~ .hero img.g1, */
+    #green1:checked ~ .sub-hero img.sub-g1,
+
+    /* #green2:checked ~ .hero img.g2, */
+    #green2:checked ~ .sub-hero img.sub-g2,
+
+    /* #green3:checked ~ .hero img.g3, */
+    #green3:checked ~ .sub-hero img.sub-g3,
+
+    /* #shadow1:checked ~ .hero img.s1, */
+    #shadow1:checked ~ .sub-hero img.sub-s1,
+
+    /* #shadow2:checked ~ .hero img.s2, */
+    #shadow2:checked ~ .sub-hero img.sub-s2,
+
+    /* #shadow3:checked ~ .hero img.s3, */
+    #shadow3:checked ~ .sub-hero img.sub-s3
+    {
+        opacity: 1;
+        z-index: 2; /*needs that here... but only for the subs*/
+    }
+
+
+
+    /* #red1:checked ~ .hero img.r1,      UNTILL I CAN FIGURE THIS OUT, IT WILL BE A PLACEHOLDER FOR THE TIME BEING
+    #red2:checked ~ .hero img.r2,
+    #red3:checked ~ .hero img.r3,
+    #blue1:checked ~ .hero img.b1,
+    #blue2:checked ~ .hero img.b2,
+    #blue3:checked ~ .hero img.b3,
+    #green1:checked ~ .hero img.g1,
+    #green2:checked ~ .hero img.g2,
+    #green3:checked ~ .hero img.g3,
+    #shadow1:checked ~ .hero img.s1,
+    #shadow2:checked ~ .hero img.s2,
+    #shadow3:checked ~ .hero img.s3{
+        opacity: 1;
+    } */
+
+
+
+
+    /* below is for keeping the button toggled, look like its toggled */
+    /* .left-cars #red1:checked ~ .sub-hero .right-selectors .gets-margin .color-widh-dropdown .dropdown-content .two-colors .named-color .r1 */
+    .container:has(#red1:checked) .right-selectors .r1,
+    .container:has(#red2:checked) .right-selectors .r2,
+    .container:has(#red3:checked) .right-selectors .r5, /*remember that r5 is the area... r3 is id... which is because we have 3 reds*/
+    
+    .container:has(#blue1:checked) .right-selectors .b1,
+    .container:has(#blue2:checked) .right-selectors .b2,
+    .container:has(#blue3:checked) .right-selectors .b5,
+
+    .container:has(#green1:checked) .right-selectors .g1,
+    .container:has(#green2:checked) .right-selectors .g2,
+    .container:has(#green3:checked) .right-selectors .g5,
+
+    .container:has(#shadow1:checked) .right-selectors .s1,
+    .container:has(#shadow2:checked) .right-selectors .s4,
+    .container:has(#shadow3:checked) .right-selectors .s6
+    {
+        scale: .95;
+        border: 2px solid #0073E6;
+    }
+
+
+    .option img{
+        transition: all 0.3s;
+    }
+    .option img:hover{
+        scale: .95;
+    }
+    
