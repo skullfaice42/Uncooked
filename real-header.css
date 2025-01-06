@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
 }
+
+.spacing{
+    height: 6.944vw;
+}
 input[type="checkbox"]{
     display: none;
 }
@@ -21,6 +25,12 @@ header{
     position: fixed;
     z-index: 1;
     margin-bottom: 7vw;
+    /* border: 20px solid white; */
+    /* padding-bottom: 10vw; */
+    z-index: 10; /*that way its on top of EVERYTHING*/
+    /* margin-bottom: vw; */
+    /* visibility: visible; */
+    /* display: block; */
 }
 /* BODY */
 
