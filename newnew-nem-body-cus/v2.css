@@ -2,18 +2,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
+    /* color: white; */
 }
-
+body{
+    /* overflow-x: s; */
+    /* width: 99vw; */
+}
 .container{
     display: flex;
+    /* flex-direction: column; */
     width: 100vw;
-    height: 58.5vw;
+    height: 55.6vw;
     top: 10vw;
 }
 
 input[type=checkbox]{
-    display: none;
+    /* display: none; */
+    /* display: block !important; */
+}
+input[type=radio]{
+    /* display: block !important; */
 }
 
 
@@ -21,16 +29,92 @@ input[type=checkbox]{
 .left-cars{
     height: 760px;
     width: 66vw;
-    height: 58.5vw; /*origional was 65vw*/
-    border: var(--border2);
+    height: 100%; /*origional was 65vw*/
+    /* border: var(--border2); */
 }
 
 .left-cars .hero{
     position: relative;
     width: 100%;
     height: 47vw; /*origional was 53*/
-    border: var(--border1);
+    transition: all 0.3s;
+    z-index: 1;
+    /* border: var(--border1); */
 }
+.left-cars{
+    position: relative;
+}
+
+/* container for zoom in */
+
+
+
+
+#zoom{
+    margin-left: 10vw; /*testing here*/
+}
+.zoom-in{
+    position: absolute;
+    bottom: 21%;
+    right: 1%;
+    /* scale: 2; */
+    z-index: 2;
+    height: 3.6vw;
+    width: 3.6vw;
+}
+#zoom:checked ~ .left-cars .hero{
+    scale: 1.3;
+    /* overflow: hidden; */
+    z-index: 2;
+    margin-left: 13vw;
+    margin-top: 3vw;
+
+}
+#zoom:checked ~ .left-cars .zoom-in .zoom-out{
+    z-index: 3;
+    scale: 2;
+    height: 3.6vw;
+    width: 3.6vw;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    margin-left: 20vw;
+    margin-top: 3vw;
+}
+.zoom-in .zoom-out{
+    opacity: 0;
+    margin-left: 24vw;
+    margin-top: 3vw;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    transition: all 0.5s;
+}
+
+#zoom:checked ~ .left-cars .sub-hero{
+    z-index: 1;/*kek im so smart*/
+    opacity: .5;
+    transition: all 0.3s;
+}
+#zoom:checked ~ .left-cars .zoom-in .zoom-in-two{
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+#zoom:checked ~ .right-selectors .color-widh-dropdown{
+    opacity: .5;
+}
+
+.zoom-in .zoom-in-two{
+    cursor: zoom-in;
+}
+.zoom-in .zoom-out{
+    cursor: zoom-out;
+}
+
+/* end container for zoom */
 .hero img{
     width: 100%;
     position: absolute;
@@ -38,17 +122,19 @@ input[type=checkbox]{
 }
 
 .left-cars .sub-hero{
+    margin-top: .29vw;
     width: 100%;
-    height: 12vw;
-    border: var(--border3);
+    height: 9vw;
+    /* border: var(--border3); */
     display: flex;
     /* justify-content: space-between; */
     gap: 1vw;
     position: relative;
+    /* justify-content: flex-end; */
 
 }
 .sub-hero .option{
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     position: relative;
     /* opacity: 0; */
     width: 100%;
@@ -176,16 +262,18 @@ input[type=checkbox]{
 .right-selectors{
     width: 33vw;
     max-height: 100%;
+    height: 100%;
+    /* height: 55.5vw; */
     overflow-y: scroll;
-    border: 2px solid green;
-    background-color: #003B76;
+    /* border: 2px solid green; */
+    /* background-color: #003B76; */ /*changed to nothing to make it look*/
     /* margin-top: 6.9vw; */
 }
 
 /* top text for right side here */
         
         .gets-margin .top-text h2{
-            font-size: 4rem;
+            font-size: 4rem !important;
             font-weight: var(--bold);
             margin-top: 1vw;
         }
@@ -217,6 +305,7 @@ input[type=checkbox]{
         /* border: var(--border2); */
         height: 4.7vw;
         align-items: center;
+        z-index: 0;
     }
     .container hr{
         margin-top: 1vw;
@@ -243,7 +332,7 @@ input[type=checkbox]{
         width: 100%;
     }
     .dropdown-content .two-colors .named-color{
-        border: 2px solid green;
+        /* border: 2px solid green; */
         width: 50%;
         /* height: 100%; */
     }
@@ -347,47 +436,117 @@ input[type=checkbox]{
         /* scale: .95; */
     }
 
-    /* #red1:checked ~ .hero img.r1, */
+    #red1:checked ~ .hero img.r14,
     #red1:checked ~ .sub-hero img.sub-r1,
 
-    /* #red2:checked ~ .hero img.r2, */
+    #red2:checked ~ .hero img.r24,
     #red2:checked ~ .sub-hero img.sub-r2,
 
-    /* #red3:checked ~ .hero img.r3, */
+    #red3:checked ~ .hero img.r34,
     #red3:checked ~ .sub-hero img.sub-r3,
 
-    /* #blue1:checked ~ .hero img.b1, */
+    #blue1:checked ~ .hero img.b14,
     #blue1:checked ~ .sub-hero img.sub-b1,
 
-    /* #blue2:checked ~ .hero img.b2, */
+    #blue2:checked ~ .hero img.b24,
     #blue2:checked ~ .sub-hero img.sub-b2,
 
-    /* #blue3:checked ~ .hero img.b3, */
+    #blue3:checked ~ .hero img.b34,
     #blue3:checked ~ .sub-hero img.sub-b3,
 
-    /* #green1:checked ~ .hero img.g1, */
+    #green1:checked ~ .hero img.g14,
     #green1:checked ~ .sub-hero img.sub-g1,
 
-    /* #green2:checked ~ .hero img.g2, */
+    #green2:checked ~ .hero img.g24,
     #green2:checked ~ .sub-hero img.sub-g2,
 
-    /* #green3:checked ~ .hero img.g3, */
+    #green3:checked ~ .hero img.g34,
     #green3:checked ~ .sub-hero img.sub-g3,
 
-    /* #shadow1:checked ~ .hero img.s1, */
+    #shadow1:checked ~ .hero img.s14,
     #shadow1:checked ~ .sub-hero img.sub-s1,
 
-    /* #shadow2:checked ~ .hero img.s2, */
+    #shadow2:checked ~ .hero img.s24,
     #shadow2:checked ~ .sub-hero img.sub-s2,
 
-    /* #shadow3:checked ~ .hero img.s3, */
+    #shadow3:checked ~ .hero img.s34,
     #shadow3:checked ~ .sub-hero img.sub-s3
     {
         opacity: 1;
         z-index: 2; /*needs that here... but only for the subs*/
     }
+    /* makes it to where when you select a sub, the hero image disapears meaning there wont be an overlay of that image */
+    #shadow-selector35:checked ~ .hero .s34,
+    #shadow-selector33:checked ~ .hero .s34,
+    #shadow-selector32:checked ~ .hero .s34,
+    #shadow-selector31:checked ~ .hero .s34,
 
+    #red-selector11:checked ~ .hero .r14,
+    #red-selector12:checked ~ .hero .r14,
+    #red-selector13:checked ~ .hero .r14,
+    #red-selector15:checked ~ .hero .r14,
 
+    #red-selector21:checked ~ .hero .r24,
+    #red-selector22:checked ~ .hero .r24,
+    #red-selector23:checked ~ .hero .r24,
+    #red-selector25:checked ~ .hero .r24,
+
+    #red-selector31:checked ~ .hero .r34,
+    #red-selector32:checked ~ .hero .r34,
+    #red-selector33:checked ~ .hero .r34,
+    #red-selector35:checked ~ .hero .r34,
+
+    #blue-selector11:checked ~ .hero .b14,
+    #blue-selector12:checked ~ .hero .b14,
+    #blue-selector13:checked ~ .hero .b14,
+    #blue-selector15:checked ~ .hero .b14,
+
+    #blue-selector21:checked ~ .hero .b24,
+    #blue-selector22:checked ~ .hero .b24,
+    #blue-selector23:checked ~ .hero .b24,
+    #blue-selector25:checked ~ .hero .b24,
+
+    #blue-selector31:checked ~ .hero .b34,
+    #blue-selector32:checked ~ .hero .b34,
+    #blue-selector33:checked ~ .hero .b34,
+    #blue-selector35:checked ~ .hero .b34,
+
+    #green-selector11:checked ~ .hero .g14,
+    #green-selector12:checked ~ .hero .g14,
+    #green-selector13:checked ~ .hero .g14,
+    #green-selector15:checked ~ .hero .g14,
+
+    #green-selector21:checked ~ .hero .g24,
+    #green-selector22:checked ~ .hero .g24,
+    #green-selector23:checked ~ .hero .g24,
+    #green-selector25:checked ~ .hero .g24,
+
+    #green-selector31:checked ~ .hero .g34,
+    #green-selector32:checked ~ .hero .g34,
+    #green-selector33:checked ~ .hero .g34,
+    #green-selector35:checked ~ .hero .g34,
+
+    #shadow-selector11:checked ~ .hero .s14,
+    #shadow-selector12:checked ~ .hero .s14,
+    #shadow-selector13:checked ~ .hero .s14,
+    #shadow-selector15:checked ~ .hero .s14,
+
+    #shadow-selector21:checked ~ .hero .s24,
+    #shadow-selector22:checked ~ .hero .s24,
+    #shadow-selector23:checked ~ .hero .s24,
+    #shadow-selector25:checked ~ .hero .s24,
+
+    #shadow-selector31:checked ~ .hero .s34,
+    #shadow-selector32:checked ~ .hero .s34,
+    #shadow-selector33:checked ~ .hero .s34,
+    #shadow-selector35:checked ~ .hero .s34
+    {
+        display: none;
+    }
+
+    /* #red2:checked ~ .hero img.r11{
+        opacity: 0;
+    } */
 
     /* #red1:checked ~ .hero img.r1,      UNTILL I CAN FIGURE THIS OUT, IT WILL BE A PLACEHOLDER FOR THE TIME BEING
     #red2:checked ~ .hero img.r2,
@@ -423,10 +582,32 @@ input[type=checkbox]{
 
     .container:has(#shadow1:checked) .right-selectors .s1,
     .container:has(#shadow2:checked) .right-selectors .s4,
-    .container:has(#shadow3:checked) .right-selectors .s6
+    .container:has(#shadow3:checked) .right-selectors .s6,
+
+    /* below is used for the interior */
+    .container:has(#itn-red1:checked) .right-selectors .r1,
+    .container:has(#itn-red2:checked) .right-selectors .r2,
+    .container:has(#itn-red3:checked) .right-selectors .r5,
+
+    .container:has(#itn-blue1:checked) .right-selectors .b1,
+    .container:has(#itn-blue2:checked) .right-selectors .b2,
+    .container:has(#itn-blue3:checked) .right-selectors .b5,
+
+    .container:has(#itn-green1:checked) .right-selectors .g1,
+    .container:has(#itn-green2:checked) .right-selectors .g2,
+    .container:has(#itn-green3:checked) .right-selectors .g5,
+
+    .container:has(#itn-shadow1:checked) .right-selectors .s1,
+    .container:has(#itn-shadow2:checked) .right-selectors .s4,
+    .container:has(#itn-shadow3:checked) .right-selectors .s6
+
+
+
+
+    
     {
         scale: .95;
-        border: 2px solid #0073E6;
+        border: 2px solid #0073E6; /*lets the user know its selected*/
     }
 
 
@@ -441,6 +622,7 @@ input[type=checkbox]{
 
     /* the the bottom buttons */
     .go-to-buttons{
+        /* height: 3vw; */
         gap: 1vw;
         display: flex;
         flex-direction: column;
@@ -450,6 +632,7 @@ input[type=checkbox]{
     }
     .go-to-buttons a{
         text-decoration: none;
+        color: white;
     }
     .go-to-buttons .but{
         display: flex;
@@ -464,7 +647,14 @@ input[type=checkbox]{
         font-weight: var(--semi-bold);
         
     }
+    /* .go-to-buttons .but1{
+        margin-top: 3vw;
+    }
     .go-to-buttons .but2{
+        margin-bottom: 2vw; /*got rid of this because i fixed it with the one below
+    } */
+    .go-to-buttons{
+        margin-top: 2vw;
         margin-bottom: 2vw;
     }
     .go-to-buttons .but:hover{
@@ -480,3 +670,242 @@ input[type=checkbox]{
     .go-to-buttons .but img{
         margin-right: 1vw;
     }
+
+
+
+
+
+
+/* media querries */
+
+@media(max-width: 1400px){
+    .color-arrow{
+        /* border: var(--border1); */
+        /* height: 7vw; */
+        margin-top: 5vw;
+    }
+}
+
+@media (max-width:1200px){
+    .go-to-buttons .but{
+        width: 20vw;
+    }
+}
+
+@media(max-width: 1086px){
+    .go-to-buttons .but1{
+        margin-top: 7vw;
+    }
+}
+/* the transition from desktop to mobile */
+
+@media (max-width: 1050px){
+    .container{
+        display: block; /*the woo meme*/
+        width: 100vw;
+    }
+    .left-cars{
+        /* border: var(--border1); */
+        /* width: 100%; */
+        width: 80%;
+        /* height: auto; */
+        /* margin-left: 5vw; */
+    }
+    .left-cars .hero{
+        margin-left: 10vw;
+    }
+    .left-cars .sub-hero{
+        margin-top: 20vw;
+        margin-left: 10vw;
+    }
+    .right-selectors{
+        margin-top: 25vw;
+        /* border: var(--border1); */
+        width: 100%;
+    }
+    footer{
+        margin-top: 90vw !important; /*getting it out of there*/
+        /* height: 4000px; */
+    }
+
+
+
+
+    /* container for zoom in */
+
+
+
+
+.zoom-in{
+    /* position: absolute; */
+    bottom: 9%;
+    right: -9%;
+    /* scale: 2; */
+    z-index: 2;
+    height: 3.6vw;
+    width: 3.6vw;
+}
+#zoom:checked ~ .left-cars .zoom-in .zoom-out{
+    z-index: 3;
+    scale: 2;
+    height: 3.6vw;
+    width: 3.6vw;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    margin-left: 15vw;
+    margin-top: 8vw;
+}
+.zoom-in .zoom-out{
+    opacity: 0;
+    margin-left: 24vw;
+    margin-top: 3vw;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    transition: all 0.5s;
+}
+
+
+
+/* end container for zoom */
+
+.color-arrow{
+    margin-top: 0;
+}
+.go-to-buttons .but{
+    margin: 0;
+    width: 30vw;
+
+}
+
+.color-widh-dropdown .dropdown-content{
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    /* border: var(--border3); */
+}
+}
+
+@media (max-width: 969px){
+    /* .color-arrow{
+        justify-content: center;
+        gap: 23vw;
+        width: ;
+    } */
+     .dropdown-content .two-colors{
+        height: 20vw;
+     }
+
+     /* figuring otu the sub-hero nanage */
+     .sub-hero{
+        gap: 32vw !important;
+        margin-left: 0;
+        overflow-x: scroll;
+        height: 30vw !important;
+        /* margin-bottom: 10vw; */
+
+     }
+     .sub-hero .option{
+        width: 30vw;
+        /* height: 20vw; */
+        /* height: auto; */
+        /* height: 40vw; */
+        /* border: var(--border2); */
+        /* gap: 10vw !important; */
+     }
+     .option img{
+        /* height: 100%; */
+        width: 27vw !important;
+     }
+
+     /* messing with the below colors */
+     .right-selectors{
+        margin-top: 40vw;
+        height: 100%;
+
+     }
+
+     footer{
+        margin-top: 100vw !important;
+     }
+     .go-to-buttons{
+        margin: 0;
+        /* border: 3px solid black; */
+        height: 30vw;
+     }
+}
+
+@media (max-width:645px){
+
+    /* zoom in  */
+    .zoom-in{
+        /* position: absolute; */
+        bottom: 9%;
+        right: -9%;
+        /* scale: 2; */
+        z-index: 2;
+        height: 3.6vw;
+        width: 3.6vw;
+    }
+    .zoom-in-two{
+        margin-left: -3vw;
+        margin-top: -21vw;
+    }
+    #zoom:checked ~ .left-cars .zoom-in .zoom-out{
+        margin-left: 15vw !important;
+        margin-top: 7vw;
+    }
+    .zoom-in .zoom-out{
+        margin-left: 18vw !important;
+        margin-top: 3vw;
+
+    }
+    /* zoom in  */
+}
+
+@media(max-width: 500px){
+    .zoom-in .zoom-in-two{
+        scale: .55;
+    }
+    #zoom:checked ~ .left-cars .zoom-in .zoom-out{
+        margin-left: 15vw !important;
+        margin-top: 4vw;
+    }
+}
+
+@media (max-width:440px){
+    .dropdown-content{
+        /* border: 2px solid white; */
+        margin-bottom: 10vw !important;
+    }
+    .go-to-buttons .but{
+        width: 50vw;
+    }
+}
+
+
+
+
+
+/* below is all for the interior page... notice how im not using 
+a whole new page for it... all im doing is replacing the varalbes 
+to make sure nothing <em>funny</em> happens*/
+
+#itn-red1:checked ~ .hero .itn-r1,
+#itn-red2:checked ~ .hero .itn-r2,
+#itn-red3:checked ~ .hero .itn-r3,
+
+#itn-blue1:checked ~ .hero .itn-b1,
+#itn-blue2:checked ~ .hero .itn-b2,
+#itn-blue3:checked ~ .hero .itn-b3,
+
+#itn-green1:checked ~ .hero .itn-g1,
+#itn-green2:checked ~ .hero .itn-g2,
+#itn-green3:checked ~ .hero .itn-g3,
+
+#itn-shadow1:checked ~ .hero .itn-s1,
+#itn-shadow2:checked ~ .hero .itn-s2,
+#itn-shadow3:checked ~ .hero .itn-s3
+{
+    opacity: 1;
+}
