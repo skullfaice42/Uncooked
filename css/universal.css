@@ -76,6 +76,7 @@ header ul {
 }
 #nav-ham-menu img{
     height: 3.125vw;
+    width: auto;
 }
 #nav-mag-glass img {
     height: 3.333vw;
@@ -841,13 +842,13 @@ input[type="checkbox"]#access:not(:checked) ~ .access-overlayhhh{
 
     
     body:has(input[type="radio"]#small-text:checked) *{
-        font-size: 12px;
+        font-size: .75rem;
     }
     body:has(input[type="radio"]#regular-sizing:checked) *{
-        font-size: 28px;
+        font-size: 1.75rem;
     }
     body:has(input[type="radio"]#larger-text:checked) *{
-        font-size: 36px;
+        font-size: 3rem;
     }
 
 /* blind users here (idk how to make it work :[) */
