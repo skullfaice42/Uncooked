@@ -1,17 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Lexend+Deca:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 * { 
     font-family: "Lexend Deca", sans-serif;
     margin: 0;
     padding: 0;
+    
 }
 
 .spacing{
     height: 6.944vw;
 }
-input[type="checkbox"]{
+header input[type="checkbox"]{
     display: none;
 }
 
-input[type="radio"] {
+header input[type="radio"] {
     display: none;
 }
 :root{
@@ -19,15 +22,15 @@ input[type="radio"] {
     font-size: 16px;
 }
 header{
-    height: 6.9vw;
-    width: 100%;
+    height: 6.944vw;
+    width: 100vw;
     background: linear-gradient(to bottom,#050133, rgba(0,0,0,0));
     position: fixed;
     z-index: 1;
     margin-bottom: 7vw;
     /* border: 20px solid white; */
     /* padding-bottom: 10vw; */
-    z-index: 10; /*that way its on top of EVERYTHING*/
+    z-index: 2; /*that way its on top of EVERYTHING*/
     /* margin-bottom: vw; */
     /* visibility: visible; */
     /* display: block; */
@@ -37,16 +40,16 @@ header{
 body{
     margin:0;
     padding: 0;
-    background-color: #050133;
+    background-color: grey;
     color: white;
-    height: 100vw;
+    height: 100vh;
     /* overflow-x: hidden; */
     overflow-y: auto;
 }
 
 .headerhhh{
-    height: 6.9vw;
-    width: 100%;
+    height: 6.944vw;
+    width: 100vw;
     background-color: #1e11ad; /*testing*/
     position: fixed;
 }
@@ -75,6 +78,7 @@ body{
 }
 .menuhhh .two-menuhhh h2{
     font-size: 3rem;
+    font-weight: var(--regular);
     /* border: 2px solid rgb(255, 0, 0); */
 }
 
@@ -326,12 +330,14 @@ input[type="checkbox"]#mag-glass:checked + label img {
 /* below is the acessability stuff */
 
 .access-overlayhhh{
-    height: 65.20vw;/*temp*/
+    height: 35vw;/*temp*/
     /* height: 66.20vw; when testing*/
+
     width: 43.88vw;/*temp*/
     position: fixed;
     transform: translateX(230%);
     margin-top: 10vw;
+    overflow: scroll;
 }
 
 .access-iconhhh{
@@ -348,10 +354,10 @@ input[type="checkbox"]#mag-glass:checked + label img {
         transform: translateX(230%);
     }
     50% {
-        transform: translateX(125%);
+        transform: translateX(124%);
     }
     100% {
-        transform: translateX(130%);
+        transform: translateX(125.5%);
     }
 }
 @keyframes outtaHere{
@@ -373,7 +379,7 @@ input[type="checkbox"]#access:not(:checked) ~ .access-overlayhhh{
 .blue-tophhh{
     width: 100%;
     height: 20%;
-    background-color: blue;/*temp*/
+    background-color: #050133;/*temp*/
     
 }
 .blue-tophhh img{
@@ -394,8 +400,8 @@ input[type="checkbox"]#access:not(:checked) ~ .access-overlayhhh{
 /* container for the blue-bott */
 .blue-botthhh{
     width: 100%;
-    height: 80%;
-    background-color: #0e0380; /*temp*/
+    height: 60vw;
+    background-color: #08006A; /*temp*/
 }
 
 
@@ -456,6 +462,7 @@ input[type="checkbox"]#access:not(:checked) ~ .access-overlayhhh{
         top: 12vw;
         color: black;
         margin-left: 2.2vw;
+        overflow-y: scroll;
     }
     .white-overlayhhh hr{
         /* margin-top: 10vw; */
@@ -785,10 +792,10 @@ body:has(input[type="radio"]#ur:checked) .lan1hhh{
 
 @media (max-width: 995px){
     .menu-contenthhh{
-        border: var(--border2);
+        /* border: var(--border2); */
     }
     .blue-botthhh{
-        border: var(--border1);
+        /* border: var(--border1); */
         height: 80vw;
     }
     .white-overlayhhh{
@@ -821,7 +828,7 @@ body:has(input[type="radio"]#ur:checked) .lan1hhh{
 
 @media (max-width: 768px){
     .blue-botthhh{
-        border: var(--border1);
+        /* border: var(--border1); */
         height: 100vw;
     }
     .white-overlayhhh{
@@ -869,4 +876,103 @@ body:has(input[type="radio"]#ur:checked) .lan1hhh{
         font-size: 1.5rem;
     }
 } */
+@media (max-width: 440px) {
 
+    header { 
+        height: 23.86363vw;
+        background: linear-gradient(to bottom,#050133, rgba(0,0,0,0));
+    }
+
+    .two-menuhhh h2 {
+        font-size: 1rem !important;
+        margin-left: 1vw;
+    }
+    .two-menuhhh img { 
+        height: 5.227272vw !important;
+        width: auto !important;
+        margin-left: 1vw;
+    }
+    .iconhhh a img {
+        margin-top: 5vw;
+        height: 13.1818vw;
+        width: auto;
+    }
+    
+    .profile-icon {
+        height: 7.04545vw;
+        width: auto !important;
+
+    }
+    .profile-cont { 
+        height: 7.04545vw;
+    }
+    .aside-iconshhh { 
+        margin-top: 7vw;
+    }
+    #magni-glass { 
+        height: 6.04545vw !important;
+        width: auto !important;
+        margin-top: 1.2vw;
+    }
+
+    .menu-contenthhh { 
+        z-index: 1;
+        width: 100vw;
+        height: 89.5vh;
+        padding-bottom: 5vw;
+    }
+
+    .headingshhh {
+        margin-left: 6vw;
+    }
+    .spaceee {
+        margin-top: 10vw;
+    }
+    .headingshhh img { 
+        height: 12vw;
+    }
+    .access-iconhhh img { 
+        height: 15vw;
+        width: auto;
+        margin-right: 1vw;
+        
+    }
+    .access-iconhhh{
+        position: fixed;
+        right: 0vw; /*this should do it*/
+        top: 0vw;
+        margin-top: 65vh;
+    }
+    [class^="more-content"] {
+        margin-left: 14vw;
+    }
+    .access-overlayhhh { 
+        width: 100vw;
+        height: 80vh;
+        overflow-x: hidden;
+        padding-bottom: 5vw;
+    }
+    @keyframes bounceIn {
+        0% {
+            transform: translateX(230%);
+        }
+        50% {
+            transform: translateX(-1%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }
+    @keyframes outtaHere{
+        0%{
+            transform: translateX(0%);
+        }
+        
+    }
+    .white-overlayhhh { 
+        padding-top: 2vw;
+        margin-top: 10vw;
+        width: 95vw;
+    }
+
+}

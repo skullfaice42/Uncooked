@@ -121,7 +121,7 @@ header ul {
     position: absolute;
     background-color: #050133;
 
-    z-index: 1000; /* Keeps it above other content */
+    z-index: 2; /* Keeps it above other content */
     transform: translateX(-100%); /* Hides it off-screen initially */
     transition: ease-in-out .4s; /* Smooth animation */
     margin-top: 6.944vw;
@@ -222,8 +222,24 @@ header ul {
 @media (max-width: 440px) {
     .topnav {
         height: 23.86363vw;
+        z-index: 2;
     }
+    .lil-x { 
+        margin: 0;
+        margin-left: 50vw; 
+    }
+    #the-x { 
+        height: 1
+    }
+    .ham-working {
 
+        z-index: 1;
+    }
+    .ham-working.active .lil-x {
+        margin: 0;
+        margin-left: 50vw; 
+
+    }
     #nav-menu {
         font-size: 1rem;
     }
@@ -241,7 +257,17 @@ header ul {
         height: 13.1818vw;
     }
 
-
+    .ham-working a, .ham-working p {
+        font-size: 1rem;
+    }
+    .ham-working { 
+        width: 100vw;
+        height: 100vh;
+    }
+    .ham-working.active  { 
+        width: 100vw;
+        height: 100vh;
+    }
 }
 
 
@@ -265,7 +291,7 @@ input[type="radio"] {
     font-size: 16px;
 }
 header{
-    height: 6.9vw;
+    height: 6.944vw;
     width: 100%;
     background: linear-gradient(to bottom,#050133, rgba(0,0,0,0));
     position: fixed;
