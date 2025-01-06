@@ -535,9 +535,6 @@
         font-size: 6px;
     }
 }
-@media (max-width: 600px) {
-
-}
 
 
 
@@ -552,9 +549,7 @@
     :root {
         font-size: 16px;
     }
-    * {
-        overflow-x: hidden;
-    }
+
     .hero-img-textcontent {
         margin-top: 70vw;
         width: 75.9090vw;
@@ -866,24 +861,24 @@
     }
 
     .merch-right .men-link {
-        background: url(../images/home/menmerch.jpg);
+        background: url(images/home/menmerch.jpg);
         width: 100vw;
         height: 29.545454vw;
     }
     .merch-right .women-link {
-        background-image: url(../images/home/womenmerch.jpg);
+        background-image: url(images/home/womenmerch.jpg);
         width: 100vw;
         height: 29.545454vw;
     }
     .merch-right .accessories-link {
-        background-image: url(../images/home/accessoriesmerch.jpg);
+        background-image: url(images/home/accessoriesmerch.jpg);
         width: 100vw;
         height: 29.545454vw;
     }
     .about-us { 
         height: 86.2045vw;
         width: 100vw;
-        background-image: url(../images/home/aboutusUX.jpg);
+        background-image: url(images/home/aboutusUX.jpg);
     }
     .about-us > img {
         display: none;

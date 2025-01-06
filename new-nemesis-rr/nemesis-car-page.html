@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nemesis Car Page</title>
-    <link rel="stylesheet" href="../css/universal.css">
-    <link rel="stylesheet" href="../css/footer.css">
     <link rel="icon" href="../icons/icon.png">
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/universal.css">
     <script src="../nav.js"></script>
+    <link rel="stylesheet" href="../css/nemesis-car-page.css">
 </head>
 <body>
     <!-- HEADER -->
@@ -22,7 +21,7 @@
             </ul>
     
             <ul class="topnav-mid">
-                <li  id="nav-tri-icon" ><a href="index.html"><img src="../icons/icon.png" ></a></li>
+                <li  id="nav-tri-icon" ><a href="../index.html"><img src="../icons/icon.png" ></a></li>
             </ul>
     
             <ul class="topnav-right">
@@ -120,12 +119,12 @@
 
         <div class="one">
             <h2>Max Speed</h2>
-            <p>2.8 sec</p>
+            <p>270+ mph</p>
         </div>
 
         <div class="one">
             <h2>0-60 mph</h2>
-            <p>270+ mph</p>
+            <p>2.8 sec</p>
         </div>
 
         <div class="one">
@@ -138,10 +137,10 @@
             <p>Twin Turbo</p>
         </div>
     </div>
-    <div class="top-lower">
+    <a href="#teleportme" class="top-lower">
         <p>Customize</p>
         <img src="../icons/right-arrow.png" alt="Right Facing Arrow">
-    </div>
+    </a>
 </div>
     <!-- closure for the top image -->
     <!-- closure for the top image -->
@@ -153,9 +152,9 @@
 <!-- carasel part -->
 <div class="carousel">
     <div class="carousel-images">
-      <img src="../new-nemesis-rr/imgs/secondary.png" alt="Black Nemesis Corner View">
-      <img src="../new-nemesis-rr/imgs/thirdary.png" alt="Black Nemesis Left Side">
-      <img src="../new-nemesis-rr/imgs/fourthdary.png" alt="Black Nemesis Back Corner">
+      <img src="../new-nemesis-rr/imgs/the-one.jpg" alt="Black Nemesis Corner View">
+      <img src="../new-nemesis-rr/imgs/the-two.jpg" alt="Black Nemesis Left Side">
+      <img src="../new-nemesis-rr/imgs/the-three.jpg" alt="Black Nemesis Back Corner">
       <img src="../new-nemesis-rr/imgs/fifthdary.jpg" alt="Black Nemesis Interor">
     </div>
     <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
@@ -172,6 +171,7 @@
     </p>
 </div>
 <!-- mechanal part ends here -->
+ <div id="teleportme"></div>
 <div class="bott-end">
     <div class="head-text">
         <h2>Customize Your Nemesis RR</h2>
@@ -317,193 +317,6 @@
 
 
 </body>
-<style>
-    body{
-        /* height: 88888px; */
-        margin: 0;
-        padding: 0;
-    }
-    .hero-img img{
-        object-fit: cover;
-        width: 100%;
-        height: auto;
-    }
-    .top-section{
-        position: relative;
-        margin-top: 6.944444vw;
-    }
-    .topl-box{
-        display: flex;
-        font-size: 1.5em;
-        background-color: #003B76;
-        width: 20.83333vw;
-        height: 2.777vw;
-        position: absolute;
-        top: 2.708vw;
-        
-        text-align: center;
-        /* align-self: center; */
-        justify-content: center;
-        align-items: center;
-    }
-    .bott-mid{
-        top: 34.1666vw;
-        position: absolute;
-        display: flex;
-        margin-left: 15.41vw;
-        width: 69.16vw;
-        justify-content: space-between;
-    }
-    .one h2, .one p{
-        font-size: 2em;
-    }
-    .top-lower{
-        display: flex;
-        position: absolute;
-        bottom: 2.29166vw;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        justify-content: center;
-        /* justify-items: center; */
-        text-align: center;
-        font-size: 2em;
-        background-color: #003B76;
-        height: 4.513vw;
-        width: 17.916vw;
-        align-items: center;
-        justify-content: center;
-        gap: 1.80555vw;
-    }
-    .top-lower p{
-        display: flex;
-        text-align: center;
-    }
-/* closure for the top image */
-/* closure for the top image */
-/* closure for the top image */
-.nem-banner{
-    display: flex;
-    height: 13.402vw;
-    /* background-color: rgb(197, 128, 36); used for testing */
-    /* gap: 38.81944vw; */
-}
-
-.nem-banner img{
-/* justify-self: flex-end; */
-width: 4.7222vw;
-height: 4.7222vw;
-margin-left:  38.81944vw;
-margin-top: 8.402vw;
-/* position: absolute; */
-}
-.nem-banner h2{
-    margin-left: 6.73611vw;
-    font-size: 4em;
-    align-self: flex-end;
-    /* width: 47.56944vw; */
-    /* background-color: #003B76; */
-}
-/* carasel part start here */
-.carousel {
-  position: relative;
-  /* width: 700px; */
-  /* max-width: 100vw; */
-  /* margin: auto; */
-  overflow: hidden;
-  width: 100%;
-}
-
-.carousel-images {
-   /* width: 100%; */
-   width: 100vw;
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.carousel-images img {
-    height: 34.72222vw;
-    /* height: auto; */
-    /* border: red 2px dotted; */
-    width: 100vw;
-  /* object-fit: cover; */
-}
-
-button {
-  position: absolute;
-  top: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  font-size: 18px;
-  cursor: pointer;
-  padding: 10px;
-  z-index: 1;
-  transform: translateY(-50%);
-}
-
-button.prev {
-  left: 0;
-}
-
-button.next {
-  right: 0;
-}
-   /* carasel part ends here */
-   .mechanical {
-    display: flex;
-    flex-direction: column; /* Stack h2 and p vertically */
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center the content block horizontally */
-    background-color: #003B76;
-    height: 25vw;
-    padding: 2vw; /* Add some space inside the container */
-}
-
-.mechanical h2,
-.mechanical p {
-    text-align: left; /* Keep the text aligned to the left */
-    width: 86.6vw; /* Adjust to your desired width, so the content doesn't stretch */
-    margin: 0; /* Remove unnecessary spacing around the text */
-}
-.mechanical h2{
-    margin-bottom: .9722222vw;
-    font-size: 2em;
-}
-.mechanical p{
-    font-size: 1.5em;
-}
-.two-images{
-    display: flex;
-    margin-left: 6.736vw;
-    margin-right: 6.736vw;
-    gap: 10.138vw;
-    position: relative;
-}
-.two-images img{
-    height: 38.1944vw;
-    display: flex;
-}
-.two-images h2{
-    position: absolute;
-    top: 34.305vw;
-    font-size: 2em;
-    text-align: center;
-    width: 38.1944vw;
-    /* background-color: black; */
-}
-.two-images h3{
-    font-weight: 200; /*REMEMBER... i dont usually add these... i did it here because it looked hella off*/
-    font-size: 2em;
-    text-align: center;
-    /* background-color: black; */
-}
-a{
-    /* text-decoration: none; */
-    color: white;
-}
-/* mechanical ends here */
-
-    </style>
     <script>
         // carasel part here
         let index = 0;
