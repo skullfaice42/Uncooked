@@ -1,0 +1,18 @@
+header{
+    z-index: 1;
+    background-color: red;
+
+}
+h3{background-color: white;}
+footer h4{background-color: blue;}
+
+#loading{
+    position: fixed;
+    background-color: #050133;
+    /* height: 100vw; */
+    /* width: 100vw; */
+    z-index: 20;
+    inset: 0; /*not too sure what this does yet*/
+    opacity: 1;
+    transition: opacity 500ms ease;
+}

@@ -335,7 +335,7 @@ input[type="checkbox"]#mag-glass:checked + label img {
 
     width: 43.88vw;/*temp*/
     position: fixed;
-    transform: translateX(230%);
+    transform: translateX(250%);/*origional was 230*/
     margin-top: 10vw;
     overflow: scroll;
 }
