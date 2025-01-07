@@ -1,6 +1,12 @@
-let loading = document.getElementById("loading");
+console.log("Script is running");
 
-setTimeout(function() 
-{
-    loading.style.opacity = 0;
-},250);
+document.addEventListener("DOMContentLoaded", function() { //domcontentloaded ensures the content is loaded before the js exicutes anything
+    let loading = document.getElementById("loading");
+    
+    setTimeout(function() {
+        loading.style.opacity = 0;
+        setTimeout(function(){
+            loading.style.display = "none"},4000);
+    }, 4000);
+});
+;

@@ -1,18 +1,67 @@
 header{
-    z-index: 1;
-    background-color: red;
-
+    z-index: 10;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
 }
-h3{background-color: white;}
-footer h4{background-color: blue;}
 
-#loading{
+#loading {
     position: fixed;
+    inset: 0;
     background-color: #050133;
-    /* height: 100vw; */
-    /* width: 100vw; */
     z-index: 20;
-    inset: 0; /*not too sure what this does yet*/
     opacity: 1;
-    transition: opacity 500ms ease;
+    transition: all 500ms ease;
+
+    /* Center content using flexbox */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loading::after{
+    content: "";
+    position: absolute;
+    inset: 40%;
+    border-radius: 50%;
+    border: 2vw solid white;
+    aspect-ratio: 1/1;
+    border-top-color: #3F8ECB;
+    animation: spinner 1s linear infinite;
+}
+@keyframes spinner{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+/* .loading-hero{
+    height: 10vh;
+} */
+.loading-hero {
+    content: "";
+    /* Adjust the image size or container as needed */
+    height: 13vw;
+    animation: img-ease 2s ease-in-out infinite;
+    /* border: 2px solid green; */
+    margin-top: 5%;
+    position: absolute;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+@keyframes img-ease{
+    50%{
+        opacity: 0;
+    }
+}
+
+.loading-hero img {
+    height: 100%;
 }

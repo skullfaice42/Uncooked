@@ -7,6 +7,7 @@
 body{
     /* overflow-x: s; */
     /* width: 99vw; */
+    background-color: #050133 !important;
 }
 .container{
     display: flex;
@@ -17,11 +18,11 @@ body{
 }
 
 input[type=checkbox]{
-    /* display: none; */
+    display: none;
     /* display: block !important; */
 }
 input[type=radio]{
-    /* display: block !important; */
+    display: none !important;
 }
 
 
