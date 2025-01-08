@@ -5,7 +5,7 @@
     width: 100%;
 }
 .hero-img { 
-    margin-top: 6.944vw;
+    /* margin-top: 6.944vw; */
     display: flex;
     flex-direction: column;
     position: relative;

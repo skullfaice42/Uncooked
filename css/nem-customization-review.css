@@ -15,9 +15,9 @@ body{
     position: absolute;
     text-align: center;
     align-self: center; 
-    margin:0;
+    /* margin:0; */
     margin-top: 6.944vw;
-    line-height: normal;
+    /* line-height: normal; */
     font-size: 72px;
 
 }
@@ -46,6 +46,7 @@ body{
     display: flex;
     flex-direction: row;
     margin:0;
+    gap: 1vw;
     align-items: center;
     color: white;
     text-decoration: none;
@@ -63,7 +64,7 @@ body{
 #change-button .rfa {
     height: 2.394vw;
     width: 1.449vw;
-    margin-left: 2.264vw;
+    /* margin-left: 2.264vw; */
 }
 
 .selection-name { 
@@ -290,7 +291,9 @@ body{
     font-weight: 300;
 }
 /* HERE */
-
+.more{
+    font-weight: var(--light);
+}
 
 .summary-readmore { 
     position: absolute;
@@ -308,7 +311,81 @@ body{
 
 
 
-/* jeremy added here */
+
+
+
+
+
+
+
+
+
+/* lower buttons here */
+
+.lower-buttons{
+    margin-top: 20vw;
+    width: 100%;
+    /* border: var(--border2); */
+    display: flex;
+    justify-content: center;
+    height: 4.5vw;
+    gap: 1vw;
+}
+.lower-buttons .change-car{
+    width: 24.6vw;
+    border: 3px solid #0073E6;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s ease-in-out;
+}
+.lower-buttons .change-car:hover{
+    background-color: #0073E6;
+    color: #050133;
+}
+.lower-buttons .change-car:active{
+    transform: scale(0.95);
+}
+.inquiry{
+    background-color: #0073E6;
+}
+
+.lower-buttons img{
+    height: 4.3vw; /*may need to change as needed*/
+}
+.lower-buttons a{
+    text-decoration: none;
+}
+.lower-buttons h2{
+    font-size: 2rem;
+    font-weight: var(--semi-bold);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1460px){
     /* .lower-buttons */

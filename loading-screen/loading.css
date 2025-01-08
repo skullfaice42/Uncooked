@@ -1,4 +1,4 @@
-header{
+/* header{
     z-index: 10;
     width: 100%;
     background-color: black;
@@ -7,7 +7,9 @@ header{
     line-height: 30px;
     display: flex;
     justify-content: center;
-}
+} */
+
+/* you can find this code in the universal one */
 
 #loading {
     position: fixed;
@@ -64,4 +66,25 @@ header{
 
 .loading-hero img {
     height: 100%;
+}
+
+
+
+
+@media (max-width:1024px){
+    .loading-hero{
+        margin-top: -1vw !important;
+    }
+}
+
+@media (max-width:768px){
+    .loading-hero{
+        margin-top: -8vw !important;
+    }
+}
+
+@media (max-width:440px){
+    .loading-hero{
+        margin-top: -30vw !important;
+    }
 }

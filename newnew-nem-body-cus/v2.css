@@ -277,10 +277,12 @@ input[type=radio]{
             font-size: 4rem !important;
             font-weight: var(--bold);
             margin-top: 1vw;
+            color: white;
         }
         .gets-margin .top-text h3{
             margin-top: 3vw;
             margin-bottom: 1.8vw;
+            color: white;
         }
         
 
@@ -297,6 +299,9 @@ input[type=radio]{
         /* border: 2px solid black; */
         height: 100%;
         align-items: center;
+    }
+    .color-arrow h3{
+        color: white;
     }
     .color-arrow img{
         height: 2.5vw;
@@ -892,6 +897,11 @@ input[type=radio]{
 a whole new page for it... all im doing is replacing the varalbes 
 to make sure nothing <em>funny</em> happens*/
 
+.interior-page{
+    overflow: hidden;
+    width: 100vw;
+}
+
 #itn-red1:checked ~ .hero .itn-r1,
 #itn-red2:checked ~ .hero .itn-r2,
 #itn-red3:checked ~ .hero .itn-r3,
@@ -909,4 +919,69 @@ to make sure nothing <em>funny</em> happens*/
 #itn-shadow3:checked ~ .hero .itn-s3
 {
     opacity: 1;
+}
+
+@media (max-width:1440px){
+
+    .zoom-in img.zoom-in-twoint{
+    margin-top: 10vh;
+    }
+    #zoom:checked ~ .left-cars .zoom-in .zoom-outint{
+
+        margin-top: 10vw;
+
+    }
+
+}
+
+@media (max-width: 768px){
+    /* for the time being... ill be aborthing on the zoom in features for the heros because it messes up with it...:/ */
+    .zoom-in{
+        display: none;
+    }
+    .interior-no-margin{
+        /* margin: 8vw; */
+        margin-top: 10vw;
+    }
+
+
+
+
+
+    /* .zoom-in img.zoom-in-twoint{
+        margin-top: 7.2vh;
+        }
+
+
+
+    #zoom:checked ~ .left-cars .heroint{
+        scale: .90;
+        margin: 0;
+        transform: translateX(-3%);
+        transition: all 0.3s ease-in-out;
+
+
+    }
+    .heroint{
+        height: 100%;
+    }
+    #zoom:checked ~ .left-cars .zoom-in .zoom-outint{
+
+        margin-right: 30vw;
+        left: 0;
+        transform: translate(10% 10%);
+
+    }
+    .zoom-inint {
+        border: var(--border2);
+        margin-right: 30vw;
+        margin-bottom: 14vw;
+    }
+
+
+    .customization-container{
+        border: 2px solid red;
+
+    } */
+
 }

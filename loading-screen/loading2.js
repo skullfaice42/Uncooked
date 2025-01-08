@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() { //domcontentloaded en
     setTimeout(function() {
         loading.style.opacity = 0;
         setTimeout(function(){
-            loading.style.display = "none"},500);
-    }, 500);
+            loading.style.display = "none"},2000);
+    }, 2000);
 });
 ;
