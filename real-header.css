@@ -6,14 +6,14 @@
     font-family: "Lexend Deca", sans-serif;
 }
 
-/* body {
+body {
     color: white;
     margin: 0;
     top: 0;
     left: 0;
     background-color: grey;
     height: 1000vh;
-} */
+}
 /* dont copy what is above */
 
 
@@ -36,11 +36,10 @@ header{
     width: 100vw;
     background: linear-gradient(to bottom,#050133, rgba(0,0,0,0));
     position: fixed;
-    z-index: 1;
-    margin-bottom: 7vw;
+    z-index: 500;
     /* border: 20px solid white; */
     /* padding-bottom: 10vw; */
-    z-index: 2; /*that way its on top of EVERYTHING*/
+    z-index: 500; /*that way its on top of EVERYTHING*/
     /* margin-bottom: vw; */
     /* visibility: visible; */
     /* display: block; */
@@ -92,7 +91,7 @@ position: fixed;
 background-color: #050133;
 transform: translateX(-110%);
 overflow-y: auto;
-height: 68.75vh; /*was going to try and experement with width = fit content but Itzel dident say anything about it*/
+height: 80vh; /*was going to try and experement with width = fit content but Itzel dident say anything about it*/
 overflow-x: hidden;
 width: 35.416vw;
 transition: all 0.3s;
@@ -106,7 +105,7 @@ box-shadow: 0 10px 10px black;
     display: flex;
     /* margin-top: 10%; */
     padding-top: 4%; /*because idk whats up with it*/
-    margin-left: 90%;
+    margin-left: 85%;
     transition: all 0.3s;
 }
 
@@ -207,21 +206,28 @@ input[type="checkbox"]#sub8:checked + label .headingshhh img {
 .aside-iconshhh label[for="mag-glass"] img {
     width: 3.3vw;
     transition: all 0.3s;
+    margin-right: 1vw;
 }
 .aside-iconshhh{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: all 1.3s;
-    /* margin-top: 3vw; */
+    height: 100%;
+    
 }
 
 
 /* Search bar styling */
 .search-containerhhh{
+
     margin-right: 7vw;
     width: 28.819vw;
     /* border: 2px solid red; */
     display: none;
     flex-direction: column;
     align-items: center;
+    margin-top: 14vw;
 }
 #search-bar {
     /* display: none; */
@@ -256,11 +262,13 @@ input[type="text"]{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 10vw;
+    height: fit-content;
     overflow-y: scroll;
     color: black;
     background-color: white;
     gap: 2vw;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 .searchinghhh a{
     width: 100%;
@@ -279,21 +287,25 @@ input[type="text"]{
 input[type="checkbox"]#mag-glass:checked ~ .search-containerhhh {
     display: inline-block;
     height: 20vw;
+    margin-right: 0;
+    
 }
 input[type="checkbox"]#mag-glass:checked + label[for="mag-glass"]{
-    position: fixed;
-    top: 1.5vw; /*yeah, this could totally be wrong*/
+    /* position: fixed; */
+    /* top: 1.5vw; yeah, this could totally be wrong */
     
     /* height: 20vw; */
     /* border: 2px solid green; */
-    right: 38%;
+    /* right: 38%; */
 }
 input[type="checkbox"]#mag-glass:checked ~ a{
-    position: fixed;
+    /* position: fixed; */
     /* border: 2px solid red; */
-    right: 1.5vw;
-    top: 1%;
+    /* right: 1.5vw;
+    top: 1%; */
 }
+
+
 /* input[type="checkbox"]#mag-glass:checked ~ .searching{
     display: block;
 } */
@@ -322,7 +334,7 @@ input[type="checkbox"]#mag-glass:checked + label img {
 .aside-iconshhh{
     display: flex;
     align-items: center;
-    gap: 2vw;
+    /* gap: 2vw; */
     position: absolute;
     right: 1.5%;
     top: 2%;
@@ -462,7 +474,7 @@ input[type="checkbox"]#access:not(:checked) ~ .access-overlayhhh{
         /* height: 81.5%; */
         height: 52vw;
         width: 39.44vw;
-        z-index: 1;
+        z-index: 500;
         top: 12vw;
         color: black;
         margin-left: 2.2vw;
@@ -612,13 +624,13 @@ input[type="checkbox"]#access:not(:checked) ~ .access-overlayhhh{
 
     
     body:has(input[type="radio"]#small-text:checked) *{
-        font-size: 12px;
+        font-size: .75rem;
     }
     body:has(input[type="radio"]#regular-sizing:checked) *{
-        font-size: 28px;
+        /* font-size: 1.75rem; */
     }
     body:has(input[type="radio"]#larger-text:checked) *{
-        font-size: 36px;
+        font-size: 2.25rem;
     }
 
 /* blind users here (idk how to make it work :[) */
@@ -909,17 +921,17 @@ body:has(input[type="radio"]#ur:checked) .lan1hhh{
     .profile-cont { 
         height: 7.04545vw;
     }
-    .aside-iconshhh { 
-        margin-top: 7vw;
-    }
+
+
     #magni-glass { 
         height: 6.04545vw !important;
         width: auto !important;
-        margin-top: 1.2vw;
+        margin-top: 1.5vw;
+        margin-right: 1.5vw;
     }
 
     .menu-contenthhh { 
-        z-index: 1;
+        z-index: 500;
         width: 100vw;
         height: 89.5vh;
         padding-bottom: 5vw;
@@ -942,7 +954,7 @@ body:has(input[type="radio"]#ur:checked) .lan1hhh{
     }
     .access-iconhhh{
         position: fixed;
-        right: 0vw; /*this should do it*/
+        right: 0vw; 
         top: 0vw;
         margin-top: 65vh;
     }
@@ -976,6 +988,51 @@ body:has(input[type="radio"]#ur:checked) .lan1hhh{
         padding-top: 2vw;
         margin-top: 10vw;
         width: 95vw;
+        height: 68vh;
+
+
+    }
+
+    .search-containerhhh {
+        margin-right: .5vw !important;
+        margin-top: 12vw;
+        width: 24vw;
+        font-size: .75rem;
+    }
+    #search-bar::placeholder{
+        font-size: 1rem;
+        /* padding-left: .69vw; */
+    }
+    .searchinghhh { 
+        height: fit-content;
+        font-size: .85rem !important;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+    #search-bar { 
+        font-size: 1rem !important;
+        margin-top: 1vw;
+        margin-bottom: 0;
+    }
+    .search-containerhhh hr { 
+        margin-top: .5vw;
+    }
+    .searchinghhh a { 
+        font-size: 1rem !important;
+    }
+    .spacing { 
+        height: 23.86363vw;
+    }
+    .lil-xhhh img {
+        margin-left:  90%;
+    }
+    .blue-tophhh {
+        height: 40%;
+    }
+    .headinghhh  { 
+        margin-top:  1rem;
+        padding-bottom: 1rem;
     }
 
 }
+

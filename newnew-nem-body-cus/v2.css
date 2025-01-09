@@ -729,10 +729,7 @@ input[type=radio]{
         /* border: var(--border1); */
         width: 100%;
     }
-    footer{
-        margin-top: 90vw !important; /*getting it out of there*/
-        /* height: 4000px; */
-    }
+
 
 
 
@@ -831,9 +828,7 @@ input[type=radio]{
 
      }
 
-     footer{
-        margin-top: 100vw !important;
-     }
+
      .go-to-buttons{
         margin: 0;
         /* border: 3px solid black; */
@@ -985,3 +980,15 @@ to make sure nothing <em>funny</em> happens*/
     } */
 
 }
+
+@media  (max-width: 440px) {
+    .container.customization-container { 
+        height: fit-content;
+    }
+    .right-selectors { 
+        margin: 0;
+        height: 80vh;
+
+    }
+}
+
