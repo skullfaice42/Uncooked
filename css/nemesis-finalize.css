@@ -63,6 +63,7 @@ line-height: 4.8611vw
 .t-right{
     margin-top: 2.4vw;
     margin-left: 2.4vw;
+    margin-left: 2.4vw;
     width: 37.9vw;
     
 }
@@ -147,11 +148,25 @@ p{
     margin-top: 4.44vw;
     /* transition: all 0.3s ease; */
 }
+/* input[type="checkbox"]{
+    display: block;
+} */
 .box1:hover,.box2:hover,.box3:hover,.box4:hover{
     transform: scale(0.95);
     background-color: #0073E6;
     color: white;
     cursor: pointer;
+}
+#one:checked ~ .four-boxes .box1,
+#two:checked ~ .four-boxes .box2,
+#three:checked ~ .four-boxes .box3,
+#four:checked ~ .four-boxes .box4
+{
+    transform: scale(0.95) !important;
+    background-color: #0073E6;
+    color: white;
+    cursor: pointer;
+
 }
 /* .box1:active{
     background-color: #0073E6;
@@ -539,6 +554,18 @@ a{
     /* margin-left: 6.3636vw; */
     /* margin-right: 6.3636vw; */
 }
+
+.days-of-the-week{
+    /* justify-self: center; */
+    width: 95%;
+    /* justify-content: space-between; */
+    /* gap: 5vw; */
+}
+.times{
+    gap: 15vw;
+}
+
+
 .top-left img{
     margin-left: 0;
     width: 100%;
@@ -561,6 +588,12 @@ a{
 .lower-area h3{
     font-size: 1.5em;
 }
+
+.four-boxes .box{
+    width: 33vw;
+}
+
+
 
 
 .top-section{
@@ -585,6 +618,11 @@ a{
 .time{
     justify-content: center;
     /* margin-left: 5vw; */
+}
+.bot-box{
+    /* font-size: 1rem; */
+    width: 90%;
+    gap: 5vw;
 }
 
 
@@ -622,5 +660,19 @@ a{
 }
 .the-rest{
     height: 300vw;
+}
+
+.days-of-the-week .times h3{
+    font-size: 1.25rem;
+}
+.bot-box h2{
+    font-size: 1rem;
+}
+.bot-box{
+    width: 97%;
+    gap: 0;
+}
+.bot-box img{
+    height: 10vw;
 }
 }

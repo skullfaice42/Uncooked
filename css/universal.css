@@ -292,11 +292,12 @@ input[type="radio"] {
 }
 header{
     height: 6.944vw;
-    width: 100%;
+    /* width: 100%; */
     background: linear-gradient(to bottom,#050133, rgba(0,0,0,0));
     position: fixed;
     z-index: 3;
     margin-bottom: 7vw;
+    overflow-x: hidden !important;
 }
 /* BODY */
 

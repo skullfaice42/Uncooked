@@ -218,3 +218,82 @@ text-align: center;
     scale: .95; 
     transition: ease-in .1s;
 }
+.two-images .arrow{
+    display: none;
+}
+
+
+@media (max-width: 1024px){
+    .top-lower{
+        width: 30vw;
+    }
+    
+}
+@media (max-width: 768px){
+    .top-lower{
+        display: none;
+    }
+    .one{
+        /* align-items: center; */
+        text-align: center;
+        /* justify-content: center; */
+    }
+    .one h2{
+        font-size: 1.5rem;
+    }
+    .one p{
+        font-size: 1.25rem;
+    }
+    .nem-banner{
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+        width: 100%;
+        /* font-size: 2rem; */
+    }
+    .nem-banner h2{
+        font-size: 3rem;
+    }
+    .mechanical p{
+        font-size: 1.5rem;
+        line-height: normal;
+    }
+    .one-img{
+        width: 100%;
+        /* margin: 0; */
+    }
+    .one-img a{
+        /* border: var(--border1); */
+        width: 50%;
+    }
+    .one-img a img{
+        /* margin-right: 20vw; */
+        height: 70vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .one-img h2{
+        /* position: absolute; */
+        /* top: 10%; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .two-images{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        /* width: 100%; */
+    }
+
+    .two-images h2{
+        position: absolute;
+    }
+    .exterior h2{
+        top: 35%;
+    }
+    .two-images .arrow{
+        position: absolute;
+        display: block;
+        height: 5vw;
+    }
+}

@@ -2,7 +2,8 @@
     color: white;
 }
 body{
-    overflow-x: hidden;
+    overflow-x: hidden !important;
+    /* overflow: hidden !important; */
 }
 .banner-cont { 
     width: 99vw;
@@ -90,14 +91,139 @@ body{
     flex-direction: column;
 }
 
-.body-rim-color-tabs {
-    display: flex; 
-    flex-direction: row;
-    width: 99vw;
-    height: 5.2083vw;
 
-    align-items: center;
+/* functionality for the exterior selection */
+.options {
+    display: flex;
+    margin-left: 5.4vw;
+    gap: 2.9vw;
+    margin-top: 2.4vw;
 }
+.options h2{
+    font-size: 2rem;
+    font-weight: var(--semi-bold);
+}
+.options h3{
+    font-size: 2rem;
+    font-weight: var(--semi-bold);
+}
+
+
+
+
+
+
+.black-color{
+    height: 4.6vw;
+    aspect-ratio: 1/1;
+    background-color: black;
+    border: 3px solid white;
+}
+.pumice{
+    /* height: 10vw; */
+    background-color: #BABCB7;
+}
+.color-options .body,
+.color-options .rim{
+    margin-top: 3.4vw;
+    margin-left: 5.3vw;
+    margin-right: 5.3vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw !important;
+}
+.lower-info{
+    display: flex;
+    /* justify-content: space-between; */
+    /* margin-left: 10vw; */
+    /* height: 7.5vw; */
+    width: auto;
+}
+.lower-info .content{
+    margin-left: 1.2vw;
+    display: flex;
+    /* height: 100%; */
+    flex-direction: column;
+    justify-content: space-between;
+}
+.lower-info h3{
+    font-size: 1.5rem;
+    font-weight: var(--semi-bold);
+}
+.lower-info h4{
+    font-size: 1.5rem;
+    font-weight: var(--light);
+}
+
+.body a,
+.rim a{
+    text-decoration: none;
+    font-weight: var(--light);
+    font-size: 1rem;
+    height: 100%;
+    /* border: var(--border2); */
+    /* margin-left: 15vw; */
+    display: flex;
+    justify-self: flex-end;
+    margin-bottom: 7vw;
+}
+.options h2,
+.options h3{
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: all 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+#body:checked ~ .options label h2,
+#rim:checked ~ .options label h3,
+#seat:checked ~ .options label h2,
+#stitching:checked ~ .options label h3
+{
+    transition: all 0.3s ease-in-out;
+}
+#body:checked ~ .body,
+#rim:checked ~ .rim,
+#seat:checked ~ .seat,
+#stitching:checked ~ .stitching{
+    display: block;
+}
+#body:checked ~ .options label[for="body"] h2,
+#rim:checked ~ .options label[for="rim"] h3
+{
+    /* text-decoration: underline; */
+    text-decoration-color: white;
+    /* border: var(--border2); */
+}
+
+.color-options .body,
+.color-options .rim,
+.color-options .seat,
+.color-options .stitching{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .box-name-money-cont { 
     display: flex;
@@ -180,6 +306,81 @@ body{
     flex-wrap: wrap;
     text-wrap: wrap;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* input[type="checkbox"]{
+    display: block !important;
+} */
+
+
+.more p{
+    font-size: 1.5rem;
+    font-weight: var(--light);
+}
+
+.more .long{
+    display: none;
+}
+
+#read-more:checked ~ .summary-review .section .summary-right .more .short{
+    display: none;
+}
+#read-more:checked ~ .summary-review .section .summary-right .more .long{
+    display: block;
+}
+#read-more:checked ~ .lower-buttons{
+    margin-top: 50vw !important;
+}
+.long label{
+    color: #0073E6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .summary-left > div { 
     display: flex;
     flex-direction: row;
@@ -365,7 +566,9 @@ body{
 }
 
 
-
+.selection-name h2{
+    display: none;
+}
 
 
 
@@ -418,7 +621,7 @@ font-size: .75em;
         display: flex;
         justify-content: center;
         align-content: center;
-        border: 2px solid aqua;
+        /* border: 2px solid aqua; */
         flex-direction: column;
         /* margin-top: 15vw; */
     }
@@ -427,8 +630,8 @@ font-size: .75em;
     }
     .more .summary-readmore{
         display: flex;
-        position: inherit;
-        border: 2px solid green;
+        /* position: inherit; */
+        /* border: 2px solid green; */
     }
 
 }
@@ -464,11 +667,62 @@ font-size: .75em;
         margin-left: auto;
     }
     .summary-right{
-        border: 21px solid green;
-        display: flex;
-        flex-direction: column;
-        margin-right: 10vw;
+        /* border: 21px solid green; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* margin-right: 10vw; */
         /* uhu yup... im aboiring this lmao i cant read it */
     }
 
+}
+
+
+@media (max-width: 1024px){
+    .selection-name p{
+        height: 3vw;
+    }
+}
+
+/* alright... because im REALLY short on time... ill be bum rushing from here on out.. untill i can make sure it looks good enough :) */
+
+
+@media (max-width: 440px){
+    .banner-cont h1{
+        font-size: 2rem;
+    }
+    .selection-name p{
+        display: none;
+    }
+    .selection-name h2{
+        display: block;
+        font-size: 1rem;
+    }
+    #change-button{
+        gap: 4vw;
+        align-items: center;
+    }
+    #change-button p{
+        font-size: 1.5rem;
+        margin-left: 4vw;
+        /* width: 30vw; */
+    }
+    #change-button .rfa{
+        height: 12.5vw;
+        width: 6.59vw;
+        margin: 0;
+        /* aspect-ratio: 1/1; */
+    }
+    /* .change-cont{
+        width: 30vw;
+    } */
+    .sideview-car-showcase .change-cont{
+        /* margin-right: 10vw; */
+        width: 40vw;
+        height: 12.5vw;
+        /* margin: 0; */
+        /* margin-top: 30vw !important; */
+    }
+    .options{
+        margin-top: 10vw;
+    }
 }
