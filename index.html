@@ -583,6 +583,7 @@
                 <a id="build-button" class="herobuttons" href="/new-nemesis-rr/nemesis-car-page.html#teleportme">
                     <p>Build</p>
                     <img src="../icons/right-arrow.png" alt="rfa" class="rfa">
+                    <a href="#overlayed-photo1"><img src="icons/down-arrow.png" alt="down arrow" class="down-arrow"></a>
                 </a>
             </div>
         </section>
@@ -599,7 +600,7 @@
             <img src="../new-home/imgs/back-right-zoom-black-cropped.jpg" id="overlayed-photo2">
         </div>
         <article>
-            <h2>Nemesis RR</h2>
+            <h2 id="nemrr">Nemesis RR</h2>
             <p>Every discerning customer craves something truly unique, and the Nemesis RR is designed to deliver just that. </p>
             <a id="discovermore-button" class="herobuttons" href="/new-nemesis-rr/nemesis-car-page.html">
                 <p>Discover More</p>
@@ -873,7 +874,19 @@
 
 
 
-
+<style>
+    .down-arrow{
+        display: none;
+    }
+    @media (max-width:440px){
+        .down-arrow{
+            display: block;
+            position: absolute;
+            right: 35%;
+            top: 200%;
+        }
+    }
+</style>
 
 </body>
 </html>
