@@ -5,6 +5,9 @@ body{
     overflow-x: hidden !important;
     /* overflow: hidden !important; */
 }
+input[type="radio"]{
+    display: none;
+}
 .banner-cont { 
     width: 99vw;
     display: flex;
@@ -119,9 +122,12 @@ body{
     background-color: black;
     border: 3px solid white;
 }
-.pumice{
+.carnelian{
+    background-color: #B81212;
+}
+.matterhorn{
     /* height: 10vw; */
-    background-color: #BABCB7;
+    background-color: #4F4F4F;
 }
 .color-options .body,
 .color-options .rim{
@@ -331,9 +337,9 @@ body{
 
 
 
-/* input[type="checkbox"]{
-    display: block !important;
-} */
+input[type="checkbox"]{
+    display: none !important;
+}
 
 
 .more p{
@@ -681,12 +687,50 @@ font-size: .75em;
     .selection-name p{
         height: 3vw;
     }
+    .summary-right .leftbold,
+    .summary-right .rightmoney{
+        font-size: 1.5rem;
+        border: 2px solid red;
+    }
+}
+@media (max-width: 560px){
+    .change-cont p{
+        font-size: 1rem !important;
+    }
+    .order-summary-head h2{
+        font-size: 2rem;
+    }
+    .lower-buttons a{
+        margin-top: 40vw;
+    }
+    footer{
+        margin-top: 60vw !important;
+    }
+    .lower-buttons h2{
+        font-size: .75/rem;
+    }
 }
 
 /* alright... because im REALLY short on time... ill be bum rushing from here on out.. untill i can make sure it looks good enough :) */
 
 
 @media (max-width: 440px){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .banner-cont h1{
         font-size: 2rem;
     }
