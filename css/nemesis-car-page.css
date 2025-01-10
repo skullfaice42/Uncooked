@@ -18,7 +18,6 @@ a {
 .top-section{
     display: flex;
     position: relative;
-    margin-top: 6.944444vw;
 }
 .topl-box{
     display: flex;
@@ -134,7 +133,7 @@ top: 50%;
 background-color: rgba(0, 0, 0, 0.5);
 color: white;
 border: none;
-font-size: 18px;
+font-size: 1.125rem;
 cursor: pointer;
 padding: 10px;
 z-index: 1;
@@ -182,8 +181,8 @@ font-weight: 300;
 display: flex;
 margin-left: 6.736vw;
 margin-right: 6.736vw;
-gap: 10.138vw;
 position: relative;
+justify-content: space-between;
 }
 
 
@@ -347,4 +346,16 @@ text-align: center;
     .top-lower {
         display: none;
     }
+    .two-images { 
+        justify-content: space-between;
+    }
+    .left-cars .hero { 
+        height: 67vw;
+    }
+
+
+
+
+
+
 }

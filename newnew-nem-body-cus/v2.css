@@ -990,5 +990,8 @@ to make sure nothing <em>funny</em> happens*/
         height: 80vh;
 
     }
+    .left-cars .hero { 
+        height: 67vw;
+    }
 }
 
