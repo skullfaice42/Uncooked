@@ -1179,7 +1179,7 @@ like on the merch page*/
 
 
 
-
+/* use for loading */
 
 #loading {
     position: fixed;
@@ -1255,7 +1255,7 @@ like on the merch page*/
 
 @media (max-width:440px){
     .loading-hero{
-        margin-top: -30vw !important;
+        margin-top: -26vw !important; /*had to change because it looked a bit off center*/
     }
 }
 

@@ -1,28 +1,182 @@
-<!-- the right one to use for merch thats incomplete -->
+<!-- alright this one should do it (done by jeremy if you have questions) -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Not Available All Merch</title>
-    <link rel="stylesheet" href="css/footer.css">
+    <title>Not Available Women's</title>
+    <link rel="stylesheet" href="../css/footer.css">
     <!-- <link rel="icon" href="images/icon.png">
     <link rel="icon" href="../icon/icon.png"> -->
     <link rel="icon" href="../icons/icon.png">
     <link rel="stylesheet" href="../styles.css">
-    <!-- <link rel="stylesheet" href="../css/footer.css"> -->
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/universal.css">
-    <link rel="stylesheet" href="../font-weight.css">
-    <!-- <script src="nav.js"></script> -->
-    <link rel="stylesheet" href="../css/new-end-page.css">
-    <script src="../../loading-screen/loading.js"></script>
+    <script src="../nav.js"></script>
+    <script src="../loading-screen/loading.js"></script>
+
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lexend Deca', sans-serif;
+        }
+
+        body {
+            background-color: #050133;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            color: white;
+            flex-direction: column;
+        }
+
+        .container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-image: url(../icon/conformation-bg.png);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            position: relative;
+            background-color: #003B76;
+            width: 87.6388888vw;
+            height: 38.1944vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .icon {
+            width: 13.68055555vw;
+            height: 14.027vw;
+            margin-bottom: 1.041666vw;
+        }
+
+        .box h2 {
+            font-size: 4em;
+            margin-top: 1.041666vw;
+        }
+
+        .trion-code {
+            font-size: 1.5em;
+            margin-top: 1.041666vw;
+            text-align: center;
+        }
+
+        .lower-box {
+            background-color: #0073E6;
+            width: 40.152777vw;
+            height: 4.51388vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 4.375vw;
+            font-size: 2em;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            /* padding: vw; */
+        }
+
+        .lower-box:hover {
+            background-color: #005bb5;
+        }
+        
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        .lower-box img{
+            margin-left: 1.8055vw;
+        }
+        @media (max-width: 1334px){
+            .lower-box{
+                font-size: 1.5em;
+            }
+        }
+        @media (max-width: 1275px){
+            .lower-box{
+                width: 50vw;
+            }
+            .lower-box img{
+                width: 2vw;
+            }
+        }
+        @media (max-width: 973px){
+            .box{
+                height: 60vw;
+                /* border: 2px solid green; */
+                /* align-items: normal; */
+                justify-content: flex-start;
+                
+            }
+            .icon{
+                /* border: 2px solid red; */
+                /* padding-top: 0; */
+                /* margin-top: 0; */
+                /* display: flex; */
+                /* top: 110%; */
+                margin-top: 3.863vw;
+                /* margin-left: 10%; */
+            }
+            .trion-code{
+                font-size: 2em;
+                /* width: 60%; */
+            }
+            
+
+        }
+        @media (max-width:791px){
+            .trion-code{
+                font-size: 2em;
+                margin-left: 4.7727vw;
+                margin-right: 4.7727vw;
+                /* border: 2px solid red; */
+            }
+            .lower-box{
+                font-size: 1em;
+            }
+            
+        }
+        
+        @media (max-width: 641px){
+            .lower-box{
+                /* font-size: 1em; */
+                width: 80vw;
+                height: 10vw;
+            }
+            .box{
+                height: 90vw;
+            }
+            img[src="images/icons/small/right-arrow.png"]{
+                height: 10vw;
+                width: auto;
+            }
+        }
+        
+    </style>
 </head>
 <body>
-
+    
 <!-- loading screen -->
 <div id="loading">
     <div class="loading-hero">
-        <img src="../../icons/icon.png" alt="">
+        <img src="../icons/icon.png" alt="Icon of Website">
     </div>
 </div>
 <!-- loading screen -->
@@ -569,147 +723,118 @@
     
 
 </header>
-<div class="spacing"></div>  
-
-
-
-
-
-
-
-
-<div class="container">
-    <!-- <img src="../icons/conformation-bg.png" alt="Conformation Hero Img"> -->
-
-    <div class="box">
-
-        <img src="../icons/icon.png" alt="Logo" class="icon">
-
-        <h2>Sorry!</h2>
-
-        <div class="holder-of-p">
-            <p>This page is not available yet.</p>
+    <div class="container">
+        <div class="box">
+            <img src="../icons/icon.png" alt="Logo" class="icon">
+            <h2>Sorry!</h2>
+            <p class="trion-code">This page is not available yet.</p>
+            <a href="merch3-women.html"><div class="lower-box">Back to Women's Merchandise <img src="../icons/right-arrow.png"></div></a>
         </div>
+    </div>
 
-        <a href="merch1-merchandise-all.html">
-            <div class="lower-box">
-                <h2>Back to All Merchandise</h2>
-                <img src="../icons/right-arrow.png">
+
+
+    <footer>
+        <div class="accountrf">
+            <div class="headerrf">
+                <h2>Account</h2>
             </div>
-        </a>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-<footer>
-    <div class="accountrf">
-        <div class="headerrf">
-            <h2>Account</h2>
+            <div class="hyperlinksrf">
+                <a href="../../../new-end-page/na-base.html">Settings</a>
+                <a href="../../../new-nemesis-rr/nemesis-customization-review.html">Saved Car Configurations</a>
+                <a href="../../../new-end-page/na-base.html">Order History</a>
+            </div>
         </div>
-        <div class="hyperlinksrf">
-            <a href="../../../new-end-page/na-base.html">Settings</a>
-            <a href="../../../new-nemesis-rr/nemesis-customization-review.html">Saved Car Configurations</a>
-            <a href="../../../new-end-page/na-base.html">Order History</a>
-        </div>
-    </div>
 
-    <div class="accountrf">
-        <div class="headerrf">
-            <h2>Dealerships</h2>
+        <div class="accountrf">
+            <div class="headerrf">
+                <h2>Dealerships</h2>
+            </div>
+            <div class="hyperlinksrf">
+                <a href="../../../new-end-page/na-base.html">Locations</a>
+            </div>
         </div>
-        <div class="hyperlinksrf">
-            <a href="../../../new-end-page/na-base.html">Locations</a>
-        </div>
-    </div>
 
-    <div class="accountrf">
-        <div class="headerrf">
-            <h2>Nemesis RR</h2>
+        <div class="accountrf">
+            <div class="headerrf">
+                <h2>Nemesis RR</h2>
+            </div>
+            <div class="hyperlinksrf">
+                <a href="../../../new-nemesis-rr/nemesis-car-page.html">Overview</a>
+                <a href="../../../new-nemesis-rr/updated-nem-ext-customisation.html">Customize</a>
+            </div>
         </div>
-        <div class="hyperlinksrf">
-            <a href="../../../new-nemesis-rr/nemesis-car-page.html">Overview</a>
-            <a href="../../../new-nemesis-rr/updated-nem-ext-customisation.html">Customize</a>
-        </div>
-    </div>
 
-    <div class="accountrf">
-        <div class="headerrf">
-            <h2>Black Widow</h2>
+        <div class="accountrf">
+            <div class="headerrf">
+                <h2>Black Widow</h2>
+            </div>
+            <div class="hyperlinksrf">
+                <a href="../../../new-black-widow-car-page/black-widow-car-page.html">Overview</a>
+                <a href="../../../new-nemesis-rr/updated-nem-ext-customisation.html">Customize</a>
+            </div>
         </div>
-        <div class="hyperlinksrf">
-            <a href="../../../new-black-widow-car-page/black-widow-car-page.html">Overview</a>
-            <a href="../../../new-nemesis-rr/updated-nem-ext-customisation.html">Customize</a>
-        </div>
-    </div>
 
-    <div class="accountrf">
-        <div class="headerrf">
-            <h2>Services</h2>
+        <div class="accountrf">
+            <div class="headerrf">
+                <h2>Services</h2>
+            </div>
+            <div class="hyperlinksrf">
+                <a href="../../../new-end-page/na-base.html">Insurance</a>
+                <a href="../../../new-end-page/na-base.html">Part Replacement</a>
+                <a href="../../../new-end-page/na-base.html">Customer Help</a>
+            </div>
         </div>
-        <div class="hyperlinksrf">
-            <a href="../../../new-end-page/na-base.html">Insurance</a>
-            <a href="../../../new-end-page/na-base.html">Part Replacement</a>
-            <a href="../../../new-end-page/na-base.html">Customer Help</a>
-        </div>
-    </div>
 
-    <div class="accountrf">
-        <div class="headerrf">
-            <h2>Merchandise</h2>
+        <div class="accountrf">
+            <div class="headerrf">
+                <h2>Merchandise</h2>
+            </div>
+            <div class="hyperlinksrf">
+                <a href="../../../new-merch/merch1-merchandise-all.html">All Merchandise</a>
+                <a href="../../../new-merch/merch2-man.html">Men</a>
+                <a href="../../../new-merch/merch3-women.html">Women</a>
+                <a href="../../../new-merch/merch4-accessories.html">Accessories</a>
+            </div>
         </div>
-        <div class="hyperlinksrf">
-            <a href="../../../new-merch/merch1-merchandise-all.html">All Merchandise</a>
-            <a href="../../../new-merch/merch2-man.html">Men</a>
-            <a href="../../../new-merch/merch3-women.html">Women</a>
-            <a href="../../../new-merch/merch4-accessories.html">Accessories</a>
-        </div>
-    </div>
 
-    <div class="accountrf">
-        <div class="headerrf">
-            <h2>About Us</h2>
+        <div class="accountrf">
+            <div class="headerrf">
+                <h2>About Us</h2>
+            </div>
+            <div class="hyperlinksrf">
+                <a href="../../../new-about-us/about-us.html">Mission</a>
+                <a href="../../../new-about-us/about-us.html#press">Press</a>
+                <a href="../../../new-end-page/na-base.html">Contact Us</a>
+            </div>
         </div>
-        <div class="hyperlinksrf">
-            <a href="../../../new-about-us/about-us.html">Mission</a>
-            <a href="../../../new-about-us/about-us.html#press">Press</a>
-            <a href="../../../new-end-page/na-base.html">Contact Us</a>
-        </div>
-    </div>
 
-    <div class="accountrf">
-        <div class="headerrf">
-            <h2>Legal</h2>
+        <div class="accountrf">
+            <div class="headerrf">
+                <h2>Legal</h2>
+            </div>
+            <div class="hyperlinksrf">
+                <a href="../../../new-end-page/na-base.html">Terms & Conditions</a>
+                <a href="../../../new-end-page/na-base.html">Privacy Policy</a>
+                <a href="../../../new-end-page/na-base.html">Cookies</a>
+            </div>
         </div>
-        <div class="hyperlinksrf">
-            <a href="../../../new-end-page/na-base.html">Terms & Conditions</a>
-            <a href="../../../new-end-page/na-base.html">Privacy Policy</a>
-            <a href="../../../new-end-page/na-base.html">Cookies</a>
-        </div>
-    </div>
 
-    <div class="accountrf">
-        <div class="headerrf">
-            <h2>Social</h2>
+        <div class="accountrf">
+            <div class="headerrf">
+                <h2>Social</h2>
+            </div>
+            <div class="iconsrf">
+                <a href="#"><img src="../../../icons/instagram.png" alt="instagram logo" id="instagram"></a>
+                <a href="#"><img src="../../../icons/facebook.png" alt="facebook logo" id="facebook"></a>
+                <a href="#"><img src="../../../icons/linkedin.png" alt="linkedin logo" id="linkedin"></a>
+            </div>
         </div>
-        <div class="iconsrf">
-            <a href="#"><img src="../../../icons/instagram.png" alt="instagram logo" id="instagram"></a>
-            <a href="#"><img src="../../../icons/facebook.png" alt="facebook logo" id="facebook"></a>
-            <a href="#"><img src="../../../icons/linkedin.png" alt="linkedin logo" id="linkedin"></a>
-        </div>
-    </div>
 
-    <div class="belowrf">
-        <a href="index.html"><img src="../icons/icon.png" alt="trion logo"></a>
-        <h3>© 2025 by TRION.</h3>
-    </div>
-</footer>
+        <div class="belowrf">
+            <a href="index.html"><img src="../icons/icon.png" alt="trion logo"></a>
+            <h3>© 2025 by TRION.</h3>
+        </div>
+    </footer>
 </body>
-
 </html>

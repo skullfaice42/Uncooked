@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+} 
+ 
+ /* container */
+ .container {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url(../icons/conformation-bg.png);
+    height: 80vw;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.box {
+    width: 87.64vw;
+    height: 38.19vw;
+    background-color: #003B76;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20vw; /* Apply top margin */
+}
+
+
+/* for the content of the container */
+.icon{
+    height: 13.68vw;
+    width: 14.03vw;
+    margin: 0 auto;
+}
+.box img{
+    justify-self: center;
+}
+.box h2{
+    font-size: 4rem;
+    text-align: center;
+    font-weight: var(--bold);
+}
+.box p{
+    /* width: 60%; */
+    font-size: 1.5rem;
+    text-align: center;
+}
+.lower-box{
+    display: flex;
+    color: white;
+    padding: 10px 20px;
+    /* margin-left: auto; */
+    /* border: var(--border3); */
+    background-color: #0073E6;
+    align-items: center;
+    gap: 1vw;
+    transition: all 0.3s ease;
+}
+.lower-box:hover{
+    scale: 0.95;
+    background-color: #005bb5;
+}
+
+
+.lower-box img{
+
+    height: 4.5vw;
+    width: 2.29vw;
+}
+.container .box a{
+    text-decoration: none;
+    /* text-align: center; */
+    margin: 0 auto;
+    margin-top: 4.375vw;
+    /* padding: 10px 20px; */
+    font-weight: var(--semi-bold);
+}
+.lower-box h2{
+    font-size: 2rem;
+}
+
+
+@media (max-width: 440px){
+    .box{
+        height: 83.4vw;
+        top: 15%;
+        padding-bottom: 3vw;
+        padding-top: 3vw;
+        /* margin-left: 4vw; */
+    }
+    .icon{
+        width: 32vw;
+        height: 31.1vw;
+    }
+    .box h2{
+        font-size: 3rem;
+    }
+    .lower-box{
+        justify-self: center;
+        /* border: var(--border2); */
+    }
+    .holder-of-p{
+        width: 85%;
+        margin: 0 auto;
+    }
+    .container{
+        background-image: url(../icons/conformation-bg-mobile.png);
+        height: 230vw;
+    }
+    .lower-box img{
+        height: 12.5vw;
+        width: 6.59vw;
+    }
+    .lower-box h2{
+        font-size: 1.5rem;
+    }
+}

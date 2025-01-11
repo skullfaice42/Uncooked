@@ -129,8 +129,16 @@ input[type="radio"]{
     /* height: 10vw; */
     background-color: #4F4F4F;
 }
+
+
+
+
+
+
 .color-options .body,
-.color-options .rim{
+.color-options .rim,
+.color-options .seat,
+.color-options .stitching{
     margin-top: 3.4vw;
     margin-left: 5.3vw;
     margin-right: 5.3vw;
@@ -162,7 +170,9 @@ input[type="radio"]{
 }
 
 .body a,
-.rim a{
+.rim a,
+.seat a,
+.stitching a{
     text-decoration: none;
     font-weight: var(--light);
     font-size: 1rem;
@@ -196,14 +206,11 @@ input[type="radio"]{
 {
     transition: all 0.3s ease-in-out;
 }
-#body:checked ~ .body,
-#rim:checked ~ .rim,
-#seat:checked ~ .seat,
-#stitching:checked ~ .stitching{
-    display: block;
-}
+
 #body:checked ~ .options label[for="body"] h2,
-#rim:checked ~ .options label[for="rim"] h3
+#rim:checked ~ .options label[for="rim"] h3,
+#seat:checked ~ .options label[for="seat"] h2,
+#stitching:checked ~ .options label[for="stitching"] h3
 {
     /* text-decoration: underline; */
     text-decoration-color: white;
@@ -214,11 +221,29 @@ input[type="radio"]{
 .color-options .rim,
 .color-options .seat,
 .color-options .stitching{
-    display: none;
+    display: none; /*kek, i now know how to fix this easilly*/
+
+    /* height: 0;
+    width: 0;
+    visibility: hidden;
+    opacity: 0;
+    margin: 0;
+    transition: all 1s; */
 }
 
 
+#body:checked ~ .body,
+#rim:checked ~ .rim,
+#seat:checked ~ .seat,
+#stitching:checked ~ .stitching{
+    display: block;
+    /* margin-top: 5vw;
+    height: auto;
+    width: auto;
+    opacity: 1;
+    visibility: visible; */
 
+}
 
 
 
@@ -348,14 +373,25 @@ input[type="checkbox"]{
 }
 
 .more .long{
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    transition: all 0.3s ease-in-out;
 }
 
 #read-more:checked ~ .summary-review .section .summary-right .more .short{
-    display: none;
+    /* display: none; */
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    opacity: 0;
 }
 #read-more:checked ~ .summary-review .section .summary-right .more .long{
-    display: block;
+    visibility: visible;
+    opacity: 1;
+    width: auto;
+    height: auto;
 }
 #read-more:checked ~ .lower-buttons{
     margin-top: 50vw !important;
@@ -537,6 +573,7 @@ input[type="checkbox"]{
     justify-content: center;
     height: 4.5vw;
     gap: 1vw;
+    transition: all 0.3s;
 }
 .lower-buttons .change-car{
     width: 24.6vw;
@@ -619,9 +656,21 @@ font-size: .75em;
 }
 @media (max-width: 1103px){
     .lower-buttons{
-        position: inherit;
-        display: flex;
+        /* position: inherit; */
+        /* display: flex; */
+        flex-direction: column;
+        /* gap: 0; */
         margin-top: 25vw !important;
+        height: 100vw;
+        border: var(--border3);
+
+        align-items: center;
+        justify-content: center;
+    }
+    .change-car{
+        margin: 0;
+        
+        /* margin-top: -121vw; */
     }
     .more{
         display: flex;
@@ -707,7 +756,7 @@ font-size: .75em;
         margin-top: 60vw !important;
     }
     .lower-buttons h2{
-        font-size: .75/rem;
+        font-size: .75rem;
     }
 }
 
@@ -715,20 +764,17 @@ font-size: .75em;
 
 
 @media (max-width: 440px){
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .change-cont p{
+        font-size: 1.5rem !important;
+        /* border: var(--border1); */
+    }
+    .options h2,
+    .options h3{
+        font-size: 1.5rem;
+    }
+    .options{
+        justify-content: space-between;
+    }
 
 
     .banner-cont h1{
@@ -780,7 +826,7 @@ font-size: .75em;
     }
 
     .summary-review { 
-        height: 58vh;
+        /* height: 58vh; */
         display: flex;
         flex-direction: column-reverse;
         flex-wrap: wrap;
@@ -788,8 +834,17 @@ font-size: .75em;
 
     }
     .summary-left a { 
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-weight: 300;
+    }
+    .summary-left .stand-equip img,
+    .summary-left .tri-code img,
+    .summary-left .change-model img
+    {
+        margin-left: 4vw; /*eyeballed this*/
+        height: 6.5vw;
+        width: 6.5vw;
+        /* aspect-ratio: 1/1; */
     }
     .totalprice p:first-child { 
         font-size: 1.25rem;
@@ -802,6 +857,20 @@ font-size: .75em;
     }
     .summary-left{ 
         width: 100vw;
+        border: 2px solid wheat;
+        position: absolute;
+        margin-top: 30vw;
+        top: 110%; /*remember to change this once you have the top one figured out*/
+        
+    }
+    .summary-right{
+        margin-top: 60vw;
+    }
+    
+    
+    .stand-equip{
+        /* margin-top: 100vw; */
+        border: 2px solid red;
     }
     .section {
         width: 100vw;

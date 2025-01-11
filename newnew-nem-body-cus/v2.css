@@ -272,7 +272,9 @@ input[type=radio]{
 }
 
 /* top text for right side here */
-        
+        .mobile-header{
+            display: none;
+        }
         .gets-margin .top-text h2{
             font-size: 4rem !important;
             font-weight: var(--bold);
@@ -882,7 +884,20 @@ input[type=radio]{
     .go-to-buttons .but{
         width: 50vw;
     }
+    .mobile-header{
+        display: block;
+        /* position: absolute; */
+        font-size: 3rem !important;
+        font-weight: var(--bold);
+        margin-top: 1vw;
+        color: white;
+    }
+    .top-text h2{
+        display: none;
+    }
 }
+
+    
 
 
 

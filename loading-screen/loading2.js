@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() { //domcontentloaded en
     setTimeout(function() {
         loading.style.opacity = 0;
         setTimeout(function(){
-            loading.style.display = "none"},2000);
+            loading.style.display = "none"},4000); //had to update because 2 seconds wasent long enough
     }, 2000);
 });
 ;
