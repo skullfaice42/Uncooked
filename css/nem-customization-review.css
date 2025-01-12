@@ -812,7 +812,7 @@ font-size: .75em;
         /* margin: 0; */
         /* margin-top: 30vw !important; */
     }
-    .options{
+    /* .options{
         margin-top: 10vw;
     }
     .summary-right .leftbold { 
@@ -826,7 +826,7 @@ font-size: .75em;
     }
 
     .summary-review { 
-        /* height: 58vh; */
+
         display: flex;
         flex-direction: column-reverse;
         flex-wrap: wrap;
@@ -841,10 +841,10 @@ font-size: .75em;
     .summary-left .tri-code img,
     .summary-left .change-model img
     {
-        margin-left: 4vw; /*eyeballed this*/
+        margin-left: 4vw; 
         height: 6.5vw;
         width: 6.5vw;
-        /* aspect-ratio: 1/1; */
+
     }
     .totalprice p:first-child { 
         font-size: 1.25rem;
@@ -860,22 +860,59 @@ font-size: .75em;
         border: 2px solid wheat;
         position: absolute;
         margin-top: 30vw;
-        top: 110%; /*remember to change this once you have the top one figured out*/
+
         
     }
     .summary-right{
         margin-top: 60vw;
-    }
+    } */
     
-    
+/*     
     .stand-equip{
-        /* margin-top: 100vw; */
+
         border: 2px solid red;
     }
     .section {
         width: 100vw;
         justify-content: center;
-        display: flex;
+        display: flex; */
 
+    /* } */
+    .summary-right .leftbold { 
+        font-size: 1rem;
+    }
+    .order-summary-head h2 { 
+        font-size: 1.5rem;
+    }
+    .rightmoney { 
+        font-size: 1rem !important;
+    }
+    .summary-review { 
+        height: fit-content;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+    .summary-left a { 
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    .totalprice p:first-child { 
+        font-size: 1.25rem;
+    }
+    .totalprice p:nth-child(2) { 
+        font-size: 1.25rem;
+    }
+    .summary-right { 
+        width: 80vw;
+    }
+    .summary-left{ 
+        width: 100vw;
+    }
+    .section {
+        width: 100vw;
+        justify-content: center;
+        display: flex;
     }
 }

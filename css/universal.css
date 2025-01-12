@@ -557,7 +557,9 @@ input[type="checkbox"]#access:not(:checked) ~ .access-overlayhhh{
         
         .dark-modehhh .circlehhh{
             display: flex;
-            justify-items: center;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
             width: 3.8vw;
             height: 3.8vw;
             border-radius: 3.8vw;
@@ -568,10 +570,7 @@ input[type="checkbox"]#access:not(:checked) ~ .access-overlayhhh{
         .dark-modehhh .circlehhh p{
             font-size: 2rem;
             font-weight: var(--bold);
-            margin-left: auto; /*i mean... it works dont it?*/
-            margin-right: auto;
-            margin-top: auto;
-            margin-bottom: auto;
+
         }
         .color-optionshhh .bluehhh{
             color: white;
@@ -580,7 +579,9 @@ input[type="checkbox"]#access:not(:checked) ~ .access-overlayhhh{
         .color-optionshhh .whitehhh{
             background-color: white;
             color: black;
-            border: 3px solid black;
+            border: 2px solid black;
+            height: 4.0vw;
+            width: 4.0vw;
         }
         .color-optionshhh .blackhhh{
             background-color: black;
@@ -1059,6 +1060,9 @@ body:has(input[type="radio"]#ur:checked) .lan1hhh{
         padding-bottom: 1rem;
     }
 
+
+
+    
 }
 
 /* END OF UPDATED HEADER */
