@@ -16,3 +16,7 @@ by sunday {
     well as other pages that were 
     messed up to begain with
 }
+by monday{
+    FOCUS on everything should be compleated (the psudo class)
+    proper font weight to everything as well
+}
