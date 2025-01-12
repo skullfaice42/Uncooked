@@ -1,0 +1,270 @@
+/* the top of the pages are used for varables */
+input[type="text"]::placeholder{
+    font-size: 2rem;
+    color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-left: 1.25vw;
+}
+input[type="text"],
+input[type="text"]::placeholder{
+    color: #D9D9D9;
+    /* outline: 3px solid #0073E6; */
+    font-size: 2rem;
+}
+
+
+input[type="text"]:focus{
+    outline: 3px solid #0073E6;
+}
+
+.height{
+    height: 4.86vw;
+}
+.light h4{
+    font-weight: var(--light);
+    font-size: 1.5rem;
+}
+.mm{
+    margin-left: 3.6vw;
+    margin-right: 3.6vw;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+.dropdown{
+    font-size: 2rem;
+    font-weight: var(--regular);
+}
+.small-box input[type="text"]{
+    width: 22.22vw;
+}
+.half-box input[type="text"]{
+    width: 39vw;
+}
+.full-box input[type="text"]{
+    width: 80.69vw;
+}
+.layer1,
+.layer3,
+.layer4{
+    gap: .69vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100vw;
+    height: 85.56vw;
+    margin-top: 6.77vw;
+
+    position: relative;
+
+}
+
+
+/* blue box here kek */
+.blue-box{
+    position: absolute;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    top: 12%;
+    left: 6.5%;
+    background-color: #003B76;
+    
+    width: 87.92vw;
+    height: 69.58vw;
+
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 1.2vw; */
+}
+
+.blue-box .top img{
+    margin-top: 2.9vw;
+    height: 7.29vw;
+    width: auto;
+}
+.blue-box .top h3{
+    font-size: 2rem;
+    font-weight: var(--semi-bold);
+
+    margin-top: .7vw;
+    margin-bottom: 1.45vw;
+}
+.blue-box .top h4{
+    font-size: 1.5rem;
+    font-weight: var(--light);
+}
+
+.layer1{
+    display: flex;
+                     /*here is the proper spacing for the little gap*/
+    margin-top: 2.4vw;
+}
+
+.dropdown1{
+    width: 22.22vw;
+}
+
+.layer2{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.blue-box button{
+    background-color: #0073E6;
+    color: white;
+    border: none;
+
+    width: 28.13vw;
+    height: 3.6vw;
+    margin-top: 1.32vw;
+    margin-left: 3.6vw;
+    transition: all 0.3s ease-in-out;
+}
+button h2{
+    font-size: 1.5rem;
+    font-weight: var(--semi-bold);
+}
+
+.blue-box button:hover{
+    scale: 0.95;
+    background-color: #005bb5;
+}
+.blue-box button:focus{
+    outline: 3px solid #80bfff;
+}
+
+
+
+
+
+@media (max-width: 1024px){
+    .container .hero img{
+        height: 100vw;
+    }
+    .blue-box{
+        height: 80vw;
+    }
+    .blue-box button{
+        width: 40vw;
+    }
+}
+
+@media (max-width: 769px){
+    .layer1,
+    .layer3,
+    .layer4,
+    .mm{
+        gap: 0vw;
+    }
+
+.container .hero img{
+    height: 110vw;
+}
+.blue-box{
+    height: 95vw;
+}
+
+
+    .dropdown1,
+    .half-box input[type="text"],
+    .dropdown3,
+    .dropdown4{
+        width: 100%;
+    }
+
+
+    .layer1{
+        flex-direction: column;
+    }
+    .layer2{
+        flex-direction: column;
+    }
+    .blue-box button{
+        width: 82vw;
+        height: 4vw;
+    }
+}
+
+@media (max-width: 768vw){
+    .small-box h4,
+    /* .layer1 .dropdown, */
+
+    .half-box h4,
+    /* .half-box input[tupe="text"], */
+
+    .full-box h4,
+    /* .full-box input[type="text"], */
+
+    .lower-text h4{
+        margin-top: 1rem;
+        margin-bottom: 2.7vw;
+    }
+
+
+    .container .hero img{
+        height: 140vw;
+    }
+    .blue-box{
+        height: 130vw;
+    }
+
+}
+
+@media (max-width: 440px){
+    .blue-box .top img{
+        height: 24vw;
+    }
+    .container .hero img{
+        height: 260vw;
+    }
+    .blue-box{
+        height: 250vw;
+    }
+    .top h4{
+        /* font-size: 1.5rem; */
+        width: 80%;
+        text-align: center;
+    }
+    .layer1 .dropdown,
+    .half-box input[type="text"],
+    .full-box input[type="text"],
+    .blue-box button{
+        height: 12vw;
+    }
+
+    .lower-text h4{
+        font-size: 1.25rem;
+    }
+}
