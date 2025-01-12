@@ -675,4 +675,54 @@ a{
 .bot-box img{
     height: 10vw;
 }
+.the-rest { 
+    margin: 3rem auto;
+}
+.top-section {
+    width: 87.272vw;
+}
+.super-car h3 { 
+    font-size: 1.5rem;
+    
+}
+.super-car h4 { 
+    font-size: 1.25rem;
+}
+.times h3:nth-of-type(1) { 
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.times h3:nth-of-type(1) { 
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.top-section { 
+    padding-bottom: 4rem;
+}
+.text.spacing-left { 
+    font-size: 1rem;
+    font-weight: 200;
+    width: 67.954vw;
+    margin-right: 0;
+    margin-left: 8.636vw;
+    
+}
+.your-content-info h5 { 
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.your-message p{
+    font-size: 1rem;
+    font-weight: 200;
+    margin-left: 3.863vw;
+}
+textarea.no-resize { 
+    width: 68.409vw;
+    margin-left: 3.863vw;
+    font-size: 1rem;
+}
+textarea.no-resize::placeholder { 
+    font-size: 1rem;
+}
+
 }

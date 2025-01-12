@@ -267,29 +267,29 @@ text-align: center;
         width: 100%;
         font-size: 2rem;
         /* width: 230%; */
-        border: var(--border3);
+        /* border: var(--border3); */
         /* margin-left: 5vw; */
         /* margin-right: 5vw; */
     }
     
     .bott-mid .one:first-of-type h2:first-of-type,
     .bott-mid .one:first-of-type p:first-of-type{
-        border: 2px solid black;
+        /* border: 2px solid black; */
         width: 100%;
     }
     .bott-mid .one:nth-of-type(2) h2:first-of-type,
     .bott-mid .one:nth-of-type(2) p:first-of-type{
-        border: black 2px solid;
+        /* border: black 2px solid; */
         width: 100%;
     }
     .bott-mid .one:nth-of-type(3) h2:first-of-type,
     .bott-mid .one:nth-of-type(3) p:first-of-type{
-        border: 2px solid green;
+        /* border: 2px solid green; */
         width: 100%;
     }
     .bott-mid .one:last-of-type h2:first-of-type,
     .bott-mid .one:last-of-type p:first-of-type{
-        border: 2px solid black;
+        /* border: 2px solid black; */
         width: 100%;
         /* margin: 0; */
         /* margin-right: 20vw; */
@@ -372,9 +372,13 @@ text-align: center;
 
 @media (max-width: 440px){
     .topl-box{
-        font-size: 1.4rem;
-        padding: 1rem 2rem;
-        width: 35%;
+        width: 38.63636vw;
+        height: 8.409vw;
+        font-size: 1.5rem;
+    }
+    .top1-box p {
+        font-size: 1.5rem;
+        font-weight: 400;
     }
     .one h2,
     .one p{
@@ -393,10 +397,13 @@ text-align: center;
 
 
     .nem-banner{
-        height: 38.1818vw;
+        height: 37.954vw;;
         /* border: var(--border2); */
         font-size: 3.25rem;
-        margin-bottom: 3vw;
+    }
+    .nem-banner h2 {
+        font-size: 3rem;
+        margin-bottom: 5.40vw;
     }
     .mechanical{
         padding: 3vw 0 3vw 0;    /*ive had to take this out to ensure they look like the nem car page*/
@@ -437,6 +444,16 @@ text-align: center;
     .two-images .one-img:last-of-type h2:first-of-type{
         font-size: 2rem;
         top: 85%;
+    }
+    .top-lower {
+        display: none;
+    }
+    .bott-mid {
+        justify-content: flex-start;
+        margin-top: 14vw;
+        gap: 1rem;
+        margin-left: 12.54545vw;
+        width: fit-content;
     }
 }
 

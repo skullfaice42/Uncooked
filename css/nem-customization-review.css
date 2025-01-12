@@ -9,7 +9,7 @@ input[type="radio"]{
     display: none;
 }
 .banner-cont { 
-    width: 99vw;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -33,7 +33,7 @@ input[type="radio"]{
     flex-direction: column;
 }
 .sideview-car-showcase img{ 
-    width: 99vw;
+    width: 100vw;
 }
 .sideview-car-showcase .change-cont { 
     position: absolute;
@@ -259,7 +259,7 @@ input[type="radio"]{
 .box-name-money-cont { 
     display: flex;
     flex-direction: row;
-    width: 99vw;
+    width: 100vw;
     height: 7.291vw;
     align-items: center;
 }
@@ -326,7 +326,7 @@ input[type="radio"]{
     height: 35.8333vw;
     display: flex;
     flex-direction: row;
-    width: 99vw;
+    width: 100vw;
 }
 .summary-left { 
     width: 32.9861vw;
@@ -662,7 +662,7 @@ font-size: .75em;
         /* gap: 0; */
         margin-top: 25vw !important;
         height: 100vw;
-        border: var(--border3);
+        /* border: var(--border3); */
 
         align-items: center;
         justify-content: center;
@@ -739,7 +739,7 @@ font-size: .75em;
     .summary-right .leftbold,
     .summary-right .rightmoney{
         font-size: 1.5rem;
-        border: 2px solid red;
+        /* border: 2px solid red; */
     }
 }
 @media (max-width: 560px){
@@ -786,6 +786,7 @@ font-size: .75em;
     .selection-name h2{
         display: block;
         font-size: 1rem;
+        font-weight: 400;
     }
     #change-button{
         gap: 4vw;
@@ -905,7 +906,7 @@ font-size: .75em;
         font-size: 1.25rem;
     }
     .summary-right { 
-        width: 80vw;
+        width: 94vw;
     }
     .summary-left{ 
         width: 100vw;
@@ -914,5 +915,91 @@ font-size: .75em;
         width: 100vw;
         justify-content: center;
         display: flex;
+    }
+    .color-options { 
+        margin-top: 2rem;
+    }
+    .options h3 { 
+        margin-right: 1rem;
+    }
+    .content h4 { 
+        font-size: 1.25rem;
+        margin-left: 1rem;
+    }
+    .content h3 { 
+        font-size: 1.25rem;
+        margin-left: 1rem;
+    }
+    .lower-info div:first-of-type { 
+        height: 13.636vw;
+    }
+    .lower-info {
+        width: fit-content;
+    }
+    .edit { 
+        width: fit-content;
+        align-self: center;
+    }
+    .edit a { 
+        margin: 0;
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+    .body { 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    #body:checked ~ .body, #rim:checked ~ .rim, #seat:checked ~ .seat, #stitching:checked ~ .stitching {
+        display: flex;
+        padding-bottom: 3rem;
+    }
+    .more p { 
+        font-size: 0.9375rem;
+        font-weight: 200;
+    }
+    .summary-left .stand-equip,
+    .summary-left .tri-code, .summary-left .change-model { 
+        margin-left: 3vw;
+    }
+    .summary-left .stand-equip img, 
+    .summary-left .tri-code img {
+     
+        height: 4.545vw;
+        width: auto;
+    }
+
+    .summary-left .change-model img { 
+        height: 3.4vw;
+        width: auto;
+    }
+    .totalprice p:nth-of-type(2) {
+        font-weight: 300;
+    }
+    .lower-buttons .change-car {
+        width: 63.1818vw;
+        height: 12.5vw;
+    }
+    .change-car h2 {
+        font-size: 1.5rem;   
+        margin-left: .9375rem;
+    }
+    .change-car img { 
+        height: 12.5vw;
+    }
+    .change-car.inquiry img { 
+        margin-left: 1.5rem;
+    }
+    .lower-buttons { 
+        height: fit-content;
+        margin-top: 3rem !important;
+    }
+    .lower-buttons a { 
+        margin-top: .5rem;
+    }
+    footer { 
+        margin-top: 4rem !important;
+
     }
 }
