@@ -1,5 +1,5 @@
 by tonight{
-    the userflow has to be document(media querries)
+    the userflow has to be done(media querries)
     ...even if you have to re-make parts of the code
     all alts have to be filled in (ALL DONE BUT MERCH)
     all pages have to work

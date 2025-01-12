@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;700&display=swap');
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Lexend Deca', sans-serif;
+    }
+
+    body {
+        background-color: #050133;
+        color: white;
+    }
+
+    .hero-img {
+        position: relative;
+        width: 100%;
+    }
+
+    .hero-img .background-img {
+        display: block;
+        width: 100%;
+        height: auto;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .overlay {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 87.916vw;
+        height: 46vw;
+        color: white;
+        text-align: center;
+        /* border: 3px solid green; */
+        background-color: #003B76;
+    }
+    .hero-img .overlay .section{
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: 28.125vw;
+        /* border: 2px solid red; */
+    }
+
+    .overlay h2 {
+        font-size: 24px;
+    }
+    .overlay img{
+        margin-top: 2.94652vw;
+        margin-bottom: 1.1506vw;
+        justify-self: center;
+        width: 6.875vw;
+        height: 6.875vw; /*fixed the height*/
+    }
+
+    .top-one h2{
+        font-size: 2em;
+    }
+    .top-one p{
+        margin-top: 1.4583vw;
+        font-size: 1.5em;
+        font-weight: var(--light);
+        margin-bottom: 1vw;
+    }
+    .login{
+        display: flex;
+        flex-direction: column;
+        gap: 1.25vw;
+        width: 100%;
+        /* border: 2px solid black; */
+    }
+    .login input[type="text"] {
+    width: 100%;
+    height: 3.611vw;
+    font-size: 1.5em;
+    color: black;
+    border: none;
+    }
+
+    .login input[type="text"]::placeholder {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    color: #D9D9D9;
+}
+
+.dont p{
+    margin-top: 1.25vw;
+    font-size: 1.5em;
+    margin-bottom: 3.0555vw;
+    text-align: left;
+}
+.dont a{
+    color: white;
+    margin-left: 2vw;
+}
+
+
+
+    .login .log-in{
+        background-color: #0073E6;
+        height: 3.611vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease-in;
+    }
+    .login .log-in:hover{
+        scale: 0.95;
+        background-color: #005bb5;
+    }
+    .login .log-in:focus{
+        outline: 3px solid #80bfff;
+        /* background-color: black; */
+    }
+
+
+
+.the-rest p{
+    margin-top: 1.25vw;
+    font-size: 1.5em;
+    text-align: left;
+}
+.email {
+    margin-top: 1.25vw;
+    display: flex;
+    align-items: center;
+    border: 3px solid #0073E6;
+    width: 20.6944444vw;
+    height: 4.513888888vw;
+    justify-content: center;
+    gap: 1vw;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s ease-in-out;
+}
+.email:hover{
+    background-color: #0073E6;
+    /* color: #050133; */
+}
+.email:active{
+    transform: scale(0.95);
+}
+
+.the-rest .email img{
+    /* width: 3.91388vw;  */
+    height: 1.59vw;
+    width: 2.15vw;
+    margin-bottom: 3vw;
+    /* margin-top: 5%; */
+}
+
+
+
+
+@media (max-width: 1024px){
+    .overlay{
+        /* margin-top: 10vw; */
+        height: 58vw;
+    }
+    .hero-img .background-img{
+        height: 70vh;
+    }
+    .email{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    .overlay{
+        /* width: 80vw; */
+    }
+    .section{
+        width: 50vw !important;
+        /* border: var(--border2); */
+    }
+}
+@media (max-width: 440px){
+    .hero-img .background-img{
+        height: 120vw;
+    }
+    .overlay{
+        height: 85vw;
+        margin-top: 15vw;
+        /* display: none; */
+    }
+
+
+    .top-one h2{
+        font-size: 1.5rem;
+    }
+    .top-one p{
+        font-size: 1rem;
+    }
+    .login input::placeholder{
+        font-size: 1rem;
+        justify-content: center;
+    }
+    .login input[type="text"]{
+        height: 7vw;                  /*i think this is a pretty good one here*/
+    }
+    .login .log-in{
+        height: 7vw;
+    }
+    .dont p{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    }
+    .the-rest p{
+        font-size: 1rem;
+    }
+    .email{
+        height: 7vw;
+    }
+    .email h2{
+        font-size: 1rem;
+    }
+    .the-rest .email img{
+        height: 4vw;
+        width: 5vw;
+    }
+
+    
+
+}

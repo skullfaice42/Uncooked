@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/universal.css">
     <script src="../nav.js"></script>
+    <link rel="stylesheet" href="../css/account-login.css">
+    <link rel="stylesheet" href="../font-weight.css">
     <script src="../loading-screen/loading.js"></script>
     
 </head>
@@ -564,7 +566,7 @@
     
     </header>
     <div class="hero-img">
-        <img src="../new-imgdump/account-login-bg.jpg" alt="Hero Background">
+        <img src="../new-imgdump/account-login-bg.jpg" alt="Hero Background" class="background-img">
 
         <div class="overlay">
             <div class="section">
@@ -577,7 +579,7 @@
 
                 <div class="login">
                     <input type="text" placeholder="Trion ID">
-                    <div class="log-in">
+                    <div class="log-in" tabindex="0">
                         <h3>Log In</h3>
                     </div>
                 </div>
@@ -590,7 +592,7 @@
                     <hr>
                     <p>Log In Without Code</p>
                     <div class="email">
-                        <img src="../icons/you-got-mail.png" alt="Mail icon">
+                        <img src="../icons/you-got-mail2.png" alt="Mail icon">
                         <h2>Log In With Email</h2>
                     </div>
                     
@@ -702,133 +704,5 @@
     </footer>
 </body>
 
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;700&display=swap');
-    
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Lexend Deca', sans-serif;
-    }
 
-    body {
-        background-color: #050133;
-        color: white;
-    }
-
-    .hero-img {
-        position: relative;
-        width: 100%;
-    }
-
-    .hero-img img {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-
-    .overlay {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 87.916vw;
-        height: 43.47222vw;
-        color: white;
-        text-align: center;
-        /* border: 3px solid green; */
-        background-color: #003B76;
-    }
-    .hero-img .overlay .section{
-        display: flex;
-        flex-direction: column;
-        margin-left: auto;
-        margin-right: auto;
-        width: 28.125vw;
-        /* border: 2px solid red; */
-    }
-
-    .overlay h2 {
-        font-size: 24px;
-    }
-    .overlay img{
-        margin-top: 2.94652vw;
-        margin-bottom: 1.1506vw;
-        justify-self: center;
-        width: 6.875vw;
-        height: 6.875vw; /*fixed the height*/
-    }
-
-    .top-one h2{
-        font-size: 2em;
-    }
-    .top-one p{
-        margin-top: 1.4583vw;
-        font-size: 1.5em;
-    }
-    .login{
-        display: flex;
-        flex-direction: column;
-        gap: 1.25vw;
-        width: 100%;
-        /* border: 2px solid black; */
-    }
-    .login input[type="text"] {
-    width: 100%;
-    height: 3.611vw;
-    font-size: 1.5em;
-    color: #D9D9D9;
-    border: none;
-    }
-
-    .login input[type="text"]::placeholder {
-        display: flex;
-        justify-content: center;
-        align-self: center;
-    color: #D9D9D9;
-}
-.dont p{
-    margin-top: 1.25vw;
-    font-size: 1.5em;
-    margin-bottom: 3.0555vw;
-    text-align: left;
-}
-
-
-
-
-    .login .log-in{
-        background-color: #0073E6;
-        height: 3.611vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-
-
-.the-rest p{
-    margin-top: 1.25vw;
-    font-size: 1.5em;
-    text-align: left;
-}
-
-.email {
-    margin-top: 1.25vw;
-    display: flex;
-    align-items: center;
-    border: 3px solid #0073E6;
-    width: 20.6944444vw;
-    height: 4.513888888vw;
-}
-
-.the-rest .email img{
-    width: 3.91388vw; /*great question, i have no idea whats wrong with it either :(*/
-    /* border: 2px solid green; */
-    margin-top: 5%; /*looks about right but this is a guess... meaning i dont really know lmao*/
-}
-</style>
 </html>

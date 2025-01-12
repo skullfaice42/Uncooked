@@ -41,6 +41,9 @@ a {
     width: 69.16vw;
     justify-content: space-between;
 }
+.one{
+    text-align: center;
+}
 .one h2, .one p{
     font-size: 2rem;
 }
@@ -60,6 +63,7 @@ a {
     align-self: flex-end;
     margin-bottom: 5vw;
     margin-left: 41.0416vw;
+    padding: 1rem 2rem;
 
 }
 
@@ -172,9 +176,12 @@ line-height: 45px; /* Adjust the font */
 margin-bottom: .9722222vw;
 font-size: 2.5rem;
 }
+
 .mechanical p{
-font-size: 2rem;
-font-weight: 300;
+font-size: 1.5rem;
+font-weight: var(--light);
+line-height: 4rem;
+
 }
 .two-images{
     margin-top: 4.4444vw;
@@ -220,142 +227,216 @@ text-align: center;
 .two-images .arrow{
     display: none;
 }
-
-
-/* @media (max-width: 1024px){
+@media (max-width: 1024px){
     .top-lower{
-        width: 30vw;
+        top: 83%;
+        padding: 0;
+        width: 30%;
+        margin: 0;
+        left: 40%;
+    }
+    .mechanical{
+        padding: 2vw;
+    }
+    .mechanical p{
+        line-height: 3rem;
+    }
+    .bott-end .head-text h2{
+        font-size: 4rem;
+        margin-bottom: 4.1vw;
+    }
+}
+@media (max-width:768px){
+    .bott-mid{
+        top: 40%;
+        width: 100%;
+        justify-content: center;
+        
+        justify-content: space-between;
+        /* gap: 10vw; */
+        /* gap: 18vw; */
+        /* border: var(--border5); */
+        /* margin-left: auto; */
+        margin: 0;
+        /* padding-left: 20vw; */
+        margin-top: 8vw;
+        /* margin-left: 7vw; */
+    }
+    .one h2,
+    .one p{
+        width: 100%;
+        font-size: 2rem;
+        /* width: 230%; */
+        border: var(--border3);
+        /* margin-left: 5vw; */
+        /* margin-right: 5vw; */
     }
     
-} */
-/* @media (max-width: 768px){
-    .top-lower{
-        display: none;
-    }
-    .one{
-
-        text-align: center;
-
-    }
-    .one h2{
-        font-size: 1.5rem;
-    }
-    .one p{
-        font-size: 1.25rem;
-    }
-    .nem-banner{
-        margin-top: 5vw;
-        margin-bottom: 5vw;
+    .bott-mid .one:first-of-type h2:first-of-type,
+    .bott-mid .one:first-of-type p:first-of-type{
+        border: 2px solid black;
         width: 100%;
+    }
+    .bott-mid .one:nth-of-type(2) h2:first-of-type,
+    .bott-mid .one:nth-of-type(2) p:first-of-type{
+        border: black 2px solid;
+        width: 100%;
+    }
+    .bott-mid .one:nth-of-type(3) h2:first-of-type,
+    .bott-mid .one:nth-of-type(3) p:first-of-type{
+        border: 2px solid green;
+        width: 100%;
+    }
+    .bott-mid .one:last-of-type h2:first-of-type,
+    .bott-mid .one:last-of-type p:first-of-type{
+        border: 2px solid black;
+        width: 100%;
+        /* margin: 0; */
+        /* margin-right: 20vw; */
+    }
 
+    .top-lower p{
+        font-size: 2rem;
     }
     .nem-banner h2{
         font-size: 3rem;
     }
-    .mechanical p{
-        font-size: 1.5rem;
-        line-height: normal;
-    }
-    .one-img{
-        width: 100%;
-
-    }
-    .one-img a{
-
-        width: 50%;
-    }
-    .one-img a img{
-
-        height: 70vw;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .one-img h2{
-
-
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .two-images{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        justify-items: center;
-
-    }
-
-    .two-images h2{
-        position: absolute;
-    }  */
-
-
-    
-/* } */
-@media (max-width: 440px) {
-    .topl-box { 
-        font-size: 1.4rem;
-        width: 38.636vw;
-        height: 8.4090vw;
-    }
-    .bott-mid .one h2 {
-        font-size: .9375rem;
-    }
-    .bott-mid  .one p {
-        font-size: .875rem;
-    }
-    .one:nth-of-type(4) {
-        margin-left:2vw;
-    }
-    .bott-mid { 
-        width:  72vw;
-    }
-    .nem-banner {
-        height: 38.1818vw;
-    }
-    .nem-banner h2 { 
-        font-size: 3.25rem;
-        margin-bottom: 3vw;
-    }
-    .mechanical h2 { 
-        font-size: 1.3rem;
-        line-height: normal;
-        margin-bottom: 0;
-        
-    }
-    .mechanical > p { 
-        font-size: 1.1rem;
-        line-height: normal;
-        margin-bottom: 0;
-        font-weight: 300;
-    }
-    .mechanical { 
+    .mechanical{
         height: 40vw;
     }
-    .head-text h2 {
-        font-size: 1.5rem;
+    .mechanical h2{
+        font-size: 2rem;
     }
-    .interior h2 { 
-        top: none;
+
+    /* getting the img and text to be in a colom form */
+    .img-and-text{
+        flex-direction: column;
+        /* border: var(--border3); */
+        width: 100%;
     }
-    .exterior h2 { 
-        top: none;
+    .flexing .img-and-text img{
+        width: 100%;
+        height: auto;
+        /* border: var(--border2); */
     }
-    .two-images h2 { 
-        top: 0;
+    .flexing .img-and-text:nth-child(2) { /*because remember theres logic above that targets this one*/
+        flex-direction: column;
     }
-    .top-lower {
-        display: none;
-    }
-    .two-images { 
-        justify-content: space-between;
-    }
-    .left-cars .hero { 
-        height: 67vw;
+    .img-and-text .text h2{
+        font-size: 3rem;
     }
 
 
 
+    .two-images{
+        flex-direction: column;
+        /* width: 100%; */
+    }
+    .one-img{
+        /* width: 85%; */
+    /* border: var(--border2); */
+    }
+    .one-img img{
+        width: 100%;
+        height: auto;
+    }
 
+    /* to get the exterior and interor lined up */
+    .two-images .one-img:first-of-type h2:first-of-type{
+        position: absolute;
+        top: 35%;
+        text-align: center;
+        width: 100%;
+        font-size: 3rem;
+        /* scale: 2; */
+    }
+    .two-images .one-img:last-of-type h2:first-of-type{
+        /* scale: 3; */
+        top: 88%;
+        text-align: center;
+        width: 100%;
+        font-size: 3rem;
+        position: absolute;
+    }
+    .one-img h3{
+        margin-bottom: 1vw;
+        margin-top: 1vw;
+    }
 
 
 }
+
+
+
+
+
+@media (max-width: 440px){
+    .topl-box{
+        font-size: 1.4rem;
+        padding: 1rem 2rem;
+        width: 35%;
+    }
+    .one h2,
+    .one p{
+        font-size: .9375rem;
+    }
+    .top-lower{
+        width: 60vw;
+        margin: 0 auto;
+        left: 21%;
+        height: 7vw;
+    }
+    .top-lower img{
+        height: 10vw;
+    }
+
+
+
+    .nem-banner{
+        height: 38.1818vw;
+        /* border: var(--border2); */
+        font-size: 3.25rem;
+        margin-bottom: 3vw;
+    }
+    .mechanical{
+        padding: 3vw 0 3vw 0;    /*ive had to take this out to ensure they look like the nem car page*/
+        height: 45vw;
+    }
+    .mechanical h2{
+        height: 50vw;
+        /* margin-top: 2vw; */
+        font-size: 1.3rem;
+        /* line-height: normal; */
+        margin-bottom: 0;
+        /* z-index: 30; */
+    }
+    .mechanical p {
+        font-size: 1.1rem;
+        line-height: 1.7rem;
+        /* line-height: normal; */
+        /* margin-bottom: 0; */
+        /* font-weight: 300; */
+
+    }
+
+    /* the lower 2 images */
+    .flexing .img-and-text .text h2{
+        font-size: 2rem;
+    }
+    .flexing .img-and-text .text p{
+        font-size: 1rem;
+    }
+    .bott-end .head-text h2{
+        font-size: 1.6rem;
+    }
+
+    .two-images .one-img:first-of-type h2:first-of-type{
+        font-size: 2rem;
+        top: 33%;
+    }
+    .two-images .one-img:last-of-type h2:first-of-type{
+        font-size: 2rem;
+        top: 85%;
+    }
+}
+

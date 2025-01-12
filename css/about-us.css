@@ -1,0 +1,409 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Jim+Nightshade&family=Lexend+Deca:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend Deca";
+    color: white;
+}
+body{
+    overflow-x: hidden;
+}
+.ml{
+    margin-left: 4.65277vw;
+}
+.mr{
+    margin-right: 4.65277vw;
+}
+    .v-top{
+        position: relative;
+    }
+    .v-top img{
+        
+        position: relative;
+        /* width: fit-content; */
+        /* width: auto; */
+        width: 100%;
+    }
+    .v-top .overlay{
+        display: flex;
+        flex-direction: column;
+        /* gap: 1px; */
+        top: 15.27vw;
+        position: absolute;
+        width: 34.2361vw;
+    }
+    .v-top .overlay h2{
+        color: #0073E6;
+        font-size: 4em;
+    }
+    .v-top .overlay h3{
+        font-size: 2em;
+    }
+
+    /* 
+    
+    
+    
+    */
+    .card-flipped{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .three-rcards{
+        display: flex;
+        flex-direction: column;
+        gap: 6.5277vw;
+        /* display: flex; */
+        /* flex-direction: column-reverse; */
+        margin-top: 6.52777vw;
+        /* background-color: black; */
+    }
+    .card-1{
+        display: flex;
+        gap: 5.0694vw;
+    }
+    .card-1 img{
+        width: 40.20833vw;
+        height: 40.20833vw;
+    }
+    .card-1 h2{
+        font-size: 4em;
+    }
+    .card-1 p{
+        font-size: 2em;
+    }
+    .side-text{
+        display: flex;
+        flex-direction: column;
+        gap: 2.9166vw;
+    }
+    .side-text p,
+    .section-1 p,
+    .section-2 p,
+    .section-3 p,
+    .section-4 p
+    {
+        font-weight: var(--light);
+    }
+
+    /* 
+    
+    
+    
+    
+    */
+    .four-grid{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 6.527vw;
+        gap: 2vw;
+    }
+    .four-grid .section-1,
+    .four-grid .section-2,
+    .four-grid .section-3,
+    .four-grid .section-4{
+        width: 40.20833vw;
+        height: 25vw;
+        border: 2px solid white;
+    }
+    .four-grid .section-1 h3,
+    .four-grid .section-2 h3{
+        margin-top: .76388vw;
+        margin-bottom: .9722vw;
+        font-size: 2em;
+    }
+    .four-grid .section-3 h3,
+    .four-grid .section-4 h3{
+        font-size: 2em;
+        margin-top: 1.9444vw;
+        margin-bottom: .9722vw;
+    }
+    .four-grid .section-1 p,
+    .four-grid .section-2 p,
+    .four-grid .section-3 p,
+    .four-grid .section-4 p{
+        font-size: 1.5em;
+        /* width: 100%; */
+    }
+    .four-grid .section-1 img,
+    .four-grid .section-2 img,
+    .four-grid .section-3 img,
+    .four-grid .section-4 img{
+        width: 14.027vw;
+    }
+    /* .four-grid .section-3 img{    /* for whatever reason, they werent aligning so i just made them all the same
+        width: 12.0833vw;
+    }
+    .four-grid .section-4 img{
+        width: 12.847vw;
+    } */
+
+    .four-grid img{
+        border: 2px solid rgb(255, 0, 0);
+    }
+    .four-grid h3{
+        border: 2px solid green;
+    }
+
+
+.richard{
+    position: relative;
+    width: 100vw;
+}
+.richard .richard-overlay{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    top: 40%;
+    margin-left: 4.5vw;
+}
+.richard-overlay h2{
+    font-size: 2rem;
+    font-weight: var(--semi-bold);
+}
+.richard-overlay h3{
+    font-size: 2rem;
+    font-weight: var(--light);
+}
+
+
+
+
+.sub-overlay h5{
+    font-weight: var(--light);
+}
+
+.the-trion-team {
+    font-weight: var(--light);
+}
+.more-of-the-team .overlay p,
+.auto-show p,
+.news p{
+    font-weight: var(--light);
+}
+
+
+
+/* 
+
+
+
+
+
+
+*/
+.people{
+    margin-top: 6.5277vw;
+    position: relative;
+}
+.people img{
+    width: 100%;
+    position: relative;
+}
+.people .overlay{
+    position: absolute; /*wow i completelly forgot i already hav an overlay lol*/
+}
+/* 
+
+
+
+
+*/
+/* .people .the-team{
+    position: relative;
+} */
+.the-team{
+    display: flex;
+    flex-wrap: wrap;
+}
+.person1 {
+    width: 25%;
+    /* height: 27.777vw; */
+    position: relative;
+    /* border: 3px solid red; */
+
+}
+
+.person1 img {
+    width: 100%;
+    height: 100%;
+}
+.person1 h4{
+    font-size: 2em;
+}
+.person1 h5{
+    font-size: 1.5em;
+}
+.person1 .sub-overlay {
+    position: absolute;
+    top: 19.305vw; 
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* border: 2px solid cyan; */
+}
+
+
+.the-team .the-trion-team{
+    margin-top: 6.527777vw;
+}
+.the-team .the-trion-team h2{
+    font-size: 4em;
+}
+.the-team .the-trion-team p{
+    font-size: 2em;
+}
+/* 
+
+
+
+
+*/
+.more-of-the-team{
+    margin-top: 6.5277vw;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: flex-end;
+}
+.more-of-the-team img{
+    position: relative;
+}
+.more-of-the-team .overlay{
+    border: 3px solid red;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-left: 10.5555vw; */
+    /* top: 38.54166vw; */
+    /* left: 10.555vw; */
+    text-align: center;
+
+margin-bottom: 4.166666vw;
+    /* justify-content: flex-end; */
+}
+.more-of-the-team h2{
+    width: 38.75vw;
+    font-size: 2em;
+    /* align-self: center; */
+}
+.more-of-the-team p{
+    width: 78.8888vw;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-content: center; */
+    /* align-content: center; */
+    font-size: 2em;
+    
+}
+/* 
+
+
+
+
+
+*/
+.auto-show{
+    margin-top: 6.5277vw;
+}
+.auto-show h2{
+    font-size: 4em;
+}
+.auto-show p{
+    font-size: 2em;
+}
+/* 
+
+
+
+
+*/
+.carousel{
+    display: flex;
+    gap: 10px;
+    margin-top: 7.5vw;
+    width: 90vw;
+    overflow-x: scroll;
+    /* justify-content: center; */
+}
+.carousel img{
+    width: 43.26vw;
+    aspect-ratio: 1/1;
+}
+
+
+/* 
+
+
+
+
+*/
+.news{
+    margin-top: 6.5277vw;
+}
+.news h2{
+    font-size: 4em;
+}
+.news p{
+    font-size: 2em;
+}
+
+/* 
+
+
+
+
+*/
+
+
+.news-imgs{
+    /* border: 2px solid white; */
+    /* width: 50vw;
+    height: 45.138888888vw; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    position: relative;
+    /* justify-content: center; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.news-imgs .new1{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: flex-end;
+    width: 49vw; /*incorect value (i did -1) because then it wouldent get flex wrapped properlly*/
+    height: 45.138888888vw;
+}
+.news-imgs .new1 img{
+    position: relative;
+}
+
+
+
+.news-imgs .overlay{
+    position: absolute;
+    display: flex;
+    /* top: 0; */
+    text-align: center;
+    /* margin-top: 100%; */
+    margin-bottom: 4.4444vw;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    width: 100%;
+}
+.new1 .overlay h2{
+    font-size: 2rem;
+}
+
