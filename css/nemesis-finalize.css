@@ -647,7 +647,7 @@ a{
     
 }
 .the-rest{
-    height: 290vw;
+    height: 250vw;
 }
 
 
@@ -659,7 +659,7 @@ a{
     font-size: 1em;
 }
 .the-rest{
-    height: 300vw;
+    /* height: 300vw; */
 }
 
 .days-of-the-week .times h3{
@@ -673,7 +673,7 @@ a{
     gap: 0;
 }
 .bot-box img{
-    height: 10vw;
+    height: 7vw;
 }
 .the-rest { 
     margin: 3rem auto;
@@ -723,6 +723,12 @@ textarea.no-resize {
 }
 textarea.no-resize::placeholder { 
     font-size: 1rem;
+}
+.phone-container input::placeholder{
+    font-size: .8rem !important;
+}
+.phone-container input{
+    padding-bottom: 1vw;
 }
 
 }

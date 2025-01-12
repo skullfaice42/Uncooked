@@ -1,0 +1,322 @@
+/* varables go here */
+.w4l{
+    width: 26.73vw;
+    /* border: var(--border2); */
+}
+.w4l h3{
+    font-size: 1.9rem;
+    font-weight: var(--semi-bold);
+}
+.w42{
+    width: 41.66vw;
+    /* border: var(--border3); */
+}
+.mm{
+    margin-left: 1.875vw;
+    margin-right: 1.875vw;
+}
+.arrow{
+    /* filter: brightness(0) invert(1); */
+    /* margin-right: 3.68vw; */
+    /* border: var(--border2); */
+    transition: all 0.3s;
+}
+.arrow:hover{
+    filter: brightness(1.1) invert(56%) sepia(63%) saturate(355%) hue-rotate(192deg); /*got from gpt because i dident know how to change colors on images*/
+    /* filter: brightness(20%); */
+}
+
+hr{
+    margin-top: 1.8vw;
+    margin-bottom: 1.8vw;
+}
+.extra-margin{
+    /* width: 100%; */
+    margin-left: 4vw;
+}
+.extra-margin h3{
+    font-size: 1.5rem;
+    font-weight: var(--light);
+}
+.hidden-icon{
+    opacity: 0;
+}
+
+
+
+
+
+
+
+.top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.hero img{
+    position: relative;
+    margin-top: 6.944vw;
+    width: 100vw;
+}
+.dm img{
+    position: absolute;
+    /* opacity: 10%; */
+    top: 28%;
+    transform: translateX(-50%);
+    /* display: flex; */
+    /* align-self: center; */
+    /* justify-content: center; */
+
+    height: 10.8vw;
+    aspect-ratio: 1/1;
+}
+
+
+
+.top-text{
+    margin-top: 6.944vw;
+    text-align: center;
+}
+
+.top-text h2{
+    font-size: 4rem;
+    font-weight: var(--bold);
+}
+.top-text h3{
+    margin-top: 1vw;
+    font-size: 1.5rem;
+    font-weight: var(--regular);
+}
+
+.three-blue-boxes{
+    display: flex;
+    flex-direction: column;
+    gap: 2.78vw;
+    justify-content: center;
+    margin: 0 auto;
+
+    margin-top: 4.79vw;
+    /* width: 100vw;                   maybe this will work? */
+    /* justify-content: space-between; */
+}
+
+
+
+
+
+
+
+
+
+
+.bb1{
+    width: 90vw;
+    height: 30vw;
+    background-color: #003B76;
+    /* justify-content: center; */
+    margin: 0 auto;
+    padding-bottom: 2.5vw;
+}
+
+.bb2{
+    height: 37.7vw;
+    width: 90vw;
+    background-color: #003B76;
+    margin: 0 auto;
+}
+.bb3{
+    width: 90vw;
+    height: 21.95vw;
+    background-color: #003B76;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.overlay-text h2{
+    margin-top: 1.8vw;
+    font-size: 2.5rem;
+    font-weight: var(--bold);
+}
+
+.layer{
+    display: flex;
+    align-items: center;
+}
+.two-right{
+    display: flex;
+    /* justify-items: space-between; */
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 17vw;
+}
+.container-of-david{
+    display: flex;
+    align-items: center;
+    gap: 17vw;
+}
+.two-right h3{
+    font-size: 1.5rem;
+    font-weight: var(--light);
+    /* border: var(--border1); */
+    width: 40vw;
+}
+.container-of-david .david-miller{
+    width: 5.55vw;
+}
+
+.overlay-text-mobile{
+    display: none;
+}
+
+
+
+@media (max-width: 1024px){
+    .dm img{
+        top: 19.5%;
+    }
+    .bb1{
+        height: 37vw;
+    }
+    .bb2{
+        height: 47vw;
+    }
+    .bb3{
+        height: 30vw;
+    }
+}
+@media (max-width: 768px){
+    .dm img{
+        top: 15%;
+    }
+    .bb1{
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        height: 48vw;
+    }
+    .bb2{
+        height: 60vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
+    .bb3{
+        margin-top: 4vw; /*used math :cool:*/
+        height: 30vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
+
+
+
+
+
+
+
+    .arrow-mobile{
+        height: 10vw;
+    }
+
+    .overlay-text{
+        display: none;
+    }
+    .overlay-text-mobile{
+        display: block;
+    }
+
+
+
+    .flexing{
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-between;
+        align-items: center;
+    }
+    .coll h2{
+        font-size: 1.5rem;
+        font-weight: var(--semi-bold);
+    }
+    .coll h3{
+        font-size: 1.25rem;
+        font-weight: var(--light);
+    }
+
+
+    .overlay-text-mobile .flexing .david-miller{
+        height: 14vw;
+        width: 14vw;
+        /* aspect-ratio: 1/1; */
+    }
+}
+@media (max-width: 440px){
+    
+    hr{
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+    .top-text h2{
+        font-size: 2rem;
+        margin-top: 15vw;
+    }
+    .top-text h3{
+        font-size: var(--light);
+    }
+    .coll h3{
+        margin-top: 2vw;
+    }
+    .dm img{
+        top: 25%;
+        height: 15vw;
+        margin-bottom: 10vw;
+    }
+    .bb1{
+        height: 90vw;
+    }
+    .bb2{
+        height: 100vw;
+    }
+    .bb3{
+        height: 60vw;
+        margin-top: 2vw;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
