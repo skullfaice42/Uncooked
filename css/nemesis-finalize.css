@@ -654,16 +654,51 @@ a{
 
 }
 @media (max-width: 440px){
-
+.base{
+    height: 8.4vw;
+}
+::placeholder,
+option,
+textarea,
+#phone::placeholder,
+.dropdown{
+    font-size: 1.25rem !important;
+}
+.option,
+textarea.base{
+    align-content: center;
+}
 .lower-area p{
     font-size: 1em;
 }
 .the-rest{
-    /* height: 300vw; */
+    height: 300vw;                      /*testing right here*/
 }
 
+.lower-area{
+    margin-bottom: 14.55vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .days-of-the-week .times h3{
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 .bot-box h2{
     font-size: 1rem;
@@ -671,9 +706,15 @@ a{
 .bot-box{
     width: 97%;
     gap: 0;
+    height: 8.4vw;
 }
 .bot-box img{
     height: 7vw;
+    margin-left: 1vw;
+}
+.lower-area p a{
+    text-decoration: underline;
+    font-size: .8125rem;
 }
 .the-rest { 
     margin: 3rem auto;
@@ -717,8 +758,9 @@ a{
     margin-left: 3.863vw;
 }
 textarea.no-resize { 
-    width: 68.409vw;
-    margin-left: 3.863vw;
+    /* width: 68.409vw; */
+    width: 100%;
+    /* margin-left: 3.863vw; */
     font-size: 1rem;
 }
 textarea.no-resize::placeholder { 
@@ -731,4 +773,13 @@ textarea.no-resize::placeholder {
     padding-bottom: 1vw;
 }
 
+}
+@media (max-width: 440px){
+    .restheader{
+        padding-top: 6.14vw;
+    }
+    .restheader .arrange-a-callback{
+        /* padding-top: 6.14vw; */
+        font-size: 2rem;
+    }
 }

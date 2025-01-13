@@ -396,8 +396,15 @@ input[type="checkbox"]{
 #read-more:checked ~ .lower-buttons{
     margin-top: 50vw !important;
 }
+/* .short label, */
 .long label{
     color: #0073E6;
+    text-decoration: underline;
+    /* text-decoration-color: ; */
+}
+.short label{
+    color: white;
+    text-decoration: underline;
 }
 
 
@@ -536,6 +543,7 @@ input[type="checkbox"]{
 /* HERE */
 .more{
     font-weight: var(--light);
+    margin-top: 5vw;
 }
 
 .summary-readmore { 
@@ -582,7 +590,9 @@ input[type="checkbox"]{
     align-items: center;
     text-align: center;
     height: 100%;
-    padding: 10px 20px;
+    /* border: var(--border5); */
+    /* height: 55px; */
+    /* padding: 10px 20px; */
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, transform 0.2s ease-in-out;
 }
@@ -773,7 +783,8 @@ font-size: .75em;
         font-size: 1.5rem;
     }
     .options{
-        justify-content: space-between;
+        /* justify-content: space-between; */
+        gap: 9.31vw;
     }
 
 

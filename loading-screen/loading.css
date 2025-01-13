@@ -18,22 +18,21 @@
     z-index: 20;
     opacity: 1;
     transition: all 500ms ease;
-
-    /* Center content using flexbox */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#loading::after{
+#loading::after {
     content: "";
     position: absolute;
-    inset: 40%;
+    width: 15vw;
+    height: 15vw;
     border-radius: 50%;
-    border: 2vw solid white;
-    aspect-ratio: 1/1;
+    border: 1.5vw solid white;
     border-top-color: #3F8ECB;
     animation: spinner 1s linear infinite;
+    z-index: 1;
 }
 @keyframes spinner{
     from{
@@ -47,16 +46,13 @@
     height: 10vh;
 } */
 .loading-hero {
-    content: "";
-    /* Adjust the image size or container as needed */
-    height: 13vw;
-    animation: img-ease 2s ease-in-out infinite;
-    /* border: 2px solid green; */
-    margin-top: 5%;
-    position: absolute;
+    position: relative;
+    width: 8vw;
+    height: 8vw;
     display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
 }
 @keyframes img-ease{
     50%{
@@ -65,7 +61,10 @@
 }
 
 .loading-hero img {
+    width: 100%;
     height: 100%;
+    object-fit: contain;
+    /* border-radius: 50%; */
 }
 
 
@@ -77,14 +76,28 @@
     }
 }
 
-@media (max-width:768px){
-    .loading-hero{
-        margin-top: -8vw !important;
+@media (max-width: 768px) {
+    #loading::after {
+        width: 25vw;
+        height: 25vw;
+        border-width: 1vw;
+    }
+
+    .loading-hero {
+        width: 15vw;
+        height: 15vw;
     }
 }
 
-@media (max-width:440px){
-    .loading-hero{
-        margin-top: -30vw !important;
+@media (max-width: 440px) {
+    #loading::after {
+        width: 40vw;
+        height: 40vw;
+        border-width: 0.8vw;
+    }
+
+    .loading-hero {
+        width: 20vw;
+        height: 20vw;
     }
 }

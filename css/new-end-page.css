@@ -53,11 +53,12 @@
 .lower-box{
     display: flex;
     color: white;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     /* margin-left: auto; */
     /* border: var(--border3); */
     background-color: #0073E6;
     align-items: center;
+    height: 3.82vw;
     gap: 1vw;
     transition: all 0.3s ease;
 }
@@ -82,6 +83,7 @@
 }
 .lower-box h2{
     font-size: 2rem;
+    font-weight: var(--semi-bold);
 }
 
 
@@ -101,7 +103,11 @@
         font-size: 3rem;
     }
     .lower-box{
+        height: 12.5vw;
         justify-self: center;
+        width: 70vw;
+        gap: 1rem;
+        justify-content: center;
         /* border: var(--border2); */
     }
     .holder-of-p{

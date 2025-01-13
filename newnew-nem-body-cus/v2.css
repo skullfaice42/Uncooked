@@ -294,13 +294,16 @@ input[type=radio]{
 }
 
 /* colors with drop downs */
-
+    .color-widh-dropdown{
+        /* border: var(--border1); */
+    }
     .color-arrow{
         display: flex;
         justify-content: space-between;
         /* border: 2px solid black; */
         height: 100%;
         align-items: center;
+        /* border: var(--border2); */
     }
     .color-arrow h3{
         color: white;
@@ -326,6 +329,7 @@ input[type=radio]{
     .dropdown-content{
         width: 100%;
         height: 4.6vw;
+        /* height: 0; */
         margin-top: 1vw;
         margin-bottom: 1.7vw;
         gap: 1vw;
@@ -690,7 +694,7 @@ input[type=radio]{
     .color-arrow{
         /* border: var(--border1); */
         /* height: 7vw; */
-        margin-top: 5vw;
+        /* margin-top: 5vw; */          /*idk why this is even here*/
     }
 }
 
@@ -720,11 +724,11 @@ input[type=radio]{
         /* margin-left: 5vw; */
     }
     .left-cars .hero{
-        margin-left: 10vw;
+        /* margin-left: 10vw; */
     }
     .left-cars .sub-hero{
-        margin-top: 20vw;
-        margin-left: 10vw;
+        margin-top: 22vw;
+        /* margin-left: 10vw; */
     }
     .right-selectors{
         margin-top: 25vw;
@@ -785,9 +789,10 @@ input[type=radio]{
 }
 
 .color-widh-dropdown .dropdown-content{
-    margin-top: 2vw;
-    margin-bottom: 2vw;
+    /* margin-top: 2vw; */                                  /*makes the smallest differnece... i could change later if i want to */
+    /* margin-bottom: 2vw; */
     /* border: var(--border3); */
+    height: 0;
 }
 }
 
@@ -803,24 +808,22 @@ input[type=radio]{
 
      /* figuring otu the sub-hero nanage */
      .sub-hero{
-        gap: 32vw !important;
-        margin-left: 0;
+        gap: 41vw !important;                      /*experementing*/
+        margin-left: 1vw;
         overflow-x: scroll;
-        height: 30vw !important;
+        height: 28vw !important;                      /*experementing*/
+        width: 98vw !important;
+        /* margin-top: 2vw; */
         /* margin-bottom: 10vw; */
+        /* border: var(--border5); */
 
      }
      .sub-hero .option{
-        width: 30vw;
-        /* height: 20vw; */
-        /* height: auto; */
-        /* height: 40vw; */
-        /* border: var(--border2); */
-        /* gap: 10vw !important; */
+        /* width: 30vw !important; */
      }
      .option img{
         /* height: 100%; */
-        width: 27vw !important;
+        width: 40vw !important;                        /*experementing*/
      }
 
      /* messing with the below colors */
@@ -877,23 +880,57 @@ input[type=radio]{
 }
 
 @media (max-width:440px){
+    
+    .hero{
+        /* border: 4px solid black; */
+        margin: 0;
+        width: 100vw !important;
+
+        /* height: 20vw; */
+    }
+    .color-arrow{
+        /* border: var(--border4); */
+        /* line-height: 81vw !important; */
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+
     .dropdown-content{
         /* border: 2px solid white; */
-        margin-bottom: 10vw !important;
+        /* margin-bottom: 10vw !important; */
+    }
+    .go-to-buttons{
+        margin-top: 9.5vw;
+        gap: 3vw;
     }
     .go-to-buttons .but{
         width: 50vw;
+        /* gap: 31vw; */
     }
     .mobile-header{
         display: block;
         /* position: absolute; */
         font-size: 3rem !important;
         font-weight: var(--bold);
-        margin-top: 1vw;
+        /* margin-top: 1vw; */
         color: white;
+        z-index: 20;
+        opacity: 1;
+        /* margin-top: 21vw; */
+        /* border: 2px solid red; */
+    }
+    .interior-heading{
+        margin-top: 34vw;
+    }
+    .top-text{
+        /* margin: 0; */
+        /* border: var(--border1); */
     }
     .top-text h2{
         display: none;
+    }
+    .top-text h3{
+        /* border: var(--border2); */
     }
 }
 
@@ -1006,7 +1043,7 @@ to make sure nothing <em>funny</em> happens*/
 
     }
     .left-cars .hero { 
-        height: 67vw;
+        /* height: 67vw; */ /*had to take this out because it messed with hero on ext*/
     }
 }
 
