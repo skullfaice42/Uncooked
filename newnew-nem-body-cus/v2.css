@@ -327,17 +327,23 @@ input[type=radio]{
     font-weight: var(--light);
 }
     .dropdown-content{
-        width: 100%;
-        height: 4.6vw;
-        /* height: 0; */
-        margin-top: 1vw;
+        /* width: 100%; */
+        /* height: 4.6vw; */
+        /* margin-top: 1vw;
         margin-bottom: 1.7vw;
-        gap: 1vw;
+        gap: 1vw; */
+        /* display: none; */
+
+        /* visibility: hidden !important;
+        opacity: 0;
+        height: 0;
+        width: 0; */
     }
     .dropdown-content .two-colors{
         margin-top: 1vw;
         margin-bottom: 1vw;
         display: flex;
+        /* display: none; */
         gap: 1.5vw;
         /* background-color: black; */
         height: 6.9vw;
@@ -388,7 +394,10 @@ input[type=radio]{
 
     /* functionality for on click displays */
     .dropdown-content{
+        /* display: none; */
+
         visibility: hidden;
+        position: absolute;
         opacity: 0; 
         transition: all 0.3s;
         height: 0;
@@ -400,6 +409,8 @@ input[type=radio]{
     #blue:checked ~ .dropdown-content.blue,
     #green:checked ~ .dropdown-content.green,
     #shadow:checked ~ .dropdown-content.shadow{
+        /* display: block; */
+        position: relative;
         visibility: visible;
         opacity: 1;
         height: auto; /*allows for the box to expand upon being checked*/
@@ -807,6 +818,7 @@ input[type=radio]{
     } */
      .dropdown-content .two-colors{
         height: 20vw;
+        /* display: none; */
      }
 
      /* figuring otu the sub-hero nanage */
@@ -883,6 +895,12 @@ input[type=radio]{
 }
 
 @media (max-width:440px){
+    
+    /* .dropdown-content .two-colors{
+        opacity: 1;
+        visibility: visible;
+        display: block;
+    } */
     .go-to-buttons.go-to-buttons-mobile{
         display: flex;
         flex-direction: column;
@@ -1057,12 +1075,12 @@ to make sure nothing <em>funny</em> happens*/
         height: fit-content;
     }
     .gets-margin{
-        height: auto;
+        /* height: auto; */                          /*COMMENTED OUT FOR TESTING KEK*/
         /* border: 8px solid white; */
     }
     .right-selectors { 
         margin: 0;
-        height: 80vh; /*got rid to account for the buttons being on the outside*/
+        height: 70vw; /*got rid to account for the buttons being on the outside*/
         /* height: 60vw; */
         /* border: 2px solid green; */
 
