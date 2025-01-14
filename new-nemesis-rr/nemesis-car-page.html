@@ -713,7 +713,7 @@
         </div>
     </div>
 
-    <div class="accountrf">
+    <div class="accountrf messedup1">
         <div class="headerrf">
             <h2>Merchandise</h2>
         </div>
@@ -725,7 +725,7 @@
         </div>
     </div>
 
-    <div class="accountrf">
+    <div class="accountrf messedup2">
         <div class="headerrf">
             <h2>About Us</h2>
         </div>
@@ -736,7 +736,7 @@
         </div>
     </div>
 
-    <div class="accountrf">
+    <div class="accountrf messedup3">
         <div class="headerrf">
             <h2>Legal</h2>
         </div>
@@ -747,7 +747,7 @@
         </div>
     </div>
 
-    <div class="accountrf">
+    <div class="accountrf messedup4">
         <div class="headerrf">
             <h2>Social</h2>
         </div>
@@ -759,7 +759,7 @@
     </div>
 
     <div class="belowrf">
-        <a href="index.html"><img src="../icons/icon.png" alt="trion logo"></a>
+        <a href="../index.html"><img src="../icons/icon.png" alt="trion logo"></a>
         <h3>© 2025 by TRION.</h3>
     </div>
 </footer>
@@ -774,6 +774,71 @@
 
 
 </body>
+
+<!-- 3.6666 -->
+<style>
+footer{
+    gap: 0;
+}
+.messedup1,
+.messedup2,
+.messedup3,
+.messedup4{
+    margin-top: 3.6666vw;
+}
+.accountrf:nth-child(2){  margin-right: 1.8333vw;margin-bottom: 1.8333 ;}
+.accountrf:nth-child(3){  margin-right: 1.8333vw;margin-bottom: 1.8333 ;}
+.accountrf:nth-child(4){  margin-right: 1.8333vw;margin-bottom: 1.8333 ;}
+.accountrf:nth-child(5){  margin-right: 1.8333vw;margin-bottom: 1.8333 ;}
+.accountrf:nth-child(6){  margin-right: 1.8333vw;margin-bottom: 1.8333 ;}
+.accountrf:nth-child(7){  margin-right: 1.8333vw;margin-top: 1.8333 ;}
+.accountrf:nth-child(8){  margin-right: 1.8333vw;margin-top: 1.8333 ;}
+.accountrf:nth-child(9){  margin-right: 1.8333vw;margin-top: 1.8333 ;}
+.accountrf:nth-child(10){  margin-right: 1.8333vw;margin-top: 1.8333 ;}
+
+@media (max-width: 768px){
+    .messedup1,
+    .messedup2,
+    .messedup3,
+    .messedup4{
+        margin: 0;
+}
+}
+
+@media (max-width: 440px){
+    .accountrf:nth-child(9){
+        text-align: left !important;
+        margin: 0;
+    }
+
+    footer{
+        /* gap: 8vw; */
+    }
+
+    .accountrf:nth-child(2),
+    .accountrf:nth-child(3),
+    .accountrf:nth-child(4),
+    .accountrf:nth-child(5),
+    .accountrf:nth-child(6),
+    .accountrf:nth-child(7),
+    .accountrf:nth-child(8),
+    .accountrf:nth-child(9),
+    .accountrf:nth-child(10)
+    {
+        /* border: 2px solid red; */
+        margin-bottom: 8vw;
+    }
+    .accountrf:nth-child(9) h2{
+        margin: 0;
+        /* border: var(--border5); */
+    }
+}
+</style>
+
+
+
+
+
     <script>
         // carasel part here
         let index = 0;

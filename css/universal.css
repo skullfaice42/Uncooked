@@ -154,6 +154,7 @@ opacity: 0;
 }
 .headingshhh h3{
     font-size: 2rem;
+    transition: all 0.3s ease-in-out;
 }
 
 
@@ -199,6 +200,22 @@ input[type="checkbox"]#check:checked ~ .menu-contenthhh {
     /* transform: translateX(-25deg); */
 }
 
+input[type="checkbox"]#sub:checked ~ label:nth-child(3),
+input[type="checkbox"]#sub2:checked ~ label:nth-child(6),
+input[type="checkbox"]#sub3:checked ~ label:nth-child(9),
+input[type="checkbox"]#sub4:checked ~ label:nth-child(12),
+input[type="checkbox"]#sub5:checked ~ label:nth-child(15),
+input[type="checkbox"]#sub6:checked ~ label:nth-child(18),
+input[type="checkbox"]#sub8:checked ~ label:nth-child(21)
+{
+    color: #0073E6;
+    
+}
+
+
+
+
+
 input[type="checkbox"]#sub:checked ~ .more-contenthhh,
 input[type="checkbox"]#sub2:checked ~ .more-content2hhh,
 input[type="checkbox"]#sub3:checked ~ .more-content3hhh,
@@ -238,11 +255,18 @@ input[type="checkbox"]#sub8:checked + label .headingshhh img {
 .iconhhh{
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 20%;
     height: 7vw;
     /* border: 2px solid green; */
     position: absolute;
     top: 0;
+    justify-content: center;
+    margin-left: auto;
+    z-index: 1; /*not too sure why this works but it just kinda does*/
+
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); 
 }
 .iconhhh img{
     /* border: 2px solid black; */
@@ -606,8 +630,10 @@ input[type="checkbox"]#access:not(:checked) ~ .access-overlayhhh{
             justify-content: center;
             align-items: center;
             text-align: center;
-            width: 8vw;
-            height: 8vw;
+            /* width: 8vw; */
+            /* height: 8vw; */                     /*WHOOPS... THIS WAS SOPPOSED TO BE FOR THE MOBILE APP*/
+            width: 3.8vw;
+            height: 3.8vw;
             border-radius: 3.8vw;
             background-color: black;
             color: white;
@@ -626,8 +652,10 @@ input[type="checkbox"]#access:not(:checked) ~ .access-overlayhhh{
             background-color: white;
             color: black;
             border: 2px solid black;
-            height: 8vw;
-            width: 8vw;
+            /* height: 8vw; */
+            /* width: 8vw; */
+            width: 3.8vw;
+            height: 3.8vw;
         }
         .color-optionshhh .blackhhh{
             background-color: black;
@@ -708,20 +736,30 @@ input[type="checkbox"]#access:not(:checked) ~ .access-overlayhhh{
 /* blind users here (idk how to make it work :[) */
 .blind-usershhh img,
 .keyboard-navhhh img{
-    width: 8vw;
-    height: 8vw;
+    /* width: 8vw; */
+    /* height: 8vw; */
+    width: 3.8vw;
+    height: 3.8vw;
 }
 
 .reset-settingshhh h2{
     /* border: 2px solid green; */
     text-align: center;
-    font-size: 2rem;
-    background-color: #0073E6;
+    font-size: 2rem !important;
+    
     color: white;
+    /* font-size: var(--regular); */
+    font-weight: var(--regular);
 }
 .reset-settingshhh{
+    margin-top: 3vw;
     margin-left: 1.041vw; /*yeah, this just wont work because i have no idea how to make it work without js*/
     margin-right: 1.041vw;
+    height: 3.8vw;
+    background-color: #0073E6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* finial icon img here herhehrhehherhehhrhehrhehrherhherhehrhrehrhehrherhreherhrrehrherhe*/
@@ -835,7 +873,7 @@ body:has(input[type="radio"]#ur:checked) .lan1hhh{
 
 .access-againhhh{
     /* display: flex; */
-    display: none;
+    /* display: none; */
     position: absolute;
     top: 90%;
     right: 2%;
@@ -929,6 +967,24 @@ body:has(input[type="radio"]#ur:checked) .lan1hhh{
 
 
 @media (max-width: 440px) {
+
+
+
+
+
+.iconhhh{
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -160%); 
+}
+
+
+
+
+
+
+
+    
     .blue-tophhh img{
         height: 10vw;
         width: 10vw;
@@ -1318,11 +1374,14 @@ footer{
     color: white;
     margin-top: 10vw;
     /* z-index: 112; */
-    gap: 3.6666vw;
+    gap: 3.6666vw;                  /*1.8333            for half*/
     display: flex;
     flex-wrap: wrap;
-    margin-left: 3.97727vw;
-    margin-right: 3.97727vw;
+    margin-left: 8.97727vw;
+    /* margin-right: 3.97727vw; */
+    /* border: 2px solid green; */
+/* border: 2px solid red; */
+
 }
 .hyperlinksrf a{
     text-decoration: none;
@@ -1341,11 +1400,16 @@ footer{
     flex-direction: column;
     gap: 1.04166vw;
 }
-
+.accountrf{
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+}
 
 
 .accountrf, .socialrf{
     width: 16%;
+    
 }
 
 .accountrf .headerrf{
@@ -1408,7 +1472,7 @@ footer{
     .accountrf:nth-child(9){
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        /* align-items: center; */
         margin: 0 auto;
         /* padding-right: 6vw; */ /*sure... i mean its aligned*/
     }

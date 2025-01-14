@@ -48,28 +48,28 @@
 .herobuttons p { 
     margin-left: 1.319vw;
     width: fit-content;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 
 #build-button { 
     margin-left:.972vw; 
     background-color: #0073E6;
-    border-style: solid;
-    border-color:#0073E6;
+    border: solid #0073E6;
     width:11.944vw;
-    height: 4.513vw;
+    /* height: 4.513vw; */
 }
 #discovermore-button { 
-    border-style: solid;
-    border-color:#0073E6;
+    border: solid #0073E6;
     width: 22.222vw;
     height: 4.513vw;
+/* height: 50%; */
+    /* height: 50vw; */
     
 }
 
 .rfa { 
-    height: 2.393vw;
+    /* height: 2.393vw; */
     margin-left: 2.264vw;
 }
 
@@ -126,7 +126,7 @@
     flex-direction: row;
     background-color: #003B76;
     margin-left: 5.972vw;
-    margin-top: 5.763vw;
+    margin-top: 10.763vw;
 }
 
 .remaining { 
@@ -153,8 +153,9 @@
     font-weight: 600;
 }
 .exclusivity-counter article p {
-    font-size:  2rem;
-    line-height: 3.813rem;
+    font-size:  1.25rem;
+    line-height: 2.813rem;
+    font-weight: var(--light);
     margin-top: 1.389vw;
 }
 .exclusivity-counter .rightarrow img { 
@@ -195,7 +196,10 @@
     align-items: center;
     color: white;
     text-decoration: none;
-    width: fit-content;
+    /* width: fit-content; */
+    /* width: 30vw; */
+    /* padding-left: 1.319vw; */
+    /* padding-right: 1.319vw; */
 }
 
 #customize-button p { 
@@ -203,11 +207,12 @@
     margin-left: 1.319vw;
     line-height:normal;
     font-size: 2.5rem;
-    width: fit-content;
+    /* width: fit-content; */
 }
 #customize-button .rfa {
     height: 2.394vw;
     width: 1.449vw;
+    margin: 1vw;
 }
 
 .nem-name { 
@@ -312,14 +317,14 @@
     height: 4.514vw;
     border-style: solid;
     border-color:#0073E6;
-    margin-top: 1rem;
+    margin-top: 8vw;
 }
 
 #learnmore p { 
     margin:0;
     margin-left: 1.319vw;
     line-height:normal;
-    font-size: 2.5rem;
+    font-size: 2rem;
     width: fit-content;
     font-weight: 600;
 }
@@ -388,7 +393,7 @@
     margin:0;
     margin-left: 1.181vw;
     line-height:normal;
-    font-size: 2.5rem;
+    font-size: 2rem;
     width: fit-content;
     font-weight: 600;
 }
@@ -474,7 +479,7 @@
     margin:0;
     margin-left: 1.181vw;
     line-height:normal;
-    font-size: 2.5rem;
+    font-size: 2rem;
     width: fit-content;
     font-weight: 600;
 }
