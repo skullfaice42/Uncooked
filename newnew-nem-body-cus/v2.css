@@ -1051,7 +1051,7 @@ to make sure nothing <em>funny</em> happens*/
     .dropdown-content.shadow{
         /* display: none; */
         /* height: 0; */
-        border: 2px solid red;
+        /* border: 2px solid red; */
     }
     .container.customization-container { 
         height: fit-content;
@@ -1064,7 +1064,7 @@ to make sure nothing <em>funny</em> happens*/
         margin: 0;
         height: 80vh; /*got rid to account for the buttons being on the outside*/
         /* height: 60vw; */
-        border: 2px solid green;
+        /* border: 2px solid green; */
 
     }
     .color-widh-dropdown{
