@@ -819,3 +819,18 @@ width: 23.055vw;
         font-size: .6em;
     }
 }
+@media (max-width:440px){
+    .two-cardsmh{
+        margin-left: 1vw;
+        margin-right: 1vw;
+        /* width: 100vw; */
+        /* border: 3px solid green; */
+    }
+    .two-cardsmh .one-clothingmh{
+        /* width: 40vw !important; */
+    }
+    .one-clothingmh a{
+        /* width: 100% !important; */
+        /* border: var(--border2); */
+    }
+}

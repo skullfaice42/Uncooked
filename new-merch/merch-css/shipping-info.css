@@ -4,6 +4,12 @@ body{
     padding: 0;
     overflow-x: hidden;
 }
+.menuhhh .two-menuhhh{
+    /* border: 2px solid green; */
+    flex-direction: row;
+}
+
+
 .container{
     display: flex;
 }
