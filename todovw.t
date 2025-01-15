@@ -20,3 +20,9 @@ by monday{
     FOCUS on everything should be compleated (the psudo class)
     proper font weight to everything as well
 }
+
+
+yo future me... remmember that you left off on 1,8... refer to it if oyu have to
+
+you are ctrl a and ctrl c/v the entire page after every ideration... there should be 
+formats on every first page... so 4.1, 5.1.... MAKE SURE TO CHANGE ALL THAT IS IN CHANGE WHEN NESSESARY
