@@ -57,7 +57,7 @@
     background-color: #0073E6;
     border: solid #0073E6;
     width:11.944vw;
-    /* height: 4.513vw; */
+    height: 4.513vw;
 }
 #discovermore-button { 
     border: solid #0073E6;
@@ -507,10 +507,28 @@
 
 
 
-
+@media (max-width: 840px) {
+    :root { 
+        font-size: 9px !important;
+    }
+    .herobuttons p { 
+        width: fit-content;
+    }
+    .rfa {
+        margin-left: 1.5vw;
+    }
+    #customize-button .rfa {
+        height: 3.5vw;
+        width: auto;
+        margin: 0;
+        margin-left: 1vw;
+    }
+}
 
 @media (max-width: 440px) {
-
+    :root {
+        font-size: 16px !important;
+    }
     .hero-img-textcontent {
         margin-top: 70vw;
         width: 75.9090vw;

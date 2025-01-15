@@ -244,13 +244,18 @@ text-align: center;
 
 
 @media (max-width: 1024px){
-    .top-lower{
+    /* .top-lower{
         top: 83%;
         padding: 0;
         width: 30%;
         margin: 0;
         left: 40%;
-    }
+    } */
+     .top-lower { 
+        margin: 0;
+        margin-left: 39vw;
+        margin-bottom: 2rem;
+     }
     .mechanical{
         padding: 2vw;
     }

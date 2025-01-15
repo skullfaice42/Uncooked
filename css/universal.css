@@ -952,6 +952,12 @@ body:has(input[type="radio"]#ur:checked) .lan1hhh{
 /* @media (max-width:) */
 
 
+@media (max-width: 840px) {
+    :root { 
+        font-size: 9px !important;
+    }
+}
+
 @media (max-width: 768px){
     .blue-botthhh{
         /* border: var(--border1); */
@@ -968,7 +974,9 @@ body:has(input[type="radio"]#ur:checked) .lan1hhh{
 
 @media (max-width: 440px) {
 
-
+    :root {
+        font-size: 16px !important;
+    }
 
 
 
