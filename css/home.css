@@ -507,7 +507,7 @@
 
 
 
-@media (max-width: 840px) {
+@media (max-width: 1024px) {
     :root { 
         font-size: 9px !important;
     }

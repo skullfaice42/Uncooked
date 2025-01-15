@@ -468,7 +468,7 @@ a{
     /* width: 100%; */
 }
 .box1, .box2, .box3, .box4{
-    width: 44%;
+    /* width: 44%; */
     margin: 0;
 }
 .spacing-left{
@@ -479,7 +479,8 @@ a{
 .four-boxes{
     justify-content: center;
     gap: 4.545vw; /*sexy*/
-    /* margin-left: 8.6363vw; */
+    width: 60vw;
+    margin-left: 13.8363vw;
     /* margin-right: 8.6363vw; */
 }
 .arrange-a-callback{

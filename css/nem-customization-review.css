@@ -1,6 +1,4 @@
-* {
-    color: white;
-}
+
 body{
     overflow-x: hidden !important;
     /* overflow: hidden !important; */
@@ -25,7 +23,9 @@ input[type="radio"]{
     font-size: 72px;
 
 }
-
+.change-car { 
+    color: white;
+}
 
 .sideview-car-showcase { 
     margin-top: 6.319vw;
@@ -661,17 +661,17 @@ font-size: .75rem;
     .lower-buttons{
         /* margin-top: 112vw; */
         /* border: 2px solid white; */
-        margin-top: 20vw !important;
+        /* margin-top: 20vw !important; */
     }
 }
 @media (max-width: 1103px){
     .lower-buttons{
         /* position: inherit; */
         /* display: flex; */
-        flex-direction: column;
+        /* flex-direction: column; */
         /* gap: 0; */
-        margin-top: 25vw !important;
-        height: 100vw;
+        /* margin-top: 25vw !important; */
+        /* height: 100vw; */
         /* border: var(--border3); */
 
         align-items: center;
@@ -718,9 +718,9 @@ font-size: .75rem;
         color: white;
         font-size: 1rem;
     }
-    .lower-buttons{
+    /* .lower-buttons{
         margin-top: 50vw !important;
-    }
+    } */
     .section{
         /* display: flex;
         flex-direction: column-reverse; */
@@ -744,7 +744,7 @@ font-size: .75rem;
 
 @media (max-width: 1024px){
     .selection-name p{
-        height: 3vw;
+        font-size: 2rem;
     }
     .summary-right .leftbold,
     .summary-right .rightmoney{
@@ -770,8 +770,14 @@ font-size: .75rem;
         margin: 0;
         font-size: 1rem;
         text-transform: uppercase;
+        color: white;
     }
-
+    .lower-buttons img { 
+        margin-left: 1.5vw;
+    }
+    .lower-buttons h2 { 
+        margin-left: 1.5vw;
+    }
 }
 @media (max-width: 560px){
     .change-cont p{
