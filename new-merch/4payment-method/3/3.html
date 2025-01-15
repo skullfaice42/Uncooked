@@ -3,19 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navy Crewneck Selection</title>
-    <link rel="stylesheet" href="../../../styles.css">
+    <title>Shipping Method</title>
     <link rel="icon" href="../../../icons/icon.png">
-    <link rel="stylesheet" href="../../merch-css/hat.css">
     <link rel="stylesheet" href="../../../styles.css">
     <link rel="stylesheet" href="../../../css/footer.css">
     <link rel="stylesheet" href="../../../css/universal.css">
-    <link rel="stylesheet" href="../../merch-css/display-merch.css">
-    <link rel="stylesheet" href="../../merch-css/you-may-also-like.css"> <!--this is what makes it look funky/// the below merch-->
+    <link rel="stylesheet" href="../../merch-css/checkout-aside.css"> <!--this is the left side-->
+    <link rel="stylesheet" href="../../merch-css/shipping-info.css"> <!--this is for the right side-->
     <link rel="stylesheet" href="../../../font-weight.css">
-    <link rel="stylesheet" href="../../merch-css/product-with-description.css"><!-- and this is what makes it look pretty :)-->
+    <script src="../../../nav.js"></script>
     <script src="../../../loading-screen/loading.js"></script>
-
 </head>
 <body>
      <!-- loading screen -->
@@ -568,620 +565,208 @@
     
     </header>
     <div class="spacing"></div>
-    <div class="container">
-        <aside class="left">
-            <img src="../../../new-merch/imgs/merch/one-crewneck-men/crewneck-men-navy-card.png" alt="White Tion hat"> 
-        </aside>
-        <aside class="right">
-            <div class="top-text">
-                <h4>Mens</h4>
-                <h3>Crewneck T-shirt</h3>
-                <h4>$15.00</h4>
-                <h4>Color: <strong>Navy</strong></h4>
+    <div class="containerc-aside">
+        <aside class="leftc-aside">
+            <div class="headingc-aside">
+                <h2>Step 1- Shipping Info</h2>
+                <h2>Step 2- Shipping Method</h2>
+                <h2>Step 3- Payment Method</h2>
             </div>
-            <div class="four-imgs">
-                <a href="../1m-crewneck-t-shirt/one-black.html"><img src="../../../new-merch/imgs/merch/minis/one-crewneck-mini/crewneck-men-black-card-mini.png" alt="black shirt"></a>
-                <a href="../1m-crewneck-t-shirt/one-white.html"><img src="../../../new-merch/imgs/merch/minis/one-crewneck-mini/crewneck-men-white-card-mini.png" alt="white shirt"></a>
-                <a href="../1m-crewneck-t-shirt/one-navy.html"><img src="../../../new-merch/imgs/merch/minis/one-crewneck-mini/crewneck-men-navy-card-mini.png" alt="navy shirt"></a>
-                <a href="../1m-crewneck-t-shirt/one-red.html"><img src="../../../new-merch/imgs/merch/minis/one-crewneck-mini/crewneck-men-red-card-mini.png" alt="red shirt"></a>
+            <div class="order-summery">
+                <h2>Order Summary</h2>
             </div>
-            <div class="hat-options">
-                
-                <a href="../1m-crewneck-t-shirt/one-black.html"><div class="circle black"></div></a>
-                <a href="../1m-crewneck-t-shirt/one-white.html"><div class="circle white"></div></a>
-                <a href="../1m-crewneck-t-shirt/one-navy.html"><div class="circle blue"></div></a>
-                <a href="../1m-crewneck-t-shirt/one-red.html"><div class="circle red"></div></a>
-            </div>
-            
-            <div class="size">
-                <h3>Size: <strong>One Size Fits All</strong></h3>
-                <a href="#">Size Guide</a>
-            </div>
-
-
-            <div class="cart">
-                <div class="add-to-cart">
-                    <input type="checkbox" id="cart-checkbox">
-                    <label for="cart-checkbox"><div class="hover">Add to Cart</div></label>
-                
-            
-                <div class="overlay" id="overlay"> 
-                    <div class="your-bag">
-                        
-                            <h2>Your Bag: 1 item</h2>
-                        
-                        
-                            <input type="checkbox" id="cart-checkbox">
-                            <label for="cart-checkbox"><div class="lil-x"><img src="../../../icons/x.png" alt="close icon"></div></label>
-                        
-                    </div>
-                    <div class="hats">
-                        <img src="../../../new-merch/imgs/merch/one-crewneck-men/crewneck-men-navy-card.png" alt="smaller black hat">
-                        <div class="info">
-                            <div class="hat">
-                                <h2>Crewneck T-shirt</h2>
-                                <strong>$15.00</strong>
-                            </div>
-                            <div class="size2">
-                                <strong>Size:</strong>
-                                <h2>One Size Fits All</h2>
-                            </div>
-                            <div class="color">
-                                <strong>Color:</strong>
-                                <h2> Navy</h2>
-                            </div>
-                            <div class="quantity">
-                                <strong>Quantity:</strong>
-                                <h2>1</h2>
-                            </div>
-                            <!-- <a href="#">REMOVE</a> -->
-                            <input type="checkbox" id="cart-checkbox">
-                            <label for="cart-checkbox"><div class="remove">Remove</div></label>
-                        </div>
-                    </div>
-                    <div class="low-link">
-                        <a href="../../2order-summary/1m-crewneck-t-shirt/one-navy.html" id="checkout-link">Ready to Checkout</a>
-                    </div>
-                    
+            <div class="pricesc-aside">
+                <div class="flexing subtotal">
+                    <h3>Subtotal:</h3>
+                    <h3>$15.00</h3> <!--CHANGE-->
+                </div>
+                <div class="flexing shipping">
+                    <h3>Estimated Shipping:</h3>
+                    <h3>Free</h3>
+                </div>
+                <div class="flexing sales">
+                    <h3>Estimated Sales Tax:</h3>
+                    <h3>-</h3>
                 </div>
             </div>
-            </div>
-            
-<!-- hidden stuff here -->
-            
-            <div class="more-infohs">
-                <img src="../../../icons/material-symbols_share.png" alt="more info icon">
+            <div class="totalc-aside">
                 <hr>
-
-
-
-                <input type="checkbox" id="dbn1" name="one-at-a-time">
-                <label for="dbn1">
-
-                    <div class="dropdown">
-                        <h3>Description</h3>
-                        <img src="../../../icons/down-arrow.png" alt="down arrow">
-                    </div>
-
-                    <div class="info-on-merch merch1">
-                        <h3>
-                            This heavyweight cotton t-shirt is a durable staple product with a classic fit.
-                        </h3>
-                        <div class="options">
-                            <div class="offers">
-                                <div class="w-circle"></div>
-                                <p>
-                                    Seamless double-needle collar.
-                                </p>
-                            </div>
-
-                            <div class="offers">
-                                <div class="w-circle"></div>
-                                <p>
-                                    Double-needle sleeve and bottom hems.
-                                </p>
-                            </div>
-
-                            <div class="offers">
-                                <div class="w-circle"></div>
-                                <p>
-                                    100% cotton.
-                                </p>
-                            </div>
-
-                            <div class="offers">
-                                <div class="w-circle"></div>
-                                <p>
-                                    Taped neck and shoulders for durability.
-                                </p>
-                            </div>
+                <div class="total-pricingc-aside">
+                    <h3>Total</h3>
+                    <h3>$00.00</h3>
+                </div>
+                <hr>
+            </div>
+            <div class="your-bagc-aside">
+                <h3 class="hidden">Your Bag (1)</h3>
+                <div class="bag-flexc-aside">
+                    <img src="../../../new-merch/imgs/merch - Copy/regular/3/3.png" alt="User chosen merch"> <!--CHANGE-->
+                    
+                    <div class="product-info">
+    
+                        <div class="name">
+                            <h3>Long Sleeve T-shirt</h3> <!--CHANGE-->
+                            <h4>$15:00</h4> <!--CHANGE-->
                         </div>
-                    </div>
-
-                    <hr>
-                </label>
-
-
-
-
-<!-- for the description part -->
-
-                <input type="checkbox" id="dbn2" name="one-at-a-time">
-                <label for="dbn2">
-
-                    <div class="dropdown">
-                        <h3>Details</h3>
-                        <img src="../../../icons/down-arrow.png" alt="down arrow">
-                    </div>
-
-                    <div class="info-on-merch merch2">
-                        <h3>
-                            A classic yet stylish cap that brings a blend of 
-                            tradition and modernity.
-                        </h3>
-                        <div class="options">
-                            <div class="offers">
-                                <div class="w-circle"></div>
-                                <p>
-                                    Constructed with premium mesh panels for 
-                                    optimal breathability.
-                                </p>
-                            </div>
-
-                            <div class="offers">
-                                <div class="w-circle"></div>
-                                <p>
-                                    Constructed with premium mesh panels for 
-                                    optimal breathability.
-                                </p>
-                            </div>
-
-                            <div class="offers">
-                                <div class="w-circle"></div>
-                                <p>
-                                    Constructed with premium mesh panels for 
-                                    optimal breathability.
-                                </p>
-                            </div>
-
-                            <div class="offers">
-                                <div class="w-circle"></div>
-                                <p>
-                                    Constructed with premium mesh panels for 
-                                    optimal breathability.
-                                </p>
-                            </div>
+    
+                        <div class="size">
+                            <h4>Size:</h4>
+                            <h3>One Size Fits All</h3>
                         </div>
-                    </div>
-
-                    <hr>
-                </label>
-
-<!-- end of 2 -->
-
-                <input type="checkbox" id="dbn3" name="one-at-a-time">
-                <label for="dbn3">
-
-                    <div class="dropdown">
-                        <h3>Materials</h3>
-                        <img src="../../../icons/down-arrow.png" alt="down arrow">
-                    </div>
-
-                    <div class="info-on-merch merch3">
-                        <h3>
-                            A classic yet stylish cap that brings a blend of 
-                            tradition and modernity.
-                        </h3>
-                        <div class="options">
-                            <div class="offers">
-                                <div class="w-circle"></div>
-                                <p>
-                                    Constructed with premium mesh panels for 
-                                    optimal breathability.
-                                </p>
-                            </div>
-
-                            <div class="offers">
-                                <div class="w-circle"></div>
-                                <p>
-                                    Constructed with premium mesh panels for 
-                                    optimal breathability.
-                                </p>
-                            </div>
-
-                            <div class="offers">
-                                <div class="w-circle"></div>
-                                <p>
-                                    Constructed with premium mesh panels for 
-                                    optimal breathability.
-                                </p>
-                            </div>
-
-                            <div class="offers">
-                                <div class="w-circle"></div>
-                                <p>
-                                    Constructed with premium mesh panels for 
-                                    optimal breathability.
-                                </p>
-                            </div>
+    
+                        <div class="color">
+                            <h4>Color:</h4>
+                            <h3>Navy</h3>  <!--CHANGE-->
                         </div>
-                    </div>
-
-                    <hr>
-                </label>
-
-
-<!-- end of 3 -->
-
-
-                <input type="checkbox" id="dbn4" name="one-at-a-time">
-                <label for="dbn4">
-
-                    <div class="dropdown">
-                        <h3>Shipping & Returns</h3>
-                        <img src="../../../icons/down-arrow.png" alt="down arrow">
-                    </div>
-
-                    <div class="info-on-merch merch4">
-                        <h3>
-                            A classic yet stylish cap that brings a blend of 
-                            tradition and modernity.
-                        </h3>
-                        <div class="options">
-                            <div class="offers">
-                                <div class="w-circle"></div>
-                                <p>
-                                    Constructed with premium mesh panels for 
-                                    optimal breathability.
-                                </p>
-                            </div>
-
-                            <div class="offers">
-                                <div class="w-circle"></div>
-                                <p>
-                                    Constructed with premium mesh panels for 
-                                    optimal breathability.
-                                </p>
-                            </div>
-
-                            <div class="offers">
-                                <div class="w-circle"></div>
-                                <p>
-                                    Constructed with premium mesh panels for 
-                                    optimal breathability.
-                                </p>
-                            </div>
-
-                            <div class="offers">
-                                <div class="w-circle"></div>
-                                <p>
-                                    Constructed with premium mesh panels for 
-                                    optimal breathability.
-                                </p>
-                            </div>
+    
+                        <div class="quantity">
+                            <h4>Quantity:</h4>
+                            <h3>1</h3>
                         </div>
+    
+                        <a href="../../1selection/3/3.html">REMOVE</a> <!--CHANGE-->
                     </div>
-
-                    <hr>
-                </label>
-
-<!-- end of 4 -->
-
-
-                <input type="checkbox" id="dbn5" name="one-at-a-time">
-                <label for="dbn5">
-
-                    <div class="dropdown">
-                        <h3>Customer Care</h3>
-                        <img src="../../../icons/down-arrow.png" alt="down arrow">
-                    </div>
-
-                    <div class="info-on-merch merch5">
-                        <h3>
-                            A classic yet stylish cap that brings a blend of 
-                            tradition and modernity.
-                        </h3>
-                        <div class="options">
-                            <div class="offers">
-                                <div class="w-circle"></div>
-                                <p>
-                                    Constructed with premium mesh panels for 
-                                    optimal breathability.
-                                </p>
-                            </div>
-
-                            <div class="offers">
-                                <div class="w-circle"></div>
-                                <p>
-                                    Constructed with premium mesh panels for 
-                                    optimal breathability.
-                                </p>
-                            </div>
-
-                            <div class="offers">
-                                <div class="w-circle"></div>
-                                <p>
-                                    Constructed with premium mesh panels for 
-                                    optimal breathability.
-                                </p>
-                            </div>
-
-                            <div class="offers">
-                                <div class="w-circle"></div>
-                                <p>
-                                    Constructed with premium mesh panels for 
-                                    optimal breathability.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <hr>
-                </label>
-<!-- end of 5 -->
-                
-
+                </div>
             </div>
             
         </aside>
-    </div>
-    <div class="you-will-also-like">
-        <h2>You May Also Like</h2>
-    </div>
-
-
-
-
-    <div class="section-of-container">
-        <!-- THIS SECTION WILL LITERELLY BE JUST COPPIED AND PASTED FROM OTHERS 
-            (THIS ONES FROM MERCH3-WOMEN.HTML) -->
-        <!-- Custom circle buttons with input -->
-            <div class="one-clothingmh">
-                <div class="white sub-container">
-                    <a href=""><img src="../../../new-merch/imgs/customized-merch/2hooded-sweatshirt/hoodie-men-black.png" alt="Acessories Iphone Case" class="eleven-onei"></a>
-                    <a href=""><img src="../../../new-merch/imgs/customized-merch/2hooded-sweatshirt/hoodie-men-white.png" alt="Acessories Iphone Case" class="eleven-twoi hidden"></a>
-                    <a href=""><img src="../../../new-merch/imgs/customized-merch/2hooded-sweatshirt/hoodie-men-navy.png" alt="Acessories Iphone Case" class="eleven-threei hidden"></a>
-                    <a href=""><img src="../../../new-merch/imgs/customized-merch/2hooded-sweatshirt/hoodie-men-red.png" alt="Acessories Iphone Case" class="eleven-fouri hidden"></a>
-                </div>
-                <h3>Hooded Sweatshirt</h3>
-                <p>$25.00</p>
-                <div class="colorsmh">
-                    <!-- Custom circle buttons with input -->
-                    <label class="color-labelmh">
-                        <input type="radio" name="eleven" value="black" class="color-inputmh eleven-onec" checked>
-                        <span class="color-blackmh"></span>
-                    </label>
-                    <label class="color-labelmh">
-                        <input type="radio" name="eleven" value="white" class="color-inputmh eleven-twoc">
-                        <span class="color-whitemh"></span>
-                    </label>
-                    <label class="color-labelmh">
-                        <input type="radio" name="eleven" value="blue" class="color-inputmh eleven-threec">
-                        <span class="color-bluemh"></span>
-                    </label>
-                    <label class="color-labelmh">
-                        <input type="radio" name="eleven" value="red" class="color-inputmh eleven-fourc">
-                        <span class="color-redmh"></span>
-                    </label>
-                </div>
-                <a href=""><button class="add-to-cartmh eleven-onebutt defalt-butt">11</button></a>
-                <a href=""><button class="add-to-cartmh hiddenbn eleven-twobutt">11.2</button></a>
-                <a href=""><button class="add-to-cartmh hiddenbn eleven-threebutt">11.3</button></a>
-                <a href=""><button class="add-to-cartmh hiddenbn eleven-fourbutt">11.4</button></a>
-            </div>
-
-
-            <div class="one-clothingmh">
-                <div class="white sub-container">
-                    <a href=""><img src="../../../new-merch/imgs/customized-merch/3longsleeve-t-shirt/longsleeve-men-black.png" alt="Acessories Coffee Mug" class="twelve-onei"></a>
-                    <a href=""><img src="../../../new-merch/imgs/customized-merch/3longsleeve-t-shirt/longsleeve-men-white.png" alt="Acessories Coffee Mug" class="twelve-twoi hidden"></a>
-                    <a href=""><img src="../../../new-merch/imgs/customized-merch/3longsleeve-t-shirt/longsleeve-men-navy.png" alt="Acessories Coffee Mug" class="twelve-threei hidden"></a>
-                    <a href=""><img src="../../../new-merch/imgs/customized-merch/3longsleeve-t-shirt/longsleeve-men-red.png" alt="Acessories Coffee Mug" class="twelve-fouri hidden"></a>
-                </div>
-                <h3>Long Sleeve T-shirt</h3>
-                <p>$15.00</p>
-                <div class="colorsmh">
-                    <!-- Custom circle buttons with input -->
-                    <label class="color-labelmh">
-                        <input type="radio" name="twelve" value="black" class="color-inputmh twelve-onec" checked>
-                        <span class="color-blackmh"></span>
-                    </label>
-                    <label class="color-labelmh">
-                        <input type="radio" name="twelve" value="white" class="color-inputmh twelve-twoc">
-                        <span class="color-whitemh"></span>
-                    </label>
-                    <label class="color-labelmh">
-                        <input type="radio" name="twelve" value="blue" class="color-inputmh twelve-threec">
-                        <span class="color-bluemh"></span>
-                    </label>
-                    <label class="color-labelmh">
-                        <input type="radio" name="twelve" value="red" class="color-inputmh twelve-fourc">
-                        <span class="color-redmh"></span>
-                    </label>
-                </div>
-                <a href=""><button class="add-to-cartmh twelve-onebutt defalt-butt">12</button></a>
-                <a href=""><button class="add-to-cartmh hiddenbn twelve-twobutt">12.2</button></a>
-                <a href=""><button class="add-to-cartmh hiddenbn twelve-threebutt">12.3</button></a>
-                <a href=""><button class="add-to-cartmh hiddenbn twelve-fourbutt">12.4</button></a>
-            </div>
-
-
-            
-
-            <div class="one-clothingmh">
-                <div class="white sub-container">
-                    <a href=""><img src="../../../new-merch/imgs/customized-merch/4tanktop-men/tanktop-men-black.png" alt="Acessories Bag" class="ten-onei"></a>
-                    <a href=""><img src="../../../new-merch/imgs/customized-merch/4tanktop-men/tanktop-men-white.png" alt="Acessories Bag" class="ten-twoi tote-bagextralogic"></a>
-                    <a href=""><img src="../../../new-merch/imgs/customized-merch/4tanktop-men/tanktop-men-navy.png" alt="Acessories Bag" class="ten-threei tote-bagextralogic"></a>
-                    <a href=""><img src="../../../new-merch/imgs/customized-merch/4tanktop-men/tanktop-men-red.png" alt="Acessories Bag" class="ten-fouri tote-bagextralogic"></a>
-                </div>
-                <h3>Tank Top</h3>
-                <p>$15.00</p>
-                <div class="colorsmh">
-                    <!-- Custom circle buttons with input -->
-                    <label class="color-labelmh">
-                        <input type="radio" name="ten" value="black" class="color-inputmh ten-onec" checked>
-                        <span class="color-blackmh"></span>
-                    </label>
-                    <label class="color-labelmh">
-                        <input type="radio" name="ten" value="white" class="color-inputmh ten-twoc">
-                        <span class="color-whitemh"></span>
-                    </label>
-                    <label class="color-labelmh">
-                        <input type="radio" name="ten" value="blue" class="color-inputmh ten-threec">
-                        <span class="color-bluemh"></span>
-                    </label>
-                    <label class="color-labelmh">
-                        <input type="radio" name="ten" value="red" class="color-inputmh ten-fourc">
-                        <span class="color-redmh"></span>
-                    </label>
-                </div>
-                <a href=""><button class="add-to-cartmh ten-onebutt defalt-butt">10</button></a>
-                <a href=""><button class="add-to-cartmh hiddenbn ten-twobutt">10.2</button></a>
-                <a href=""><button class="add-to-cartmh hiddenbn ten-threebutt">10.3</button></a>
-                <a href=""><button class="add-to-cartmh hiddenbn ten-fourbutt">10.4</button></a>
-            </div>
-
-            <!-- fourth section -->
-            <div class="one-clothingmh">
-                <div class="white sub-container overflow">
-                    <a href=""><img src="../../../new-merch/imgs/customized-merch/5crewneck-women/crewneck-women-black.png" alt="Mens Long Sleeve" class="three-onei messedup"></a>
-                    <a href=""><img src="../../../new-merch/imgs/customized-merch/5crewneck-women/crewneck-women-white.png" alt="Mens Long Sleeve" class="three-twoi hidden messedup"></a>
-                    <a href=""><img src="../../../new-merch/imgs/customized-merch/5crewneck-women/crewneck-women-navy.png" alt="Mens Long Sleeve" class="three-threei hidden messedup"></a>
-                    <a href=""><img src="../../../new-merch/imgs/customized-merch/5crewneck-women/crewneck-women-red.png" alt="Mens Long Sleeve" class="three-fouri hidden messedup"></a>
-                </div>
-                <h3>Crewneck T-shirt</h3>
-                <p>$15.00</p>
-                <div class="colorsmh">
-                    <!-- Custom circle buttons with input -->
-                    <label class="color-labelmh">
-                        <input type="radio" name="three" value="black" class="color-inputmh three-onec" checked>
-                        <span class="color-blackmh"></span>
-                    </label>
-                    <label class="color-labelmh">
-                        <input type="radio" name="three" value="white" class="color-inputmh three-twoc">
-                        <span class="color-whitemh"></span>
-                    </label>
-                    <label class="color-labelmh">
-                        <input type="radio" name="three" value="blue" class="color-inputmh three-threec">
-                        <span class="color-bluemh"></span>
-                    </label>
-                    <label class="color-labelmh">
-                        <input type="radio" name="three" value="red" class="color-inputmh three-fourc">
-                        <span class="color-redmh"></span>
-                    </label>
-                </div>
-                <a href="1"><button class="add-to-cartmh three-onebutt defalt-butt">3.1</button></a>
-                <a href="2"><button class="add-to-cartmh hiddenbn three-twobutt bad-butt">3.2</button></a>
-                <a href="3"><button class="add-to-cartmh hiddenbn three-threebutt bad-butt">3.3</button></a>
-                <a href="3"><button class="add-to-cartmh hiddenbn three-fourbutt bad-butt">3.4</button></a>
-            </div>
-
+        <!-- <aside class="rightc-aside">
+            <h1>sigma</h1>
+        </aside> -->
+    <aside class="right">
+        <div class="shipping-methods">
+            <h2>Step 2- Shipping Method</h2>
         </div>
-        <footer>
-            <div class="accountrf">
-                <div class="headerrf">
-                    <h2>Account</h2>
-                </div>
-                <div class="hyperlinksrf">
-                    <a href="../../../new-end-page/na-base.html">Settings</a>
-                    <a href="../../../new-nemesis-rr/nemesis-customization-review.html">Saved Car Configurations</a>
-                    <a href="../../../new-end-page/na-base.html">Order History</a>
-                </div>
+        <div class="shipping-options">
+            <div class="option">
+                <input type="radio" id="standard" name="shipping" value="standard">
+                <label for="standard">
+                    <strong>Standard: Free</strong>
+                    <p>Delivers in 7 business days or less if ordered by 9AM PT (excluding pre-orders)</p>
+                </label>
             </div>
-    
-            <div class="accountrf">
-                <div class="headerrf">
-                    <h2>Dealerships</h2>
-                </div>
-                <div class="hyperlinksrf">
-                    <a href="../../../new-end-page/na-base.html">Locations</a>
-                </div>
+            <div class="option">
+                <input type="radio" id="express" name="shipping" value="express">
+                <label for="express">
+                    <strong>Express: $13.00</strong>
+                    <p>Delivers in 3 business days if ordered by 9AM PT (excluding pre-orders)</p>
+                </label>
             </div>
-    
-            <div class="accountrf">
-                <div class="headerrf">
-                    <h2>Nemesis RR</h2>
-                </div>
-                <div class="hyperlinksrf">
-                    <a href="../../../new-nemesis-rr/nemesis-car-page.html">Overview</a>
-                    <a href="../../../new-nemesis-rr/updated-nem-ext-customisation.html">Customize</a>
-                </div>
+            <div class="option">
+                <input type="radio" id="overnight" name="shipping" value="overnight">   
+                <label for="overnight">
+                    <strong>Overnight: $20.00</strong>
+                    <p>Delivers next business day if ordered by 9AM PT (excluding pre-orders)</p>
+                </label>
             </div>
-    
-            <div class="accountrf">
-                <div class="headerrf">
-                    <h2>Black Widow</h2>
-                </div>
-                <div class="hyperlinksrf">
-                    <a href="../../../new-black-widow-car-page/black-widow-car-page.html">Overview</a>
-                    <a href="../../../new-nemesis-rr/updated-nem-ext-customisation.html">Customize</a>
-                </div>
+            <!-- <a href="hat-payment-info.html"><div class="button">Continue to Payment Method</div></a> -->
+            <a href="../../../new-merch/5payment-methood/3/3.html"> <!--CHANGE--> <button><div class="uni-button">Continue to Payment Method</div></button></a>
+        </div>
+    </aside>
+    </div>
+    <footer>
+        <div class="accountrf">
+            <div class="headerrf">
+                <h2>Account</h2>
             </div>
-    
-            <div class="accountrf">
-                <div class="headerrf">
-                    <h2>Services</h2>
-                </div>
-                <div class="hyperlinksrf">
-                    <a href="../../../new-end-page/na-base.html">Insurance</a>
-                    <a href="../../../new-end-page/na-base.html">Part Replacement</a>
-                    <a href="../../../new-end-page/na-base.html">Customer Help</a>
-                </div>
+            <div class="hyperlinksrf">
+                <a href="../../../new-end-page/na-base.html">Settings</a>
+                <a href="../../../new-nemesis-rr/nemesis-customization-review.html">Saved Car Configurations</a>
+                <a href="../../../new-end-page/na-base.html">Order History</a>
             </div>
+        </div>
     
-            <div class="accountrf">
-                <div class="headerrf">
-                    <h2>Merchandise</h2>
-                </div>
-                <div class="hyperlinksrf">
-                    <a href="../../../new-merch/merch1-merchandise-all.html">All Merchandise</a>
-                    <a href="../../../new-merch/merch2-man.html">Men</a>
-                    <a href="../../../new-merch/merch3-women.html">Women</a>
-                    <a href="../../../new-merch/merch4-accessories.html">Accessories</a>
-                </div>
+        <div class="accountrf">
+            <div class="headerrf">
+                <h2>Dealerships</h2>
             </div>
-    
-            <div class="accountrf">
-                <div class="headerrf">
-                    <h2>About Us</h2>
-                </div>
-                <div class="hyperlinksrf">
-                    <a href="../../../new-about-us/about-us.html">Mission</a>
-                    <a href="../../../new-about-us/about-us.html#press">Press</a>
-                    <a href="../../../new-end-page/na-base.html">Contact Us</a>
-                </div>
+            <div class="hyperlinksrf">
+                <a href="../../../new-end-page/na-base.html">Locations</a>
             </div>
+        </div>
     
-            <div class="accountrf">
-                <div class="headerrf">
-                    <h2>Legal</h2>
-                </div>
-                <div class="hyperlinksrf">
-                    <a href="../../../new-end-page/na-base.html">Terms & Conditions</a>
-                    <a href="../../../new-end-page/na-base.html">Privacy Policy</a>
-                    <a href="../../../new-end-page/na-base.html">Cookies</a>
-                </div>
+        <div class="accountrf">
+            <div class="headerrf">
+                <h2>Nemesis RR</h2>
             </div>
-    
-            <div class="accountrf">
-                <div class="headerrf">
-                    <h2>Social</h2>
-                </div>
-                <div class="iconsrf">
-                    <a href="#"><img src="../../../icons/instagram.png" alt="instagram logo" id="instagram"></a>
-                    <a href="#"><img src="../../../icons/facebook.png" alt="facebook logo" id="facebook"></a>
-                    <a href="#"><img src="../../../icons/linkedin.png" alt="linkedin logo" id="linkedin"></a>
-                </div>
+            <div class="hyperlinksrf">
+                <a href="../../../new-nemesis-rr/nemesis-car-page.html">Overview</a>
+                <a href="../../../new-nemesis-rr/updated-nem-ext-customisation.html">Customize</a>
             </div>
+        </div>
     
-            <div class="belowrf">
-                <a href="index.html"><img src="../icons/icon.png" alt="trion logo"></a>
-                <h3>© 2025 by TRION.</h3>
+        <div class="accountrf">
+            <div class="headerrf">
+                <h2>Black Widow</h2>
             </div>
-        </footer>
+            <div class="hyperlinksrf">
+                <a href="../../../new-black-widow-car-page/black-widow-car-page.html">Overview</a>
+                <a href="../../../new-nemesis-rr/updated-nem-ext-customisation.html">Customize</a>
+            </div>
+        </div>
     
+        <div class="accountrf">
+            <div class="headerrf">
+                <h2>Services</h2>
+            </div>
+            <div class="hyperlinksrf">
+                <a href="../../../new-end-page/na-base.html">Insurance</a>
+                <a href="../../../new-end-page/na-base.html">Part Replacement</a>
+                <a href="../../../new-end-page/na-base.html">Customer Help</a>
+            </div>
+        </div>
+    
+        <div class="accountrf">
+            <div class="headerrf">
+                <h2>Merchandise</h2>
+            </div>
+            <div class="hyperlinksrf">
+                <a href="../../../new-merch/merch1-merchandise-all.html">All Merchandise</a>
+                <a href="../../../new-merch/merch2-man.html">Men</a>
+                <a href="../../../new-merch/merch3-women.html">Women</a>
+                <a href="../../../new-merch/merch4-accessories.html">Accessories</a>
+            </div>
+        </div>
+    
+        <div class="accountrf">
+            <div class="headerrf">
+                <h2>About Us</h2>
+            </div>
+            <div class="hyperlinksrf">
+                <a href="../../../new-about-us/about-us.html">Mission</a>
+                <a href="../../../new-about-us/about-us.html#press">Press</a>
+                <a href="../../../new-end-page/na-base.html">Contact Us</a>
+            </div>
+        </div>
+    
+        <div class="accountrf">
+            <div class="headerrf">
+                <h2>Legal</h2>
+            </div>
+            <div class="hyperlinksrf">
+                <a href="../../../new-end-page/na-base.html">Terms & Conditions</a>
+                <a href="../../../new-end-page/na-base.html">Privacy Policy</a>
+                <a href="../../../new-end-page/na-base.html">Cookies</a>
+            </div>
+        </div>
+    
+        <div class="accountrf">
+            <div class="headerrf">
+                <h2>Social</h2>
+            </div>
+            <div class="iconsrf">
+                <a href="#"><img src="../../../icons/instagram.png" alt="instagram logo" id="instagram"></a>
+                <a href="#"><img src="../../../icons/facebook.png" alt="facebook logo" id="facebook"></a>
+                <a href="#"><img src="../../../icons/linkedin.png" alt="linkedin logo" id="linkedin"></a>
+            </div>
+        </div>
+    
+        <div class="belowrf">
+            <a href="index.html"><img src="../icons/icon.png" alt="trion logo"></a>
+            <h3>© 2025 by TRION.</h3>
+        </div>
+    </footer>
 
-    
 </body>
+
 </html>
