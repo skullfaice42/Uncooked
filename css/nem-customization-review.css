@@ -1041,3 +1041,8 @@ font-size: .75rem;
 
     }
 }
+@media (max-width: 400px) { 
+    .lower-buttons {
+        flex-direction: column;
+    }
+}

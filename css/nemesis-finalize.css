@@ -784,3 +784,12 @@ textarea.no-resize::placeholder {
         font-size: 2rem;
     }
 }
+@media (max-width: 400px){ 
+    .inquiry { 
+        text-align: center;
+    }
+    .the-rest {
+        height: fit-content;
+        padding-bottom: 4rem;
+    }
+}
