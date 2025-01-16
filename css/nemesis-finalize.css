@@ -792,4 +792,10 @@ textarea.no-resize::placeholder {
         height: fit-content;
         padding-bottom: 4rem;
     }
+    .t-right .times h3:nth-of-type(1) {
+        display: flex;
+        font-size: 1rem;
+        font-weight: 400;
+
+    }
 }

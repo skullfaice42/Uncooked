@@ -1046,3 +1046,15 @@ font-size: .75rem;
         flex-direction: column;
     }
 }
+@media (max-width: 380px) { 
+    .lower-buttons .change-car { 
+        width: fit-content;
+        padding-right: 2vw;
+    }
+    .change-car h2 { 
+        width: fit-content;
+    }
+    .lower-buttons a { 
+        width: fit-content;
+    }
+}
