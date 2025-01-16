@@ -325,6 +325,7 @@ input[type="radio"]{
         margin-top: 5vw;
         height: 15vw; /*IF YOU HAVE ISSUES WITH THE H3, REPLACE THIS kek*/
     }
+
     .anthony{
         margin-top: 10vw;
     }
@@ -336,5 +337,18 @@ input[type="radio"]{
     }
     .itzel{
         margin-top: 0;
+    }
+}
+@media (max-width: 400px){
+    .anthony p{
+        margin-top: 15vw;
+        /* margin-bottom: 2vw; */
+        /* border: 2px solid red; */
+    }
+    .anthony{
+        /* border: 2px solid red; */
+        margin-bottom: 10vw !important;
+        /* height: fit-content; */
+        /* font-size: 1rem; */
     }
 }
