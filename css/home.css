@@ -602,7 +602,7 @@ html{
         font-size: 1.5rem  ;;
     }
     #discovermore-button { 
-        width: 57.727vw;
+        width: fit-content;
         height: 12.5vw;
     }
     #build-button {
@@ -975,7 +975,35 @@ html{
         padding-right: 2vw;
     }
 }
+@media (max-width: 380px) {
+    .herobuttons {
+        width: fit-content;
+        padding-right: 3vw;
+    }
+    .herobuttons p {
+        width: fit-content;
+    }
+    .exclusivity-counter {
+        height: fit-content;
+        padding-bottom: 2vw;
+    }
+    .s-card { 
+        height: fit-content;
+    }
+    .s-card article {
+        height: fit-content;
+    }
+    .s-card-cont {
+        height: fit-content;
+    }
+    #learnmore { 
+        padding-right: 2vw;
+    }
+    .merch-left article > p {
+        width: 80vw;
 
+    }
+}
 
 
 
