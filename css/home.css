@@ -17,12 +17,13 @@
     flex-direction: column;
     position: absolute;
     flex-wrap: wrap;
-    width: 35.189vw;
+    width: fit-content;
 }
 .hero-img-textcontent h1 { 
     font-size: 4.9rem;
     color: #0073E6;
     margin: 0;
+    width: fit-content;
 }
 .hero-img-textcontent p {
     font-weight: 500;
@@ -549,6 +550,15 @@
     }
     .s-card article {
         height: fit-content;
+    }
+    .s-card article h3 { 
+        font-size: 1.8rem;
+    }
+    #shopmerch { 
+        width: fit-content;
+    }
+    .merch-left article > p {
+        width: 40vw;
     }
 }
 @media (max-width: 440px) {
