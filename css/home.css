@@ -526,7 +526,7 @@
 }
 @media (max-width: 780px) {
     .hero-img h1 {
-        line-height:1.5rem;
+        line-height:5rem;
 
     }
     .car-quick-desc article > p { 
@@ -546,6 +546,9 @@
     }
     .s-card article > p { 
         font-size: 1.4rem;
+    }
+    .s-card article {
+        height: fit-content;
     }
 }
 @media (max-width: 440px) {
