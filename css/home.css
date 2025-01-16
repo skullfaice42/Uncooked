@@ -1,6 +1,9 @@
-
+html{
+    scroll-behavior: smooth;
+}
 .hero-img-stuff img{ 
     width: 100vw;
+    height:  auto;
 }
 .hero-img { 
     /* margin-top: 6.944vw; */
@@ -8,6 +11,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
+
 }
 .hero-img-textcontent {
     margin-top: 16.667vw;
@@ -265,7 +269,9 @@
 .s-header h2 { 
     margin-left: 5.972vw;
 }
-
+.down-arrow{
+    display: none;
+}
 .s-card-cont { 
     display: flex;
     flex-direction: row;
@@ -565,6 +571,8 @@
     :root {
         font-size: 16px !important;
     }
+    
+    
     .hero-img-textcontent {
         margin-top: 70vw;
         width: 75.9090vw;
@@ -925,6 +933,28 @@
         margin-left: 4.3181vw;
     }
 
+    
+    
+    .down-arrow{
+        display: flex;
+        
+        height: auto;
+        width:  auto;
+    }
+    #downarrowlink { 
+        height: fit-content;
+        width: fit-content;
+        align-self:  center;
+        margin-top: 30vw;
+    }
+    .exclusivity-counter .rightarrow{
+        display: none;
+    }
+    .hero-button-cont { 
+        width: 90vw;
+        height: fit-content;
+    }
+    
 }
 
 
