@@ -615,7 +615,9 @@ font-size: .6em;
         }
         .right a button{
             font-size: 1em;
+            height: 6vw;
         }
+        
     }
     @media (max-width: 640px){
         .top-area .img{

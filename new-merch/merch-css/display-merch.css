@@ -657,6 +657,7 @@ width: 23.055vw;
     cursor: pointer;
     text-align: center;
     transition: background-color 0.3s, color 0.3s, transform 0.2s ease-in-out;
+    text-decoration: none;
 }
 .add-to-cartmh2{
     /* border: 21px solid green; */
@@ -716,7 +717,9 @@ width: 23.055vw;
 .bot-buttons button:hover{
     scale: 0.95;
 }
-
+.one-clothingmh a{
+    text-decoration: none !important;
+}
 .bot-buttons a button{
     color: white;
     text-decoration: none;
@@ -823,14 +826,12 @@ width: 23.055vw;
     .two-cardsmh{
         margin-left: 1vw;
         margin-right: 1vw;
-        /* width: 100vw; */
-        /* border: 3px solid green; */
+        /* border: 2px solid green; */
+        scale: 1.5;
+        margin-top: 20vw;
     }
-    .two-cardsmh .one-clothingmh{
-        /* width: 40vw !important; */
+    .one-clothingmh{
+        margin-bottom: 20vw;
     }
-    .one-clothingmh a{
-        /* width: 100% !important; */
-        /* border: var(--border2); */
-    }
+
 }

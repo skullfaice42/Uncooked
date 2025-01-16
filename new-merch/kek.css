@@ -1,90 +1,340 @@
-.one{
-    width: 23.05vw;
-    height: 45.83vw;
-    /* display: flex; */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input[type="radio"]{
+    display: none;
 }
 
-.img-container{
-    width: 23.05vw;
-    height: 32.9vw;
-    border: var(--border2);
-    position: relative;
+.itzel{
+    margin-top: 6vw;
+}
+.anthony{
+    /* color: white; */
+    width: 23.055vw;
+    /* width: 100%; */
+    }
+    .anthony img {
+        /* background-color: white; */
+        /* width: 23.055vw; */
+        width: 100%;
+        object-fit: cover; /*idk what this does, i just got reccomended it*/
+        transition: all 0.3s ease;
+    }
+    .anthony h3 {
+        font-size: 2em;
+    }
+    
+    .anthony p {
+        font-size: 1.5em;
+    }
+
+
+
+/* used to toggle the images */
+#dango11:checked ~ .anthony .whitemh .one-oneimg,
+#dango12:checked ~ .anthony .whitemh .one-twoimg,
+#dango13:checked ~ .anthony .whitemh .one-threeimg,
+#dango14:checked ~ .anthony .whitemh .one-fourimg,
+
+#dango21:checked ~ .anthony .whitemh .two-oneimg,
+#dango22:checked ~ .anthony .whitemh .two-twoimg,
+#dango23:checked ~ .anthony .whitemh .two-threeimg,
+#dango24:checked ~ .anthony .whitemh .two-fourimg,
+
+#dango31:checked ~ .anthony .whitemh .three-oneimg,
+#dango32:checked ~ .anthony .whitemh .three-twoimg,
+#dango33:checked ~ .anthony .whitemh .three-threeimg,
+#dango34:checked ~ .anthony .whitemh .three-fourimg,
+
+#dango41:checked ~ .anthony .whitemh .four-oneimg,
+#dango42:checked ~ .anthony .whitemh .four-twoimg,
+#dango43:checked ~ .anthony .whitemh .four-threeimg,
+#dango44:checked ~ .anthony .whitemh .four-fourimg,
+
+#dango51:checked ~ .anthony .whitemh .five-oneimg,
+#dango52:checked ~ .anthony .whitemh .five-twoimg,
+#dango53:checked ~ .anthony .whitemh .five-threeimg,
+#dango54:checked ~ .anthony .whitemh .five-fourimg,
+
+#dango61:checked ~ .anthony .whitemh .six-oneimg,
+#dango62:checked ~ .anthony .whitemh .six-twoimg,
+#dango63:checked ~ .anthony .whitemh .six-threeimg,
+#dango64:checked ~ .anthony .whitemh .six-fourimg,
+
+#dango71:checked ~ .anthony .whitemh .seven-oneimg,
+#dango72:checked ~ .anthony .whitemh .seven-twoimg,
+#dango73:checked ~ .anthony .whitemh .seven-threeimg,
+#dango74:checked ~ .anthony .whitemh .seven-fourimg,
+
+#dango81:checked ~ .anthony .whitemh .eight-oneimg,
+#dango82:checked ~ .anthony .whitemh .eight-twoimg,
+#dango83:checked ~ .anthony .whitemh .eight-threeimg,
+#dango84:checked ~ .anthony .whitemh .eight-fourimg,
+
+#dango91:checked ~ .anthony .whitemh .nine-oneimg,
+#dango92:checked ~ .anthony .whitemh .nine-twoimg,
+#dango93:checked ~ .anthony .whitemh .nine-threeimg,
+#dango94:checked ~ .anthony .whitemh .nine-fourimg,
+
+#dango101:checked ~ .anthony .whitemh .ten-oneimg,
+#dango102:checked ~ .anthony .whitemh .ten-twoimg,
+#dango103:checked ~ .anthony .whitemh .ten-threeimg,
+#dango104:checked ~ .anthony .whitemh .ten-fourimg,
+
+#dango111:checked ~ .anthony .whitemh .eleven-oneimg,
+#dango112:checked ~ .anthony .whitemh .eleven-twoimg,
+#dango113:checked ~ .anthony .whitemh .eleven-threeimg,
+#dango114:checked ~ .anthony .whitemh .eleven-fourimg,
+
+#dango121:checked ~ .anthony .whitemh .twelve-oneimg,
+#dango122:checked ~ .anthony .whitemh .twelve-twoimg,
+#dango123:checked ~ .anthony .whitemh .twelve-threeimg,
+#dango124:checked ~ .anthony .whitemh .twelve-fourimg
+{
+    opacity: 1;
+    visibility: visible;
+    
+}
+
+/* used to toggle the buttons */
+
+#dango11:checked ~ .anthony .butt-holder .one-onebuttkek,
+#dango12:checked ~ .anthony .butt-holder .one-twobuttkek,
+#dango13:checked ~ .anthony .butt-holder .one-threebuttkek,
+#dango14:checked ~ .anthony .butt-holder .one-fourbuttkek,
+
+#dango21:checked ~ .anthony .butt-holder .two-onebuttkek,
+#dango22:checked ~ .anthony .butt-holder .two-twobuttkek,
+#dango23:checked ~ .anthony .butt-holder .two-threebuttkek,
+#dango24:checked ~ .anthony .butt-holder .two-fourbuttkek,
+
+#dango31:checked ~ .anthony .butt-holder .three-onebuttkek,
+#dango32:checked ~ .anthony .butt-holder .three-twobuttkek,
+#dango33:checked ~ .anthony .butt-holder .three-threebuttkek,
+#dango34:checked ~ .anthony .butt-holder .three-fourbuttkek,
+
+#dango41:checked ~ .anthony .butt-holder .four-onebuttkek,
+#dango42:checked ~ .anthony .butt-holder .four-twobuttkek,
+#dango43:checked ~ .anthony .butt-holder .four-threebuttkek,
+#dango44:checked ~ .anthony .butt-holder .four-fourbuttkek,
+
+#dango51:checked ~ .anthony .butt-holder .five-onebuttkek,
+#dango52:checked ~ .anthony .butt-holder .five-twobuttkek,
+#dango53:checked ~ .anthony .butt-holder .five-threebuttkek,
+#dango54:checked ~ .anthony .butt-holder .five-fourbuttkek,
+
+#dango61:checked ~ .anthony .butt-holder .six-onebuttkek,
+#dango62:checked ~ .anthony .butt-holder .six-twobuttkek,
+#dango63:checked ~ .anthony .butt-holder .six-threebuttkek,
+#dango64:checked ~ .anthony .butt-holder .six-fourbuttkek,
+
+#dango71:checked ~ .anthony .butt-holder .seven-onebuttkek,
+#dango72:checked ~ .anthony .butt-holder .seven-twobuttkek,
+#dango73:checked ~ .anthony .butt-holder .seven-threebuttkek,
+#dango74:checked ~ .anthony .butt-holder .seven-fourbuttkek,
+
+#dango81:checked ~ .anthony .butt-holder .eight-onebuttkek,
+#dango82:checked ~ .anthony .butt-holder .eight-twobuttkek,
+#dango83:checked ~ .anthony .butt-holder .eight-threebuttkek,
+#dango84:checked ~ .anthony .butt-holder .eight-fourbuttkek,
+
+#dango91:checked ~ .anthony .butt-holder .nine-onebuttkek,
+#dango92:checked ~ .anthony .butt-holder .nine-twobuttkek,
+#dango93:checked ~ .anthony .butt-holder .nine-threebuttkek,
+#dango94:checked ~ .anthony .butt-holder .nine-fourbuttkek,
+
+#dango101:checked ~ .anthony .butt-holder .ten-onebuttkek,
+#dango102:checked ~ .anthony .butt-holder .ten-twobuttkek,
+#dango103:checked ~ .anthony .butt-holder .ten-threebuttkek,
+#dango104:checked ~ .anthony .butt-holder .ten-fourbuttkek,
+
+#dango111:checked ~ .anthony .butt-holder .eleven-onebuttkek,
+#dango112:checked ~ .anthony .butt-holder .eleven-twobuttkek,
+#dango113:checked ~ .anthony .butt-holder .eleven-threebuttkek,
+#dango114:checked ~ .anthony .butt-holder .eleven-fourbuttkek,
+
+#dango121:checked ~ .anthony .butt-holder .twelve-onebuttkek,
+#dango122:checked ~ .anthony .butt-holder .twelve-twobuttkek,
+#dango123:checked ~ .anthony .butt-holder .twelve-threebuttkek,
+#dango124:checked ~ .anthony .butt-holder .twelve-fourbuttkek
+
+{
+    /* scale: 2; */
+    opacity: 1;
+    visibility: visible;
+    /* height: 100%; */
+    /* width: 100%; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* re-do above kek */
+
+
+
+.whitemh{
     display: flex;
     background-color: white;
-    /* align-items: center; */
+    /* background-color: transparent; */
+    width: 23.055vw;
+    height: 32.91vw;
+    /* transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; */
+    position: relative;
 }
-.img-container img{
+.whitemh img{
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    height: 100%;
+    width: 100%;
+}
+.add-to-cart{
+    margin-top: auto;
+    width: 100%;
+    font-size: 1.25em;
+    border: #0073E6 3px solid;
+    color: white;
+    background-color: transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s ease-in-out;
+}
+
+.add-to-cartmh:hover {
+    background-color: #0073E6;
+    color: #050133;
+}
+
+.add-to-cartmh:active {
+    transform: scale(0.95); /*kek*/
+}
+.color-label {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.color-label span {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    border: rgba(255, 255, 255, 0.315) 2px solid;
+    display: inline-block;
+    transition: 0.2s all;
+}
+
+
+.butt-holder{
+    position: relative;
+}
+.butt-holder a{
     position: absolute;
     width: 100%;
     height: 100%;
-    opacity: 0;
-    transition: all 0.3s;
-    visibility: hidden;
-    border: var(--border2);
-}
-#ten1:checked ~ .one .img-container .ten1,
-#ten2:checked ~ .one .img-container .ten2,
-#ten3:checked ~ .one .img-container .ten3,
-#ten4:checked ~ .one .img-container .ten4{
-    opacity: 1;
-    visibility: visible;
+    visibility:hidden;
 }
 
 
 
-.circles-container{
-    position: absolute;
-    display: flex;
-    gap: 1vw;
+
+.color-black {
+    background-color: black;
+    box-sizing: border-box;
 }
-.circles-container .circle{
+
+.color-white {
     background-color: white;
-    height: 4vw;
-    width: 4vw;
-    border-radius: 40vw;
-}
-.circles-container .black{background-color: black; transition: all 0.3s ease-in-out;}
-.circles-container .white{background-color: white;}
-.circles-container .navy{background-color: navy;}
-.circles-container .red{background-color: red;}
-
-.circles-container .black:hover,
-.circles-container .white:hover,
-.circles-container .navy:hover,
-.circles-container .red:hover{
-    scale: .95;
+    box-sizing: border-box;
 }
 
-.one h2{
-    margin-top: 1vw;
-    font-size: 2rem;
-    font-weight: var(--semi-bold);
-}
-.one h3{
-    margin-top: 1vw;
-    font-size: 1.5rem;
-    font-weight: var(--light);
-    margin-bottom: 1vw;
-}
-.add-to-cart-container{
-    position: relative;
-    border: 2px solid green;
-    width: 100%;
-    height: 3.6vw;
+.color-blue {
+    background-color: blue;
+    box-sizing: border-box;
 }
 
-
-
-/* .one{
-    border: var(--border1);
+.color-red {
+    background-color: red;
+    box-sizing: border-box;
 }
-.img-container{
-    position: relative;
+
+.anthony h3{
+    margin-top: 3vw;
+    height: 10vw;
 }
-.img-container img{
-    position: absolute;
-    visibility: hidden;
-    height: 0;
-    opacity: .2;
-} */
+.jeremy{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid green; */
+}
+@media (max-width: 903px){
+    .jeremy{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3vw;
+    }
+    .jeremy .anthony{
+        width: 34%;
+        margin-top: 10vw;
+    }
+    .whitemh{
+        width: 100%;
+    }
+}
+@media (max-width: 440px){
+    .anthony h3{
+        font-size: 1.5rem;
+        margin-top: 5vw;
+        height: 15vw; /*IF YOU HAVE ISSUES WITH THE H3, REPLACE THIS kek*/
+    }
+    .anthony{
+        margin-top: 10vw;
+    }
+    .add-to-cart{
+        font-size: 1rem;
+    }
+    .butt-holder{
+        margin-bottom: 10vw;
+    }
+    .itzel{
+        margin-top: 0;
+    }
+}
