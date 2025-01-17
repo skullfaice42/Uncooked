@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     font-family: "Lexend Deca";
-    color: white;
+    /* color: white; */
 }
 body{
     overflow-x: hidden;
@@ -88,7 +88,9 @@ body{
     {
         font-weight: var(--light);
     }
-
+    .side-text h2{
+        font-size: 4rem;
+    }
     /* 
     
     
@@ -277,6 +279,8 @@ body{
 }
 .more-of-the-team img{
     position: relative;
+    width: 100vw;
+    height: 52.08vw;
 }
 .more-of-the-team .overlay{
     /* border: 3px solid red; */
@@ -413,21 +417,19 @@ input[type="radio"]{
     display: none;
 }
 
-@media (max-width:440px){
+/* @media (max-width:440px){
     .v-top{
         width: 100vw !important;
-        /* border: 2px solid green; */
+
     }
     .incomplete{
         display: block;
-        /* position: absolute; */
+
         height: 200vh;
         width: 200vw;
         background-color: grey;
         z-index: 9999;
         position: fixed;
-        /* top: 30%; */
-        /* left: 45%; */
 
     }
     .incomplete h2{
@@ -441,7 +443,7 @@ input[type="radio"]{
         display: flex;
         justify-content: center;
         align-items: center;
-        /* font-weight: 4rem; */
+
         font-size: 4rem;
         padding-top: 3vw;
         padding-bottom: 3vw;
@@ -450,9 +452,9 @@ input[type="radio"]{
         display: none;
     }
     .incomplete .img{
-        /* scale: .6; */
+
         width: 200vw !important;
-        /* margin-left: 31vw; */
+
         border: 2px solid green;
 
 
@@ -476,7 +478,105 @@ input[type="radio"]{
         padding-top: 2vw;
         padding-bottom: 2vw;
     }
-    body:not(#go-away:checked) ~ body{
-        
+    
+} */
+
+
+.side-text h2{
+    font-size: 2rem;
+}
+.section-3 img,
+.section-4 img{
+    /* margin-top: 3vw; */
+}
+@media (max-width: 1024px){
+.four-grid {
+    gap: 7vw;
+}
+.sub-overlay h4{
+    font-size: 1.5rem;
+}
+.sub-overlay h5{
+    font-size: 1rem;
+}
+}
+@media (max-width: 440px){
+    .v-top .overlay h2{
+        font-size: 2rem;
     }
+    .v-top .overlay{
+        width: 40%;
+    }
+    .v-top .overlay h3{
+        font-size: 1rem;
+    }
+    .side-text h2{
+        font-size: 1rem;
+    }
+    .side-text p{
+        font-size: .8rem;
+    }
+    .four-grid .section-1 h3,
+    .four-grid .section-2 h3,
+    .four-grid .section-3 h3,
+    .four-grid .section-4 h3
+    {
+        font-size: 1rem;
+    }
+    .four-grid .section-1 p,
+    .four-grid .section-2 p,
+    .four-grid .section-3 p,
+    .four-grid .section-4 p{
+        font-size: .8rem;
+    }
+    .four-grid{
+        /* gap: 13vw; */
+        /* border: var(--border3); */
+        height: 100vw;
+    }
+    .richard h2{
+        font-size: 2rem;
+    }
+    .richard h3{
+        font-size: 1rem;
+    }
+    
+    .the-team{
+        /* border: var(--border3); */
+    }
+    .the-team .person1{
+        /* border: var(--border2); */
+        width: 50%;
+    }
+    .person1 .sub-overlay{
+        top: 70%;
+    }
+
+    
+    .more-of-the-team h2{
+        font-size: 1rem;
+        width: 100%;
+    }
+    .more-of-the-team p{
+        font-size: 1rem;
+        width: 100%;
+    }
+    .auto-show h2{
+        font-size: 2rem;
+    }
+    .auto-show p{
+        font-size: 1rem;
+    }
+    .news h2{
+        font-size: 2rem;
+    }
+    .news p{
+        font-size: 1rem;
+    }
+    .new1 .overlay h2{
+        font-size: 1.5rem;
+    }
+
+
+
 }
