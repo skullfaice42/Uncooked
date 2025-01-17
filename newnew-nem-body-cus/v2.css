@@ -81,8 +81,10 @@ input[type=radio]{
     opacity: 1;
     margin-left: 20vw;
     margin-top: 3vw;
+    display: block;
 }
 .zoom-in .zoom-out{
+    display: none;
     opacity: 0;
     margin-left: 24vw;
     margin-top: 3vw;
