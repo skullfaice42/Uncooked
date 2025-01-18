@@ -116,31 +116,43 @@ align-items: stretch; /* Make both sections align with the tallest one */
 }
 
 
-.entire-sectionmh:nth-child(1) .mini-heromh {
-    flex-direction: row-reverse;
+.entire-sectionmh:nth-child(1) {
+    /* flex-direction: row-reverse; */
     margin-left: 2.0833vw;
+    /* width: 100%; */
 }
 .entire-sectionmh:nth-child(2){
-    flex-direction: row-reverse;
-    margin-right: 2.0833vw;
+    /* flex-direction: row-reverse; */
+    margin-left: 2.0833vw;
+    /* margin-right: 2.0833vw; */
+    /* border: 2px solid red; */
 }
 .entire-sectionmh:nth-child(3){
     margin-left: 2.0833vw;
 }
+
 .mini-heromh {
 height: auto; /* Let the height of mini-hero adapt to the flex container */
 max-height: 100%; /* Ensure it doesn't exceed the calculated height */
-width: auto;
+width: 100%;
+/* height: 100%; */
+/* border: ; */
 object-fit: cover; /* Ensure the image scales proportionally */
+/* opacity: 0; */
+/* border: 2px solid red; */
 
 }
+
 .entire-sectionmh .mini-heromh{
     height: 100%;
+    background-size: cover;
+    /* background-position: center; */
 }
 
 .one-clothingmh{
 color: white;
 width: 23.055vw;
+/* border: 2px solid red; */
 /* width: 100%; */
 }
 .white{
