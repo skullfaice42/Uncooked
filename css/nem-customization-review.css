@@ -593,6 +593,7 @@ input[type="checkbox"]{
     gap: 1vw;
     transition: all 0.3s;
 }
+
 .lower-buttons .change-car{
     width: 20vw;
     border: 3px solid #0073E6;
@@ -798,6 +799,9 @@ font-size: .75rem;
     }
     .order-summary-head h2{
         font-size: 2rem;
+    }
+    .lower-buttons { 
+        flex-direction: column;
     }
     .lower-buttons a{
         margin-top: 40vw;

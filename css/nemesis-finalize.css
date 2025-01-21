@@ -134,6 +134,8 @@ p{
     justify-self: center;
     margin-top: 10.347vw;
     margin-left: 6.0416vw;
+    height: fit-content;
+    padding-bottom: 4rem;
     /* margin-left: 8.0555vw; */
 }
 .spacing-left{
