@@ -10,3 +10,4 @@ document.addEventListener("DOMContentLoaded", function() { //domcontentloaded en
     }, 500);
 });
 ;
+//was 500, checking 10000

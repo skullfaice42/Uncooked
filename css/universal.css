@@ -50,7 +50,7 @@ body{
     padding: 0;
 }
 .spacing{
-    height: 6.944vw;
+    height: 5vw;
 }
 header input[type="checkbox"]{
     display: none;
@@ -64,7 +64,7 @@ header input[type="radio"] {
     font-size: 16px;
 }
 header{
-    height: 6.944vw;
+    height: 5vw;
     width: 100vw;
     background: linear-gradient(to bottom,#050133, rgba(0,0,0,0));
     position: fixed;
@@ -105,12 +105,14 @@ header{
 }
 .menuhhh .two-menuhhh img{
     
-    width: 4.652vw;
-    height: 3.125vw;
+    /* width: 4.652vw;
+    height: 3.125vw; */
+    width: 2.326vw;
+    height: 1.5625vw;
     /* border: 2px solid rgb(255, 0, 0); */
 }
 .menuhhh .two-menuhhh h2{
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: var(--regular);
     /* border: 2px solid rgb(255, 0, 0); */
 }
@@ -136,12 +138,12 @@ opacity: 0;
 
 
 .menu-contenthhh .lil-xhhh img{
-    height: 3.680vw;
+    height: 1.8vw;
     /* width: 30px;  */
     display: flex;
     /* margin-top: 10%; */
     padding-top: 4%; /*because idk whats up with it*/
-    margin-left: 85%;
+    margin-left: 90%;
     transition: all 0.3s;
 }
 
@@ -256,7 +258,7 @@ input[type="checkbox"]#sub8:checked + label .headingshhh img {
     display: flex;
     justify-content: center;
     width: 20%;
-    height: 7vw;
+    height: 4.5vw;
     /* border: 2px solid green; */
     position: absolute;
     top: 0;
@@ -270,7 +272,7 @@ input[type="checkbox"]#sub8:checked + label .headingshhh img {
 }
 .iconhhh img{
     /* border: 2px solid black; */
-    width: 7.152vw;
+    width: 4.5vw;
     /* position: absolute; */
     /* left: 45%; */
     /* top: 0; */
@@ -279,7 +281,7 @@ input[type="checkbox"]#sub8:checked + label .headingshhh img {
 /* mag glass here */
 /* Magnifying glass icon */
 .aside-iconshhh label[for="mag-glass"] img {
-    width: 3.3vw;
+    width: 1.65vw;
     transition: all 0.3s;
     margin-right: 1vw;
 }
@@ -393,7 +395,7 @@ input[type="checkbox"]#mag-glass:checked + label img {
 
 /* Profile image styling */
 .aside-iconshhh a img {
-    width: 5.138vw;
+    width: 2.569vw;
     transition: all .3s;
     /* border: 2px solid green; */
 }
@@ -1267,7 +1269,6 @@ like on the merch page*/
 
 /* use for loading */
 
-/* 
 #loading {
     position: fixed;
     inset: 0;
@@ -1299,9 +1300,9 @@ like on the merch page*/
         transform: rotate(360deg);
     }
 }
-/* .loading-hero{
+.loading-hero{
     height: 10vh;
-} */
+} 
 .loading-hero {
     position: relative;
     width: 8vw;

@@ -44,7 +44,7 @@ html{
     font-weight: 600;
     text-decoration: none;
     color: white;   
-    
+    width: fit-content;
     display: flex;
     margin-top: 2.708vw;
     align-items: center;
@@ -61,12 +61,16 @@ html{
     margin-left:.972vw; 
     background-color: #0073E6;
     border: solid #0073E6;
-    width:11.944vw;
+    /* width:11.944vw;
+     */
+     width: fit-content;
+     padding-right: 1.5rem;
     height: 4.513vw;
 }
 #discovermore-button { 
     border: solid #0073E6;
-    width: 22.222vw;
+    padding-right: 1.5rem;
+    /* width: 22.222vw; */
     height: 4.513vw;
 /* height: 50%; */
     /* height: 50vw; */
@@ -75,7 +79,9 @@ html{
 
 .rfa { 
     /* height: 2.393vw; */
-    margin-left: 2.264vw;
+    /* margin-left: 2.264vw;
+     */
+    margin-left: 1.5rem;
 }
 
 
@@ -191,7 +197,7 @@ html{
     background-color: #0073E6;
     align-self: flex-end;
     margin-top: 28.056vw;
-    width: 17.917vw;
+    /* width: 17.917vw; */
     height: 4.513vw;
     margin-right: 2.153vw;
 }
@@ -283,12 +289,13 @@ html{
 
 .s-card { 
     display: flex;
-    height: 28.264vw;
+    height: fit-content;
     width: 33.33%;
 }
 .s-card article {
     display: flex;
     flex-direction: column;
+    height: fit-content;
 }
 #s-card-1 img { 
     height: 8.333vw;
@@ -321,7 +328,9 @@ html{
     align-items: center;
     color: white;
     text-decoration: none;
-    width: 19.027vw;
+    /* width: 19.027vw; */
+    padding-right: 1.5rem;
+    width: fit-content;
     height: 4.514vw;
     border-style: solid;
     border-color:#0073E6;
@@ -390,13 +399,18 @@ html{
     align-items: center;
     color: white;
     text-decoration: none;
-    width: 26.389vw;;
+    /* width: 26.389vw;;
+     */
+    width: fit-content;
+    padding-right: 1.5rem;
     height: 4.514vw;
     border-style: solid;
     border-color:#0073E6;
     margin-top: 2.014vw;
 }
-
+#shopmerch:hover { 
+    scale: .95;
+}
 #shopmerch p { 
     margin:0;
     margin-left: 1.181vw;
@@ -476,13 +490,18 @@ html{
     align-items: center;
     color: white;
     text-decoration: none;
-    width: 16.458vw;
+    /* width: 16.458vw;
+     */
+    width: fit-content;
+    padding-right: 1.5rem;
     height: 4.514vw;
     border-style: solid;
     border-color:#0073E6;
     margin-top: 2.083vw;
 }
-
+#aboutus:hover {
+    scale: .95;
+}
 #aboutus p { 
     margin:0;
     margin-left: 1.181vw;
