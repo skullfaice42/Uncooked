@@ -157,12 +157,14 @@ input[type="radio"]{
     margin-left: 1.2vw;
     display: flex;
     /* height: 100%; */
+    height: fit-content;
     flex-direction: column;
     justify-content: space-between;
 }
 .lower-info h3{
     font-size: 1.5rem;
     font-weight: var(--semi-bold);
+    padding-bottom: 1.5rem;
 }
 .lower-info h4{
     font-size: 1.5rem;
@@ -305,8 +307,11 @@ input[type="radio"]{
     width: 80.902vw;
     justify-content: flex-end;
     margin-right: 5.2083vw;
+    color: white;
 }
-
+.edit a { 
+    color: white;
+}
 .order-summary-head {
     height: 16.8055vw;
     display: flex;
@@ -337,7 +342,12 @@ input[type="radio"]{
     flex-wrap: wrap;
     text-wrap: wrap;
 }
-
+.change-car img { 
+    margin-left: 1.5rem;
+}
+.change-car h2 { 
+    margin-left: 1.5rem;
+}
 
 
 
@@ -584,7 +594,7 @@ input[type="checkbox"]{
     transition: all 0.3s;
 }
 .lower-buttons .change-car{
-    width: 24.6vw;
+    width: 20vw;
     border: 3px solid #0073E6;
     display: flex;
     align-items: center;
@@ -742,6 +752,7 @@ font-size: .75rem;
 }
 
 
+
 @media (max-width: 1024px){
     .selection-name p{
         font-size: 2rem;
@@ -765,6 +776,7 @@ font-size: .75rem;
         margin: 0;
         width: fit-content;
         align-self: center;
+        color: white;
     }
     .edit a { 
         margin: 0;
@@ -772,6 +784,7 @@ font-size: .75rem;
         text-transform: uppercase;
         color: white;
     }
+
     .lower-buttons img { 
         margin-left: 1.5vw;
     }
