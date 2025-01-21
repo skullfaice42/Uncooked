@@ -113,6 +113,12 @@ justify-content: space-between;
 display: flex;
 gap: 2rem;
 align-items: stretch; /* Make both sections align with the tallest one */
+width: fit-content;
+padding-bottom: 4rem;
+}
+.jazzmh { 
+    width: fit-content;
+    margin-left: 6rem;
 }
 
 

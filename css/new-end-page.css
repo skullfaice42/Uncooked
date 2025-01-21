@@ -61,6 +61,8 @@
     height: 3.82vw;
     gap: 1vw;
     transition: all 0.3s ease;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .lower-box:hover{
     scale: 0.95;
@@ -86,7 +88,10 @@
     font-weight: var(--semi-bold);
 }
 
-
+.lil-xhhh img {
+    height: auto !important;
+    width: auto !important;
+}
 @media (max-width: 440px){
     .box{
         height: 83.4vw;

@@ -36,14 +36,16 @@ line-height: 4.8611vw
 
 .super-car{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     gap: 1vw;
-    margin-top: 1.8vw;
-    margin-bottom: 1.8vw;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    
 }
 .super-car h3,
 .super-car h4{
-    margin-left: 3vw;
+    margin-left: 1.5rem;
     /* margin-top: 1.8vw; */
 }
 
@@ -131,7 +133,8 @@ p{
     height: 146.527vw;
     justify-self: center;
     margin-top: 10.347vw;
-    /* margin-left: 6.0416vw; */
+    margin-left: 6.0416vw;
+    /* margin-left: 8.0555vw; */
 }
 .spacing-left{
     margin-left: 03.6111vw;
